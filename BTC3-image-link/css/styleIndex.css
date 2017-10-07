@@ -1,0 +1,28 @@
+* {
+	padding: 0px;
+	margin: 0[x;]
+}
+h1 {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+a {
+	padding: 5px;
+	border: 2px solid orange;	
+	width: 320px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+p {
+
+	margin: 30px;
+	text-align: center;
+}
+img {
+	margin: 4px;
+	border-radius: 3px;
+	border: 1px solid grey;
+	max-width: 300px;
+}
