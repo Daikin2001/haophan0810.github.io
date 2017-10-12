@@ -1,0 +1,106 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+#wrap	{
+
+	max-width: 100%;
+	margin: 10px;
+	background-color: #b7cff7;
+}
+#gallery {
+	width: 100%;
+}
+.images {
+	width: 25%;
+	/*border: 1px solid red;*/
+	/*margin-left: 5px;
+	margin-right: 5px;*/
+	padding: 5px;
+	float: left;
+	
+}
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+ @keyframes textspan {
+ 	0%  {margin-right: 10%; color:  #fb0b8d;}
+ 	10%  {margin-right: 25%; color:  #364572;}
+ 	20%  {margin-right: 50%; color:  #4575eb;}
+    30%  {margin-right: 75%px;color:  #20ff3d;}
+    50%  {margin-right: 80%; color:  #951dc1;}
+    75%  {margin-right: 65%; color:  #d6df07;}
+    100% {margin-right: 35%; color:  #f21645;}
+ }
+@keyframes borderimage {
+	0%  {border: 3px solid #fb0b8d;}
+    25%  {border: 3px solid #20ff3d;}
+    50%  {border: 3px solid #951dc1;}
+    75%  {border: 3px solid #d6df07;}
+    100% {border: 3px solid #f21645;}
+}
+ h1 {
+ 	padding: 5px;
+ 	animation: title 5s ease infinite;
+ }
+.row1:hover {
+	opacity: 0.5;
+	transition: opacity 0.8s linear;
+	
+}
+
+.row2 img:hover {
+	box-shadow:0px 11px 10px 0px rgba(255, 90, 62, 1);
+}
+img {
+	border: 2px solid #eaa78f;
+	border-radius: 10px;
+	width: 100%;
+	animation: borderimage 4s ease infinite;
+	
+}
+
+.row3:hover {
+	transform:translate(0,10px);
+	transition: transform 0.5s linear;
+}
+.row4 img:hover{
+	transform:scale(1.2);
+	transition: transform 0.5s linear;
+
+}
+.row4 {
+	overflow: hidden;
+}
+
+#clear {
+	clear: both;
+}
+span	{
+	font-style: italic;
+	text-align: right;
+	display: block;
+	padding: 15px;
+	animation: textspan 10s ease infinite;
+}
+/*span:hover {
+	margin-right: 500px;
+	font-weight: bold;
+	transition: margin-right 4s linear;
+	color: red;
+}*/
+h1	{
+	color: red;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
