@@ -21,6 +21,10 @@ a {
 	text-align: center;
 	text-decoration: none;
 }
+
+a:hover {
+	color: red;
+}
 p {
 
 	margin: 30px;
