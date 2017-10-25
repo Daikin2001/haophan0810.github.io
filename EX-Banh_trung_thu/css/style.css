@@ -21,7 +21,7 @@
 	margin-right: 5px;*/
 	padding: 5px;
 	float: left;
-	
+
 }
 @keyframes title {
     0%  {background-color: #EF7126; color: #F9E559;}
@@ -31,30 +31,40 @@
     100% {background-color: #218C8D; color: #F9E559;}
 }
 
- @keyframes textspan {
- 	0%  {margin-right: 10%; color:  #fb0b8d;}
- 	10%  {margin-right: 25%; color:  #364572;}
- 	20%  {margin-right: 50%; color:  #4575eb;}
-    30%  {margin-right: 75%px;color:  #20ff3d;}
-    50%  {margin-right: 80%; color:  #951dc1;}
-    75%  {margin-right: 65%; color:  #d6df07;}
-    100% {margin-right: 35%; color:  #f21645;}
+ 
+ @keyframes textSpan {
+	 0% {opacity: 0;color:#EF7126; }
+	 20% {opacity: 0.1;color: #6F3662;}	 
+	 25% {opacity: 0.4;color: #9F6164;}
+	 30% {opacity: 0.6;color: #44B3C2;}	
+	 35% {opacity: 1;color: #218C8D;}
+	 40%  {margin-right: 10%; color:  #fb0b8d;}
+ 	45%  {margin-right: 25%; color:  #364572;}
+ 	50%  {margin-right: 50%; color:  #4575eb;}
+    55%  {margin-right: 75%;color:  #20ff3d;}    
+    65%  {margin-right: 65%; color:  #d6df07;}
+    75% {margin-right: 35%; color:  #f21645;}
+    80% {opacity: 0.9;color: #F9E559;}
+    90% {opacity: 0.8;color:#EF7126; }
+	95% {opacity: 0.3;color: #6F3662;}	 
+	100% {opacity: 0;color: #9F6164;}
+	
  }
 @keyframes borderimage {
-	0%  {border: 3px solid #fb0b8d;}
-    25%  {border: 3px solid #20ff3d;}
-    50%  {border: 3px solid #951dc1;}
-    75%  {border: 3px solid #d6df07;}
-    100% {border: 3px solid #f21645;}
+	0%  {border: 3px solid #EF7126;}
+    25%  {border: 3px solid #6F3662;}
+    50%  {border: 3px solid #9F6164;}
+    75%  {border: 3px solid #44B3C2;}
+    100% {border: 3px solid #218C8D;}
 }
  h1 {
  	padding: 5px;
- 	animation: title 5s ease infinite;
+ 	animation: title 10s ease infinite;
  }
 .row1:hover {
 	opacity: 0.5;
 	transition: opacity 0.8s linear;
-	
+
 }
 
 .row2 img:hover {
@@ -64,8 +74,8 @@ img {
 	border: 2px solid #eaa78f;
 	border-radius: 10px;
 	width: 100%;
-	animation: borderimage 4s ease infinite;
-	
+	animation: borderimage 10s ease infinite;
+
 }
 
 .row3:hover {
@@ -85,18 +95,17 @@ img {
 	clear: both;
 }
 span	{
+	display: block;
+	font-size: 1.5em;
 	font-style: italic;
 	text-align: right;
 	display: block;
 	padding: 15px;
-	animation: textspan 10s ease infinite;
+	animation: textSpan 10s ease infinite;
+	
 }
-/*span:hover {
-	margin-right: 500px;
-	font-weight: bold;
-	transition: margin-right 4s linear;
-	color: red;
-}*/
+
+
 h1	{
 	color: red;
 	text-align: center;
