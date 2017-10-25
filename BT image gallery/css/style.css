@@ -39,14 +39,14 @@ body {
 		#menu a:visited {
 		    color: #c4b5fc;
 		}
+		
+		#menu a:active {
+		    color: #0000FF;
+		}
 		#menu a:hover {
 		    color: #f80d37;
 		    text-decoration: underline;
 		}
-		#menu a:active {
-		    color: #0000FF;
-		}
-
 		
 	/*IMAGE	*/
 	#images-gallery {
