@@ -7,6 +7,7 @@
 #wrap {
 	width: 1000px;
 	margin: auto;
+	
 
 }
 
@@ -22,39 +23,63 @@
 		border-bottom: 4px solid #189baf;
 		
 	}
-#main-content {
-	width: 100%;
+#main-content {	
+	width: 100%;	
+	background-color:#ecf0f6;
 	position: relative;
-	background-color:#f1e8dd;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
-	#menu{
-		
-		float: left;
+	#menu{				
 		width: 15%;
-		/*position: absolute;*/
+		position: absolute;		
 		padding: 10px;
 	}
-		/*#menu a{
-			background-color:#aff0ad ;
-			padding: 3px;
-			line-height: 1.5em;
-			width: 90%;
+		#menu a{
+			background-color: #becae0;	
+			/*margin-bottom: 20px;		*/
+			padding-bottom: 20px;
+			padding-top:20px;
+			line-height: 1.5em;			
 			display: block;
-			font-size: 2em;
-			margin: 10px 0;
+			width: 100%;
+			font-size: 1.5em;			
 			text-decoration: none;
-			text-align: center;
-			border-bottom: 3px solid #2cce25;
-		}*/
-	#gallery {
-		float: left;
-		width: 85%;
+			text-align: center;	
+
 		}
+		#menu a:hover {
+			background-color: #859bc5;
+			text-decoration: underline;
+		}
+		#menu a:first-child {
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		#menu a:last-child {
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	#gallery {		
+		width: 100%;
+		}
+
+		.left-gallery {
+			width: 15%;
+			height: 1px;
+			float:left;
+		}	
+		.right-gallery{
+			width: 85%;
+			float:left;
+		}
+
 		.image {
 			float: left;
 			padding: 8px;
 			width: 25%;
 		}
+
 			.image img{
 				width: 100%;
 				border: 4px solid #189baf;
@@ -63,7 +88,13 @@
 
 			.image img:hover {
 				border-color: red;
+
 			}
 #clear {
 	clear :both;
+}
+#top {
+	position: fixed;
+	bottom: 5px;
+	right: 3px;
 }
