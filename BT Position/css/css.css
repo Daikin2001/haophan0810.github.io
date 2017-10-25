@@ -31,10 +31,10 @@
 		
 		float: left;
 		width: 15%;
-		position: absolute;
+		/*position: absolute;*/
 		padding: 10px;
 	}
-		#menu a{
+		/*#menu a{
 			background-color:#aff0ad ;
 			padding: 3px;
 			line-height: 1.5em;
@@ -45,7 +45,7 @@
 			text-decoration: none;
 			text-align: center;
 			border-bottom: 3px solid #2cce25;
-		}
+		}*/
 	#gallery {
 		float: left;
 		width: 85%;
