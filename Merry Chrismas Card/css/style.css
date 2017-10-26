@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+#wrap {
+	width: 1200px;
+	margin: auto;
+}
+	#menu {
+		width: 100%;
+		margin-top:5px;
+		margin-bottom: 10px;
+	}
+		.main-menu {
+			width: 100%;
+			height: 50px;
+			/*background-color: gray;*/
+		}
+
+	#content {
+		width: 100%;
+		position: relative;
+	}
+	@keyframes changeColorBorder {
+		10% {border-color: #3430c9;}
+		20% {border-color: #bed347;}
+		30% {border-color: #f24d84;}
+		40% {border-color: #ad2af8;}
+		50% {border-color: #c701f0;}
+		60% {border-color: #f807a3;}
+		70% {border-color: #4dd441;}
+		80% {border-color: #860ece;}
+		100% {border-color: #e82b0c;}
+
+	}
+	@keyframes textBlur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+	@keyframes snowOneMove {
+		0% {top:10px;right: 10px;}
+		20% {left:10px;top: 50px;}
+		40% {top:120px;right: 10px;}
+		50% {left:10px;top: 200px;}
+		70% {top:250px;right: 10px;}
+		80% {top:300px;left: 10px;}
+		100% {bottom:10px;right: 10px;}
+		
+	}
+
+	@keyframes reindeerMove {
+		10% {right: 20%;}
+		20% {right: 30%;}
+		30% {right: 40%;}
+		40% {right: 50%;}
+		50% {right: 60%;}
+		60% {right: 70%;}
+		70% {right: 75%;}
+		95% {right: 80%;}		
+		100% {right: 80%;opacity: 0;}		
+	}
+		.card {
+			background: none;
+			background-image: url("image/snow1.png");
+			background-image: url("image/snow2.png");
+			background-image: url("image/snow3.png");
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;			
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 4px solid red;
+			animation: changeColorBorder 5s ease infinite;
+		}
+			.card img {
+
+				width: 100%;
+				border-radius:5px;
+
+			}
+			.text {
+				position: absolute;
+				left: 200px;
+				bottom: 170px;
+				font-size: 1.8em;
+				animation: textBlur 0.75s ease-out infinite;
+				text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+
+			}
+			.reindeer {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				transform: rotate(360deg);
+				/*transform: scaleX(-1);*/
+				animation: reindeerMove 10s ease-in infinite;
+				
+			}
+			/*.snow1  {
+				max-width:20px;
+				position: absolute;
+				top: 10px;
+				right: 10px;				
+			}
+			.snow2 {
+				max-width: 22px;
+				position: absolute;
+				top: 10px;
+				right: 250px;
+			}
+			.snow3 {
+				max-width: 25px;
+				position: absolute;
+				top: 10px;
+				left: : 100px;
+			}*/
+/*			.reindeer img {
+				  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+			}
+	*/

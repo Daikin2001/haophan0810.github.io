@@ -45,12 +45,14 @@
 			width: 100%;
 			font-size: 1.5em;			
 			text-decoration: none;
-			text-align: center;	
+			text-align: center;
+			color: blue;
 
 		}
 		#menu a:hover {
+			color: red;
 			background-color: #859bc5;
-			text-decoration: underline;
+			
 		}
 		#menu a:first-child {
 			border-top-left-radius: 5px;

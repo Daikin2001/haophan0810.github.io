@@ -29,23 +29,15 @@ body {
 		font-size: 1.3em;
 	}
 		#menu a {
+			color: blue;
 			text-decoration: none;		
 
 		}
 
-		#menu a:link {
-		    color: #108c8e;
-		}
-		#menu a:visited {
-		    color: #c4b5fc;
-		}
 		
-		#menu a:active {
-		    color: #0000FF;
-		}
 		#menu a:hover {
 		    color: #f80d37;
-		    text-decoration: underline;
+		    
 		}
 		
 	/*IMAGE	*/
