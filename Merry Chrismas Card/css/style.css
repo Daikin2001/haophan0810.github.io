@@ -3,10 +3,50 @@
 	margin:0;
 	box-sizing: border-box;
 }
+body { background-color:#333; }
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+
+
+
+
 
 #wrap {
-	width: 1200px;
+	width: 100%;
 	margin: auto;
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
 }
 	#menu {
 		width: 100%;
@@ -21,7 +61,7 @@
 
 	#content {
 		width: 100%;
-		position: relative;
+		
 	}
 	@keyframes changeColorBorder {
 		10% {border-color: #3430c9;}
@@ -80,14 +120,12 @@
 		100% {right: 80%;opacity: 0;}		
 	}
 		.card {
-			background: none;
-			background-image: url("image/snow1.png");
-			background-image: url("image/snow2.png");
-			background-image: url("image/snow3.png");
+			
+			
 			width: 50%;
 			margin-left: auto;
-			margin-right: auto;			
-			position: absolute;
+			margin-right: auto;	
+			position: relative;			
 			top: 10px;
 			left: 10px;
 			padding: 10px;
@@ -102,12 +140,16 @@
 
 			}
 			.text {
+				/*width: 50%;*/
+				/*display: inline-block;*/
 				position: absolute;
-				left: 200px;
-				bottom: 170px;
-				font-size: 1.8em;
+				/*left: 200px;
+				bottom: 170px;*/
+				right: 20%;				
+				top:45%;
+				/*font-size: 1.8em;*/
 				animation: textBlur 0.75s ease-out infinite;
-				text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+				/*text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;*/
 
 			}
 			.reindeer {
@@ -119,24 +161,11 @@
 				animation: reindeerMove 10s ease-in infinite;
 				
 			}
-			/*.snow1  {
-				max-width:20px;
-				position: absolute;
-				top: 10px;
-				right: 10px;				
+			span	{
+				width: 100%;
+				display: block;
 			}
-			.snow2 {
-				max-width: 22px;
-				position: absolute;
-				top: 10px;
-				right: 250px;
-			}
-			.snow3 {
-				max-width: 25px;
-				position: absolute;
-				top: 10px;
-				left: : 100px;
-			}*/
+
 /*			.reindeer img {
 				  -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
