@@ -8,12 +8,15 @@ ul,li {
 	display: block;
 }
 #wrap {
-	width: 1200px;
+	width: 1000px;
 	margin: 5px auto;
+	background-color: #e9e7ec;
 }
 	#main-menu {
 		background-color: #fdecde;
 		width: 100%;
+		margin-bottom: 10px;
+		
 		/*position: relative;*/
 	}
 		.logo{
@@ -38,6 +41,7 @@ ul,li {
 				padding:10px;
 			}
 			li.menu {
+				text-transform: uppercase;
 				width: 20%;
 				float: left;
 
@@ -55,8 +59,157 @@ ul,li {
 				display: none;
 				position: absolute;
 			}
-			
+	#special {
+		width: 100%;
+		border-bottom: 5px solid red;
+	}
+		.sales {
+			padding:10px;
+			width: 70%;
+			float: left;
+		}
+			.foot-sales-up {
+				padding: 5px;
+				width: 100%;
+			}
+				.left-foot-sales-up {
+					padding: 5px;
+					width: 60%;
+					float: left;
+				}
+				.right-foot-sales-up {
+					/*padding: 5px;*/
+					width: 40%;
+					float: left;
+				}
+					.up-right-foot-sales-up {
+						/*padding: 5px;*/
 
+					}
+					.down-right-foot-sales-up {
+						/*padding: 5px;*/
+
+					}
+			.foot-sales-down {
+				width: 100%;
+				padding: 5px;
+			}
+				.left-foot-sales-down {
+					width: 40%;
+					float: left;
+					padding: 5px;
+				}
+				.right-foot-sales-down {
+					width: 60%;
+					float: left;
+					padding: 5px;
+				}
+
+		.adv {
+			padding: 5px;
+			width: 30%;
+			float: left;
+		}
+
+		#products {
+			margin-top: 20px;
+			width: 100%;
+			border-bottom: 5px solid orange;
+		}
+		/*.hot-pot-special {
+			position: relative;
+		}*/
+			.products {
+				padding: 10px;
+				width: 100%;
+
+				
+			}
+				/*.products span {
+					position: absolute;
+					top: 50px;
+					left: 50px;
+				}*/
+				.image-product {
+					padding: 10px;
+					width: 60%;
+					/*position: relative;*/
+					float: left;
+				}
+				.content-product {
+					padding: 10px;
+					width: 40%;
+					float: left;
+
+				}
+		
+		img	{
+			width: 100%;
+			border-radius: 5px;
+		}
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+	#footer	{
+		width: 100%;
+		margin-top: 10px;
+	}	
+		#footer h3 {
+			margin-bottom: 5px;
+			/*text-decoration: underline;*/
+			color: red;
+		}
+		.hotline{
+			font-weight: bold;
+			color: blue;
+		}
+		#footer a {
+			padding-top: 2px;
+			padding-bottom: 3px;
+			color: black;
+			display: block;
+		}
+			#footer a:hover {
+				color: red;
+			}
+		.contact {
+			width: 100%;
+			border-bottom: 5px solid green;
+		}
+		.support {
+			width: 30%;
+			float: left;
+			padding: 5px;
+		}
+		.mini-contact {
+			width: 30%;
+			float: left;
+			padding: 5px;
+		}
+		.fan-page	{
+			width: 40%;
+			float: left;
+			padding: 5px;
+		}
+		.copyright {
+			text-align: center;
+			margin-top: 20px;
+			font-size: 1.2em;
+		}
+	.top {
+		position: fixed;
+		bottom: 2px;
+		right: 2px;
+	}	
+	.top img {
+		width: 40px;
+	}
 .clear {
 	clear: both;
+	border: 2px solid white;
 }
