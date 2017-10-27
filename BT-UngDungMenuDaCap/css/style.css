@@ -3,4 +3,59 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+ul,li {
+	list-style-type: none;
+	display: block;
+}
+#wrap {
+	width: 1200px;
+	margin: 5px auto;
+}
+	#main-menu {
+		background-color: #fdecde;
+		width: 100%;
+		/*position: relative;*/
+	}
+		.logo{
+			padding: 5px;
+			width: 20%;
+			/*position: absolute;
+			top: 0px;
+			left: 0px;*/
+			float: left;
+		}
+			.logo img {
+				width: 100%;
+			}
+		.menu {
+			padding-top: 5px;
+			width: 80%;
+			float: left;
+					
+		}
+			ul.menu {
+				width: 100%;
+				padding:10px;
+			}
+			li.menu {
+				width: 20%;
+				float: left;
 
+			}
+				li.menu-foots {
+					position: relative;
+				}
+				li.menu-foots:hover ul.mini-menu {
+				display: block;
+				z-index: 1;
+				}
+
+			ul.mini-menu {
+				text-align: left;
+				display: none;
+				position: absolute;
+			}
+
+.clear {
+	clear: both;
+}
