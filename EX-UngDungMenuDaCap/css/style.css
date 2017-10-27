@@ -25,9 +25,12 @@ body {
 	}*/
 	a {
 		text-decoration: none;
+		color: blue;
+
 	}
-
-
+	a:hover {
+		color: red;
+	}
 
 	#menu {
 		/*position: relative;*/
@@ -201,6 +204,7 @@ body {
 		width: 100%;
 		height: 50px;
 		/*background-color: #df9d0a;*/
+		text-align: center;
 
 	}
 	#dautrang {
@@ -209,4 +213,5 @@ body {
 		right:15px;
 		bottom: 2px;
 	}
+
 	
