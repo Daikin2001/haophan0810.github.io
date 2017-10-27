@@ -140,17 +140,38 @@ body { background-color:#333; }
 
 			}
 			.text {
-				/*width: 50%;*/
+				width: 100%;
+
 				/*display: inline-block;*/
 				position: absolute;
-				/*left: 200px;
-				bottom: 170px;*/
-				right: 20%;				
-				top:45%;
-				/*font-size: 1.8em;*/
+				right: -50%;
+				bottom: 43%;				
+				font-size: 1.8em;
 				animation: textBlur 0.75s ease-out infinite;
-				/*text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;*/
+				text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 
+			}
+				@media screen and (max-width: 2000px) {
+	    		.text {
+	        		font-size: 2em;
+			    }
+			}
+			@media screen and (max-width: 1400px) {
+	    		.text {
+	        		font-size: 1.5em;
+			    }
+			}
+			@media screen and (max-width: 1000px) {
+	    		.text {
+	        		font-size: 1.2em;
+			    }
+			}
+			@media screen and (max-width: 700px) {
+	    		.text {
+	        		font-size: 0.7em;
+	        		right: -45%;
+	        		bottom: 42%;
+			    }
 			}
 			.reindeer {
 				position: absolute;
@@ -161,10 +182,7 @@ body { background-color:#333; }
 				animation: reindeerMove 10s ease-in infinite;
 				
 			}
-			span	{
-				width: 100%;
-				display: block;
-			}
+			
 
 /*			.reindeer img {
 				  -moz-transform: scaleX(-1);
