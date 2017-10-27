@@ -1,0 +1,25 @@
+/*CSS ABOUT*/
+
+#content-about {	
+	position: relative;
+	width: 80%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+h2 {
+	background-color: #c19af6;
+	border-radius: 5px;
+	text-align: center;
+	color: #575a53;
+	font-weight: bold;
+	margin: 10px;
+	padding: 10px;
+}
+p {
+	padding: 5px;
+	margin: 10px;
+	text-align: justify;
+
+}
