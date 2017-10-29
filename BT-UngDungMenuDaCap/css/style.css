@@ -4,8 +4,17 @@
 	box-sizing: border-box;
 }
 ul,li {
+	text-align: center;
 	list-style-type: none;
 	display: block;
+}
+a {
+	
+	text-decoration: none;
+	color: #59045b;
+}
+a:hover {
+	color: #0c39c7;
 }
 #wrap {
 	width: 1000px;
@@ -16,6 +25,7 @@ ul,li {
 		background-color: #fdecde;
 		width: 100%;
 		margin-bottom: 10px;
+		border-bottom: 5px solid green;
 		
 		/*position: relative;*/
 	}
@@ -41,11 +51,16 @@ ul,li {
 				padding:10px;
 			}
 			li.menu {
+				border-right: 2px solid red;
 				text-transform: uppercase;
 				width: 20%;
 				float: left;
+				height: 50px;				
 
 			}
+				li.menu.home-page {
+				    border-right: 0px solid;
+				}
 				li.menu-foots {
 					position: relative;
 				}
@@ -55,62 +70,124 @@ ul,li {
 				}
 
 			ul.mini-menu {
-				text-align: left;
+				top: 30px;
+    			left: 30px;
+				padding: 5px;
+				background-color: #90cd83;
+				margin-top: 20px;
+				/*text-align: left;*/
 				display: none;
 				position: absolute;
+			}
+			li.mini-menu {
+				padding: 2px;
 			}
 	#special {
 		width: 100%;
 		border-bottom: 5px solid red;
 	}
 		.sales {
-			padding:10px;
+			padding-bottom: 5px;
+			padding-right: 5px;
 			width: 70%;
 			float: left;
 		}
 			.foot-sales-up {
-				padding: 5px;
+				/*padding: 5px;*/
 				width: 100%;
 			}
 				.left-foot-sales-up {
-					padding: 5px;
+					padding-left: 10px;
 					width: 60%;
 					float: left;
+					position: relative;
 				}
 				.right-foot-sales-up {
-					/*padding: 5px;*/
+					padding-right: 5px;
+    				padding-left: 5px;
 					width: 40%;
 					float: left;
 				}
 					.up-right-foot-sales-up {
 						/*padding: 5px;*/
+						position: relative;
 
 					}
 					.down-right-foot-sales-up {
+						position: relative;
 						/*padding: 5px;*/
 
 					}
 			.foot-sales-down {
 				width: 100%;
-				padding: 5px;
+				
 			}
 				.left-foot-sales-down {
 					width: 40%;
 					float: left;
-					padding: 5px;
+					padding-left: 10px;
+					position: relative;
+					/*padding: 5px;*/
 				}
 				.right-foot-sales-down {
+					position: relative;
+				    padding-left: 10px;
+   					padding-right: 5px;
 					width: 60%;
 					float: left;
-					padding: 5px;
+					
 				}
+				.value-sales {
+					position: absolute;
+					bottom: 5px;
+					right: 5px;
+				}
+				.value-sales img {
+					width: 50px;
+				}
+				@keyframes sale{
+					from {opacity: 0};
+					to {opacity: 1};
 
+				}
+				.sale50 {
+					animation: sale 0.5s linear infinite;
+				}
 		.adv {
-			padding: 5px;
+			padding-right: 5px;
+			padding-left: 5px;
 			width: 30%;
 			float: left;
 		}
+		#introduce {
+			padding: 10px 5px;
+			width: 100%;
+			border-bottom: 5px solid violet;
+		}	
+			.wellcome {
+				margin-bottom: 15px;
+				color: red;
+			}
+			@keyframes returnRestaurent {
+				from {opacity: 0};
+				to {opacity: 1};
+			}
+			h2 span {
+				animation: returnRestaurent 0.5s ease infinite;
+			}
+			.content-introduce p {
 
+				font-family: monospace,sans-serif;
+			    text-indent: 20px;
+			    text-align: justify;
+			    line-height: 1.5em;
+			    word-spacing: 1px;
+			    margin-bottom: 10px;
+
+			}
+			.image-introduce img {
+				width: 100%;
+			}
 		#products {
 			margin-top: 20px;
 			width: 100%;
@@ -142,15 +219,23 @@ ul,li {
 					float: left;
 
 				}
+				.content-product h4 {
+					color: #06a20d;
+					text-align: center;
+					margin-bottom: 15px;
+					text-transform: uppercase;
+				}
+				.content-product p {
+
+					text-indent: 15px;
+					text-align: justify;
+				}
 		
 		img	{
 			width: 100%;
 			border-radius: 5px;
 		}
-		a {
-			text-decoration: none;
-			color: blue;
-		}
+		
 		h2 {
 			text-align: center;
 			text-transform: uppercase;
@@ -184,12 +269,12 @@ ul,li {
 		.support {
 			width: 30%;
 			float: left;
-			padding: 5px;
+			padding: 10px;
 		}
 		.mini-contact {
 			width: 30%;
 			float: left;
-			padding: 5px;
+			padding: 10px;
 		}
 		.fan-page	{
 			width: 40%;
