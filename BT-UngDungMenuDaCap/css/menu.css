@@ -1,0 +1,47 @@
+span {
+	display: block;
+}
+
+#content-foots {
+	width: 100%;
+}
+	.foots {
+		width: 100%;
+	}
+		.foots h2 {
+			margin-top: 15px;
+			margin-bottom: 10px;
+			padding-left: 5px;
+			text-align: left;
+			text-transform: uppercase;
+			color:red;
+		}
+		.content-foots {
+			border-bottom: 2px solid #ba7dc7;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px; 
+
+		}
+			.each-foots {
+				text-align: center;
+				padding: 5px;
+				width: 25%;
+				float: left;
+
+
+			}
+			.image-foots {
+				margin-bottom: 5px;
+				overflow: hidden;
+				border-radius: 5px;
+				
+			}
+			.each-foots img {
+				width: 100%;
+			}
+			 .each-foots img:hover {
+			 	transform: scale(1.2);
+			 	border-radius: 5px;
+			 	transition: transform 0.5s linear;
+			 	
+			 }

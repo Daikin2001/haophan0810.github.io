@@ -1,0 +1,70 @@
+#content-about {
+	width: 80%;
+	margin: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom:5px solid #163f66;
+}
+	p {
+		margin-bottom: 5px;
+	}
+	h2 {
+			padding: 10px;
+			background-color: #a8f78e;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			text-align: center;
+			color: red;
+	}
+	#info-about {
+		text-align: justify;
+			border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom:5px solid #163f66;
+	}
+		/*#info-about h2 {
+			margin-bottom: 10px;
+			text-align: center;
+			color: red;
+		}*/
+		#info-about p {
+			text-indent: 10px;
+			margin-bottom: 5px;
+			letter-spacing: 1px;
+		}
+	#contact-about {
+			border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom:5px solid #163f66;
+	}
+		#contact-about a {
+			color: blue;
+		}
+		#contact-about a:hover {
+			color: red;
+		}
+	#office-about {
+		text-align: justify;
+	}
+	#office-about p{
+		text-indent: 10px;
+	}
+	.left-office-about {
+		width: 70%;
+		float: left;
+	}
+	.right-office-about {
+		overflow: hidden;
+		padding: 5px;
+		width: 30%;
+		float: left;
+	}
+	.right-office-about img{
+		width: 100%;
+	}
+	.right-office-about img:hover {
+			 	transform: scale(1.2);
+			 	border-radius: 5px;
+			 	transition: transform 0.5s linear;
+			 	
+			 }
