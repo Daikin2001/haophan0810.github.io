@@ -159,11 +159,37 @@ a:hover {
 			width: 30%;
 			float: left;
 		}
+
+		.left-foot-sales-up:hover img{
+			opacity: 0.7;
+			}
+			.up-right-foot-sales-up:hover img{
+			opacity: 0.7;
+			}
+
+				.down-right-foot-sales-up:hover img{
+			opacity: 0.7;
+			}
+
+				.left-foot-sales-down:hover img{
+			opacity: 0.7;
+			}
+
+				.right-foot-sales-down:hover img{
+			opacity: 0.7;
+			}
+
+		.adv:hover img{
+			opacity: 0.7;
+			}
+		
+		
 		#introduce {
 			padding: 10px 5px;
 			width: 100%;
 			border-bottom: 5px solid violet;
 		}	
+
 			.wellcome {
 				margin-bottom: 15px;
 				color: red;
