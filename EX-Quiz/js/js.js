@@ -71,3 +71,13 @@ var question6 ={
  a3.innerHTML = arr[0].choose3;
  a4.innerHTML = arr[0].choose4;
 
+ var btnElemt = document.getElementsByClassName("btnAnswer");
+ 
+ for(var i=0; i<btnElemt.length; i++){
+ 	btnElemt[i].addEventListener("click",function(){
+		for (var j=1; j<arr.length; j++){
+
+		}
+	})
+ }
+
