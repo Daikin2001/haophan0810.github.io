@@ -20,6 +20,7 @@ document.getElementById("equal").addEventListener("click",function () {
 		return;
 	}
 	var exp = display.value.replace(/x/g,"*");
+		exp = exp.replace(/÷/g,"/");
 	console.log(exp);
 	display.value = eval(exp);
 
@@ -27,17 +28,20 @@ document.getElementById("equal").addEventListener("click",function () {
 
 document.getElementById("squareRoot").addEventListener("click",function () {
 	var exp = display.value.replace(/x/g,"*");
+		exp = exp.replace(/÷/g,"/");
 	display.value = Math.sqrt(eval(exp));
 })
 
 document.getElementById("percent").addEventListener("click",function () {
 	var exp = display.value.replace(/x/g,"*");
+		exp = exp.replace(/÷/g,"/");
 	display.value = eval(exp)/100;
 })
 
 document.getElementById("factorial").addEventListener("click",function(){
 	var exp = display.value.replace(/x/g,"*");
-	var res = factorial(exp);
+		exp = exp.replace(/÷/g,"/");
+	var res = factorial(eval(exp));
 	display.value = res;
 })
 function factorial (num){
