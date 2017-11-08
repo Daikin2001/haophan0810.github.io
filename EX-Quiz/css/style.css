@@ -5,25 +5,48 @@
 }
 
 #wrap {
-	width: 600px;
+	width: 800px;
+	margin: 100px auto;
+	padding: 10px;
 	background-color: #cbe6ed;
+	height: 400px;
 }
 	#questions {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 20px;
 	}
-
+	#numberQuestion {
+		margin-bottom: 10px;
+		text-align: left;
+		padding: 10px;
+	}						
 	#answer {
 		width: 100%;
 	}
 		.btnButton {
 			float: left;
 			width: 50%;
+			padding: 10px;
 		}
 		button {
+			height: 50px;
+			color: #f65ddc;
+			border: 2px solid #f65ddc;
 			width: 100%;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0);
 		}
-
+		button:focus {
+			outline: none;
+		}
+		button:active {
+			background-color: #c18777;
+		}
+	#footer	{
+		padding: 10px;
+		text-align: right;
+	}
 .clear {
 	clear: both;
 }
