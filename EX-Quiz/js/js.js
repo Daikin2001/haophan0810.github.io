@@ -59,7 +59,7 @@ var question6 ={
 }
  var arr = [question1,question2,question3,question4,question5,question6];
  var nQ=document.getElementById("numberQuestion");
- var q= document.getElementById("question");
+ var q= document.getElementById("mainQuestion");
  var a1= document.getElementById("btnAnswer1");
  var a2= document.getElementById("btnAnswer2");
  var a3= document.getElementById("btnAnswer3");
@@ -96,14 +96,18 @@ var question6 ={
  		foot.innerHTML = "<p class='foot'>Câu số "+(temp+1)+ " / "+arr.length+"</p>";
 
 		}else if(mark==6){
-			var win=document.getElementById("wrap");
-			win.innerHTML= "<h1>Bạn đã chiến thắng, xin chúc mừng</h1>";
+			window.location.href = 'win.html';
+			// var win=document.getElementById("wrap");
+			// win.innerHTML= "<h1>Bạn đã chiến thắng, xin chúc mừng</h1>";
 		}else {
 			document.getElementById("questions").style.display="none";
 			document.getElementById("answer").style.display="none";
 			document.getElementById("footer").style.display="none";
-			document.getElementById("resAlert1").innerHTML= "<h1>Rất tiếc bạn đã thất bại</h1>";
-			document.getElementById("resAlert2").innerHTML= "<h3>Bạn đã trả lời đúng "+mark +" câu hỏi</h3>";
+			document.getElementById("resAlert1").innerHTML= "<h1>Rất tiếc bạn đã thất bại!</h1>";
+			for (var i=0; i<mark;i++){
+				document.getElementById("resAlert2").innerHTML+= "<img src='image/success-icon.png' style='width:50px' />"
+			}
+			// document.getElementById("resAlert2").innerHTML= "<h3>Bạn đã trả lời đúng "+mark +" câu hỏi</h3>";
 			document.getElementById("resAlert3").innerHTML="<button id='back' onclick='clickBtnBack()'>Chơi lại nào</button>";
 		}
 		
