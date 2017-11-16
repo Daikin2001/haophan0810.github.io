@@ -4,14 +4,155 @@
     box-sizing: border-box;
 }
 body {
+    
     background: url('../image/bg3.jpg') center center no-repeat;
 }
+    #progress {
+        width: 100%;
+        padding: 10px;
+    }
+    progress {
+        display: none;
+        margin: auto;
+        width: 100%;
+        height: 14px;
+        /* display: block; */
+        -webkit-appearance: none;
+        border: none;
+        /* background-image:
+        -webkit-linear-gradient(-45deg, 
+                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, 
+                                rgba(255, 255, 255, .25), 
+                                rgba(0, 0, 0, .25)),
+        -webkit-linear-gradient(left, rgb(204, 0, 0), rgb(74, 245, 131));
+ 
+     border-radius: 5px; 
+     background-size: 30px 20px, 100% 100%, 100% 100%; */
+     /* background-color: #f3f3f3; */
+     /* border: 0;
+     height: 18px;
+     border-radius: 9px; */
+     
+    }
+     
+    progress::-webkit-progress-bar { 
+        background: rgba(255, 253, 253, 0);
+        border: 1px solid rgba(230, 113, 113, 0.6);
+        border-radius: 5px; 
+     }
+    progress::-webkit-progress-value {
+        background-image:
+        -webkit-linear-gradient(-45deg, 
+                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, 
+                                rgba(255, 255, 255, .25), 
+                                rgba(0, 0, 0, .25)),
+        -webkit-linear-gradient(left, rgb(204, 0, 0), rgba(74, 245, 128, 0.698)); 
+        border-radius: 5px; 
+        background-size: 30px 20px, 100% 100%, 100% 100%; 
+        transition: all 0.5s linear;
+    }
+    #playMode,#win,#lose {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
 
+        /* background: white; */
+        /* display: none; */
+    }
+    /* #playMode {
+        display: none;
+    } */
+    #win,#lose {
+        display: none;
+    }
+    
+    #win h1 {
+        color: rgb(255, 255, 0);
+    }
+    #lose h1 {
+        color: #f85f52;
+    }
+    #win img{
+        width: 100%;
+    }
+    #lose img {
+        width: 80%;
+    }
+    #lose #btnTimeOver {
+        margin-top: 15px;
+        background-color: #f85f52;
+
+
+    }
+    .dialog {
+        width: 500px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 5% auto;
+        transition: all 0.5 linear;
+    }
+    #playMode .dialog {
+        padding: 10px;        
+        margin: 15% auto;
+        background-color: rgba(255, 255, 255, 0.678);
+        
+        
+    }   
+        .dialog h1 {
+            margin: 20px;
+            text-transform: uppercase;
+            color: rgb(94, 10, 190)
+        }
+        .dialog h2 {
+            margin-bottom: 20px;
+
+        }
+        .btnDialog {
+            cursor: pointer;
+            opacity: 0.8;
+            color: rgb(255, 255, 255);
+            width: 150px;
+            padding: 3px;
+            height: 40px;
+            border: 0px solid ;
+            margin-bottom: 30px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            font-size: 1.1em;
+            -webkit-box-shadow: 3px 3px 3px 1px rgba(84, 62, 161, 0.8);
+            -moz-box-shadow:    3px 3px 3px 1px rgba(84, 62, 161, 0.8);
+            box-shadow:         3px 3px 3px 1px rgba(84, 62, 161, 0.8);
+        }
+        #btnHard {
+            background-color: rgb(235, 59, 59);
+        }
+        #btnNormal {
+            background-color: rgb(31, 26, 126);
+        }
+        button:focus {
+            outline: none;
+        }
+        button:hover {
+            opacity: 1;
+            transition: all 0.4s linear;
+        }
+    #snow {
+        opacity: 0.4;
+    }
     #wrap {
         z-index: 1;
         max-width: 1200px;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 50px;
+        opacity: 0.6;
     }
 
         #content {

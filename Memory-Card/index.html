@@ -14,22 +14,45 @@
 
 <body>
     <div id="snow"></div>
+
     <div id="wrap">
+        <div id="progress">
+            <progress max='100' value='100'></progress>
+        </div>
+
         <div id="content">
-            <!-- <div class="contain">                
-                <div class="card" data-image">
-                        <div class="back">
-                            <img src="image/i1.jpg" alt="">
-                        </div>
-                        <div class="front">
-                            <img src="image/front.png" alt="">
-                    </div></div></div> 
-            
-            </div> -->
+           
         </div>
 
     </div>
-    <audio id="welcome-sound" >
+    <div id="playMode">
+        <div class="dialog">
+            <h1>Memory Card</h1>
+            <h2 class="playMode">Choose play mode</h2>
+            <button id="btnHard" class="btnDialog" onclick="playMode(30)">Hard</button>
+            <button id="btnNormal" class="btnDialog" onclick="playMode(45)" > Normal</button>
+
+
+        </div>
+
+    </div>
+    <div id="win">
+        <div class="dialog">
+            <img src="image/victory.png" alt="">
+            <h1>You won!</h1>
+
+        </div>
+    </div>
+    <div id="lose">
+        <div class="dialog">
+            <img src="image/defeat.png" alt="">
+            <h1>Time Over</h1>
+            <button id="btnTimeOver" class="btnDialog">Play again!</button> 
+
+        </div>
+
+    </div>
+    <audio id="welcome-sound">
         <source src="sound/Welcome Rift.mp3" type="audio/mpeg">
     </audio>
     <audio id="music-sound">
@@ -41,9 +64,13 @@
     <audio id="wrong-sound">
         <source src="sound/wrong.mp3" type="audio/mpeg">
     </audio>
-    <audio id="flip-sound" >
+    <audio id="flip-sound">
         <source src="sound/Card Flip.mp3" type="audio/mpeg">
     </audio>
+
+
+    
+    
 </body>
 
 </html>

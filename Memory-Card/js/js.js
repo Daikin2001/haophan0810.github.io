@@ -1,4 +1,45 @@
+function changeProgress (time){
+    var temp;
+    var valueProgress =100;
+    var delay =135;
+    var myProc = setInterval(function(){         
+        valueProgress -=(100*(delay/1000))/time;
+        $('progress').attr('value',valueProgress);
+        temp = valueProgress;
+        
+        if (valueProgress<0){
+            console.log("pause")
+            clearInterval(myProc);
+        }
+    }, delay);
+    
+}
+
+function playSound(n) {
+    document.getElementById(n + "-sound").load(),
+    document.getElementById(n + "-sound").play()
+}
+function playMode(n) {
+    console.log (n);
+    $('#playMode').css('display','none');
+    $('#wrap').css('opacity','1');
+    $('#snow').css('opacity','1');
+    $('progress').css('display','block');
+        playSound('welcome');
+        setTimeout(function(){
+            playSound('music');
+        },300)
+    document.getElementById('welcome-sound').volume=0.5;
+    document.getElementById('music-sound').volume=0.5;
+    document.getElementById('correct-sound').volume=0.4;
+    document.getElementById('wrong-sound').volume=0.4;
+    document.getElementById('flip-sound').volume=0.5;
+    changeProgress(n);
+}
+
 $(document).ready(function () {
+    
+    
     var arrContainImg = [0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 9, 10, 10, 11, 11];
     function shuffle(arrContainImg) {
         var currentIndex = arrContainImg.length, temporaryValue, randomIndex;
@@ -29,22 +70,13 @@ $(document).ready(function () {
             var divImgBack = '<div class="back" ><img src="image/i' + arr[i] + '.jpg" alt=""></div>';
             $('#content').append('<div class="contain" >' + '<div class="card"  data-image="' + arr[i] + '">' + divImgBack + divImg + '</div></div>');
         }
-            playSound('welcome');
-        setTimeout(function(){
-            playSound('music');
-        },300)
-        document.getElementById('welcome-sound').volume=0.5;
-        document.getElementById('music-sound').volume=0.5;
-        document.getElementById('correct-sound').volume=0.4;
-        document.getElementById('wrong-sound').volume=0.4;
-        document.getElementById('flip-sound').volume=0.5;
+        
         // document.getElementById('welcome-sound').volume=0.6;
 
     }
-    function playSound(n) {
-        document.getElementById(n + "-sound").load(),
-        document.getElementById(n + "-sound").play()
-    }
+  
+    
+    
     var check = null;
     $('.card').on('click', function () {
         playSound('flip');
