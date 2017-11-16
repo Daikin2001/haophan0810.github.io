@@ -5,10 +5,12 @@ function changeProgress (time){
     var myProc = setInterval(function(){         
         valueProgress -=(100*(delay/1000))/time;
         $('progress').attr('value',valueProgress);
-        temp = valueProgress;
-        
+        temp = valueProgress;        
         if (valueProgress<0){
-            console.log("pause")
+            $('#lose').css('display','block');
+            $('#wrap').css('opacity','0.4');
+            $('#snow').css('opacity','0.3');
+            console.log("pause");
             clearInterval(myProc);
         }
     }, delay);
