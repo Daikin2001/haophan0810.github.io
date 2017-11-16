@@ -19,8 +19,9 @@ $(document).ready(function () {
         return arrContainImg;
     }
 
-    //    shuffle(arrContainImg);
+    shuffle(arrContainImg);
     loadCard(arrContainImg);
+    
     function loadCard(arr) {
         var divImg = '<div class="front"><img src="image/front.png" alt=""></div>';
         console.log("dasdasd");
@@ -28,6 +29,17 @@ $(document).ready(function () {
             var divImgBack = '<div class="back" ><img src="image/i' + arr[i] + '.jpg" alt=""></div>';
             $('#content').append('<div class="contain" >' + '<div class="card"  data-image="' + arr[i] + '">' + divImgBack + divImg + '</div></div>');
         }
+            playSound('welcome');
+        setTimeout(function(){
+            playSound('music');
+        },300)
+        document.getElementById('welcome-sound').volume=0.5;
+        document.getElementById('music-sound').volume=0.5;
+        document.getElementById('correct-sound').volume=0.4;
+        document.getElementById('wrong-sound').volume=0.4;
+        document.getElementById('flip-sound').volume=0.5;
+        // document.getElementById('welcome-sound').volume=0.6;
+
     }
     function playSound(n) {
         document.getElementById(n + "-sound").load(),
@@ -35,7 +47,7 @@ $(document).ready(function () {
     }
     var check = null;
     $('.card').on('click', function () {
-
+        playSound('flip');
         $(this).css('pointer-events', 'none');
         $(this).addClass('openned');
         var m = $(this).attr('data-image');
