@@ -29,8 +29,8 @@
         <div class="dialog">
             <h1>Memory Card</h1>
             <h2 class="playMode">Choose play mode</h2>
-            <button id="btnHard" class="btnDialog" onclick="playMode(30)">Hard</button>
-            <button id="btnNormal" class="btnDialog" onclick="playMode(45)" > Normal</button>
+            <button id="btnHard" class="btnDialog" onclick="playMode(40)">Hard</button>
+            <button id="btnNormal" class="btnDialog" onclick="playMode(50)" > Normal</button>
 
 
         </div>
@@ -47,7 +47,7 @@
         <div class="dialog">
             <img src="image/defeat.png" alt="">
             <h1>Time Over</h1>
-            <button id="btnTimeOver" class="btnDialog">Play again!</button> 
+            <button id="btnTimeOver" onclick="playAgain()" class="btnDialog">Play again!</button> 
 
         </div>
 
@@ -66,6 +66,12 @@
     </audio>
     <audio id="flip-sound">
         <source src="sound/Card Flip.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="victory-sound">
+        <source src="sound/Victory.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lost-sound">
+        <source src="sound/Defeated.mp3" type="audio/mpeg">
     </audio>
 
 

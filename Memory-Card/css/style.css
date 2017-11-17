@@ -50,7 +50,7 @@ body {
         -webkit-linear-gradient(top, 
                                 rgba(255, 255, 255, .25), 
                                 rgba(0, 0, 0, .25)),
-        -webkit-linear-gradient(left, rgb(204, 0, 0), rgba(74, 245, 128, 0.698)); 
+        -webkit-linear-gradient(left, rgb(4, 255, 79), rgb(253, 0, 0)); 
         border-radius: 5px; 
         background-size: 30px 20px, 100% 100%, 100% 100%; 
         transition: all 0.5s linear;
@@ -71,13 +71,14 @@ body {
     } */
     #win,#lose {
         display: none;
+        
     }
     
     #win h1 {
-        color: rgb(255, 255, 0);
+        color: rgb(255, 0, 0);
     }
     #lose h1 {
-        color: #f85f52;
+        color:rgb(255, 0, 0);
     }
     #win img{
         width: 100%;
@@ -163,7 +164,7 @@ body {
             .contain {
                 width: 12.5%;
                 float: left;
-                padding: 10px;
+                padding: 12px;
             }
                 .card {
                     position: relative;
