@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Andika;
 }
 ul,li {
 	text-align: center;
@@ -22,6 +23,7 @@ a:hover {
 	background-color: #e9e7ec;
 }
 	#main-menu {
+		
 		background-color: #fdecde;
 		width: 100%;
 		margin-bottom: 10px;
@@ -41,6 +43,7 @@ a:hover {
 				width: 100%;
 			}
 		.menu {
+			
 			padding-top: 5px;
 			width: 80%;
 			float: left;
@@ -51,6 +54,7 @@ a:hover {
 				padding:10px;
 			}
 			li.menu {
+				font-family: Arimo;
 				border-right: 2px solid red;
 				text-transform: uppercase;
 				width: 20%;
@@ -203,7 +207,7 @@ a:hover {
 			}
 			.content-introduce p {
 
-				font-family: monospace,sans-serif;
+				font-family: 'Gentium Basic', serif;
 			    text-indent: 20px;
 			    text-align: justify;
 			    line-height: 1.5em;
@@ -248,6 +252,7 @@ a:hover {
 
 				}
 				.content-product {
+					font-family: 'Roboto', sans-serif;
 					padding: 10px;
 					width: 40%;
 					float: left;
