@@ -62,7 +62,11 @@
     $('.info').append('<h2>Email: <span>'+register['email']+'</span></h2>') ;
     
     $('.info').append('<h2>Birthday: <span>'+register['birthday']+'</span></h2>') ;
+    if (register['sex']==undefined){
+        $('.info').append('<h2>Sex: </h2>') ;
+    }else {
+        $('.info').append('<h2>Sex: <span>'+register['sex']+'</span></h2>') ;
+    }
     
-    $('.info').append('<h2>Sex: <span>'+register['sex']+'</span></h2>') ;
     
   
