@@ -5,7 +5,7 @@
 }
 .clear {
     clear: both;
-    height: 20px;
+    /* height: 20px; */
 }
 #wrap {
     width: 100%;
@@ -16,11 +16,14 @@
     #logo {
         position: relative;
     }
-        #logo,#login-form,#right,#left {
+        #logo,#login,#right,#left {
             width: 50%;
             float: left;
             padding: 10px;
             
+        }
+        #form-login {
+            width: 50%;
         }
         .logo {
             position: absolute;
@@ -34,23 +37,53 @@
         .ipt-email,input.ipt-pass {
             height: 23px;
             margin-bottom: 3px;
-            width: 150px;
+            
         }
+        input.ipt-pass {
+            width:100% ;
+            
+        }
+        input.ipt-email {
+            width: 100%;
+           
+        }
+        div.ipt {
+            padding-right: 10px;
+        }
+        div.ipt-pass {
+            padding-right: 10px;
+        }
+
+
         .lbl-remember {
             color: #fff;
+        }
+        .pass {
+            width: 100%;
+            
+        }
+
+        .log {
+            width: 25%;
+            float: left;
+        }
+        div.ipt-pass {
+            width: 75%;
+            float: left;
         }
 
         .sub-login {
             color: #fff;
             border: 1px solid #ced0d4;
             background-color: #4267b2;
-            border-color: #29487d;           
+            border-color: #29487d; 
+            border-radius: 0px;          
             
             cursor: pointer;
             display: inline-block;     
             height: 23px;
-            width: 50px;       
-            font-size: 12px; */
+            width: 100%;     
+            font-size: 12px; 
             -webkit-font-smoothing: antialiased;
             font-weight: bold;
             line-height: 18px;
@@ -66,10 +99,7 @@
             color: white;
             
         }
-        .ipt {
-            width: 
-        }
-
+        
         a {
             text-decoration: none;
             color: #9cb4d8;
@@ -86,24 +116,24 @@
             color: #ffffff;
 
         }
+        
+        
         #form-register div {
             margin-bottom: 10px;
         }
         .left-login-form {
-            width: 29%;
+            width: 45%;
             float: left;
         }
         .right-login-form {
-            width:40%;
+            width:55%;
             float: left;
         }
         .content {
             margin: 10px 0;
             /* background-color: #e9ebee' */
         }
-        #form-register {
-            /* padding: 10px; */
-        }
+        
         .heightInput {
             height: 40px;
             border-radius: 5px;
@@ -113,15 +143,27 @@
             
         }
        .width-div{
-            width: 59%;
+            width: 50%;
         }
+        .f-name {
+            width: 50%;
+            float: left;
+             
+        }   
+            .first-name {
+                padding-right: 3px;
+            }
+            .surname {
+                padding-left: 3px;
+            }
+            .f-name input{
+                width: 100%;
+                
+            }
+
         .width-ip {
             width: 100%;
         }
-            .f-name {
-                width: 49%;
-                
-            }
             
            select.birthday {
                width: 15%;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Đăng ký thông tin</title>
     <link rel="stylesheet" href="css/css.css">
-   
+
 </head>
 
 <body>
@@ -20,39 +20,49 @@
                 </div>
 
             </div>
-            <div id="login-form">
-                <form action="">
-                    <div class="left-login-form">
-                        <div class="email-phone">
-                            <div class="lbl-email">
-                                <label class="font-sty" for="email-phone">Email or Phone</label>
+            <div id="login">
+                <div id="form-login">
+                    <form action="">
+                        <div class="left-login-form">
+                            <div class="email-phone">
+                                <div class="lbl-email">
+                                    <label class="font-sty" for="email-phone">Email or Phone</label>
+
+                                </div>
+                                <div class="ipt">
+                                    <input class="ipt-email" type="text" name="email-phone" id="email-phone" placeholder="">
+
+                                </div>
+                            </div>
+
+                            <input class="ipt" type="checkbox" name="rememberID" id="remember">
+                            <label class="lbl-remember" for="remember">Remember</label>
+                        </div>
+                        <div class="right-login-form">
+                            <div class="lbl-pass">
+                                <label class="font-sty" for="password">Password</label>
 
                             </div>
-                            <div class="ipt">
-                                <input class="ipt-email" type="text" name="email-phone" id="email-phone" placeholder="">
+                            <div class="clear"></div>
+                            <div class="pass">
+                                <div class="ipt-pass">
+                                <input class="ipt-pass" type="password" name="password" id="password">
+                                
+                                </div>
+                                <div class="log">
+                                        <input class="sub-login" type="submit" value="Login">
+                                        
+                                </div>
+
+                            </div>
+                            <div class="clear"></div>
+                            <div>
+                                <a href="" class="fogot">Forgotten account?</a>
 
                             </div>
                         </div>
-
-                        <input class="ipt" type="checkbox" name="rememberID" id="remember">
-                        <label class="lbl-remember" for="remember">Remember</label>
-                    </div>
-                    <div class="right-login-form">
-                        <div class="lbl-pass">
-                            <label class="font-sty" for="password">Password</label>
-
-                        </div>
-                        <div class="ipt-pass">
-                            <input class="ipt-pass" type="password" name="password" id="password">
-                            <input class="sub-login" type="submit" value="Login">
-
-                        </div>
-                        <div>
-                            <a href="" class="fogot">Forgotten account?</a>
-
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <div class="clear"></div>
         </div>
@@ -66,11 +76,17 @@
                 <div class="content">
                     <h1>Đăng ký tài khoản</h1>
                 </div>
-                <div id="form-register" >
-                    <form action="registed.html" name"register" method="get">
+                <div id="form-register">
+                    <form action="registed.html" name "register" method="get">
                         <div class="full-name width-div">
-                            <input type="text" class="f-name heightInput" name="first-name" id="first-name" placeholder="First name">
-                            <input type="text" class="f-name heightInput" name="surname" id="surname" placeholder="Surname">
+                            <div class="f-name first-name">
+                                <input type="text" class="heightInput" name="first-name" id="first-name" placeholder="First name">
+
+                            </div>
+                            <div class="f-name surname">
+                                <input type="text" class="heightInput" name="surname" id="surname" placeholder="Surname">
+
+                            </div>
                         </div>
                         <div class="mobile-number width-div">
                             <input type="text" class="heightInput width-ip" name="mobile-number" id="mobile-number" placeholder="Mobile number">
@@ -103,7 +119,7 @@
                         <div class="sex">
                             <span class="female">
                                 <input type="radio" value="female" class="sex" name="sex" id="female">
-                                <label class="sex"  for="female">Female</label>
+                                <label class="sex" for="female">Female</label>
                             </span>
                             <span class="male">
                                 <input type="radio" value='male' class="sex" name="sex" id="male">

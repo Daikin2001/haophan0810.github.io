@@ -3,5 +3,18 @@
 }
 
 #content {
-    width: 
+    width: 80%;
+    margin: auto;
+}
+h1 {
+    color: red;
+    text-align: center;
+    margin: 10px 0;
+}
+h2 {
+    margin: 5px 0;
+}
+h2 span {
+    font-style: italic;
+    color: rgb(0, 102, 255);
 }
