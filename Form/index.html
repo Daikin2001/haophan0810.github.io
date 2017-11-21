@@ -3,89 +3,115 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Đăng ký thông ton</title>
+    <title>Đăng ký thông tin</title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/js.js"></script>
+   
 </head>
 
 <body>
     <div id="wrap">
         <div id="menu">
             <div id="logo">
-                <h1>FakeBook</h1>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="image/logo.png" alt="">
+
+                    </a>
+                </div>
+
             </div>
             <div id="login-form">
                 <form action="">
                     <div class="left-login-form">
-                        <label for="email-phone">Email or Phone</label>
-                        <br/>
-                        <input type="text" name="email-phone" id="email-phone" placeholder="">
-                        <br/>
-                        <input type="checkbox" name="rememberID" id="remember">
-                        <label for="remember">Remember</label>
+                        <div class="email-phone">
+                            <div class="lbl-email">
+                                <label class="font-sty" for="email-phone">Email or Phone</label>
+
+                            </div>
+                            <div class="ipt">
+                                <input class="ipt-email" type="text" name="email-phone" id="email-phone" placeholder="">
+
+                            </div>
+                        </div>
+
+                        <input class="ipt" type="checkbox" name="rememberID" id="remember">
+                        <label class="lbl-remember" for="remember">Remember</label>
                     </div>
                     <div class="right-login-form">
-                        <label for="password">Password</label>
-                        <br/>
-                        <input type="password" name="password" id="password">
-                        <input type="submit" value="Login">
-                        <br/>
-                        <a href="" class="fogot">Forgotten account?</a>
+                        <div class="lbl-pass">
+                            <label class="font-sty" for="password">Password</label>
+
+                        </div>
+                        <div class="ipt-pass">
+                            <input class="ipt-pass" type="password" name="password" id="password">
+                            <input class="sub-login" type="submit" value="Login">
+
+                        </div>
+                        <div>
+                            <a href="" class="fogot">Forgotten account?</a>
+
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="clear"></div>
         </div>
-        
+
         <div id="content">
             <div id="left">
-                <div>dadasd
-                    <h2>asddasd</h2>
+                <div>
                 </div>
             </div>
             <div id="right">
                 <div class="content">
-                    <h2>Đăng ký tài khoản</h2>
+                    <h1>Đăng ký tài khoản</h1>
                 </div>
-                <div id="form-register">
-                    <form action="">
-                        <div class="name">
-                            <input type="text" name="first-name" id="name" placeholder="First name">
-                            <input type="text" name="surname" id="surname" placeholder="Surname">
+                <div id="form-register" >
+                    <form action="registed.html" name"register" method="get">
+                        <div class="full-name width-div">
+                            <input type="text" class="f-name heightInput" name="first-name" id="first-name" placeholder="First name">
+                            <input type="text" class="f-name heightInput" name="surname" id="surname" placeholder="Surname">
                         </div>
-                        <div class="mobile-number">
-                            <input type="text" name="mobile-number" id="mobile-number" placeholder="Mobile number">
+                        <div class="mobile-number width-div">
+                            <input type="text" class="heightInput width-ip" name="mobile-number" id="mobile-number" placeholder="Mobile number">
 
                         </div>
-                        <div class="email">
-                            <input type="text" name="email" id="email" placeholder="Email">
+                        <div class="email width-div">
+                            <input type="text" class="heightInput width-ip" name="email" id="email" placeholder="Email">
 
                         </div>
-                        <div class="new-password">
-                            <input type="password" name="new-password" id="new-password" placeholder="New password">
+                        <div class="new-password width-div">
+                            <input type="password" class="heightInput width-ip" name="new-password" id="new-password" placeholder="New password">
 
                         </div>
-                        <div id="Birthday">
-                            Birthday
+                        <div class="birthday width-div">
+                            <span class="birthday">Birthday</span>
                             <br/>
-                            <select name="day" id="day-birthday"></select>
-                            <select name="month" id="month-birthday"></select>
-                            <select name="year" id="year-birthday"></select>
+                            <select class="birthday" name="day" id="day-birthday">
+                                <option value="day">Day</option>
+                            </select>
+                            <select class="birthday" name="month" id="month-birthday">
+                                <option value="month">Month</option>
+
+                            </select>
+                            <select class="birthday" name="year" id="year-birthday">
+                                <option value="year">Year</option>
+
+                            </select>
 
                         </div>
                         <div class="sex">
                             <span class="female">
-                                <input type="radio" name="sex" id="female">
-                                <label for="female">Famale</label>
+                                <input type="radio" value="female" class="sex" name="sex" id="female">
+                                <label class="sex"  for="female">Female</label>
                             </span>
                             <span class="male">
-                                <input type="radio" name="sex" id="male">
-                                <label for="male">Male</label>
+                                <input type="radio" value='male' class="sex" name="sex" id="male">
+                                <label class="sex" for="male">Male</label>
                             </span>
                         </div>
 
-                        <input type="submit" value="Create Account">
+                        <input class="heightInput submitA" onclick="getValue()" type="submit" value="Create Account">
 
 
                     </form>
@@ -94,6 +120,8 @@
         </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

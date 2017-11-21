@@ -12,12 +12,72 @@
 }
     #menu,#content {
         width: 100%;
+    }   
+    #logo {
+        position: relative;
     }
         #logo,#login-form,#right,#left {
             width: 50%;
             float: left;
+            padding: 10px;
+            
         }
-    
+        .logo {
+            position: absolute;
+            left: 180px;
+            top: 30px;
+        }
+        .lbl-email,.lbl-pass {
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .ipt-email,input.ipt-pass {
+            height: 23px;
+            margin-bottom: 3px;
+            width: 150px;
+        }
+        .lbl-remember {
+            color: #fff;
+        }
+
+        .sub-login {
+            color: #fff;
+            border: 1px solid #ced0d4;
+            background-color: #4267b2;
+            border-color: #29487d;           
+            
+            cursor: pointer;
+            display: inline-block;     
+            height: 23px;
+            width: 50px;       
+            font-size: 12px; */
+            -webkit-font-smoothing: antialiased;
+            font-weight: bold;
+            line-height: 18px;
+            padding: 2px 6px;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: none;
+            vertical-align: top;
+            white-space: nowrap;
+           
+        }
+        .font-sty {
+            color: white;
+            
+        }
+        .ipt {
+            width: 
+        }
+
+        a {
+            text-decoration: none;
+            color: #9cb4d8;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     #menu {
         background-color: #3f5c9a;
     }
@@ -26,8 +86,92 @@
             color: #ffffff;
 
         }
-        .left-login-form {
-            widows: 30%;
+        #form-register div {
+            margin-bottom: 10px;
         }
+        .left-login-form {
+            width: 29%;
+            float: left;
+        }
+        .right-login-form {
+            width:40%;
+            float: left;
+        }
+        .content {
+            margin: 10px 0;
+            /* background-color: #e9ebee' */
+        }
+        #form-register {
+            /* padding: 10px; */
+        }
+        .heightInput {
+            height: 40px;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 8px 10px;
+            border:1.5px solid #bdc7d8;
+            
+        }
+       .width-div{
+            width: 59%;
+        }
+        .width-ip {
+            width: 100%;
+        }
+            .f-name {
+                width: 49%;
+                
+            }
+            
+           select.birthday {
+               width: 15%;
+               height: 30px;
+           }
+           input.sex {
+               height: 20px;
+               
+           }
+           label.sex {
+               font-size: 18px;
+           }
+           div .label {
+               font-size: 18px;
+           }
+           div.sex span {
+               padding: 5px;
+           }
+           span.birthday {
+              padding: 2px;
+           }
+           #year-birthday {
+               width: 70px;
+           }
+           select {
+            border: 1px solid #bdc7d8;
+            font-size: 13px;
+            height: 30px;
+            padding: 5px; 
+            -webkit-appearance: menulist;            
+            align-items: center;
+            white-space: pre;
+            -webkit-rtl-ordering: logical;
+            color: black;
+            background-color: white;
+            cursor: default;  
+           }
 
-    
+           .submitA {
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+            border: 1px solid;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            letter-spacing: 1px;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(0,0,0,.5);
+            width: 30%;
+           }
