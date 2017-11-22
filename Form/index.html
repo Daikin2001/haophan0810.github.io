@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Đăng ký thông tin</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
 
@@ -77,7 +78,7 @@
                     <h1>Đăng ký tài khoản</h1>
                 </div>
                 <div id="form-register">
-                    <form action="registed.html" name "register" method="get" target="_blank">
+                    <form action="registed.html" name "register" method="get" >
                         <!-- <div class="full-name width-div">
                             <div class="f-name first-name">
                                 <input type="text" class="heightInput" name="first-name" id="first-name" placeholder="First name">
@@ -89,56 +90,109 @@
                             </div>
                             
                         </div> -->
-                        <div class="full-name width-div">
+                        <div class="full-name width-div error">
                             <input type="text" class="heightInput width-ip" name="full-name" id="full-name" placeholder="User name">
-
+                           <div class="test2">
+                                <span class="error1"></span>
+                                
+                           </div>
+                           <div class="err">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                           </div>
+                           
                         </div>
                         
-                        <div class="email width-div">
+                        <div class="email width-div error">
                             <input type="text" class="heightInput width-ip" name="email" id="email" placeholder="Email">
-
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="new-password width-div">
+                        <div class="new-password width-div error" >
                             <input type="password" class="heightInput width-ip" name="new-password" id="new-password" placeholder="New password">
-
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="facebook width-div">
+                        <div class="facebook width-div error">
                             <input type="text" class="heightInput width-ip" name="facebook" id="facebook" placeholder="Facebook address">
-
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="mobile-number width-div">
+                        <div class="mobile-number width-div error">
                             <input type="text" class="heightInput width-ip" name="mobile-number" id="mobile-number" placeholder="Mobile number">
-
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="birthday width-div">
-                            <span class="birthday ">Birthday</span>
-                            <br/>
-                            <select class="birthday" name="day" id="day-birthday">
-                                <option selected="1" value="">Day</option>
-                            </select>
-                            <select class="birthday" name="month" id="month-birthday">
-                                <option selected="1" value="">Month</option>
-
-                            </select>
-                            <select class="birthday" name="year" id="year-birthday">
-                                <option selected="1" value="">Year</option>
-
-                            </select>
+                        <div class="birthday width-div error">
+                            <div>
+                                    Birthday
+                                    <br/>
+                                    <select class="birthday" name="day" id="day-birthday">
+                                        <option selected="1" value="">Day</option>
+                                    </select>
+                                    <select class="birthday" name="month" id="month-birthday">
+                                        <option selected="1" value="">Month</option>
+        
+                                    </select>
+                                    <select class="birthday" name="year" id="year-birthday">
+                                        <option selected="1" value="">Year</option>
+        
+                                    </select>
+                            </div>
                             
-
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="sex" id="sex" >
-                            <span class="female">
-                                <input type="radio" value="female" class="sex" name="sex" id="female">
+                        <div class="sex error" id="sex" >
+                            <div class="sex-div">
+                                <span class="female">
+                                <input type="radio" onclick="check()" value="female" class="sex" name="sex" id="female">
                                 <label class="sex" for="female">Female</label>
                             </span>
                             <span class="male">
-                                <input type="radio" value='male' class="sex" name="sex" id="male">
+                                <input type="radio" onclick="check()" value='male' class="sex" name="sex" id="male">
                                 <label class="sex" for="male">Male</label>
                             </span>
+                            </div>               
+                                    
+                            <div class="test2">
+                                    <span class="error1"></span>
+                                    
+                               </div>
+                            
+                            <div class="err">
+                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            </div>
                         </div>
-
-                        <input class="heightInput submitA"  type="submit" value="Create Account">
+                        <div class="clear"></div>
+                        <div class="test1">
+                                <input class="heightInput submitA"  type="submit" value="Create Account">
+                                
+                        </div>
 
 
                     </form>
