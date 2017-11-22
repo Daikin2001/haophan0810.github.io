@@ -167,7 +167,11 @@
         .width-ip {
             width: 100%;
         }
-            
+            #sex {
+                width: 18%;
+                border: 0px solid red;
+                height: 30px;
+            }
            select.birthday {
                width: 15%;
                height: 30px;

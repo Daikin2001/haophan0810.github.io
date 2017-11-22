@@ -77,8 +77,8 @@
                     <h1>Đăng ký tài khoản</h1>
                 </div>
                 <div id="form-register">
-                    <form action="registed.html" name "register" method="get">
-                        <div class="full-name width-div">
+                    <form action="registed.html" name "register" method="get" target="_blank">
+                        <!-- <div class="full-name width-div">
                             <div class="f-name first-name">
                                 <input type="text" class="heightInput" name="first-name" id="first-name" placeholder="First name">
 
@@ -87,11 +87,13 @@
                                 <input type="text" class="heightInput" name="surname" id="surname" placeholder="Surname">
 
                             </div>
-                        </div>
-                        <div class="mobile-number width-div">
-                            <input type="text" class="heightInput width-ip" name="mobile-number" id="mobile-number" placeholder="Mobile number">
+                            
+                        </div> -->
+                        <div class="full-name width-div">
+                            <input type="text" class="heightInput width-ip" name="full-name" id="full-name" placeholder="User name">
 
                         </div>
+                        
                         <div class="email width-div">
                             <input type="text" class="heightInput width-ip" name="email" id="email" placeholder="Email">
 
@@ -100,23 +102,32 @@
                             <input type="password" class="heightInput width-ip" name="new-password" id="new-password" placeholder="New password">
 
                         </div>
+                        <div class="facebook width-div">
+                            <input type="text" class="heightInput width-ip" name="facebook" id="facebook" placeholder="Facebook address">
+
+                        </div>
+                        <div class="mobile-number width-div">
+                            <input type="text" class="heightInput width-ip" name="mobile-number" id="mobile-number" placeholder="Mobile number">
+
+                        </div>
                         <div class="birthday width-div">
-                            <span class="birthday">Birthday</span>
+                            <span class="birthday ">Birthday</span>
                             <br/>
                             <select class="birthday" name="day" id="day-birthday">
-                                <option value="day">Day</option>
+                                <option selected="1" value="">Day</option>
                             </select>
                             <select class="birthday" name="month" id="month-birthday">
-                                <option value="month">Month</option>
+                                <option selected="1" value="">Month</option>
 
                             </select>
                             <select class="birthday" name="year" id="year-birthday">
-                                <option value="year">Year</option>
+                                <option selected="1" value="">Year</option>
 
                             </select>
+                            
 
                         </div>
-                        <div class="sex">
+                        <div class="sex" id="sex" >
                             <span class="female">
                                 <input type="radio" value="female" class="sex" name="sex" id="female">
                                 <label class="sex" for="female">Female</label>
@@ -127,7 +138,7 @@
                             </span>
                         </div>
 
-                        <input class="heightInput submitA" onclick="getValue()" type="submit" value="Create Account">
+                        <input class="heightInput submitA"  type="submit" value="Create Account">
 
 
                     </form>
