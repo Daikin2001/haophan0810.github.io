@@ -90,8 +90,8 @@ $('#form-register').on('submit',function(){
         $('.new-password>div>span').text('');
         $('#new-password').css('border-color','#bdc7d8');
     }
-    if ($('#facebook').val().match(/^(facebook.com\/|fb.com\/)([^\/^\s]$)/)==null){
-        $('.facebook>div>span').text('Tên miền phải 1 trong 2 dạng facebook.com/abc hoặc fb.com/abc');
+    if ($('#facebook').val().match(/^(facebook.com\/|fb.com\/)([^\/^\s])/)==null){
+        $('.facebook>div>span').text('Tên miền phải giống như "facebook.com/abc" hoặc fb.com/abc');
         $('.facebook>.err').css('display','block');
         $('#facebook').css('border-color','red');
         isValid=false;
