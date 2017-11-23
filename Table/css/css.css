@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrap {
+    width: 50%;
+    margin: auto;
+}
+table {
+    width: 100%;
+    
+}
+td,th,table {
+    padding: 10px;
+    border: 2px solid rgb(177, 225, 247);
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+th#image {
+    width: 50px;
+}
+caption {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+th {
+    text-transform: uppercase;
+    position: relative;
+    width: 150px;
+    background-color: rgba(205, 191, 191, 0.94);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+#img-up {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+}
+#img-down {
+    position: absolute;
+    top: 21px;
+    right: 3px;
+
+}
+
+.img-cell {
+    border-radius: 50%;
+}
+.email {
+    color: rgba(17, 0, 255, 0.797);
+    font-style: italic;
+}
+
+.row:hover {
+    background-color: rgba(159, 198, 244, 0.447);
+}
