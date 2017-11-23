@@ -7,7 +7,7 @@ body {
     background-color: rgba(206, 202, 202, 0.55);
 }
 #wrap {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 table {
@@ -20,19 +20,24 @@ td,th,table {
     border-collapse: collapse;
     text-align: center;
     font-size: 1.2em;
+   
 }
 
 th#image {
     width: 50px;
 }
 caption {
+    text-transform: uppercase;
     margin: 10px 0;
     font-size: 2em;
+    font-family: 'Caveat', cursive;
+    
 }
 
 th {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
+    
+    font-family: 'Cantarell', sans-serif;
+     text-transform: capitalize;
     position: relative;
     width: 150px;
     background-color: rgba(148, 179, 245, 0.94);
@@ -71,4 +76,8 @@ tr:nth-child(odd) {
 }
 th:hover {
     cursor: pointer;
+}
+td {
+    font-family: 'Neucha', cursive;
+    
 }
