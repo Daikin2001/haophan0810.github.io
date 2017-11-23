@@ -52,12 +52,43 @@ var lee = {
     email:'lee@naruto.com',
     phone:'0153456789'
 }
-function sort (){
-    alert("dashda");
-}
+function sortTable() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable");
+    switching = true;
+    /*Make a loop that will continue until
+    no switching has been done:*/
+    while (switching) {
+      //start by saying: no switching is done:
+      switching = false;
+      rows = table.getElementsByTagName("TR");
+      /*Loop through all table rows (except the
+      first, which contains table headers):*/
+      for (i = 1; i < (rows.length - 1); i++) {
+        //start by saying there should be no switching:
+        shouldSwitch = false;
+        /*Get the two elements you want to compare,
+        one from current row and one from the next:*/
+        x = rows[i].getElementsByTagName("TD")[0];
+        y = rows[i + 1].getElementsByTagName("TD")[0];
+        //check if the two rows should switch place:
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        /*If a switch has been marked, make the switch
+        and mark that a switch has been done:*/
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
+    }
+  }
 var data = [naruto,lee,kakashj,hinata,konohamaru,hokage,itachi];
 function loadTable (){
-    var table = "<table><caption><span id='caption'>Naruto</span></caption><tr id='row0' >";
+    var table = "<table id='myTable'><caption><span id='caption'>Naruto</span></caption><tr id='row0' >";
     
     for (var i =0;i<arrTittle.length;i++ ){
         table += "<th id='"+arrTittle[i]+"'>"+arrTittle[i]+"</th>";
@@ -86,5 +117,6 @@ for (var i=0; i<data.length;i++){
  $( $(".phone")[i]).append(data[i]['phone']);
  
 }
-$('th').append('<div onclick="sort()" class="img-sort"><img id="img-up" src="image/up1.png" width="20px" ></div>');
-$('th').append('<div onclick="sort()" class="img-sort"><img id="img-down" src="image/down1.png" width="20px" ></div>');
+
+$('th').append('<div  class="img-sort"><img id="img-up" src="image/up1.png" width="20px" ></div>');
+$('th').append('<div  class="img-sort"><img id="img-down" src="image/down1.png" width="20px" ></div>');
