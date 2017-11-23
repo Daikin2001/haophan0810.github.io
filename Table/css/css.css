@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgba(206, 202, 202, 0.55);
+}
 #wrap {
     width: 50%;
     margin: auto;
@@ -13,7 +16,7 @@ table {
 }
 td,th,table {
     padding: 10px;
-    border: 2px solid rgb(177, 225, 247);
+    border: 3px solid rgba(255, 255, 255, 0.68);
     border-collapse: collapse;
     text-align: center;
     font-size: 1.2em;
@@ -28,14 +31,19 @@ caption {
 }
 
 th {
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     position: relative;
     width: 150px;
-    background-color: rgba(205, 191, 191, 0.94);
+    background-color: rgba(148, 179, 245, 0.94);
+    
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2
+    background-color: rgba(206, 202, 202, 0.55);
+}
+tr:nth-child(odd) {
+    background-color: #726f6f6b;
 }
 #img-up {
     position: absolute;
@@ -60,4 +68,7 @@ tr:nth-child(even) {
 
 .row:hover {
     background-color: rgba(159, 198, 244, 0.447);
+}
+th:hover {
+    cursor: pointer;
 }
