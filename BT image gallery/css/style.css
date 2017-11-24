@@ -1,125 +1,29 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+div a img {
+    width: 100%;
+    
+    transition: all 0.5s ease;
+    
 }
-body {
-	background-color:#f7f7f7;
+div.row div {
+    /* margin-bottom: 20px;  */
+
 }
-#wrap {
-	max-width:1000px;
-	margin: auto;
-	}
-	/*BANNER*/
-	#banner {
-		width: 100%;
-		margin-bottom: 10px;
-		}
-		#banner img {
-			border-bottom-right-radius:  10px;
-			border-bottom-left-radius: 10px;
-			width: 100%;
-				
-		}
-	/*MENU*/
-	#menu {
-		width: 100%;
-		margin-bottom: 10px;
-		text-align: center;
-		font-size: 1.3em;
-	}
-		#menu a {
-			color: blue;
-			text-decoration: none;		
+div.row div:hover img  {
+    opacity: 0.7;
+}
 
-		}
-
-		
-		#menu a:hover {
-		    color: #f80d37;
-		    
-		}
-		
-	/*IMAGE	*/
-	#images-gallery {
-		width: 100%;
-		/*padding: 10px;		*/
-		margin: 10px 0;
-
-	}
-
-		.image-content {
-			width: 20%;
-			float: left;
-			padding: 10px;
-		}
-		.image-content img {
-			width: 100%;
-			border: 3px solid #f2bac5;
-			border-radius: 10px;
-		}
-		.cat img {
-			border: 3px solid #f2bac5;
-		}
-		.cat img:hover {
-			border: 3px solid #d93a59;
-
-		}
-
-		.dog img {
-			border-color :#c7feaf;
-		}
-		 .dog img:hover {
-		 	border-color:#74fc3a;
-		 }
-
-		.panda img {
-			border-color:#adb5fb;
-		}
-
-		.panda img:hover {
-			border-color:#1b2ff5;
-		}
-		.sheep img {
-			border-color:#d2eb0a;
-		}
-
-		.sheep img:hover {
-			border-color:#6c7905;
-		}
-		.bee img {
-			border-color:#ca40ff;
-		}
-		.bee img:hover {
-			border-color:#530073;
-		}
-		.elephant img {
-			border-color:#ac74c6;
-		}
-		.elephant img:hover {
-			border-color:#532a67;
-		}
-		.lion img {
-			border-color:#d0f5b4;
-		}
-		.lion img:hover {
-			border-color:#2e5a0c;
-		}
-
-	#clear {
-		clear: both;
-	}	
-
-	#dautrang {
-		margin: 10px 0;
-		text-align: center;
-		font-size: 1.5em;
-
-	}
-		#dautrang a {
-			text-decoration: none;
-		}
-
-		#dautrang a:hover {
-			color:red;
-		}
+footer {
+    text-align: center;
+}
+div#bs-example-navbar-collapse-1 {
+    /* text-align: center; */
+    width: 50%;
+    margin: auto;
+}
+@media only screen  and (max-width: 1200px) and (min-width: 700px) {
+    div#bs-example-navbar-collapse-1 {
+        /* text-align: center; */
+        width: 70%;
+        margin: auto; 
+    }
+}

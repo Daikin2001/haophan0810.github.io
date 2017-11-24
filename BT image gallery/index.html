@@ -1,246 +1,336 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Animals Gallery</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
 </head>
+
 <body>
-	<div id="wrap" >
-		<!-- BANNER -->
-		<div id="banner">
-			<img class="banner" src="image/banner.jpg" alt="banner Animals Gallery" title="banner Animals gallery">			
-		</div>
-		<!-- END BANNER -->
-		<!-- MENU -->
-		<div id="menu">			
-			<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="About Cat" target="_blank">Cat</a>   |      			
-			<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="About Dog" target="_blank">Dog</a>   |      
-			<a href="https://vi.wikipedia.org/wiki/Panda" title="About Panda" target="_blank">Panda</a>   |      
-			<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="About Sheep" target="_blank">Sheep</a>   |      
-			<a href="https://vi.wikipedia.org/wiki/Ong" title="About Bee" target="_blank">Bee</a>   |      
-			<a href="https://vi.wikipedia.org/wiki/Voi" title="About Elephant" target="_blank">Elephant</a>   |      
-			<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="About Lion" target="_blank">Lion</a>
-		</div>
-		<!-- END MENU -->
+	<div id="page" class="container">
+		<header>
+			<div id="banner">
+				<img class="banner img-responsive" src="image/banner.jpg" alt="banner Animals Gallery" title="banner Animals gallery">
+			</div>
+			<nav id="menu" class="navbar navbar-default">
+				<div class="nav1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						 aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- <a class="navbar-brand" href="#">Menu</a> -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="About Cat" target="_blank">Cat</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="About Dog" target="_blank">Dog</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/Panda" title="About Panda" target="_blank">Panda</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="About Sheep" target="_blank">Sheep</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/Ong" title="About Bee" target="_blank">Bee</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/Voi" title="About Elephant" target="_blank">Elephant</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="About Lion" target="_blank">Lion</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+
+
 		<!-- IMAGE -->
-		<div id="images-gallery">			
-			<div class="image-content cat">
-				<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
-					<img src="image/cat 1.jpg"/ alt="Cat" title="cat">
-				</a>
-			</div>
 
-			<div class="image-content cat">
-				<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
-					<img src="image/cat 2.jpg"/ alt="Cat" title="cat">
-				</a>
-			</div>
+		<section id="images-gallery">
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">					
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail " src="image/lion 3.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 cat">
+					<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
+						<img class="img-responsive thumbnail" src="image/cat 1.jpg" / alt="Cat" title="cat">
+					</a>
+				</div>
 
-			<div class="image-content cat">
-				<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
-					<img src="image/cat 3.jpg"/ alt="Cat" title="cat">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 cat">
+					<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
+						<img class="img-responsive thumbnail" src="image/cat 2.jpg" / alt="Cat" title="cat">
+					</a>
+				</div>
 
-			<div class="image-content cat">
-				<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
-					<img src="image/cat 4.jpg"/ alt="Cat" title="cat">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 cat">
+					<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
+						<img class="img-responsive thumbnail" src="image/cat 3.jpg" / alt="Cat" title="cat">
+					</a>
+				</div>
 
-			<div class="image-content cat">
-				<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
-					<img src="image/cat 5.jpg"/ alt="Cat" title="cat">
-				</a>																	
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 cat">
+					<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
+						<img class="img-responsive thumbnail" src="image/cat 4.jpg" / alt="Cat" title="cat">
+					</a>
+				</div>
 
-			<div class="image-content dog">
-				<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
-				<img src="image/dog 1.jpg" alt="dog" title="dog">
-			</a>				
-			</div>
 
-			<div class="image-content dog">
-				<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
-				<img src="image/dog 2.jpg" alt="dog" title="dog">
-			</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 cat">
+					<a href="https://vi.wikipedia.org/wiki/M%C3%A8o" title="Cat" target="_blank">
+						<img class="img-responsive thumbnail" src="image/cat 5.jpg" / alt="Cat" title="cat">
+					</a>
+				</div>
 
-			<div class="image-content dog">
-				<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
-				<img src="image/dog 3.jpg" alt="dog" title="dog">
-			</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 dog">
+					<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
+						<img class="img-responsive thumbnail" src="image/dog 1.jpg" alt="dog" title="dog">
+					</a>
+				</div>
 
-			<div class="image-content dog">
-				<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
-				<img src="image/dog 4.jpg" alt="dog" title="dog">
-			</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 dog">
+					<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
+						<img class="img-responsive thumbnail" src="image/dog 2.jpg" alt="dog" title="dog">
+					</a>
+				</div>
 
-			<div class="image-content dog">
-				<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
-				<img src="image/dog 5.jpg" alt="dog" title="dog">
-			</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 5.jpg" alt="lion" title="lion">
+					</a>
+				</div>
 
-			<div class="image-content panda">
-				<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
-					<img src="image/panda 1.jpg" alt="panda"	title="panda">
-				</a>				
-			</div>
 
-			<div class="image-content panda">
-				<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
-					<img src="image/panda 2.jpg" alt="panda"	title="panda">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 dog">
+					<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
+						<img class="img-responsive thumbnail" src="image/dog 4.jpg" alt="dog" title="dog">
+					</a>
+				</div>
 
-			<div class="image-content panda">
-				<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
-					<img src="image/panda 3.jpg" alt="panda"	title="panda">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 dog">
+					<a href="https://vi.wikipedia.org/wiki/Ch%C3%B3" title="Dog" target="_blank">
+						<img class="img-responsive thumbnail" src="image/dog 5.jpg" alt="dog" title="dog">
+					</a>
+				</div>
 
-			<div class="image-content panda">
-				<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
-					<img src="image/panda 4.jpg" alt="panda"	title="panda">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 panda">
+					<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
+						<img class="img-responsive thumbnail" src="image/panda 1.jpg" alt="panda" title="panda">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 3.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 panda">
+					<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
+						<img class="img-responsive thumbnail" src="image/panda 2.jpg" alt="panda" title="panda">
+					</a>
+				</div>
 
-			<div class="image-content panda">
-				<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
-					<img src="image/panda 5.jpg" alt="panda"	title="panda">
-				</a>				
-			</div>	
 
-			<div class="image-content sheep">
-				<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
-					<img src="image/sheep 1.jpg">
-				</a>			
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 panda">
+					<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
+						<img class="img-responsive thumbnail" src="image/panda 3.jpg" alt="panda" title="panda">
+					</a>
+				</div>
 
-			<div class="image-content sheep">
-				<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
-					<img src="image/sheep 2.jpg">
-				</a>			
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 panda">
+					<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
+						<img class="img-responsive thumbnail" src="image/panda 4.jpg" alt="panda" title="panda">
+					</a>
+				</div>
 
-			<div class="image-content sheep">
-				<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
-					<img src="image/sheep 3.jpg">
-				</a>			
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 panda">
+					<a href="https://vi.wikipedia.org/wiki/Panda" title="Panda" target="_blank">
+						<img class="img-responsive thumbnail" src="image/panda 5.jpg" alt="panda" title="panda">
+					</a>
+				</div>
 
-			<div class="image-content sheep">
-				<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
-					<img src="image/sheep 4.jpg">
-				</a>			
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 sheep">
+					<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
+						<img class="img-responsive thumbnail" src="image/sheep 1.jpg">
+					</a>
+				</div>
 
-			<div class="image-content sheep">
-				<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
-					<img src="image/sheep 5.jpg">
-				</a>			
-			</div>
 
-			<div class="image-content bee">
-				<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
-					<img src="image/bee 1.jpg" alt="bee" title="bee">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 sheep">
+					<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
+						<img class="img-responsive thumbnail" src="image/sheep 2.jpg">
+					</a>
+				</div>
 
-			<div class="image-content bee">
-				<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
-					<img src="image/bee 2.jpg" alt="bee" title="bee">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 sheep">
+					<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
+						<img class="img-responsive thumbnail" src="image/sheep 3.jpg">
+					</a>
+				</div>
 
-			<div class="image-content bee">
-				<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
-					<img src="image/bee 3.jpg" alt="bee" title="bee">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 sheep">
+					<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
+						<img class="img-responsive thumbnail" src="image/sheep 4.jpg">
+					</a>
+				</div>
 
-			<div class="image-content bee">
-				<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
-					<img src="image/bee 4.jpg" alt="bee" title="bee">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 sheep">
+					<a href="https://vi.wikipedia.org/wiki/C%E1%BB%ABu_nh%C3%A0" title="Sheep" target="_blank">
+						<img class="img-responsive thumbnail" src="image/sheep 5.jpg">
+					</a>
+				</div>
 
-			<div class="image-content bee">
-				<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
-					<img src="image/bee 5.jpg" alt="bee" title="bee">
-				</a>				
-			</div>
 
-			<div class="image-content elephant">
-				<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
-					<img src="image/elephant 1.jpg" alt="elephant" title="elephant">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 bee">
+					<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
+						<img class="img-responsive thumbnail" src="image/bee 1.jpg" alt="bee" title="bee">
+					</a>
+				</div>
 
-			<div class="image-content elephant">
-				<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
-					<img src="image/elephant 2.jpg" alt="elephant" title="elephant">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 bee">
+					<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
+						<img class="img-responsive thumbnail" src="image/bee 2.jpg" alt="bee" title="bee">
+					</a>
+				</div>
 
-			<div class="image-content elephant">
-				<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
-					<img src="image/elephant 3.jpg" alt="elephant" title="elephant">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 bee">
+					<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
+						<img class="img-responsive thumbnail" src="image/bee 3.jpg" alt="bee" title="bee">
+					</a>
+				</div>
 
-			<div class="image-content elephant">
-				<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
-					<img src="image/elephant 4.jpg" alt="elephant" title="elephant">
-				</a>
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 4.jpg" alt="lion" title="lion">
+					</a>
+				</div>
 
-			<div class="image-content elephant">
-				<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
-					<img src="image/elephant 5.jpg" alt="elephant" title="elephant">
-				</a>
-			</div>
 
-			<div class="image-content lion">
-				<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
-					<img src="image/lion 1.jpg" alt="lion" title="lion">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 bee">
+					<a href="https://vi.wikipedia.org/wiki/Ong" title="Bee" target="_blank">
+						<img class="img-responsive thumbnail" src="image/bee 5.jpg" alt="bee" title="bee">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 3.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 elephant">
+					<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
+						<img class="img-responsive thumbnail" src="image/elephant 1.jpg" alt="elephant" title="elephant">
+					</a>
+				</div>
 
-			<div class="image-content lion">
-				<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
-					<img src="image/lion 2.jpg" alt="lion" title="lion">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 elephant">
+					<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
+						<img class="img-responsive thumbnail" src="image/elephant 2.jpg" alt="elephant" title="elephant">
+					</a>
+				</div>
 
-			<div class="image-content lion">
-				<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
-					<img src="image/lion 3.jpg" alt="lion" title="lion">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 elephant">
+					<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
+						<img class="img-responsive thumbnail" src="image/elephant 3.jpg" alt="elephant" title="elephant">
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 3.jpg" alt="lion" title="lion">
+					</a>
+				</div>
 
-			<div class="image-content lion">
-				<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
-					<img src="image/lion 4.jpg" alt="lion" title="lion">
-				</a>				
-			</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 elephant">
+					<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
+						<img class="img-responsive thumbnail" src="image/elephant 4.jpg" alt="elephant" title="elephant">
+					</a>
+				</div>
 
-			<div class="image-content lion">
-				<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
-					<img src="image/lion 5.jpg" alt="lion" title="lion">
-				</a>				
+				<div class="col-xs-6 col-sm-4 col-md-3 elephant">
+					<a href="https://vi.wikipedia.org/wiki/Voi" title="Elephant" target="_blank">
+						<img class="img-responsive thumbnail" src="image/elephant 5.jpg" alt="elephant" title="elephant">
+					</a>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 1.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive thumbnail" src="image/lion 2.jpg" alt="lion" title="lion">
+					</a>
+				</div>
 			</div>
+			<!-- <div class="row">
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive" src="image/lion 3.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive" src="image/lion 4.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-3 lion">
+					<a href="https://vi.wikipedia.org/wiki/S%C6%B0_t%E1%BB%AD" title="Lion" target="_blank">
+						<img class="img-responsive" src="image/lion 5.jpg" alt="lion" title="lion">
+					</a>
+				</div>
+			</div> -->
 			<!-- END IMAGE -->
-		</div>
-		<div id="clear"></div>		
-		<div id="dautrang" >
-			<a href="#menu">Về đầu trang</a>
-		</div>
+		</section>
+		<footer>
+			<div>
+					<a href="#menu">Về đầu trang</a>
+					
+			</div>
+		</footer>
+		<div id="clear"></div>
+		
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
 </body>
+
 </html>
