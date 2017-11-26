@@ -7,7 +7,7 @@
 body {
     width: 100%;   
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .font-light {
     font-family: 'Quicksand', sans-serif;
@@ -23,15 +23,12 @@ body {
 }
 .font-light.font-px {
     font-size: 27.83px;
+    letter-spacing: 2.5px;
 }
 sup {
     font-size: 34.3px;
 }
-#number {
-    margin-top: 20px;
-    font-size: 97.31px;
-    color: #0047b1;
-}
+
 .text.font-bold {
     font-size: 22.92px;
     color: #0047b1;
@@ -62,7 +59,7 @@ sup {
 }
 #logo {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
  #logo img {
      width: 255px;
@@ -76,6 +73,7 @@ sup {
      
  }
  section {
+     position: relative;
     padding: 40px 30px;
      width: 630px;
      float: left;
@@ -86,7 +84,7 @@ sup {
      float: left;
  }
  #text {
-     margin-bottom: 60px;
+     margin-bottom: 55px;
  }
  #test {
      width: 50px;
@@ -95,14 +93,35 @@ sup {
      margin-bottom: 47px;
  }
  #textSarafi{
-     margin-bottom: 8px;
+     margin-bottom: 5px;
  }
  #sarafi {
      width: 100%;
      height: 200px;
-     margin-bottom: 85px;
+     margin-bottom: 80px;
  }
+ .number {
+    margin-top: 15px;
+    font-size: 97.31px;
+    color: #0047b1;
+    padding-bottom: 5px;
+}
+input {
+    font-family: 'Quicksand', sans-seri;
+    font-size: 97.31px;
+    color: #0047b1;
+    width: 100%;
+    text-align: center;
+    border: 0px solid white;   
+    font-weight: bold; 
+}
+input:focus {
+
+    outline: none;
+}
+
  #left,#right {
+     
      text-align: center;
      width: 200px;
      height: 100%;
@@ -112,6 +131,20 @@ sup {
      -moz-box-shadow:    0px 20px 20px 0px rgba(0, 0, 0, 0.1);
      box-shadow:         0px 20px 20px 0px rgba(0, 0, 0, 0.1);
      
+ }
+ #dialog {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300;
+     text-align: center;
+     color: rgb(255, 0, 0);
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background:rgba(255, 255, 255, 0);
+    left: 30px;
+    bottom: 140px;
+    font-size: 0.8em;
+    
  }
  #middle {
      position: relative;
@@ -129,4 +162,71 @@ sup {
  .email.font-bold {
     font-size: 30px;
     color: #0047b1;
+}
+
+
+/* aside */
+#icon {
+    margin-bottom: 64px;
+}
+#slide {
+    width: 100%;
+    height: 318px;
+    margin-bottom: 90px;
+}
+.slide {
+    position: relative;
+    width: 470px;
+    float: right;
+  
+}
+.slide img {
+    position: absolute;
+    display: none;
+    width: 100%;
+    
+}
+#eclip1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #00afef;
+    /* position: relative; */
+    padding: 6px;
+    float: left;
+}
+#eclip2 {
+    text-align: center;
+    color: white;
+    width: 77px;
+    height: 77px;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* position: absolute;
+    top: 6px;
+    left: 6px; */
+    position: relative;
+    
+  
+    
+}
+#phone-icon {
+    
+    font-size: 55px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+#phone-number {
+    width: 300px;
+    font-size: 47px;
+    color: #0047b1;
+    float: left;
+    padding: 12px 30px;
+    
+}
+#contact {
+    width: 100%;
+    padding-left: 120px;
+    
 }

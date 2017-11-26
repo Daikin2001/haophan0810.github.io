@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/css.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!-- <script src="js/vender-frefix/prefixfree.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     <title>Tuyển Dụng Techmaster</title>
 </head>
 <body>
@@ -20,29 +21,32 @@
                 <img src="image/logo.png" alt="">
             </div>
             <div id="text">
-                <div class="font-light">Tuyển dụng</div>
-                <div class="font-bold">Phụ trách tuyển sinh</div>
+                <div class="font-light">Tuyển Dụng</div>
+                <div class="font-bold">Phụ Trách Tuyển Sinh</div>
             </div>
             <div id="textSarafi">
                 <span class="font-bold">Lương<sup>*</sup></span>
-                <span class="font-light font-px">(Nhập học viên ở dưới)</h3>
+                <span class="font-light font-px">(nhập học viên ở dưới)</h3>
             </div>
             <div id="test"></div>
             <div id="sarafi">
                 <div id="left">
                     
-                    <div id="number" class="font-bold">30</div>
+                    <div id="input" class="number font-bold">
+                        <input type="text" value="30" onchange='changeValue(this)' >
+                    </div>
+                    
                     <div class="text font-bold">Học Viên</div>
                 </div>
                 <div id="middle">
                     <img src="image/arrow.png" alt="">
                 </div>
                 <div id="right">
-                        <div id="number" class="font-bold">13</div>
+                        <div id="result" class="number font-bold">13</div>
                         <div class="text font-bold">Triệu VNĐ</div>
                 </div>
             </div>
-            <div id=caution""></div>
+            <div id="dialog"></div>
             <div id="email">
                 <span class="email font-bold">CV gửi về : cuong@techmaster.vn</span>
             </div>
@@ -52,11 +56,27 @@
                 <div id="icon" class="icon">
                         <img src="image/icon.png" width="93px" alt="">
                     </div>
-            <div id="slide">
-
-            </div>
+                    <div id="slide">
+                        <div class="slide">
+                            <img src="image/slide1.jpg" alt="">
+                            <img src="image/slide2.jpg" alt="">
+                            <img src="image/slide3.jpg" alt="">                            
+                            <img src="image/slide4.jpg" alt="">
+                            
+                        </div>
+                    </div>
+           
             <div id="contact">
-               
+              
+                   <div id="eclip1">
+                        <div id="eclip2">
+                        <i class="fa fa-phone " id="phone-icon" aria-hidden="true"></i>
+                        
+                        </div>
+                            
+                   </div>
+                   <div id="phone-number" class="font-bold">0902209011</div>
+             
             </div>
         </aside>
     </div>
