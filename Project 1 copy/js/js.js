@@ -12,9 +12,8 @@ function changeValue(n) {
         return;
     }
     if (n.value.length>3 | n.value.match(/^\d+$/)==null ){
-        // $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
-        $('input').attr('value','10');
-        console.log('dsa');
+        $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
+        
     }else {
         $('#dialog').html('');
         console.log(re2);

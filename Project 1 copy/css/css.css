@@ -28,7 +28,9 @@ body {
 sup {
     font-size: 34.3px;
 }
-
+a {
+    text-decoration: none;
+}
 .text.font-bold {
     font-size: 22.92px;
     color: #0047b1;
@@ -137,7 +139,7 @@ input:focus {
     font-weight: 300;
      text-align: center;
      color: rgb(255, 0, 0);
-    position: absolute;
+    /* position: absolute; */
     width: 200px;
     height: 50px;
     background:rgba(255, 255, 255, 0);
@@ -197,7 +199,7 @@ input:focus {
 }
 #eclip2 {
     text-align: center;
-    color: white;
+    color: white ;
     width: 77px;
     height: 77px;
     border: 1px solid white;
@@ -211,7 +213,7 @@ input:focus {
     
 }
 #phone-icon {
-    
+    color: white !important;
     font-size: 55px;
     position: absolute;
     top: 10px;
@@ -237,10 +239,18 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-@media  screen and (max-width: 1100px){
+@media  screen and (max-width: 500px){
+    #background {
+        width: 170%;
+    }
+    #wrap {
+        text-align: center;
+    }
 
     section,aside {
-        padding-top: 10px;
+        
+        margin: auto;
+        padding: 10px 5px;
         float:none;
         width: 100%;
     }
@@ -248,3 +258,27 @@ input::-webkit-inner-spin-button {
         display: none;
     }
 }
+@media  screen and (max-width: 1100px){
+    #wrap {
+        text-align: center;
+    }
+    #test {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    #sarafi {
+        width: 570px;;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    section,aside {
+        
+        margin: auto;
+        float:none;
+        width: 100%;
+    }
+    #icon,#slide {
+        display: none;
+    }
+}
+
