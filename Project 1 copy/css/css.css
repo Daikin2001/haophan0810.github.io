@@ -8,6 +8,9 @@ body {
     position: relative;
     overflow: hidden;
 }
+.config-500 {
+    display: none;
+}
 .font-light {
     font-family: 'Quicksand', sans-serif;
     font-size: 34.83px;
@@ -269,6 +272,7 @@ input::-webkit-inner-spin-button {
         width: 20%;
     }
     aside {
+        padding: 0;
         width: 50%;
     }
     #contact {
@@ -284,14 +288,20 @@ input::-webkit-inner-spin-button {
 @media  screen and (max-width: 800px){
     aside {
         width: 100%;
-        padding-left: 20%;
+        padding-left: 10%;
     }
 }
 
 @media  screen and (max-width: 500px){
-    
+  
     #wrap {
         text-align: center;
+    }
+    #logo {
+        margin-bottom: 20px;
+    }
+    #text {
+        margin-bottom: 15px;
     }
     #phone-number {
         width: 50%;
@@ -302,5 +312,72 @@ input::-webkit-inner-spin-button {
     #middle img {
         width: 50%;
     }
-
+    section,aside {
+        padding: 0;
+        padding-top: 10px;  
+        width: 100%;
+    }
+    #middle {
+        float: none;
+        display: none;
+    }
+   
+    .config-500 {
+        margin-top:50px;
+        float: left;
+        width: 20%;
+        display: block;
+    }
+    #sarafi {
+        padding: 8px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    #right,#left{
+        width: 40%;
+        height: 120px;
+    }
+    #test {
+        margin-bottom: 15px;
+    }
+    .number,input {
+        margin-top: 0px;
+        font-size: 40px;
+    }
+   .next-arrow {
+       animation:  arrow 1s ease infinite;
+       transition: animation 0.5s linear;
+   }
+   .single-arrow {
+       animation: singleArrow 0.5s ease infinite;
+       transition: animation 0.5s linear;
+   }
+   #contact {
+       padding: 8px;
+   }
+   #phone-number {
+       padding: 12px 10px;
+       font-size: 35px;
+   }
+   .email.font-bold {
+       font-size: 25px;
+   }
+   #rectangle {
+       height: 310px;
+   }
+   #tritangle {
+       height: 150px;
+   }
+}
+@keyframes arrow {
+    from {opacity:0;}
+    to {opacity:1;}
+    
+}
+@keyframes singleArrow {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: white;}
+    100% {color: green;}
+    
 }
