@@ -9,7 +9,7 @@ function changeValue(n) {
     }else {
         $('#dialog').html('');
         console.log(re2);
-        $('#result').html(result);
+        $('#result').html(re2);
        
     }
     
