@@ -339,7 +339,7 @@ input::-webkit-inner-spin-button {
     }
     .number,input {
         margin-top: 0px;
-        font-size: 40px;
+        font-size: 40px !important;
     }
    .next-arrow {
        animation:  arrow 1s ease infinite;
