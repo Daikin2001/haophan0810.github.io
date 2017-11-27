@@ -210,13 +210,17 @@ input:focus {
     top: 6px;
     left: 6px; */
     position: relative;
+    animation: phoneIcon 0.8s linear infinite;
+    transition: all 0.3s linear;
 }
 #phone-icon {
-    color: white !important;
-    font-size: 55px;
+    color: white ;
+    font-size: 54px;
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 15px;
+    animation: phoneIconColor 0.8s linear infinite;
+    transition: all 0.3s linear;
 }
 #phone-number {
     width: 300px;
@@ -233,6 +237,10 @@ input:focus {
 }
 #email {
     text-align: center;
+}
+.cv {
+    animation: cvEff 0.5s linear infinite;
+    transition: 0.1s ease;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -395,3 +403,31 @@ input::-webkit-inner-spin-button {
     100% {color: green;}
     
 }
+/* @keyframes phoneIcon {
+    0%   {width:30px ;height: 30px;border-color:red; }
+    25%  {width:35px ;height: 35px;border-color:green;}
+    50%  {width:40px ;height: 40px;border-color:rgb(255, 217, 0); }
+    100% {width:50px ;height: 50px;border-color:rgb(0, 255, 42);}
+} */
+
+@keyframes phoneIcon {
+    0%   {transform: scale(1.1);border-color: red  }
+    25%  {transform: scale(1.2);border-color: rgb(51, 255, 0)  }
+    50%  {transform: scale(1.4);  border-color: rgb(68, 0, 255) }
+    100% {transform: scale(1.5);border-color: rgb(255, 0, 157)  }
+}
+@keyframes phoneIconColor {
+    0%   {color: rgba(0, 255, 0, 0.253) }
+    25%  {color: rgba(0, 255, 0, 0.411)  }
+    50%  {color: rgba(0, 255, 0, 0.637)   }
+    100% {color: rgba(0, 255, 0, 0.715)  }
+}
+@keyframes cvEff {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
