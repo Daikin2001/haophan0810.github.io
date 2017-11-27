@@ -210,9 +210,6 @@ input:focus {
     top: 6px;
     left: 6px; */
     position: relative;
-    
-  
-    
 }
 #phone-icon {
     color: white !important;
@@ -301,7 +298,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 20px;
     }
     #text {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     #phone-number {
         width: 50%;
@@ -368,6 +365,23 @@ input::-webkit-inner-spin-button {
    #tritangle {
        height: 150px;
    }
+   #eclip1 {
+    width: 80px;
+    height: 80px;    
+}
+#eclip2 {    
+    width: 67px;
+    height: 67px;   
+}
+#phone-icon { 
+    font-size: 45px;
+}
+.font-light,.font-bold {
+    font-size: 24px;
+}
+.font-light.font-px {
+    font-size: 17px;
+}
 }
 @keyframes arrow {
     from {opacity:0;}
