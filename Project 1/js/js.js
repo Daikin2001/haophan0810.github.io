@@ -4,8 +4,8 @@ function changeValue(n) {
     var result = Math.ceil(re1);     
     var re3 = Math.round(re1)
     var re2 = re1.toFixed(1);
-    if (n.value.length>2 | n.value.match(/^\d+$/)==null ){
-        $('#dialog').html("Error! (Nhập số không quá 3 chữ số)");
+    if (n.value==1|n.value.length>3 | n.value.match(/^\d+$/)==null ){
+        $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
     }else {
         $('#dialog').html('');
         console.log(re2);
@@ -48,4 +48,4 @@ function changeValue(n) {
        count=-1;
        imgs.eq(0).fadeIn(1000);
    }        
-},2500);
+},3500);
