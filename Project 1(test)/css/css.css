@@ -5,11 +5,9 @@
 }
 
 body {
+    width: 100%;   
     position: relative;
     overflow: hidden;
-}
-.config-500 {
-    display: none;
 }
 .font-light {
     font-family: 'Quicksand', sans-serif;
@@ -30,9 +28,7 @@ body {
 sup {
     font-size: 34.3px;
 }
-a {
-    text-decoration: none;
-}
+
 .text.font-bold {
     font-size: 22.92px;
     color: #0047b1;
@@ -141,7 +137,7 @@ input:focus {
     font-weight: 300;
      text-align: center;
      color: rgb(255, 0, 0);
-    /* position: absolute; */
+    position: absolute;
     width: 200px;
     height: 50px;
     background:rgba(255, 255, 255, 0);
@@ -201,7 +197,7 @@ input:focus {
 }
 #eclip2 {
     text-align: center;
-    color: white ;
+    color: white;
     width: 77px;
     height: 77px;
     border: 1px solid white;
@@ -210,17 +206,16 @@ input:focus {
     top: 6px;
     left: 6px; */
     position: relative;
-    animation: phoneIcon 0.8s linear infinite;
-    transition: all 0.3s linear;
+    
+  
+    
 }
 #phone-icon {
-    color: white ;
-    font-size: 54px;
+    
+    font-size: 55px;
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: 15px;
-    animation: phoneIconColor 0.8s linear infinite;
-    transition: all 0.3s linear;
 }
 #phone-number {
     width: 300px;
@@ -235,199 +230,21 @@ input:focus {
     padding-left: 120px;
     
 }
-#email {
-    text-align: center;
-}
-.cv {
-    animation: cvEff 0.5s linear infinite;
-    transition: 0.1s ease;
-}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+@media  screen and (max-width: 1100px){
 
-@media  screen and (max-width: 1229px){
-    #wrap {
-        text-align: center;
-    }
-    #test {
-        margin: auto;
-        margin-bottom: 40px;
-    }
-    #sarafi {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 40px;
-    }
     section,aside {
+        padding-top: 10px;
+        float:none;
         width: 100%;
-        margin: auto;
-        float:none;        
-    }
-    #right,#left {
-        width: 40%;
-    }
-    #dialog {
-        width: 100%;
-    }
-    #middle {
-        width: 20%;
-    }
-    aside {
-        padding: 0;
-        width: 50%;
-    }
-    #contact {
-        padding: 0;
     }
     #icon,#slide {
         display: none;
     }
-    #phone-number {
-        padding: 12px 60px;
-    }
 }
-@media  screen and (max-width: 800px){
-    aside {
-        width: 100%;
-        padding-left: 10%;
-    }
-}
-
-@media  screen and (max-width: 500px){
-  
-    #wrap {
-        text-align: center;
-    }
-    #logo {
-        margin-bottom: 20px;
-    }
-    #text {
-        margin-bottom: 10px;
-    }
-    #phone-number {
-        width: 50%;
-    }
-    #middle {
-        width: 125px;
-    }
-    #middle img {
-        width: 50%;
-    }
-    section,aside {
-        padding: 0;
-        padding-top: 10px;  
-        width: 100%;
-    }
-    #middle {
-        float: none;
-        display: none;
-    }
-   
-    .config-500 {
-        margin-top:50px;
-        float: left;
-        width: 20%;
-        display: block;
-    }
-    #sarafi {
-        padding: 8px;
-        height: 130px;
-        margin-bottom: 15px;
-    }
-    #right,#left{
-        width: 40%;
-        height: 120px;
-    }
-    #test {
-        margin-bottom: 15px;
-    }
-    .number,input {
-        margin-top: 0px;
-        font-size: 40px !important;
-    }
-   .next-arrow {
-       animation:  arrow 1s ease infinite;
-       transition: animation 0.5s linear;
-   }
-   .single-arrow {
-       animation: singleArrow 0.5s ease infinite;
-       transition: animation 0.5s linear;
-   }
-   #contact {
-       padding: 8px;
-   }
-   #phone-number {
-       padding: 12px 10px;
-       font-size: 35px;
-   }
-   .email.font-bold {
-       font-size: 25px;
-   }
-   #rectangle {
-       height: 310px;
-   }
-   #tritangle {
-       height: 150px;
-   }
-   #eclip1 {
-    width: 80px;
-    height: 80px;    
-}
-#eclip2 {    
-    width: 67px;
-    height: 67px;   
-}
-#phone-icon { 
-    font-size: 45px;
-}
-.font-light,.font-bold {
-    font-size: 24px;
-}
-.font-light.font-px {
-    font-size: 17px;
-}
-}
-@keyframes arrow {
-    from {opacity:0;}
-    to {opacity:1;}
-    
-}
-@keyframes singleArrow {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: white;}
-    100% {color: green;}
-    
-}
-/* @keyframes phoneIcon {
-    0%   {width:30px ;height: 30px;border-color:red; }
-    25%  {width:35px ;height: 35px;border-color:green;}
-    50%  {width:40px ;height: 40px;border-color:rgb(255, 217, 0); }
-    100% {width:50px ;height: 50px;border-color:rgb(0, 255, 42);}
-} */
-
-@keyframes phoneIcon {
-    0%   {transform: scale(1.1);border-color: red  }
-    25%  {transform: scale(1.2);border-color: rgb(51, 255, 0)  }
-    50%  {transform: scale(1.4);  border-color: rgb(68, 0, 255) }
-    100% {transform: scale(1.5);border-color: rgb(255, 0, 157)  }
-}
-@keyframes phoneIconColor {
-    0%   {color: rgba(0, 255, 0, 0.253) }
-    25%  {color: rgba(0, 255, 0, 0.411)  }
-    50%  {color: rgba(0, 255, 0, 0.637)   }
-    100% {color: rgba(0, 255, 0, 0.715)  }
-}
-@keyframes cvEff {
-   from {
-       opacity: 0;
-   }
-   to {
-       opacity: 1;
-   }
-}
-

@@ -9,22 +9,17 @@ function changeValue(n) {
         console.log('dsd');
         $('#dialog').html('');
         $('#result').html('0');
-        
-    }else if (n.value.length >3) {
+        return;
+    }
+    if (n.value.length>3 | n.value.match(/^\d+$/)==null ){
         $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
+        
     }else {
         $('#dialog').html('');
+        console.log(re2);
         $('#result').html(re2);
-    }
-    // if (n.value.length>3 | n.value.match(/^\d+$/)==null ){
-    //     $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
-        
-    // }else {
-    //     $('#dialog').html('');
-    //     console.log(re2);
-    //     $('#result').html(re2);
     
-    // }
+    }
     
     
 }
