@@ -32,7 +32,8 @@
             <div id="sarafi">
                 <div id="left">                    
                     <div id="input"  class="number font-bold">
-                        <input type="text"  maxlength="3" value="30" oninput='changeValue(this)' >
+                        <input type="number"  oninput='changeValue(this)' onkeydown="javascript: return event.keyCode == 69 ? false : true" value="30"/>
+                        <!-- <input type="text"  maxlength="3" value="30" oninput='changeValue(this)' > -->
                     </div>
                     
                     <div class="text font-bold">Học Viên</div>
