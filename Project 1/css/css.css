@@ -155,14 +155,16 @@ input:focus {
      width: 170px;
      height: 100%;
      float: left;
-      
  }
- #middle img {
+ #middle .arrow {
+     font-size: 100px;
+     color: #00afef;
      position: absolute;
-     left: 38px;
-     bottom: 44px;
-     width: 93px;
+     top: 105px;
+     left : 35px;
  }
+
+
  .email.font-bold {
     font-size: 30px;
     color: #0047b1;
@@ -252,7 +254,10 @@ input {
     -moz-appearance:textfield;
 }
 
-
+.font-config-all {
+    font-weight: 600;
+    font-size: 25px;
+}
 @media  screen and (max-width: 1229px){
     #wrap {
         text-align: center;
@@ -294,14 +299,33 @@ input {
         padding: 12px 60px;
     }
 }
+@media screen and (max-height:800px){
+    #text {
+        margin-bottom: 30px;
+    }
+    #logo {
+        margin-bottom: 35px;
+    }
+    #sarafi {
+        margin-bottom: 20px;
+    }
+    #slide {
+        margin-bottom: 25px;
+    }
+}
 @media  screen and (max-width: 800px){
     aside {
         width: 100%;
         padding-left: 10%;
     }
+    #middle .arrow {
+        font-size: 80px;
+        top: 115px;
+        left: 20px;
+    }
 }
 
-@media  screen and (max-width: 500px){
+@media  screen and (max-width: 600px){
   
     #wrap {
         text-align: center;
@@ -316,26 +340,19 @@ input {
         width: 50%;
     }
     #middle {
-        width: 125px;
+        width: 20%;
+        
     }
-    #middle img {
-        width: 50%;
+    #middle .arrow {
+        color: white;
+        font-size: 50px;
+        top: 45%;
+        left: 20%;
     }
-    section,aside {
+      section,aside {
         padding: 0;
         padding-top: 10px;  
         width: 100%;
-    }
-    #middle {
-        float: none;
-        display: none;
-    }
-   
-    .config-500 {
-        margin-top:50px;
-        float: left;
-        width: 20%;
-        display: block;
     }
     #sarafi {
         padding: 8px;
@@ -350,9 +367,14 @@ input {
         margin-bottom: 15px;
     }
     .number,input {
-        margin-top: 0px;
-        font-size: 40px !important;
+        font-size: 35px;
+        
+    }    
+    #result {
+        font-size: 35px;
+        margin-top: 15px;
     }
+ 
    .next-arrow {
        animation:  arrow 1s ease infinite;
        transition: animation 0.5s linear;
@@ -363,6 +385,7 @@ input {
    }
    #contact {
        padding: 8px;
+       margin-left: 5%;
    }
    #phone-number {
        padding: 12px 10px;
@@ -394,6 +417,14 @@ input {
 .font-light.font-px {
     font-size: 17px;
 }
+}
+@media screen and (max-width:400px){
+    #middle .arrow {
+        
+        font-size: 40px;
+        top: 45%;
+        left: 18%;
+    }
 }
 @keyframes arrow {
     from {opacity:0;}
