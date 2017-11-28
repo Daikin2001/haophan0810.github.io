@@ -1,3 +1,16 @@
+// function fressKey() {
+//     console.log(event.keyCode);
+//     console.log($('input'.value));
+//     console.log(typeof event.keyCode);
+//     console.log(event.keyCode==69 );
+//     if (window.event.keyCode==69 || $('input'.value).length>3){
+//         console.log('asdas');
+//         return false;
+//     }else {
+//         console.log('else');
+//         return true;
+//     }
+// }
 function changeValue(n) {
     var m = parseInt(n.value) ;
     var re1 = 2 * m / Math.log2(m);
