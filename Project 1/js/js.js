@@ -5,7 +5,7 @@ function changeValue(n) {
     var re3 = Math.round(re1)
     var re2 = re1.toFixed(1);
     
-    if (n.value==1){
+    if (n.value==1|n.value==''){
         console.log('dsd');
         $('#dialog').html('');
         $('#result').html('0');
