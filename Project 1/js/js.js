@@ -46,7 +46,7 @@ function changeValue(n) {
 //
 
 
-///c2
+//slide2
     
  var imgs =$('.slide').children('img');
  console.log(imgs);
