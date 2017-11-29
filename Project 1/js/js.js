@@ -1,18 +1,23 @@
 var  valueInput;
-function fressKey() {
-    console.log (valueInput);
-    if (window.event.keyCode==8 || window.event.keyCode==46)
-    {
-        return true;
-    }
-    if (window.event.keyCode==69 ||valueInput.length>2){
-        console.log('asdas');
-        return false;
-    }else {
-        console.log('else');
-        return true;
-    }
-}
+// function fressKey() {
+//     console.log (valueInput);
+//     var arrKeyCode =[8,46,37,49,17,91,18,93,18,112,113,114,115,116,117,118,119,120,121,123]
+//     for (var i=0; i<arrKeyCode.length;i++){
+//         if (window.event.keyCode==arrKeyCode[i] )
+//         {
+//             console.log(event.keyCode);
+//             return true;
+//         }
+//     }
+    
+//     if (window.event.keyCode==69 ||valueInput.length>2){
+//         console.log('asdas');
+//         return false;
+//     }else {
+//         console.log('else');
+//         return true;
+//     }
+// }
 function changeValue(n) {
     valueInput=n.value;
     var m = parseInt(n.value) ;
