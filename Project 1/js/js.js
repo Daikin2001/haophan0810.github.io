@@ -32,7 +32,8 @@ function changeValue(n) {
         $('#result').html('0');
         
     }else if (n.value.length >3) {
-        $('#dialog').html("Error! (Nhập số không quá 4 chữ số)");
+        var m = n.value.slice(0,3);
+        $('input').val(m);
     }else {
         $('#dialog').html('');
         $('#result').html(re2);
