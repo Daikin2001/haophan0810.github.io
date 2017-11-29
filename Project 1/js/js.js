@@ -1,17 +1,20 @@
-// function fressKey() {
-//     console.log(event.keyCode);
-//     console.log($('input'.value));
-//     console.log(typeof event.keyCode);
-//     console.log(event.keyCode==69 );
-//     if (window.event.keyCode==69 || $('input'.value).length>3){
-//         console.log('asdas');
-//         return false;
-//     }else {
-//         console.log('else');
-//         return true;
-//     }
-// }
+var  valueInput;
+function fressKey() {
+    console.log (valueInput);
+    if (window.event.keyCode==8 || window.event.keyCode==46)
+    {
+        return true;
+    }
+    if (window.event.keyCode==69 ||valueInput.length>2){
+        console.log('asdas');
+        return false;
+    }else {
+        console.log('else');
+        return true;
+    }
+}
 function changeValue(n) {
+    valueInput=n.value;
     var m = parseInt(n.value) ;
     var re1 = 2 * m / Math.log2(m);
     var result = Math.ceil(re1);     
