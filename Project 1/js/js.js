@@ -72,15 +72,16 @@ function changeValue(n) {
     
  var imgs =$('.slide').children('img');
  console.log(imgs);
+ var isNum = 0;
  var count =0;
  imgs.eq(count).show();
  
- setInterval(function(){
-    imgs.eq(count).fadeOut(1000);
-    count+=1; 
-    imgs.eq(count).fadeIn(1000);
-   if (count==imgs.length){
-       count=-1;
-       imgs.eq(0).fadeIn(1000);
-   }        
-},3500);
+ setInterval(function(){    
+     
+    imgs.eq(count).fadeOut(1000); 
+    isNum+=1;    
+    count=isNum%5;
+    console.log(count);
+    imgs.eq(count).fadeIn(1000);    
+
+},3000);
