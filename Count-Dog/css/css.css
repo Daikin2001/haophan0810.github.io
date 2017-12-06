@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrap {
+    padding-top:20px;
+    width: 500px;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+p {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: red;
+}
+#left,#right {
+    float: left;
+}
+#left {
+    width: 40%;
+}
+#right {
+    width: 60%;
+}
+li  {
+    display: block;
+    padding: 10px;
+}

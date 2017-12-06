@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+#wrap {
+    width: 1200px;
+    margin: auto;
+}
+#list-dog,#display-dog {
+    float: left;
+}
+#list-dog{
+    width: 60%;
+}
+#display-dog {
+    width: 40%;
+}
+li{
+    display: block;
+    padding: 10px;
+}
+img{
+    width: 100%;
+    float: right;
+}
+p{
+    padding: 15px;
+    display: block;
+    font-size: 20px;
+    color: red;
+}
