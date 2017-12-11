@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+div#wrap {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+/* HEADER */
+    
+    /* NAV 1  */
+    div#nav-up,nav#nav-down {
+        width: 100%;
+        height: 55px;
+        background-color: #6bd192;
+    }
+
+        div#logo {
+            width: 20%;
+            font-size: 30px;
+            font-family: 'Emilys Candy', cursive;
+            float: left;
+        }
+
+        div#menu-search {
+            width: 40%;
+            float: left;
+            max-width: 500px;
+        }
+        div#menu-phone {
+            width: 25%;
+            float: left;
+        }
+        div#menu-cart {
+            width: 15%;
+            float: left;
+        }
+    /* NAV 2 */
+    #home,ul#list-main,.list-item {
+        float: left;
+        display: block;
+        padding: 5px;
+    }   
+    ul > li {
+        list-style-type: none;
+    }
+        .menu-lever-2 {
+            display: none;
+
+        }    
+    

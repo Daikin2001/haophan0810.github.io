@@ -48,7 +48,7 @@ var controller = {
         }
         
         return dogNames;
-    },
+    },    
     getCurentDog: function(){
         return model.curentDog;
     },
@@ -67,32 +67,48 @@ var view ={
         this.listDogNames = controller.getListNames();
         this.curentDog = controller.getCurentDog();
         this.dogs=controller.getDogs();
-        console.log(this.dogs[1].src);
+        // console.log(this.dogs[1].src);
         view.hienthi();
     },
     hienthi : function(){
         
         var listDogNames = this.listDogNames;
+         console.log(this.dogs);
+        var arrDogs = this.dogs;
+        var crDog= this.curentDog;
         // console.log(listDogNames);
         var html = '';
         for (var i=0;i<listDogNames.length;i++){
             html += "<li data-name='"+i+"'>" +listDogNames[i]+"</>";
         }
+        
+        $('img').click( function() {
+            var countElement =$('img').attr('src');
+            console.log(countElement);
+            for (var i=0; i<arrDogs.length;i++){
+                if (arrDogs[i].src==countElement){
+                    arrDogs[i].count +=1;
+                    $('#count-dog').text(arrDogs[i].count );
+                }
+            }        
+        })
+
         $('#danhsach').html(html);
         $('#name-dog').text(this.curentDog.name);
         $('img').attr('src',this.curentDog.src);
-        $('#count-dog').text(this.curentDog.count);
-        $('li').on('click',function(){
+        $('#count-dog').text(this.curentDog.count);        
             $('li').on('click',function(){
                 var x= $(this).attr('data-name');
-                 
-            $('#name-dog').text(this.dogs[x].name);
-            $('img').attr('src',this.dogs[x].src);
-            $('#count-dog').text(this.dogs[x].count);
+                 crDog=arrDogs[x];
+                 console.log('dasdasd');
+                 console.log(crDog);
+            $('#name-dog').text(crDog.name);
+            $('img').attr('src',crDog.src);
+            $('#count-dog').text(crDog.count);
             
             
             })
-        })
+        
     }
     
 }
