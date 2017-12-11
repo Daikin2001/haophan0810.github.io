@@ -8,10 +8,12 @@ img {
 div#wrap {
     max-width: 1140px;
     margin: auto;
-    padding: 0 15px;
+    
 }
 /* HEADER */
-    
+    header,#sale-1,#sale-2,aside {
+        padding: 0 15px;
+    }
     /* NAV 1  */
     div#nav-up,nav#nav-down {
         width: 100%;
@@ -52,4 +54,23 @@ div#wrap {
             display: none;
 
         }    
+
+    /* section */
+    section {
+        width: 100%;
+    }
+    aside {
+        margin-bottom: 30px;
+    }
     
+    .title-group {
+        width: 100%;
+    }
+    .product {
+        width: 25%;
+        float: left;
+        padding: 15px;
+    }
+    .content-product {
+        border: 1px solid rgb(202, 197, 197);
+    }
