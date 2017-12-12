@@ -9,8 +9,6 @@
     <link rel="shortcut icon" href="images/icon-flower.ico">
     <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Trirong:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -28,27 +26,38 @@
                 </div>
                 <!-- SEARCH -->
                 <div id="menu-search">
-                    <input type="search" name="search" id="ipt-search" placeholder="Bạn muốn tìm hoa gì?">
+                    <input type="text" name="search" id="ipt-search" placeholder="Bạn muốn tìm hoa gì?">
                     <i class="fa fa-search" aria-hidden="true"></i>
 
                 </div>
                 <!-- PHONE -->
                 <div id="menu-phone">
-
-                    <a href="tel:01642248648">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>01642248648</span>
-                    </a>
+                    <div id="menu-phone-i">
+                        <a href="tel:01642248648">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div id="menu-phone-span">
+                        <a href="tel:01642248648">
+                            <span>01642248648</span>
+                        </a>
+                    </div>
                 </div>
                 <!-- CART -->
                 <div id="menu-cart">
-                    <a href="">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span class="text-cart">Giỏ hàng</span>
-                    </a>
-
+                    <div id="menu-cart-i">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div id="menu-cart-span">
+                        <a href="">
+                            <span class="text-cart">Giỏ hàng</span>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="clear"></div>
             <!-- NAV-DOWN -->
             <nav id="nav-down">
                 <!-- LIST MAIN -->
@@ -60,10 +69,10 @@
 
                 </div>
                 <ul id="list-main">
-                    <li class="list-item">
+                    <li class="list-item li-birthday">
                         <a href="">Hoa sinh nhật</a>
                     </li>
-                    <li class="list-item">Chủ đề
+                    <li class="list-item li-topic">Chủ đề
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
 
                         <!-- OCCASIONS -->
@@ -85,7 +94,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-item">Hoa Tươi
+                    <li class="list-item li-flower">Hoa Tươi
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
 
                         <!-- LIST FLOWERS -->
@@ -107,7 +116,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-item">Hoa đặc biệt
+                    <li class="list-item li-flower-special">Hoa đặc biệt
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
 
                         <!-- LIST SPECIALS -->
@@ -129,10 +138,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item li-func">
                         <a href="">Hoa chia buồn</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item li-gift">
                         <a href="">Quà tặng</a>
                     </li>
                 </ul>
@@ -151,13 +160,14 @@
                             <div id="tittle-img-slide">
                                 Tên sản phẩm
                             </div>
-                            <div class="shopping-cart">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <span>Mua ngay</span>
-                            </div>
-                            <div class="buy-img-slide">
-                                <span>Xem chi tiết</span>
-                            </div>
+                           <div class="img-slide-cart-shop">
+                                <div class="img-slide-div-buy-now">
+                                        <div class="img-slide-btn-buy-now">Mua ngay</div>
+                                    </div>
+                                    <div class="img-slide-div-view">
+                                        <div class="img-slide-btn-view">Xem chi tiết</div>
+                                    </div>
+                           </div>
                         </div>
                         <div id="arrow-back">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -574,8 +584,405 @@
                 </div>
                 <!-- PRODUCTS HOT -->
                 <div id="products-new">
+                    <div class="tittle-group">PRODUCT SPECIAL</div>
+
+                    <div class="all-products">
+                        <!-- ONE PRODUCT -->
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product" id="product-">
+                            <div class="content-product">
+                                <div class="image-product">
+                                    <a href="">
+                                        <img src="images/product-400-400/product1.jpeg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="descrition">
+                                    <div class="name-product">
+                                        <a href="">
+                                            <span>Hoa hồng giáng sinh</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="cost-product">
+                                        <span>2000 VND</span>
+                                    </div>
+                                    <div class="sale-product">
+                                        <span>3000 VND</span>
+                                    </div>
+                                    <div class="shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <!-- CONTAIN SALE ..... -->
+                                <div class="special-product">
+                                    <div class="sale-product">
+                                        <span>25% OFF</span>
+                                    </div>
+                                    <div class="new-product">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="hot-product">
+                                        <span>HOT</span>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- SALE 2 -->
+                    <div id="sale-2">
+                        <img src="images/slide/1.jpg" alt="">
+
+                    </div>
+                    <!-- ACCESSORIES -->
+                    <div id="products-new">
                         <div class="tittle-group">PRODUCT SPECIAL</div>
-        
+
                         <div class="all-products">
                             <!-- ONE PRODUCT -->
                             <div class="product" id="product-">
@@ -584,13 +991,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -619,12 +1026,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -632,13 +1039,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -667,12 +1074,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -680,13 +1087,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -715,12 +1122,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -728,13 +1135,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -763,12 +1170,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -776,13 +1183,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -811,12 +1218,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -824,13 +1231,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -859,12 +1266,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -872,13 +1279,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -907,12 +1314,12 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="product" id="product-">
                                 <div class="content-product">
@@ -920,13 +1327,13 @@
                                         <a href="">
                                             <img src="images/product-400-400/product1.jpeg" alt="">
                                         </a>
-        
+
                                     </div>
                                     <div class="descrition">
                                         <div class="name-product">
                                             <a href="">
                                                 <span>Hoa hồng giáng sinh</span>
-        
+
                                             </a>
                                         </div>
                                         <div class="cost-product">
@@ -955,432 +1362,27 @@
                                     <div class="quick-view">
                                         <a href="">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
+
                                         </a>
-        
+
                                     </div>
                                 </div>
-        
+
                             </div>
-        
+
                         </div>
-                <!-- SALE 2 -->
-                <div id="sale-2">
-                    <img src="images/slide/1.jpg" alt="">
-
-                </div>
-                <!-- ACCESSORIES -->
-                <div id="products-new">
-                        <div class="tittle-group">PRODUCT SPECIAL</div>
-        
-                        <div class="all-products">
-                            <!-- ONE PRODUCT -->
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="product" id="product-">
-                                <div class="content-product">
-                                    <div class="image-product">
-                                        <a href="">
-                                            <img src="images/product-400-400/product1.jpeg" alt="">
-                                        </a>
-        
-                                    </div>
-                                    <div class="descrition">
-                                        <div class="name-product">
-                                            <a href="">
-                                                <span>Hoa hồng giáng sinh</span>
-        
-                                            </a>
-                                        </div>
-                                        <div class="cost-product">
-                                            <span>2000 VND</span>
-                                        </div>
-                                        <div class="sale-product">
-                                            <span>3000 VND</span>
-                                        </div>
-                                        <div class="shopping-cart">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span>Thêm vào giỏ hàng</span>
-                                        </div>
-                                    </div>
-                                    <!-- CONTAIN SALE ..... -->
-                                    <div class="special-product">
-                                        <div class="sale-product">
-                                            <span>25% OFF</span>
-                                        </div>
-                                        <div class="new-product">
-                                            <span>NEW</span>
-                                        </div>
-                                        <div class="hot-product">
-                                            <span>HOT</span>
-                                        </div>
-                                    </div>
-                                    <div class="quick-view">
-                                        <a href="">
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-        
-                                        </a>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-        
-                        </div>
-                <!-- TAGS -->
-                <div id="tags"></div>
-                <!-- FOOTER -->
-                <footer>
-                    <!-- FOOTER-UP -->
-                    <div id="footer-up"></div>
-                    <!-- FOOTER DOWN -->
-                    <div id="footer-down"></div>
-                </footer>
-
-
-
+                        <!-- TAGS -->
+                        <div id="tags"></div>
+                        <!-- FOOTER -->
+                        <footer>
+                            <!-- FOOTER-UP -->
+                            <div id="footer-up"></div>
+                            <!-- FOOTER DOWN -->
+                            <div id="footer-down"></div>
+                        </footer>
         </section>
         </div>
-
-
-
         <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
         <script src="js/js.js"></script>
 </body>
 
