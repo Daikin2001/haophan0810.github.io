@@ -16,6 +16,19 @@ input:focus {
     outline: none;
 }
 
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #6bd192;
+  }
+  input::-moz-placeholder { /* Firefox 19+ */
+    color: #6bd192;
+  }
+ input:-ms-input-placeholder { /* IE 10+ */
+    color: #6bd192;
+  }
+ input:-moz-placeholder { /* Firefox 18- */
+    color: #6bd192;
+  }
+
 i.fa.fa-phone {
     font-size: 25px;
     color: white;
