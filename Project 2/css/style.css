@@ -5,7 +5,7 @@
 }
 /* BODY */
 body {
-    background-color: #b2cecf;
+    background-color: #e9ebee;
 }
 .clear {
     clear: both;
@@ -23,7 +23,9 @@ a {
 img {
     width: 100%;
 }
-
+img#img-logo {
+    width: 45%;
+}
 
 
 i.fa.fa-phone {
