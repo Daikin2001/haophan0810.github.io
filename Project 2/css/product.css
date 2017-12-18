@@ -3,7 +3,7 @@
 div#breadcrumb {
     padding: 15px;
 }
-a#a-brand,i#icon-home,li.breadcrumb.brand,i.fa.fa-angle-right {
+a#a-branch,i#icon-home,li.breadcrumb.branch,i.fa.fa-angle-right {
     color: #d02552;
 }
 li.breadcrumb.home {
@@ -15,7 +15,7 @@ li.breadcrumb.home {
 li.breadcrumb.home:hover i#icon-home {
     color:  #ffffff;
 }
-li.breadcrumb.brand {
+li.breadcrumb.branch {
     padding: 1px 0px 0px 0px;
     float: left;
     width: 8%;
@@ -23,7 +23,7 @@ li.breadcrumb.brand {
     font-size: 14px;
 }
 
-li.breadcrumb.brand:hover a#a-brand {
+li.breadcrumb.branch:hover a#a-branch {
     color: #ffffff;
 }
 i#icon-home {
@@ -224,9 +224,7 @@ li.products {
 }
 
 li.products:hover {
-    background-color: #d02552;
-    border-top: 1px solid #50d07d;
-    border-bottom:  0px solid;
+    background-color: #b50b38;
 }
 
 a.products {
