@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 /* BODY */
+
+nav#nav-down.testScroll {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 1110px;
+    background-color: #50d07d97;
+}
 body {
     background-color: #e9ebee;
 }
@@ -110,6 +118,7 @@ div#nav-up,nav#nav-down {
     width: 100%;
     height: 55px;
     background-color: #50d07d;
+    
 }
 
 div#nav-up {

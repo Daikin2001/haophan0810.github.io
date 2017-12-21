@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Trirong:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
@@ -140,59 +140,57 @@
                 </ul>
             </nav>
         </header>
-        <div id="breadcrumb">
-            <ul class="breadcrumb">
-                <li class="breadcrumb home">
-                    <a href="index.html" class="breadcrumb">
-                        <i id="icon-home" class="fa fa-home breadcrumb" aria-hidden="true"></i>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="breadcrumb branch"><a href="" id="a-branch">Hoa đặc biệt</a> </li>
-                <li class="breadcrumb branch-2"><a href="" id="a-branch-2">Hoa hồng giáng sinh</a> </li>
-                
-            </ul>
-        </div>
-        <div class="clear"></div>
+   <div id="content-cart">
+       <div class="cart-title">
+           <h3 class="cart-title">Giỏ hàng của bạn</h3>
 
-        <div id="content-product-des">
-            <div class="content-product-des">
-                    <h1 id="title-product">Hoa Hồng giáng sinh</h1>
-                    <aside id="left">
-                        <div id="aside-img-left">
-                            <img src="images/des-test.jpg" alt="">
-                        </div>
-                    </aside>
-                    <aside id="right">
-                        <div class="aside-right">
-                                <h2 id="aside-right-cost">
-                                        <span class="product-sale-cost">5.000.000 VND</span> 
-                                        <span class="product-current-cost">6.000.000 VND</span>
-                                    </h2>
-                                    <div id="aside-right-des">
-                        Hoa rất thích hợp vào các dịp sinh nhật, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore, assumenda quam sed fuga debitis eum odio architecto. Iusto suscipit nisi illo quas quod pariatur ullam ipsam sunt mollitia sapiente.
-                                    </div>
-                                    <div id="aside-right-gift">
-                                        <ul class="gift">
-                                            <li class="item-gift">Gọi đặt mua <a href="tel:0199999999">0199999999</a></li>
-                                            <li class="item-gift">Miễn phí giao hàng trong nội thành Hà Nội</li>
-                                            <li class="item-gift">Tặng thiệp chúc mừng</li>
-                                            <li class="item-gift">Tặng voucher 100.000 VND</li>
-                                           
-                                        </ul>
-                                    </div>
-                                    <div id="aside-right-buy-now">
-                                        <a href="" class="buy-now">Mua ngay</a>
-                                    </div>
-                        </div>
+       </div>
+       <div id="list-prds">
+           <div class="cart-product">
+               <div class="cart-product-left">
+                   <div class="cart-product-left-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="cart-product-remove">
+                        <i class="fa fa-times remove" aria-hidden="true"></i>
+                        <span class="remove">Xóa</span>
+                   </div>
+               </div>
+
+               <div class="cart-product-right">
+                   <div class="cart-product-right-name">
+                       <a href="" class="cart-product-right-name">Hoa sinh nhat</a>
+                       <span class="cart-product-right-cost">200.000.000 VND</span>
+                   </div>
+                   <div class="cart-product-right-gift">
+                       <span class="cart-product-right-gift">Gift 1</span>
+                       <span class="cart-product-right-gift">Gift 2</span>
                        
-            
-                    </aside>
-                    <div class="clear"></div>
-            </div>
-        </div>
-       
-        
+                   </div>
+
+                   <div class="cart-product-right-number">
+                       <div class="cart-minus">
+                            <i class="fa fa-minus cart-minus" aria-hidden="true"></i>
+                       </div>
+                       <div class="cart-number">
+                           <span class="cart-number">1</span>
+                       </div>
+                       <div class="cart-plus">
+                            <i class="fa fa-plus cart-plus" aria-hidden="true"></i>
+                       </div>
+                   </div>
+                   <div class="clear"></div>
+               </div>
+           </div>
+           <div class="cart-total">
+               <h3 class="cart-total-title">Tổng tiền</h3>
+               <span class="cart-total">4444.444 VND</span>
+               
+           </div>
+       </div>
+   </div>
+
+        <div class="clear"></div>
         <!-- FOOTER -->
         <footer>
             <!-- FOOTER-UP -->

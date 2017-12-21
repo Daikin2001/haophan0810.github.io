@@ -71,6 +71,7 @@ div.product-accessories {
 }
 div#sale-1,div#sale-2 {
     margin-bottom: 30px;
+    position: relative;
 }
 
 .all-products {
@@ -118,7 +119,7 @@ span.cost-product-sale {
     height: 30%;
     overflow: hidden;
 }
-i.fa.fa-shopping-cart.product-cart {font-size: 17px;color: #d02552;}
+i.fa.fa-shopping-cart.product-cart {font-size: 17px;color: #ffffff;}
 
 .shopping-cart {
     padding: 10px 40px 10px 40px;
@@ -140,7 +141,7 @@ span.shopping-cart-span {
     cursor: pointer;
 }
 
-a.shopping-cart-a {color: #d02552;font-weight:  bold;}
+a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
 
 .quick-view {
     position: absolute;
@@ -408,6 +409,7 @@ div#slide-images:hover .slide-arrow {
         float: left;
         padding: 15px;
         height: 450px;
+        
     }
     .content-product {
         border: 1px solid #dddddd;
@@ -537,3 +539,55 @@ div#show-sale-start:hover i.content-sale-start{
     opacity: 1;
 }
 
+/* SALE - 1 */
+
+div#sale-1 h2.sale-1-description-title {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    /* background-color: #ffffff78; */
+    padding:  5px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+
+div#sale-1 div.sale-1-view {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    font-size: 20px;
+    /* background-color: #ffffff78; */
+    padding: 10px;
+    color: white;
+    border-radius:  5px;
+    border: 1px solid;
+    text-transform: uppercase;
+}
+div.sale-1-bg{
+    width: 100%;
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.sale-1-background{
+    background-color: #d025524d;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+/* test */
+.test {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+}

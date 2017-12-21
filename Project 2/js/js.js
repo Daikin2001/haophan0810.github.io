@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // new WOW().init();
     var objHeight = 0;
     $.each($('.slide-image'), function () {
 
@@ -9,29 +10,29 @@ $(document).ready(function () {
 
 
     //after load, show popup
-    $('#start-wrap').addClass('show-start-wrap');
-    $('#show-sale-start').addClass('show-sale-start');
-    var showPTitleStart = setInterval(function(){
-        $('#title-sale-start').addClass('title-sale-start');
+    // $('#start-wrap').addClass('show-start-wrap');
+    // $('#show-sale-start').addClass('show-sale-start');
+    // var showPTitleStart = setInterval(function(){
+    //     $('#title-sale-start').addClass('title-sale-start');
 
-        clearInterval(showPTitleStart);
-    },500);
-    var showContentStart = setInterval(function(){
-     $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
-        clearInterval(showContentStart);
-    },800);
-    //close when click x
-    $('i.content-sale-start').click(function(){
-        $('#start-wrap').removeClass('show-start-wrap');
-        console.log(this);;
-    })
-    //au to close
-    var closeStartSale = setInterval(function(){
-        $('#start-wrap').removeClass('show-start-wrap');
+    //     clearInterval(showPTitleStart);
+    // },500);
+    // var showContentStart = setInterval(function(){
+    //  $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
+    //     clearInterval(showContentStart);
+    // },800);
+    // //close when click x
+    // $('i.content-sale-start').click(function(){
+    //     $('#start-wrap').removeClass('show-start-wrap');
+    //     console.log(this);;
+    // })
+    // //au to close
+    // var closeStartSale = setInterval(function(){
+    //     $('#start-wrap').removeClass('show-start-wrap');
 
 
-        clearInterval(closeStartSale);
-    },5000);
+    //     clearInterval(closeStartSale);
+    // },5000);
 
     //Auto set height for div slide
     var slideImg = $('.slide-image');
@@ -39,45 +40,7 @@ $(document).ready(function () {
 
     //Auto play slide
     setInterval(function(){
-        // $('.slide-image').removeClass('add-transition');        
-        // var nextSlide = $('.active').next();
-        // var _this = this;
-        // console.log(nextSlide.index());
-        // $('.active-circle').removeClass('active-circle');
-        
-        // if (nextSlide.index() < slideImg.length) {
-        //     $('.active').addClass('current-slide-out').one('webkitAnimationEnd', function () {
-        //         $('.current-slide-out').removeClass('current-slide-out');
-        //     });
-
-        //     nextSlide.addClass('next-slide-in').one('webkitAnimationEnd', function () {
-        //         console.log('why');
-        //         $('.active').removeClass('active');
-
-        //         $('.next-slide-in').addClass('active').removeClass('next-slide-in');
-              
-        //     });
-        //    console.log(nextSlide.index());
-        //    var index= nextSlide.index();
-        // //    $('.active-circle').removeClass('active-circle');
-        //    $('.circle-slide:nth('+index+')').addClass('active-circle');
-        //    console.log($('.circle-slide:nth('+index+')').index());
-        // } else {
-        //     $('.active').addClass('current-slide-out').one('webkitAnimationEnd', function () {
-        //         $('.current-slide-out').removeClass('current-slide-out');
-        //     });
-        //     $('.slide-image:first').addClass('next-slide-in').one('webkitAnimationEnd', function () {
-        //         console.log('why');
-        //         $('.active').removeClass('active');
-
-        //         $('.next-slide-in').addClass('active').removeClass('next-slide-in');
-        //     });
-          
-        //     $('.circle-slide:first').addClass('active-circle');
-
-        // }
-        $('#arrow-next').trigger('click');
-       
+        $('#arrow-next').trigger('click');    
 
     },4000)
     //Click arrow Next
@@ -182,15 +145,44 @@ $(document).ready(function () {
 
     //Click circle in slide
     $('.circle-slide').click(function(){
-        $('.slide-image').addClass('add-transition');
+        // $('.slide-image').addClass('add-transition');
+        $('.circle-slide').css('pointer-events', 'none');
+        console.log($(this).index());        
+        $('.active').addClass('fadeOutLeft animated').one('webkitAnimationEnd', function () {
+            $('.fadeOutLeft').removeClass('active fadeOutLeft animated');
+            
+        });
         
-        console.log($(this).index());
-        $('.active').removeClass('active');
         $('.active-circle').removeClass('active-circle');        
         $(this).addClass('active-circle');        
         var index = $(this).index();
-        $('.slide-image:nth('+index+')').addClass('active');
+        $('.slide-image:nth('+index+')').addClass('active fadeInRight animated').one('webkitAnimationEnd',function(){
+            $('.fadeInRight').removeClass('fadeInRight animated');
+        });
+        setTimeout(function () {
+            $('.circle-slide').css('pointer-events', 'auto');
+        }, 800);
+
     })
 
-
+    // handle when scroll - > menu fixed
+    $(window).scroll(function(){
+        var viewportWidth = $("body").innerWidth();
+        var viewportHeight = $("body").innerHeight();
+        var c = document.body.clientHeight;
+        var b = $(window).scrollTop();
+        var a = $("html").scrollTop();
+        $('.test').html(c);
+        if (a>110){
+            $('#nav-down').addClass('testScroll');
+        }else{
+            $('#nav-down').removeClass('testScroll');
+            
+        }
+        console.log(a);
+        if(a>200){
+            $('.product').addClass('fadeInLeft animated');
+        }
+    })
+   
 })
