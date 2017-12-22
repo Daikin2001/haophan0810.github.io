@@ -1,0 +1,199 @@
+div#content-cart{
+    width: 50%;
+    margin: auto;
+    /* background-color:  white; */
+}
+
+div.cart-title {
+    width: 100%;
+    padding: 15px 0px 0px 15px;
+}
+
+h3.cart-title {
+    color:  #d02552;
+    text-transform: uppercase;
+    margin: 15px 0 15px 0;
+}
+
+div#list-prds {
+    width: 100%;
+    background-color:  white;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+div.cart-product {
+    width: 100%;
+    /* padding:  15px; */
+}
+
+div.cart-product-left {
+    float:  left;
+    width: 20%;
+}
+
+.remove {
+    color: #999;
+}
+
+button.cart-product-remove {
+    border: 0px;
+    font-size: 14px;
+    cursor:  pointer;
+}
+
+.cart-product-right {
+    float: left;
+    width: 80%;
+    padding-left:  15px;
+}
+
+.cart-product-right-name {
+    width: 100%;
+}
+
+.cart-product-right-gift {
+    width: 100%;
+}
+
+span.cart-product-right-gift {
+    display: block;
+    text-indent: 1%;
+}
+
+.cart-product-right-number {
+    width: 32%;
+    float: right;
+}
+
+div.cart-minus,div.cart-number,div.cart-plus {
+    float: left;
+    width: 33%;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.cart-plus {
+    color: #50d17c;
+    cursor: pointer;
+}
+
+div.cart-number {
+    color: black;
+    border-right:  0px solid;
+    border-left: 0px solid;
+}
+
+.cart-minus {
+    color: #999;
+}
+
+div.cart-total {
+    width: 100%;
+    margin-bottom:  15px;
+    overflow: auto;
+}
+
+h3.cart-total-title {
+    float: left;
+}
+
+span.cart-total {
+    float: right;
+    color:  #d02552;
+}
+
+form#form-info-customer {
+    margin-top: 15px;
+}
+
+input#male,input#female {
+    margin-right:  1%;
+}
+
+div#check-sex, div#info-cus, div#check-address, div#show-address, div#show-address,div.time-transport-pro,div.bill-company {
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+div#show-address,div.w-address {
+    width: 100%;
+    /* padding: 15px; */
+}
+
+div#show-address {
+    padding: 15px;
+}
+
+div.city-address, div.district-address {
+    width: 50%;
+    float: left;
+}
+
+select#city-address,select#district-address {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.district-address {
+    padding: 0 0 0 15px;
+}
+
+div.city-address {
+    padding: 0 15px 0 0;
+}
+
+select#city-address,select#district-address {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+input#address,input#shop {
+    margin: 1%;
+}
+
+label.label-address {
+    margin-right: 3%;
+}
+
+div#info-cus {
+    width: 100%;
+}
+
+div.name-cus,div.phone-cus {
+    width: 50%;
+    float: left;
+}
+
+div.phone-cus {
+    padding: 0px 0px 0px 14px;
+}
+
+div.name-cus {
+    padding: 0px 15px 0px 0px;
+}
+
+input#name-cus,input#phone-cus {width: 100%;font-size: 14px;padding: 5px;border: 1px solid #50d17c;border-radius: 5px;color: #50d17c;}
+
+label.label-sex {
+    margin-right: 3%;
+}
+
+a.cart-product-right-name {
+    color: #d02552;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+span.cart-product-right-cost {
+    float: right;
+}
+
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}

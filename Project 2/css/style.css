@@ -15,6 +15,12 @@ nav#nav-down.testScroll {
 body {
     background-color: #e9ebee;
 }
+.clear2 {
+    clear: both;
+    width: 50%;
+    border-bottom: 1px solid #e9ebee;
+    margin: auto;
+}
 .clear {
     clear: both;
 }

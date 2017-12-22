@@ -22,7 +22,9 @@
                 <!-- LOGO -->
                 <div id="logo">
                     <a href="">
-                        <span class="text-logo"><img id="img-logo" src="images/logo-project.png" alt=""></span>
+                        <span class="text-logo">
+                            <img id="img-logo" src="images/logo-project.png" alt="">
+                        </span>
                     </a>
                 </div>
                 <!-- SEARCH -->
@@ -140,55 +142,148 @@
                 </ul>
             </nav>
         </header>
-   <div id="content-cart">
-       <div class="cart-title">
-           <h3 class="cart-title">Giỏ hàng của bạn</h3>
+        <div id="content-cart">
+            <div class="cart-title">
+                <h3 class="cart-title">Giỏ hàng của bạn</h3>
 
-       </div>
-       <div id="list-prds">
-           <div class="cart-product">
-               <div class="cart-product-left">
-                   <div class="cart-product-left-img">
-                       <img src="" alt="">
-                   </div>
-                   <div class="cart-product-remove">
-                        <i class="fa fa-times remove" aria-hidden="true"></i>
-                        <span class="remove">Xóa</span>
-                   </div>
-               </div>
+            </div>
+            <div id="list-prds">
+                <div class="cart-product">
+                    <div class="cart-product-left">
+                        <div class="cart-product-left-img">
+                            <img src="images/des-test.jpg" alt="">
+                        </div>
+                        <button class="cart-product-remove">
+                            <i class="fa fa-times-circle remove" aria-hidden="true"></i>
+                            <span class="remove">Xóa</span>
+                        </button>
+                    </div>
 
-               <div class="cart-product-right">
-                   <div class="cart-product-right-name">
-                       <a href="" class="cart-product-right-name">Hoa sinh nhat</a>
-                       <span class="cart-product-right-cost">200.000.000 VND</span>
-                   </div>
-                   <div class="cart-product-right-gift">
-                       <span class="cart-product-right-gift">Gift 1</span>
-                       <span class="cart-product-right-gift">Gift 2</span>
-                       
-                   </div>
+                    <div class="cart-product-right">
+                        <div class="cart-product-right-name">
+                            <a href="" class="cart-product-right-name">Hoa sinh nhat</a>
+                            <span class="cart-product-right-cost">200.000.000 VND</span>
+                        </div>
+                        <div class="cart-product-right-gift">
+                            <span class="cart-product-right-gift">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                Gift 1</span>
+                            <span class="cart-product-right-gift">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                Gift 2</span>
 
-                   <div class="cart-product-right-number">
-                       <div class="cart-minus">
-                            <i class="fa fa-minus cart-minus" aria-hidden="true"></i>
-                       </div>
-                       <div class="cart-number">
-                           <span class="cart-number">1</span>
-                       </div>
-                       <div class="cart-plus">
-                            <i class="fa fa-plus cart-plus" aria-hidden="true"></i>
-                       </div>
-                   </div>
-                   <div class="clear"></div>
-               </div>
-           </div>
-           <div class="cart-total">
-               <h3 class="cart-total-title">Tổng tiền</h3>
-               <span class="cart-total">4444.444 VND</span>
-               
-           </div>
-       </div>
-   </div>
+                        </div>
+
+                        <div class="cart-product-right-number">
+                            <div class="cart-minus">
+                                <i class="fa fa-minus cart-minus" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart-number">
+                                <span class="cart-number">1</span>
+                            </div>
+                            <div class="cart-plus">
+                                <i class="fa fa-plus cart-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="cart-total">
+                    <h3 class="cart-total-title">Tổng tiền</h3>
+                    <span class="cart-total">4444.444 VND</span>
+                </div>
+                <div class="clear2"></div>
+                <form action="" name="info-customer" id="form-info-customer">
+
+                    <div id="check-sex">
+                        <input type="radio" name="sex" id="male">
+                        <label class="label-sex" for="male">Anh</label>
+                        <input type="radio" name="sex" id="female">
+                        <label for="female">Chị</label>
+                    </div>
+                    <div id="info-cus">
+                        <div class="name-cus">
+                            <input type="text" name="name-customer" id="name-cus" placeholder="Họ và tên">
+
+                        </div>
+                        <div class="phone-cus">
+                            <input type="text" name="phone-customer" id="phone-cus" placeholder="Số điện thoại">
+
+                        </div>
+                    </div>
+                    <span class="form-text">Để được phục vụ nhanh nhất, hãy chọn thêm</span>
+                    <div id="check-address">
+                        <input type="radio" name="address" id="address">
+                        <label class="label-address" for="address">Địa chỉ giao hàng</label>
+                        <input type="radio" name="shop" id="shop">
+                        <label for="shop">Nhận tại cửa hàng</label>
+                    </div>
+                    <div id="show-address">
+                        <div class="w-address">
+                            <div class="city-address">
+                                <select name="city" id="city-address">
+                                    <option selected='1' value="">Tỉnh/Thành Phố</option>
+                                    <option selected='1' value="">Tỉnh/Thành Phố</option>
+                                    <option selected='1' value="">Tỉnh/Thành Phố</option>
+                                    <option selected='1' value="">Tỉnh/Thành Phố</option>
+
+
+                                </select>
+
+                            </div>
+                            <div class="district-address">
+                                <select name="district" id="district-address">
+                                    <option selected='1' value="">Quận/Huyện</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <input type="text" name="address-des" id="address-des" placeholder="Số nhà, xã, phường">
+                        <span class="time-transport">Thời gian giao hàng:</span>
+                        <div class="time-transport-pro">
+                            <select name="time-tran" id="time-transport">
+                            </select>
+                            <select name="hour-tran" id="hour-transport">
+
+                            </select>
+                        </div>
+                        <div class="card-pay">
+                            <input type="radio" name="cardpay" id="card-pay">
+                            <label for="card-pay">Cà thẻ khi nhận hàng</label>
+
+                        </div>
+                        <div class="bill-product">
+                            <input type="radio" name="bill-product" id="bill-cart">
+                            <label for="bill-cart">Xuất hóa đơn</label>
+                        </div>
+                        <div class="bill-company">
+                            <div class="name-company">
+                                <input type="text" name="name-company" id="name-company" placeholder="Tên công ty">
+
+                            </div>
+                            <div class="address-company">
+                                <input type="text" name="address-company" id="address-company" placeholder="địa chỉ công ty">
+
+                            </div>
+                            <div class="tax-code-company">
+                                <input type="text" name="tax-code-company" id="tax-code-company" placeholder="mã số thuế công ty">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="payment-products">
+                        <div id="pay-in-hourse">Thanh toán khi nhận hàng</div>
+                        <div id="pay-card-online">Thanh toán Online</div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
 
         <div class="clear"></div>
         <!-- FOOTER -->
