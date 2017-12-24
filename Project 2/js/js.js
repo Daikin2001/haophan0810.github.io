@@ -10,29 +10,29 @@ $(document).ready(function () {
 
 
     //after load, show popup
-    $('#start-wrap').addClass('show-start-wrap');
-    $('#show-sale-start').addClass('show-sale-start');
-    var showPTitleStart = setInterval(function(){
-        $('#title-sale-start').addClass('title-sale-start');
+    // $('#start-wrap').addClass('show-start-wrap');
+    // $('#show-sale-start').addClass('show-sale-start');
+    // var showPTitleStart = setInterval(function(){
+    //     $('#title-sale-start').addClass('title-sale-start');
 
-        clearInterval(showPTitleStart);
-    },500);
-    var showContentStart = setInterval(function(){
-     $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
-        clearInterval(showContentStart);
-    },800);
-    //close when click x
-    $('i.content-sale-start').click(function(){
-        $('#start-wrap').removeClass('show-start-wrap');
-        console.log(this);;
-    })
-    //au to close
-    var closeStartSale = setInterval(function(){
-        $('#start-wrap').removeClass('show-start-wrap');
+    //     clearInterval(showPTitleStart);
+    // },500);
+    // var showContentStart = setInterval(function(){
+    //  $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
+    //     clearInterval(showContentStart);
+    // },800);
+    // //close when click x
+    // $('i.content-sale-start').click(function(){
+    //     $('#start-wrap').removeClass('show-start-wrap');
+    //     console.log(this);;
+    // })
+    // //au to close
+    // var closeStartSale = setInterval(function(){
+    //     $('#start-wrap').removeClass('show-start-wrap');
 
 
-        clearInterval(closeStartSale);
-    },5000);
+    //     clearInterval(closeStartSale);
+    // },5000);
 
     //Auto set height for div slide
     var slideImg = $('.slide-image');
@@ -174,9 +174,9 @@ $(document).ready(function () {
         var a = $("html").scrollTop();
         // $('.test').html(a);
         if (a>110){
-            $('#nav-down').addClass('testScroll');
+            $('#nav-down-wrap').addClass('testScroll');
         }else{
-            $('#nav-down').removeClass('testScroll');
+            $('#nav-down-wrap').removeClass('testScroll');
             
         }
         console.log(a);

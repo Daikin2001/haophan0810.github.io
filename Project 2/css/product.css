@@ -81,7 +81,7 @@ span.cost-product-sale {
     height: 30%;
     overflow: hidden;
 }
-i.fa.fa-shopping-cart.product-cart {font-size: 17px;color: #d02552;}
+i.fa.fa-shopping-cart.product-cart {font-size: 17px;color: #ffffff;}
 
 .shopping-cart {
     padding: 10px 40px 10px 40px;
@@ -103,7 +103,7 @@ span.shopping-cart-span {
     cursor: pointer;
 }
 
-a.shopping-cart-a {color: #d02552;font-weight:  bold;}
+a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
 
 .quick-view {
     position: absolute;

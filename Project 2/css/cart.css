@@ -20,6 +20,7 @@ div#list-prds {
     background-color:  white;
     margin-bottom: 30px;
     padding: 15px;
+    overflow:  auto;
 }
 
 div.cart-product {
@@ -113,16 +114,33 @@ input#male,input#female {
 
 div#check-sex, div#info-cus, div#check-address, div#show-address, div#show-address,div.time-transport-pro,div.bill-company {
     margin-bottom: 10px;
-    overflow: auto;
+    /* overflow: auto; */
+}
+
+div#info-cus {
+    overflow:  auto;
 }
 
 div#show-address,div.w-address {
     width: 100%;
+    /* background-color: #e9ebee; */
     /* padding: 15px; */
 }
 
 div#show-address {
-    padding: 15px;
+    padding: 15px 30px 0 30px;
+    background-color:  #e9ebee;
+    position: relative;
+    display:  none;
+}
+
+div.triangle-sho-address {
+    position:  absolute;
+    border-left: 10px solid transparent;
+    border-bottom: 7px solid #e9ebee;
+    border-right: 10px solid transparent;
+    top: -7px;
+    left: 52px;
 }
 
 div.city-address, div.district-address {
@@ -141,6 +159,7 @@ select#city-address,select#district-address {
 
 div.city-address {
     padding: 0 15px 0 0;
+    margin-bottom:  5px;
 }
 
 select#city-address,select#district-address {
@@ -192,8 +211,86 @@ span.cart-product-right-cost {
 
 
 select{
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     -moz-appearance: none;
     appearance: none;
     padding: 5px;
+}
+
+input#address-des {
+    width: 100%;
+    /* display:  block; */
+    /* margin-top: 5px; */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.time-transport-pro {
+    width: 100%;
+}
+
+div.time-transport,div.hour-transport {
+    width:  50%;
+    float:  left;
+}
+
+div.time-transport {
+    padding: 0px 15px 0px 0px;
+}
+
+div.hour-transport {
+    padding:  0px 0px 0px 15px;
+}
+
+select#time-transport,select#hour-transport {
+    width:  100%;
+}
+
+div.bill-company,div.name-company,input#name-company,div.address-company,input#address-company,div.tax-code-company,input#tax-code-company {
+    width:  100%;
+}
+
+div#payment-products {
+    width:  100%;
+}
+
+div.pay-in-house,div.pay-card-online {
+    width:  50%;
+    FLOAT: left;
+    padding: 0 15px;
+}
+
+div#pay-in-house,div#pay-card-online {
+    width:  100%;
+    border-radius:  5px;
+    color:  white;
+    padding:  5px;
+    font-size:  14px;
+    text-align:  center;
+    text-transform: uppercase;
+}
+
+div#pay-in-house {
+    background-color: #50d07d;
+}
+
+div#pay-in-house:hover {
+    background-color: green;
+}
+
+div#pay-card-online {
+    background-color:  #d02552;
+}
+
+div#pay-card-online:hover {
+    background-color: #ff0245;
+}
+
+div.bill-product {
+    margin-bottom:  10px;
+}
+
+input#name-company, input#address-company, input#tax-code-company {
+    padding: 5px;
+    margin-bottom:  5px;
 }

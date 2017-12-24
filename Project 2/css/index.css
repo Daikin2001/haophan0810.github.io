@@ -25,12 +25,14 @@ div#sale-3 {
     position: absolute;
     top: 0px;
     right: 5px;
-    
+    visibility:  hidden;
+    transition:  0.4s;
+    opacity:  0;
 }
 
 .quick-view-acessories a i {
     color: #50d07d;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .cost-product-acessories {
@@ -61,6 +63,11 @@ span.span-accessories {
     padding: 0 5px 0 5px;
     height: 100%;
     position: relative;
+}
+
+div.content-product-accessories:hover .quick-view-acessories {
+    visibility:  visible;
+    opacity: 1;
 }
 
 div.product-accessories {
