@@ -28,9 +28,10 @@ div#nav-down-wrap.testScroll {
     position: fixed;
     top: 0;
     z-index: 20;
-    height: 45px;
+    /* height: 45px; */
     width: 100%;
-    background-color: #50d07d97;
+    /* background-color: #50d07dc9; */
+    transition: 0.2s;
 }
 body {
     background-color: #e9ebee;
@@ -329,6 +330,18 @@ div.address {
 .social-icon {
     margin-top: 20px;
     text-align: center;
+    overflow: auto;
+}
+
+div.wrap-icon-a {
+    margin: auto;
+    overflow:  auto;
+    padding: 0 0 0 20%;
+}
+
+a.a-social-icon {
+    display: block;
+    float: left;
 }
 
 i.fa.fa-linkedin-square.social {
@@ -396,6 +409,7 @@ div#footer-down-wrap {
 div#footer-down {
     text-align:  center;
     padding: 15px 0;
+    color:  white;
 }
 li.title {
     padding: 0 0 5px 0px;
@@ -416,3 +430,95 @@ ul.middle a {
     color: #d02552;
     font-size: 14px;
 }
+
+
+
+/* BACK TO TOP */
+div.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 5px;
+    width: 50px;
+    height:  50px;
+    background-color: #50d17c97;
+    text-align: center;
+    border-radius: 50%;
+    transition:  0.4s;
+    visibility:  hidden;
+    opacity: 0;
+}
+div.back-to-top.show-back-to-top {
+    visibility: visible;
+    opacity: 1;
+}
+.back-to-top:hover {
+    background-color: #50d17c;
+}
+i.back-to-top {
+    color: #ffffff;
+    font-size: 30px;
+    position:  absolute;
+    top: 10px;
+    left: 12px;
+}
+a.back-to-top {position:  relative;
+    display: block;
+}
+
+a.cart-scrolled {
+    display:  block;
+    width: 160px;
+    position:  fixed;
+    bottom: 60px;
+    right: 60px;
+    height: 50px;
+    /* background-color: red; */
+    /* border-radius: 30px; */
+    color: #d02552;
+}
+
+a.cart-scrolled:hover div.icon-cart-scrolled {
+    background-color: #50d17c;
+    transition: 0.3s;
+}
+div.cart-scrolled {
+    width: 100%;
+    /* height:  100%; */
+}
+
+div.icon-cart-scrolled {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #96e4b1;
+    text-align: center;
+    padding: 9px 0 0 0;
+}
+
+i.fa.fa-shopping-cart.icon-cart-scrolled {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+div.cart-scrolled-notification {
+    float: left;
+    width: 100px;
+    padding:  5px;
+}
+
+.cart-scrolled-notification span {
+    display:  block;
+    width:  100%;
+}
+
+span.notification-number {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+span.notification-title {
+    font-size: 12px;
+    text-align:  center;
+}
+
