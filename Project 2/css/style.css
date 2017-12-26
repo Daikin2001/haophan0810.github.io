@@ -23,7 +23,6 @@ div#nav-up-wrap {
     background-color:  white;
 }
 /* BODY */
-
 div#nav-down-wrap.testScroll {
     position: fixed;
     top: 0;
@@ -197,10 +196,12 @@ i.fa.fa-shopping-cart.menu-cart {
     color: #50d07d;
 }
 
-li.list-item.li-func,li.list-item.li-flower-special {
+li.list-item.li-flower-special {
     width: 20%;
 }
-
+li.list-item.li-wedding {
+    width: 12%;
+}
 
 li.list-item.li-flower,li.list-item.li-topic {
     width: 15%;
@@ -263,8 +264,8 @@ li.list-item {
     transition: 0.4s;
 }
 
-li.list-item.li-gift.level-1 {
-    width: 12%;
+li.list-item.li-require.level-1 {
+    width: 20%;
 }
 
 ul.menu-lever-2 li {

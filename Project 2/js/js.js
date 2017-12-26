@@ -1,11 +1,5 @@
 $(document).ready(function () {
-    new WOW().init();
-   
-    
-
-    
-    
-
+    new WOW().init();  
     var objHeight = 0;
     $.each($('.slide-image'), function () {
 
