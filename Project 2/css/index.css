@@ -709,7 +709,7 @@ div#show-sale-start:hover i.content-sale-start{
 
 /* SALE - 1 */
 
-div#sale-1 h2.sale-1-description-title {
+div#sale-1 h2.sale-1-description-title,div#sale-2 h2.sale-1-description-title {
     position: absolute;
     top: 20%;
     left: 20%;
@@ -722,7 +722,7 @@ div#sale-1 h2.sale-1-description-title {
 }
 
 
-div#sale-1 div.sale-1-view {
+div#sale-1 div.sale-1-view,div#sale-2 div.sale-1-view {
     position: absolute;
     top: 45%;
     left: 47%;
