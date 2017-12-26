@@ -1,5 +1,11 @@
 $(document).ready(function () {
     new WOW().init();
+   
+    
+
+    
+    
+
     var objHeight = 0;
     $.each($('.slide-image'), function () {
 
@@ -179,20 +185,29 @@ $(document).ready(function () {
             $('#nav-down-wrap').addClass('testScroll');
             //fix-back-to-top
             $('div.back-to-top').addClass('show-back-to-top');
-            console.log('adsadasd');
+            if($('sub.menu-cart').data('number-product')!= '0'){
+                $('a.cart-scrolled').addClass('show-cart-bottom');
+            }
         }else{
             $('#nav-down-wrap').removeClass('testScroll');
             $('div.back-to-top').removeClass('show-back-to-top');
-            
-            
+            $('a.cart-scrolled').removeClass('show-cart-bottom');
         }
         console.log(a);
         if(a>200){
             $('.product').addClass('fadeInLeft animated');
         }
+
+        
     })
-    console.log($(window).height());
-    //Scroll btn-back-to-top show
-    
-   
-})
+    $(window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+
+})  
+
+
+// var html = document.querySelector('html')
+// window.onbeforeunload = function(){
+//     html.scrollTop = 0 ;
+// }

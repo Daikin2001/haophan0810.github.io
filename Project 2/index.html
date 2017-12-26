@@ -61,7 +61,7 @@
                 <div id="menu-cart" class="show-cart">
                     <a href="">
                         <i class="fa fa-shopping-cart menu-cart" aria-hidden="true"></i>
-                        <sub class="menu-cart">12</sub>
+                        <sub class="menu-cart" data-number-product="12">12</sub>
                         <span class="menu-cart">Giỏ hàng</span>
                     </a>
                 </div>
@@ -332,60 +332,61 @@
 
             </aside>
             <!-- PRODUCTS NEW -->
-            <div id="products-special">
-                <div id="preview-product">
-                    <div class="wrap-preview-product">
-                        <div class="preview-product-title">
-                            <div class="preview-product-name">
-                                <h2 class="name-product-preview">Hoa hồng giáng sinh
-                                        <span class="code-product">hhgs</span>
-                                </h2>
-                                <div class="preview-product-rating">                                        
-                                                <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
-                                                <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
-                                                <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
-                                                <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
-                                                <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
-                                                                
-                                    </div>
-                            </div>                          
-                        </div>
-                       <div class="clear"></div>
-                        <aside id="preview-left">
-                                <div id="aside-img-left">
-                                    <img src="images/des-test.jpg" alt="">
+            <div id="preview-product">
+                <div class="wrap-preview-product">
+                    <div class="preview-product-title">
+                        <div class="preview-product-name">
+                            <h2 class="name-product-preview">Hoa hồng giáng sinh
+                                    <span class="code-product">(hhgs)</span>
+                            </h2>
+                            <div class="preview-product-rating">                                        
+                                            <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o preview-product-rating-icon" aria-hidden="true"></i>
+                                                            
                                 </div>
-                            </aside>
-                            <aside id="preview-right">
-                                <div class="aside-right">
-                                        <h2 id="aside-right-cost">
-                                                <span class="product-sale-cost">5.000.000 VND</span> 
-                                                <span class="product-current-cost">6.000.000 VND</span>
-                                            </h2>
-                                            <div id="aside-right-des">
-                                Hoa rất thích hợp vào các dịp sinh nhật, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore, assumenda quam sed fuga debitis eum odio architecto. Iusto suscipit nisi illo quas quod pariatur ullam ipsam sunt mollitia sapiente.
-                                            </div>
-                                            <div id="aside-right-gift">
-                                                <ul class="gift">
-                                                    <li class="item-gift">Gọi đặt mua <a href="tel:0199999999">0199999999</a></li>
-                                                    <li class="item-gift">Miễn phí giao hàng trong nội thành Hà Nội</li>
-                                                    <li class="item-gift">Tặng thiệp chúc mừng</li>
-                                                    <li class="item-gift">Tặng voucher 100.000 VND</li>                                                   
-                                                </ul>
-                                            </div>
-                                            <div id="aside-right-buy-now">
-                                                <a href="" class="buy-now">Mua ngay</a>
-                                            </div>
-                                </div>
-                               
-                    
-                            </aside>
-
+                        </div>                          
                     </div>
-                   
-                        
+                   <div class="clear"></div>
+                    <aside id="preview-left">
+                            <div id="aside-img-left">
+                                <img src="images/des-test.jpg" alt="">
+                            </div>
+                        </aside>
+                        <aside id="preview-right">
+                            <div class="aside-right">
+                                    <h2 id="aside-right-cost">
+                                            <span class="product-sale-cost">5.000.000 VND</span> 
+                                            <span class="product-current-cost">6.000.000 VND</span>
+                                        </h2>
+                                        <div id="aside-right-des">
+                            Hoa rất thích hợp vào các dịp sinh nhật, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore, assumenda quam sed fuga debitis eum odio architecto. Iusto suscipit nisi illo quas quod pariatur ullam ipsam sunt mollitia sapiente.
+                                        </div>
+                                        <div id="aside-right-gift">
+                                            <ul class="gift">
+                                                <li class="item-gift">Gọi đặt mua <a href="tel:0199999999">0199999999</a></li>
+                                                <li class="item-gift">Miễn phí giao hàng trong nội thành Hà Nội</li>
+                                                <li class="item-gift">Tặng thiệp chúc mừng</li>
+                                                <li class="item-gift">Tặng voucher 100.000 VND</li>                                                   
+                                            </ul>
+                                        </div>
+                                        <div id="aside-right-buy-now">
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                            </div>
+                           
+                
+                        </aside>
+                        <i class="fa fa-times-circle-o preview-product" aria-hidden="true"></i>
 
                 </div>
+               
+                    
+
+            </div>
+            <div id="products-special">                
                 <div class="tittle-group">Hoa Đặc biệt
                     <div class="tittle-group-line-1"></div>
                     <div class="tittle-group-line-2"></div>
@@ -1339,7 +1340,21 @@
             </div>
             <!-- SALE 2 -->
             <div id="sale-2">
-                <img src="images/slide/1.jpg" alt="">
+                <div class="sale-1--img">
+                    <img src="images/slide/1.jpg" alt="">
+
+                </div>
+                <div class="sale-1-bg">
+                    <div class="sale-1-background"></div>
+
+                </div>
+                <h2 class="sale-1-description-title wow zoomIn">
+                    Giảm giá 5% cho các đơn hàng khi mua Hoa Sinh Nhật!
+                </h2>
+                <div class="sale-1-view wow zoomIn">
+                    Xem ngay!
+
+                </div>
 
             </div>
             <!-- ACCESSORIES -->

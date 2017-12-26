@@ -217,6 +217,8 @@ div#preview-product {
     background-color: #0000009e;
     /* overflow: scroll; */
     height: 100%;
+    visibility: hidden;
+    opacity: 0;
 }
 
 div.wrap-preview-product {
@@ -224,8 +226,13 @@ div.wrap-preview-product {
     margin: auto;
     margin-top:  100px;
     background-color: white;
-    overflow: auto;
+    /* overflow: auto; */
     height: 600px;
+    position: relative;
+}
+
+.wrap-preview-product:hover i.fa.fa-times-circle-o.preview-product {
+    visibility: visible;
 }
 
 div.preview-product-title {
@@ -254,8 +261,62 @@ span.code-product {
     margin-left:  10px;
 }
 
-h2.name-product-preview {
+h2#aside-right-cost {
+    margin-bottom:  15px;
 }
+span.product-sale-cost {
+    color: red;
+    margin-right:  10px;
+    font-size:  20px;
+}
+span.product-current-cost {
+    font-size: 15px;
+    color: #999;
+    text-decoration:  line-through;
+}
+div#aside-right-des {
+    width:  100%;
+    margin-bottom:  15px;
+}
+ul.gift {
+    padding: 0 15px;
+}
+li.item-gift {
+    list-style:  circle;
+    display: list-item;
+}
+div#aside-right-buy-now {
+    width:  50%;
+    margin: 30px auto 0px auto;
+}
+
+a.buy-now {
+    background-color: #50d07d;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    color:  white;
+    text-align:  center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+a.buy-now:hover {
+    background-color:  #d02552;
+}
+i.fa.fa-times-circle-o.preview-product {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #d02552;
+    z-index: 999999;
+    font-size: 20px;
+    visibility: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 
 h2.name-product-preview {
     color: #d02552;
@@ -697,4 +758,7 @@ div.sale-1-background{
     top: 10px;
     right: 10px;
 
+}
+html {
+    transition: 1s;
 }
