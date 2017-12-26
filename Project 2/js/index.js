@@ -27,8 +27,13 @@ var ABC = {
 $(document).ready(function () {
     //products special
     var htmlProductSpecial = "";
+    var test=0;
+    var test2=0;
     for (var i = 0; i < arrDataSpecial.length; i++) {
-        htmlProductSpecial += '<div class="product wow fadeInUp" id="' + arrDataSpecial[i].id + '">' +
+        ;
+        test2=(test%4+1)/10;
+        test+=1;
+        htmlProductSpecial += '<div class="product wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+test2+'s" id="' + arrDataSpecial[i].id + '">' +
             '<div class="content-product">' +
             ' <div class="image-product">' +
             '<a href="product-description.html">' +
@@ -78,8 +83,13 @@ $(document).ready(function () {
 
     //products best sellest
     var htmlBestSellest = "";
+    var testBest=0;
+    var testBest2=0;
     for (var i = 0; i < arrDataBestSell.length; i++) {
-        htmlBestSellest += '<div class="product wow fadeInUp" id="' + arrDataBestSell[i].id + '">' +
+        testBest2=(testBest%4+1)/10;
+        testBest+=1;
+       
+        htmlBestSellest += '<div class="product wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testBest2+'s" id="' + arrDataBestSell[i].id + '">' +
             '<div class="content-product">' +
             ' <div class="image-product">' +
             '<a href="product-description.html">' +

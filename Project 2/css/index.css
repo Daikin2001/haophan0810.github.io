@@ -1,10 +1,6 @@
-.line-bottom {
-    border: 1px solid #DDDDDD;
-    margin-top: 15px;
-}
-
 div#sale-3 {
     padding: 15px;
+    margin-bottom:  15px;
 }
 
 .cost-product-sale-acessories {
@@ -227,6 +223,10 @@ span.cost-product-sale.promotion-sale {
     margin-bottom: 15px;
     position: relative;
     color: #d02552;
+}
+
+div#products-special,div#products-hot {
+    margin-bottom:  15px;
 }
 
 div#preview-product {

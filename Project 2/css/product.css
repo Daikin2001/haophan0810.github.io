@@ -35,6 +35,7 @@ i#icon-home {
 section {
     width: 75%;
     float: left;
+    margin-bottom:  15px;
 }
 .all-products {
     margin-bottom: 15px;
@@ -51,13 +52,26 @@ span.cost-product-sale {
     text-decoration: line-through;
     color: #00000080;
     margin-right: 15px;
+    display: none;
 }
-
 .cost-product {
     height: 20%;
     text-align: center;
     padding: 0px 10px 0px 10px;
 }
+
+
+div.rating-product {
+    height:  15%;
+    width: 100%;
+    text-align: center;
+}
+
+i.rating-product {
+    color: yellow;
+    cursor:  pointer;
+}
+
 
 .descrition {
     width: 100%;
@@ -66,11 +80,12 @@ span.cost-product-sale {
 
 .image-product {
     width: 100%;
-    height: 65%;
+    height: 253px;
+    overflow: hidden;
 }
 
 .name-product a span {
-    color: #50d07d;
+    color: #d12652;
 }
 .name-product {
     padding: 15px 10px 10px 10px;
@@ -103,6 +118,8 @@ span.shopping-cart-span {
     cursor: pointer;
 }
 
+.shopping-cart-div:hover {background-color: #46b56d;}
+
 a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
 
 .quick-view {
@@ -126,6 +143,7 @@ a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
     height: 30px;
     padding: 0 15px 0 15px;
     color: white;
+    display: none;
 }
 
 .special-product.special-product-hot {
@@ -133,16 +151,23 @@ a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
     display: block;
 }
 
-.special-product.special-product-new {
-    display: none;
-    background-color: #22b322e8;
+.special-product.promotion-new {
+    
+    background-color: #22b322bf;
+    display: block;
 }
 
-.special-product.special-product-off {
-    display: none;
-    background-color: #af0404c7;
+span.promotion {
+    text-transform: uppercase;
 }
 
+.special-product.promotion-sale {
+    display: block;
+    background-color: #af0404ac;
+}
+span.cost-product-sale.promotion-sale {
+    display: inline;
+}
 .tittle-group {
     text-align: center;
     text-transform: uppercase;
@@ -185,11 +210,20 @@ a.shopping-cart-a {color: #ffffff;font-weight:  bold;}
     background-color: white;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.content-product img {
+    transition: 0.4s;
+}
+.content-product:hover img {
+    transform: scale(1.15);
 }
 
 .content-product:hover .quick-view {
-opacity: 1;
+    opacity: 1;
 }
+
 
 aside{
     width: 25%;
