@@ -1,5 +1,6 @@
 var arrDataSpecial = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08];
 var arrDataBestSell = [SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16];
+var arrDataAccessories = [PK01,PK02,PK03,PK04,PK05,PK06,PK07,PK08];
 var ABC = {
     name: 'Sinh Nhật Ngọt Ngào',
     category: 'birthday',
@@ -23,6 +24,9 @@ var ABC = {
             return m;
         };
     }
+   
+
+    
 }
 $(document).ready(function () {
     //products special
@@ -136,8 +140,45 @@ $(document).ready(function () {
             '</div>'
 
     }
+
+      //products Accessories
+      var htmlAccessories = "";
+      var testAccs=0;
+      var testAccs2=0;
+      for (var i = 0; i < arrDataAccessories.length; i++) {
+          testAccs2=(testAccs%8+1)/10;
+          testAccs+=1;         
+          htmlAccessories += 
+          '<div class="product-accessories wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testAccs2+'s" id="' + arrDataAccessories[i].id + '">' +
+            '<div class="content-product-accessories">' +
+                '<div class="image-product-acessories">' +
+                    '<a href="product-description.html">' +
+                         '<img src="' + arrDataAccessories[i].src + '" alt="' + arrDataAccessories[i].alt + '" title="' + arrDataAccessories[i].title + '">' +
+                     '</a>' +
+                '</div>' +
+                '<div class="descrition-acessories">' +
+                    '<div class="name-product-acessories">' +
+                         '<a href="">' +
+                             '<span class="span-accessories">' + arrDataAccessories[i].name + '</span>' +
+                         '</a>' +
+                    '</div>' +
+                    '<div class="cost-product-acessories">' +
+                         '<div class="cost-product-not-sale-acessories">' + arrDataAccessories[i].curentCost() + ' đ</div>' +
+                         '<div class="cost-product-sale-acessories ' + arrDataAccessories[i].promotion + '">' + arrDataAccessories[i].oldCost() + ' đ</div>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="quick-view-acessories">' +
+                    '<a href="" title="Xem nhanh">' +
+                        '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
+                    '</a>' +
+                '</div>' +
+                '</div>' +
+            '</div>'
+  
+      }
     $('#content-products-special').append(htmlProductSpecial);
     $('#content-products-best-sellest').append(htmlBestSellest);
+    $('#accessories-products').append(htmlAccessories);
     new WOW().init();
     var objHeight = 0;
     $.each($('.slide-image'), function () {
@@ -149,29 +190,29 @@ $(document).ready(function () {
 
 
     //after load, show popup
-    // $('#start-wrap').addClass('show-start-wrap');
-    // $('#show-sale-start').addClass('show-sale-start');
-    // var showPTitleStart = setInterval(function(){
-    //     $('#title-sale-start').addClass('title-sale-start');
+    $('#start-wrap').addClass('show-start-wrap');
+    $('#show-sale-start').addClass('show-sale-start');
+    var showPTitleStart = setInterval(function(){
+        $('#title-sale-start').addClass('title-sale-start');
 
-    //     clearInterval(showPTitleStart);
-    // },500);
-    // var showContentStart = setInterval(function(){
-    //  $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
-    //     clearInterval(showContentStart);
-    // },800);
-    // //close when click x
-    // $('i.content-sale-start').click(function(){
-    //     $('#start-wrap').removeClass('show-start-wrap');
-    //     console.log(this);;
-    // })
-    // //au to close
-    // var closeStartSale = setInterval(function(){
-    //     $('#start-wrap').removeClass('show-start-wrap');
+        clearInterval(showPTitleStart);
+    },500);
+    var showContentStart = setInterval(function(){
+     $('p.content-sale-start,h1.content-sale-start').addClass('effect-content-sale-start');
+        clearInterval(showContentStart);
+    },800);
+    //close when click x
+    $('i.content-sale-start,#start-wrap').click(function(){
+        $('#start-wrap').removeClass('show-start-wrap');
+        console.log(this);;
+    })
+    //auto close
+    var closeStartSale = setInterval(function(){
+        $('#start-wrap').removeClass('show-start-wrap');
 
 
-    //     clearInterval(closeStartSale);
-    // },5000);
+        clearInterval(closeStartSale);
+    },5000);
 
     //Auto set height for div slide
     var slideImg = $('.slide-image');

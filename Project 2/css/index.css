@@ -41,6 +41,7 @@ div#sale-3 {
     font-weight: 400;
     text-align: center;
     overflow: hidden;
+    padding: 5px 0;
 }
 
 span.span-accessories {
@@ -50,13 +51,14 @@ span.span-accessories {
     height: 40%;
 }
 .image-product-acessories {
-    height: 60%;
+    height: 110.5px;
+    overflow:  hidden;
 }
 
 .content-product-accessories {
     background-color: white;
     border: 1px solid #DDDDDD;
-    padding: 0 5px 0 5px;
+    /* padding: 0 5px 0 5px; */
     height: 100%;
     position: relative;
     overflow:  hidden;
@@ -86,6 +88,8 @@ div#sale-1,div#sale-2 {
 .all-products {
     margin-bottom: 15px;
 }
+
+div#accessories-products {}
 
 span.cost-product-not-sale {
     font-size: 18px;
@@ -225,7 +229,7 @@ span.cost-product-sale.promotion-sale {
     color: #d02552;
 }
 
-div#products-special,div#products-hot {
+div#products-special, div#products-hot {
     margin-bottom:  15px;
 }
 
@@ -624,11 +628,10 @@ div#start-wrap {
     top: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 9;
     visibility:hidden;
     opacity: 0;
     transition: 0.4s;
-    
 }
 
     /* effect  */
@@ -704,7 +707,7 @@ div#show-sale-start {
         div#description-sale-start {
             position: absolute;
             width: 80%;
-            top: 25%;
+            top: 5%;
             left: 9%;
             /* overflow: hidden; */
             transition: 0.4s;
