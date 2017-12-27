@@ -28,31 +28,31 @@ var ABC = {
 
     
 }
-$(document).ready(function () {
-    //products special
-    var htmlProductSpecial = "";
+function getElementProduct (arr){
+    var elmProduct = "";
+    var arrLength = arr.length;
     var test=0;
     var test2=0;
-    for (var i = 0; i < arrDataSpecial.length; i++) {
-        ;
+    for (var i = 0; i < arrLength; i++) {        
         test2=(test%4+1)/10;
-        test+=1;
-        htmlProductSpecial += '<div class="product wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+test2+'s" id="' + arrDataSpecial[i].id + '">' +
+        test+=1;        
+        elmProduct += 
+        '<div class="product wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+test2+'s" id="' + arr[i].id + '">' +
             '<div class="content-product">' +
             ' <div class="image-product">' +
             '<a href="product-description.html">' +
-            '<img src="' + arrDataSpecial[i].src + '" alt="' + arrDataSpecial[i].alt + '" title="' + arrDataSpecial[i].title + '">' +
+            '<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
             '</a>' +
             '</div>' +
             '<div class="descrition">' +
             '<div class="name-product">' +
             '<a href="">' +
-            '<span>' + arrDataSpecial[i].name + '</span>' +
+            '<span>' + arr[i].name + '</span>' +
             '</a>' +
             '</div>' +
             '<div class="cost-product">' +
-            '<span class="cost-product-sale ' + arrDataSpecial[i].promotion + '">' + arrDataSpecial[i].oldCost() + ' đ</span>' +
-            '<span class="cost-product-not-sale">' + arrDataSpecial[i].curentCost() + ' đ</span>' +
+            '<span class="cost-product-sale ' + arr[i].classPromotion + '">' + arr[i].oldCost() + ' đ</span>' +
+            '<span class="cost-product-not-sale">' + arr[i].curentCost() + ' đ</span>' +
             '</div>' +
             '<div class="rating-product">' +
             '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
@@ -63,84 +63,31 @@ $(document).ready(function () {
             '</div>' +
             '<div class="shopping-cart">' +
             '<div class="shopping-cart-div">' +
-            '<a href="" class="shopping-cart-a">' +
+            '<a href="" class="shopping-cart-a">' + 
             '<i class="fa fa-shopping-cart product-cart" aria-hidden="true"></i>' +
             '<span class="shopping-cart-span">Thêm vào giỏ hàng</span>' +
             '</a>' +
             '</div>' +
             '</div>' +
             '</div>' +
-            '<div class="special-product ' + arrDataSpecial[i].classPromotion + '">' +
+            '<div class="special-product ' + arr[i].classPromotion + '">' +
             '<div class="hot-product">' +
-            '<span class="promotion">' + arrDataSpecial[i].textPromotion() + '</span>' +
+            '<span class="promotion">' + arr[i].textPromotion() + '</span>' +
             '</div>' +
             '</div>' +
             '<div class="quick-view">' +
-            '<a href="" title="Xem nhanh">' +
-            '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
-            '</a>' +
+            //'<a href="" title="Xem nhanh">' +
+            '<i class="fa fa-search-plus quick-view" title="Xem nhanh" aria-hidden="true"></i>' +
+            //'</a>' +
             '</div>' +
             '</div>' +
             '</div>'
 
+        }
+        return elmProduct;
     }
-
-    //products best sellest
-    var htmlBestSellest = "";
-    var testBest=0;
-    var testBest2=0;
-    for (var i = 0; i < arrDataBestSell.length; i++) {
-        testBest2=(testBest%4+1)/10;
-        testBest+=1;
-       
-        htmlBestSellest += '<div class="product wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testBest2+'s" id="' + arrDataBestSell[i].id + '">' +
-            '<div class="content-product">' +
-            ' <div class="image-product">' +
-            '<a href="product-description.html">' +
-            '<img src="' + arrDataBestSell[i].src + '" alt="' + arrDataBestSell[i].alt + '" title="' + arrDataBestSell[i].title + '">' +
-            '</a>' +
-            '</div>' +
-            '<div class="descrition">' +
-            '<div class="name-product">' +
-            '<a href="">' +
-            '<span>' + arrDataBestSell[i].name + '</span>' +
-            '</a>' +
-            '</div>' +
-            '<div class="cost-product">' +
-            '<span class="cost-product-sale ' + arrDataBestSell[i].promotion + '">' + arrDataBestSell[i].oldCost() + ' đ</span>' +
-            '<span class="cost-product-not-sale">' + arrDataBestSell[i].curentCost() + ' đ</span>' +
-            '</div>' +
-            '<div class="rating-product">' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '</div>' +
-            '<div class="shopping-cart">' +
-            '<div class="shopping-cart-div">' +
-            '<a href="" class="shopping-cart-a">' +
-            '<i class="fa fa-shopping-cart product-cart" aria-hidden="true"></i>' +
-            '<span class="shopping-cart-span">Thêm vào giỏ hàng</span>' +
-            '</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '<div class="special-product ' + arrDataBestSell[i].classPromotion + '">' +
-            '<div class="hot-product">' +
-            '<span class="promotion">' + arrDataBestSell[i].textPromotion() + '</span>' +
-            '</div>' +
-            '</div>' +
-            '<div class="quick-view">' +
-            '<a href="" title="Xem nhanh">' +
-            '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
-            '</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>'
-
-    }
-
+$(document).ready(function () {
+   
       //products Accessories
       var htmlAccessories = "";
       var testAccs=0;
@@ -176,8 +123,8 @@ $(document).ready(function () {
             '</div>'
   
       }
-    $('#content-products-special').append(htmlProductSpecial);
-    $('#content-products-best-sellest').append(htmlBestSellest);
+    $('#content-products-special').append(getElementProduct(arrDataSpecial));
+    $('#content-products-best-sellest').append(getElementProduct(arrDataBestSell));
     $('#accessories-products').append(htmlAccessories);
     new WOW().init();
     var objHeight = 0;
