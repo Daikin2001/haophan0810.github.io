@@ -275,6 +275,10 @@ a.shop-special-shop-now:hover {
 aside#info-shop{
     margin-bottom: 100px;
 }
+
+aside#info-shop div.wrap.info-shop {
+    position: relative;
+}
 div.info-shop-content-wrap{
     float: left;
     width: 60%;
@@ -309,9 +313,6 @@ div.info-shop-img{
     padding: 15px;
     position: relative;
 }
-div.info-shop-img-wrap{
-    /* position: relative; */
-}
 
 div.info-shop-img-bg{
     position: absolute;
@@ -332,17 +333,22 @@ div.info-shop-img-frames{
     border: 3px solid white;
     z-index: 4;
 }
-
-
-div#sale-3 {
-    padding: 15px;
-    margin-bottom:  15px;
+div.bg-info-shop-left,div.bg-info-shop-right{
+    position: absolute;
+    z-index:  4;
+    width: 45%;
 }
 
-div#sale-1,div#sale-2 {
-    margin-bottom: 30px;
-    position: relative;
+.bg-info-shop-right {
+    bottom: -70px;
+    right: -80px;
 }
+
+.bg-info-shop-left {
+    bottom: -70px;
+    left: -80px;
+}
+
 
 .all-products {
     margin-bottom: 15px;
@@ -997,71 +1003,40 @@ div#show-sale-start:hover i.content-sale-start{
 
 /* SALE - 1 */
 
-div#sale-1 h2.sale-1-description-title,div#sale-2 h2.sale-1-description-title {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    /* background-color: #ffffff78; */
-    padding:  5px;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-}
-
-
-div#sale-1 div.sale-1-view,div#sale-2 div.sale-1-view {
-    position: absolute;
-    top: 45%;
-    left: 47%;
-    font-size: 20px;
-    /* background-color: #ffffff78; */
-    padding: 10px;
-    color: white;
-    border-radius:  5px;
-    border: 1px solid;
-    text-transform: uppercase;
-}
-div.sale-1-bg{
-    width: 100%;
-    padding: 0 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-div.sale-1-background{
-    background-color: #00000078;
-    width: 100%;
-    height: 300px;
-}
 
 
 
 /* comment */
-
+h2.comment-header{
+    text-transform: uppercase;
+    text-align: center;
+    color: #232a34;
+}
 div.row-comment{
     width: 100%;
     overflow: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 div.comment-img{
     width: 15%;
     float: left;
-    padding: 15px;
+    padding: 30px;
 }
+div.comment-img-wrap img{width: 100%;border: 1px solid #eeaa9c;border-radius: 50%;}
 div.comment-content{
     width: 85%;
     float: left;
+    border-left: 2px solid #eeaa9c;
+    padding: 4px 50px 0 15px;
+    transform: translateY(88%);
 }
-p.comment-content{}
-p.comment-user{}
+
 
 div.comment-content-1{
     width: 85%;
     float: left;
     text-align: right;
     border-right: 2px solid #eeaa9c;
+    padding:  5px 15px 0 30px;
+    transform: translateY(88%);
 }
-p.comment-content-1{
-}
-p.comment-user-1{}
