@@ -89,43 +89,43 @@ function getElementProduct (arr){
 $(document).ready(function () {
    
       //products Accessories
-      var htmlAccessories = "";
-      var testAccs=0;
-      var testAccs2=0;
-      for (var i = 0; i < arrDataAccessories.length; i++) {
-          testAccs2=(testAccs%8+1)/10;
-          testAccs+=1;         
-          htmlAccessories += 
-          '<div class="product-accessories wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testAccs2+'s" id="' + arrDataAccessories[i].id + '">' +
-            '<div class="content-product-accessories">' +
-                '<div class="image-product-acessories">' +
-                    '<a href="product-description.html">' +
-                         '<img src="' + arrDataAccessories[i].src + '" alt="' + arrDataAccessories[i].alt + '" title="' + arrDataAccessories[i].title + '">' +
-                     '</a>' +
-                '</div>' +
-                '<div class="descrition-acessories">' +
-                    '<div class="name-product-acessories">' +
-                         '<a href="">' +
-                             '<span class="span-accessories">' + arrDataAccessories[i].name + '</span>' +
-                         '</a>' +
-                    '</div>' +
-                    '<div class="cost-product-acessories">' +
-                         '<div class="cost-product-not-sale-acessories">' + arrDataAccessories[i].curentCost() + ' đ</div>' +
-                         '<div class="cost-product-sale-acessories ' + arrDataAccessories[i].promotion + '">' + arrDataAccessories[i].oldCost() + ' đ</div>' +
-                    '</div>' +
-                '</div>' +
-                '<div class="quick-view-acessories">' +
-                    '<a href="" title="Xem nhanh">' +
-                        '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
-                    '</a>' +
-                '</div>' +
-                '</div>' +
-            '</div>'
+    //   var htmlAccessories = "";
+    //   var testAccs=0;
+    //   var testAccs2=0;
+    //   for (var i = 0; i < arrDataAccessories.length; i++) {
+    //       testAccs2=(testAccs%8+1)/10;
+    //       testAccs+=1;         
+    //       htmlAccessories += 
+    //       '<div class="product-accessories wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testAccs2+'s" id="' + arrDataAccessories[i].id + '">' +
+    //         '<div class="content-product-accessories">' +
+    //             '<div class="image-product-acessories">' +
+    //                 '<a href="product-description.html">' +
+    //                      '<img src="' + arrDataAccessories[i].src + '" alt="' + arrDataAccessories[i].alt + '" title="' + arrDataAccessories[i].title + '">' +
+    //                  '</a>' +
+    //             '</div>' +
+    //             '<div class="descrition-acessories">' +
+    //                 '<div class="name-product-acessories">' +
+    //                      '<a href="">' +
+    //                          '<span class="span-accessories">' + arrDataAccessories[i].name + '</span>' +
+    //                      '</a>' +
+    //                 '</div>' +
+    //                 '<div class="cost-product-acessories">' +
+    //                      '<div class="cost-product-not-sale-acessories">' + arrDataAccessories[i].curentCost() + ' đ</div>' +
+    //                      '<div class="cost-product-sale-acessories ' + arrDataAccessories[i].promotion + '">' + arrDataAccessories[i].oldCost() + ' đ</div>' +
+    //                 '</div>' +
+    //             '</div>' +
+    //             '<div class="quick-view-acessories">' +
+    //                 '<a href="" title="Xem nhanh">' +
+    //                     '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
+    //                 '</a>' +
+    //             '</div>' +
+    //             '</div>' +
+    //         '</div>'
   
-      }
+    //   }
     $('#content-products-special').append(getElementProduct(arrDataSpecial));
     $('#content-products-best-sellest').append(getElementProduct(arrDataBestSell));
-    $('#accessories-products').append(htmlAccessories);
+    // $('#accessories-products').append(htmlAccessories);
     new WOW().init();
     var objHeight = 0;
     $.each($('.slide-image'), function () {
