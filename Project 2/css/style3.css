@@ -319,35 +319,69 @@ div#footer-up {
     padding: 30px;
 }
 
-div#social-network {
+div.footer-col{
+    width: 33.333333333%;
     float: left;
-    font-size: 14px;
-    width: 40%;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    height: 100%;
 }
 
-ul.footer-col.right {
-    font-size:  14px;
-    color: #d02552;
+.footer-col.middle {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+a.footer-up-icon{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #aece89;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 24px;
+    transition: 0.4s;
 }
 
-div.address {
+a.footer-up-icon:hover {
+    background-color: #98b27b;
+}
+a.footer-up-icon i.footer-up-icon{
+
+color: #ffffff;
+
+font-size: 50px;
+}
+p.footer-up-title{
+    margin-top: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232a34;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+p.footer-up-content{
+    text-align: center;
+    font-size: 15px;
+    color: #232a34;
+    padding: 30px 20px 50px 20px;
 }
 
 .social-icon {
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 30px;
     text-align: center;
     overflow: auto;
 }
 
-div.wrap-icon-a {
-    margin: auto;
-    overflow:  auto;
-    padding: 0 0 0 20%;
-}
 
 a.a-social-icon {
-    display: block;
-    float: left;
+    display: inline-block;
+    /* float: left; */
 }
 
 i.fa.fa-linkedin-square.social {
@@ -375,35 +409,23 @@ i.fa.fa-envelope-o.social {
     font-size: 35px;
 }
 
-ul.footer-col.middle {
-    width: 30%;
-    float: left;
-    letter-spacing: 0.5px;
-    /* font-size:  14px; */
-}
 
-ul.footer-col.left {
-    float: left;
-    width: 30%;
-    color: #d02552;
-    font-size:  16px;
-    /* text-align:  center; */
-}
 footer  {
     width: 100%;
 }
-div#footer-up,div#footer-down {
-    padding: 0 15px;
-    max-width:  1140px;
+div#footer-up {
+    padding: 0px 15px;
+    max-width: 1110px;
     margin:  auto;
+    /* overflow: auto; */
+    margin-top:  100px;
+    background-color: #aece892e;
 }
 
 div#footer-up-wrap {
     width: 100%;
     background-color:  white;
     overflow:  auto;
-    /* margin-bottom:  15px; */
-    padding: 15px 0px;
 }
 
 div#footer-down-wrap {
@@ -415,13 +437,9 @@ div#footer-down-wrap {
 div#footer-down {
     text-align:  center;
     padding: 15px 0;
-    color:  white;
+    color: #232a34;
+    font-size: 20px;
 }
-li.title {
-    padding: 0 0 5px 0px;
-    font-size: 14px;
-}
-
 .left a,.footer-phone {
     color: #aece89;
 }
@@ -429,16 +447,6 @@ li.title {
 i.fa.fa-phone.footer-phone {
     color: #aece89;
 }
-
-
-
-ul.middle a {
-    color: #d02552;
-    font-size: 14px;
-}
-
-
-
 /* BACK TO TOP */
 div.back-to-top {
     position: fixed;
@@ -446,19 +454,20 @@ div.back-to-top {
     right: 5px;
     width: 50px;
     height:  50px;
-    background-color: #50d17c97;
+    background-color: #eeaa9c;
     text-align: center;
     border-radius: 50%;
     transition:  0.4s;
     visibility:  hidden;
     opacity: 0;
+    z-index:  10;
 }
 div.back-to-top.show-back-to-top {
     visibility: visible;
     opacity: 1;
 }
 .back-to-top:hover {
-    background-color: #50d17c;
+    background-color: rgba(238,156,156,1.00);
 }
 i.back-to-top {
     color: #ffffff;
@@ -477,11 +486,12 @@ a.cart-scrolled {
     position:  fixed;
     bottom: 60px;
     right: 60px;
-    height: 50px;    
-    color: #d02552;
+    height: 50px;
+    color: #232a34;
     visibility: hidden;
     opacity: 0;
     transition: 0.4s;
+    z-index: 10;
 }
 a.cart-scrolled.show-cart-bottom {
     visibility: visible;
@@ -489,7 +499,7 @@ a.cart-scrolled.show-cart-bottom {
 }
 
 a.cart-scrolled:hover div.icon-cart-scrolled {
-    background-color: #50d17c;
+    background-color: rgba(238,156,156,1.00);
     transition: 0.3s;
 }
 div.cart-scrolled {
@@ -502,7 +512,7 @@ div.icon-cart-scrolled {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #96e4b1;
+    background-color: #eeaa9c;
     text-align: center;
     padding: 9px 0 0 0;
 }

@@ -27,22 +27,21 @@ aside#wrap-slide ul.slide li.slide.show-img-slide{
 }
 aside#wrap-slide ul.slide li.slide.slide-current-out{
     opacity: 1;
-    -webkit-animation: slideOutLeft 1s forwards;
+    -webkit-animation: slideOutLeft 1.5s forwards;
 }
 @-webkit-keyframes slideOutLeft{
+  
     from {
-      
-        transform: translateX(0%);
-        
-        
-    }
-    to {
-       
-        transform: translateX(-100%);
-    }
+        opacity: 1;
+      }
+    
+      to {
+        opacity: 0.4;
+        transform: translate3d(-100%, 0, 0);
+      }
 }
 aside#wrap-slide ul.slide li.slide.slide-next-in{
-    animation: slideInRight 1s forwards;
+    animation: slideInRight 1.5s forwards;
     opacity: 1;
 }
 @-webkit-keyframes slideInRight{
@@ -99,7 +98,7 @@ h2.slide-description-header{
 }
 h2.slide-description-header.slide-next-in{
     -webkit-animation: slideUp 1s forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     
 }
 div.slide-line{
@@ -112,7 +111,7 @@ div.slide-line{
 }
 div.slide-line.slide-next-in{
     -webkit-animation: slideUp 1 forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     
 }
 @-webkit-keyframes slideUp{
@@ -139,7 +138,7 @@ a.slide-shop-now{
 a.slide-shop-now.slide-next-in{
 
     -webkit-animation: slideUp 1s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     
 }
 
