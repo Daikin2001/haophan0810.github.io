@@ -1001,10 +1001,118 @@ div#show-sale-start:hover i.content-sale-start{
     opacity: 1;
 }
 
-/* SALE - 1 */
+/* PROMOTION */
 
+div#promotion,div#promotion-2,div#promotion-3{
+    width: 100%;
+    height: 500px;
+}
+div#promotion div.promotion{
+    background-image: url("../images/valentine.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+}
+div.promotion-wrap{
+    max-width: 1140px;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+div.promotion-description{
+    width: 50%;
+    float: right;
+    height: 100%;
+    padding: 0 15px;
+}
+h2.promotion-description-title{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 10px;
+}
+p.promotion-description-text{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-indent: 30px;
+}
+a.promotion-shop-now{
+    display: block;
+    color: white;
+    background-color: #eeaa9c;
+    padding: 10px 20px;
+    width: 34%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    border-radius: 3px;
+}
 
+a.promotion-shop-now:hover {
+    background-color: rgba(238,156,156,1.00);
+}
+/* PROMOTION-2 */
+div#promotion-2 div.promotion-2{
+    background-image: url("../images/wedding.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+}
 
+div.promotion-2-description{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 0 15px;
+}
+h2.promotion-2-description-title{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 10px;
+}
+p.promotion-2-description-text{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-indent: 30px;
+    margin-bottom: 30px;
+}
+/* PROMOTION - 3 */
+div#promotion-3 div.promotion-3{
+    background-image: url("../images/yeucau.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+}
+
+div.promotion-3-description{
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    padding: 0 15px;
+}
+h2.promotion-3-description-title{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 10px;
+}
+p.promotion-3-description-text{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-indent: 30px;
+    margin-bottom: 30px;
+}
 
 /* comment */
 h2.comment-header{
