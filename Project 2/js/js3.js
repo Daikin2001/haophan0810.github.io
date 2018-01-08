@@ -1,88 +1,104 @@
-window.addEventListener('DOMContentLoaded', function () {
-    var numberImgSlide = document.querySelectorAll('aside#wrap-slide ul li.slide');
-    var imgs = document.querySelectorAll('ul li div.slide-img');
-
-    var h2s= document.querySelectorAll('div.slide-description h2');
-    var divLines = document.querySelectorAll('div.slide-line');
-    var aShopNow = document.querySelectorAll('a.slide-shop-now');
-
-    console.log(imgs);
-    var numberCircle = document.querySelectorAll('div ul.slide-circle-routing li');
-    var imgCurrentShow = document.querySelector('.show-circle');
-    var indexCurrent = imgCurrentShow.getAttribute('data-index');
-    var indexEachCircle =0;
-    var lengthImg=numberCircle.length;
-    var getIndex;
-    var arrClassSlides = ["img-next-in0","img-next-in1","img-next-in0","img-next-in1","img-next-in0"];
-    var autoSlide = setInterval(function(){
-        if (indexCurrent==lengthImg-1){
-            getIndex=0;
-        }else {
-            getIndex= parseInt(indexCurrent)+1;            
-        }
-        console.log(getIndex);
-        
-        for (var i = 0; i < lengthImg;i++){
-            numberCircle[i].classList.remove('show-circle');
-        }      
-        numberCircle[indexCurrent].classList.remove('show-circle');
-        numberCircle[getIndex].classList.add('show-circle');
-        // img show remove class show
-        for (var i =0; i<lengthImg;i++){
-            numberImgSlide[i].classList.remove('show-img-slide','slide-current-out','slide-next-in');
-            imgs[i].classList.remove(arrClassSlides[i]);
-            h2s[i].classList.remove('slide-next-in');
-            divLines[i].classList.remove('slide-next-in');
-            aShopNow[i].classList.remove('slide-next-in');
+function getElementProduct (arr){
+    var elmProduct = "";
+    var arrLength = arr.length;
+    var test=0;
+    var test2=0;
+    for (var i = 0; i < arrLength; i++) {        
+        test2=(test%4+1)/10;
+        test+=1;        
+        elmProduct += 
+        '<div class="product" id="' + arr[i].id + '">' +
+            '<div class="content-product">' +
+            ' <div class="image-product">' +
+            '<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
+            '<div class="img-product-bg">'+
+            '<div class="img-product-bg-a">'+
+            '<a href="" class="img-product-bg-a">'+
+            '<span class="img-product-quick-view" data-id-product="'+arr[i].id+'">'+
+            '<i class="fa fa-plus img-quick-view" aria-hidden="true"></i>'+
+            '</span>'+
+            '</a>'+
+            '</div>'+
+            '</div>'+
+            '</div>' +
+            '<div class="descrition">' +
+            '<div class="name-product">' +
+            '<a href="">' +
+            '<span>' + arr[i].name + '</span>' +
+            '</a>' +
+            '</div>' +
+            '<div class="cost-product">' +
+            '<span class="cost-product-sale ' + arr[i].classPromotion + '">' + arr[i].oldCost() + ' đ</span>' +
+            '<span class="cost-product-not-sale">' + arr[i].curentCost() + ' đ</span>' +
+            '</div>' +
+            '<div class="rating-product">' +
+            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+            '</div>' +
+            '<div class="shopping-cart">' +
+            '<div class="shopping-cart-div" data-id-product="'+arr[i].id+'">' +
             
-        }
-        //slide add 
-        numberImgSlide[getIndex].classList.add('show-img-slide');        
-        numberImgSlide[indexCurrent].classList.add('slide-current-out');
-        numberImgSlide[getIndex].classList.add('slide-next-in');
-        imgs[getIndex].classList.add(arrClassSlides[getIndex]);
-        h2s[getIndex].classList.add('slide-next-in');
-        divLines[getIndex].classList.add('slide-next-in');
-        aShopNow[getIndex].classList.add('slide-next-in');
-        indexCurrent=getIndex;
-
-
-    },10000)
-    // click each circle
-
-  for (var i = 0; i<lengthImg; i++){
-      numberCircle[i].addEventListener('click',function(){
-        for (var i = 0; i < lengthImg;i++){
-            numberCircle[i].classList.remove('show-circle');
-        }
-        // lay index click
-        getIndex= this.getAttribute ('data-index');
-        numberCircle[indexCurrent].classList.remove('show-circle');
-        numberCircle[getIndex].classList.add('show-circle');
-        // img show remove class show
-        for (var i =0; i<lengthImg;i++){
-            numberImgSlide[i].classList.remove('show-img-slide','slide-current-out','slide-next-in');
-            imgs[i].classList.remove(arrClassSlides[i]);
-            h2s[i].classList.remove('slide-next-in');
-            divLines[i].classList.remove('slide-next-in');
-            aShopNow[i].classList.remove('slide-next-in');
+            '<i class="fa fa-shopping-cart product-cart" aria-hidden="true"></i>' +
+            '<span class="shopping-cart-span">Thêm vào giỏ hàng</span>' +
             
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class="special-product ' + arr[i].classPromotion + '">' +
+            '<div class="hot-product">' +
+            '<span class="promotion">' + arr[i].textPromotion() + '</span>' +
+            '</div>' +
+            '</div>' +
+          
+            '</div>' +
+            '</div>'
+
         }
-        //slide add 
-        numberImgSlide[getIndex].classList.add('show-img-slide');        
-        numberImgSlide[indexCurrent].classList.add('slide-current-out');
-        numberImgSlide[getIndex].classList.add('slide-next-in');
-        imgs[getIndex].classList.add(arrClassSlides[getIndex]);
-        h2s[getIndex].classList.add('slide-next-in');
-        divLines[getIndex].classList.add('slide-next-in');
-        aShopNow[getIndex].classList.add('slide-next-in');
-        indexCurrent=getIndex;
+        return elmProduct;
+    }
+    var numberCart = 0;
+    var arrProductsInCart=[];
+$(document).ready(function(){
+  
+    $('sub.menu-cart').html(numberCart);
+    $('sub.menu-cart').attr('data-number-product',numberCart);
+    $('span.notification-number').html(numberCart+" sản phẩm");
+    $(window).scroll(function () {
+        var viewportWidth = $("body").innerWidth();
+        var viewportHeight = $("body").innerHeight();
+        var c = document.body.clientHeight;
+        var b = $(window).scrollTop();
+        var a = $("html").scrollTop();
         
-      })
-     
-     
-  }
- 
+
+        // $('.test').html(a);
+        if (a > 55) {
+            //fix-nav
+            
+            $('#nav-down-wrap').addClass('testScroll');
+            //fix-back-to-top
+            $('div.back-to-top').addClass('show-back-to-top');
+            // console.log( $('sub.menu-cart').attr('data-number-product'));
+            // console.log(numberCart);
+            if ($('sub.menu-cart').attr('data-number-product') != '0') {
+                $('a.cart-scrolled').addClass('show-cart-bottom');
+            }
+          
+        } else {
+            $('#nav-down-wrap').removeClass('testScroll');
+            $('div.back-to-top').removeClass('show-back-to-top');
+            $('a.cart-scrolled').removeClass('show-cart-bottom');
+        }
+       
+
+
+    })
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
+    });
 
 
 })

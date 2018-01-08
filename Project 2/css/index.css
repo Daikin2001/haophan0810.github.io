@@ -131,6 +131,7 @@ i.rating-product {
     width: 100%;
     height: 253px;
     overflow: hidden;
+    position: relative;
 }
 
 .name-product a span {
@@ -608,12 +609,9 @@ div#slide-images:hover .slide-arrow {
     transition: 0.4s;
 }
 
-.content-product:hover img {
-    transform: scale(1.15);
-}
+.content-product:hover div.img-product-bg {opacity: 1;}
 
 .content-product:hover .quick-view {
-    opacity: 1;
 }
 
 
@@ -769,4 +767,47 @@ div.sale-1-background{
     background-color: #d025524d;
     width: 100%;
     height: 300px;
+}
+
+div.img-product-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000004d;
+    z-index: 5;
+    transition: 0.4s;
+    opacity: 0;
+}
+div.img-product-bg-a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+a.img-product-bg-a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+a.img-product-quick-view{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #0000008c;
+}
+
+a.img-product-quick-view:hover {
+    background-color: #000000d4;
+}
+i.img-quick-view{
+    font-size: 15px;
+    color: white;
 }

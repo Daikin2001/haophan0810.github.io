@@ -26,60 +26,37 @@ var ABC = {
 }
 $(document).ready(function () {
     //products special
-    var htmlProducts = "";
-    for (var i = 0; i < arrDataSpecial.length; i++) {
-        htmlProducts += '<div class="product wow fadeInUp" id="' + arrDataSpecial[i].id + '">' +
-            '<div class="content-product">' +
-            ' <div class="image-product">' +
-            '<a href="product-description.html">' +
-            '<img src="' + arrDataSpecial[i].src + '" alt="' + arrDataSpecial[i].alt + '" title="' + arrDataSpecial[i].title + '">' +
-            '</a>' +
-            '</div>' +
-            '<div class="descrition">' +
-            '<div class="name-product">' +
-            '<a href="">' +
-            '<span>' + arrDataSpecial[i].name + '</span>' +
-            '</a>' +
-            '</div>' +
-            '<div class="cost-product">' +
-            '<span class="cost-product-sale ' + arrDataSpecial[i].promotion + '">' + arrDataSpecial[i].oldCost() + ' đ</span>' +
-            '<span class="cost-product-not-sale">' + arrDataSpecial[i].curentCost() + ' đ</span>' +
-            '</div>' +
-            '<div class="rating-product">' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
-            '</div>' +
-            '<div class="shopping-cart">' +
-            '<div class="shopping-cart-div">' +
-            '<a href="" class="shopping-cart-a">' +
-            '<i class="fa fa-shopping-cart product-cart" aria-hidden="true"></i>' +
-            '<span class="shopping-cart-span">Thêm vào giỏ hàng</span>' +
-            '</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '<div class="special-product ' + arrDataSpecial[i].classPromotion + '">' +
-            '<div class="hot-product">' +
-            '<span class="promotion">' + arrDataSpecial[i].textPromotion() + '</span>' +
-            '</div>' +
-            '</div>' +
-            '<div class="quick-view">' +
-            '<a href="" title="Xem nhanh">' +
-            '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
-            '</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>'
-
-    }
-
- 
-    $('#content-products').append(htmlProducts);
     
-    new WOW().init();
+    $('#content-products').append(getElementProduct(arrDataSpecial));
+    
+    $(window).scroll(function () {
+        var viewportWidth = $("body").innerWidth();
+        var viewportHeight = $("body").innerHeight();
+        var c = document.body.clientHeight;
+        var b = $(window).scrollTop();
+        var a = $("html").scrollTop();
+
+        // $('.test').html(a);
+        if (a > 55) {
+            //fix-nav
+            $('#nav-down-wrap').addClass('testScroll');
+            //fix-back-to-top
+            $('div.back-to-top').addClass('show-back-to-top');
+            if ($('sub.menu-cart').data('number-product') != '0') {
+                $('a.cart-scrolled').addClass('show-cart-bottom');
+            }
+        } else {
+            $('#nav-down-wrap').removeClass('testScroll');
+            $('div.back-to-top').removeClass('show-back-to-top');
+            $('a.cart-scrolled').removeClass('show-cart-bottom');
+        }
+        // console.log(a);
+        if (a > 200) {
+            $('.product').addClass('fadeInLeft animated');
+        }
+
+
+    })
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);
     });

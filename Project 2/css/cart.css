@@ -75,7 +75,7 @@ div.cart-minus,div.cart-number,div.cart-plus {
 }
 
 .cart-plus {
-    color: #50d17c;
+    color: #eeaa9c;
     cursor: pointer;
 }
 
@@ -193,7 +193,7 @@ div.name-cus {
     padding: 0px 15px 0px 0px;
 }
 
-input#name-cus,input#phone-cus {width: 100%;font-size: 14px;padding: 5px;border: 1px solid #50d17c;border-radius: 5px;color: #50d17c;}
+input#name-cus,input#phone-cus {width: 100%;font-size: 14px;padding: 5px;border: 1px solid #eeaa9c;border-radius: 5px;color: #eeaa9c;}
 
 label.label-sex {
     margin-right: 3%;
@@ -271,19 +271,19 @@ div#pay-in-house,div#pay-card-online {
 }
 
 div#pay-in-house {
-    background-color: #50d07d;
+    background-color: #aece89;
 }
 
 div#pay-in-house:hover {
-    background-color: green;
+    background-color: #98b27b;
 }
 
 div#pay-card-online {
-    background-color:  #d02552;
+    background-color: #eeaa9c;
 }
 
 div#pay-card-online:hover {
-    background-color: #ff0245;
+    background-color: rgba(238,156,156,1.00);
 }
 
 div.bill-product {
