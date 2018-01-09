@@ -28,8 +28,8 @@ function getElementProduct (arr){
             '</a>' +
             '</div>' +
             '<div class="cost-product">' +
-            '<span class="cost-product-sale ' + arr[i].classPromotion + '">' + arr[i].oldCost() + ' đ</span>' +
-            '<span class="cost-product-not-sale">' + arr[i].curentCost() + ' đ</span>' +
+            '<span class="cost-product-sale ' + arr[i].classPromotion + '" data-old-cost="'+arr[i].cost+'">' + arr[i].cost.toLocaleString() + ' đ</span>' +
+            '<span class="cost-product-not-sale" data-current-cost="'+getCurrentCost(arr[i])+'">' + getCurrentCost(arr[i]).toLocaleString() + ' đ</span>' +
             '</div>' +
             '<div class="rating-product">' +
             '<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
@@ -49,7 +49,7 @@ function getElementProduct (arr){
             '</div>' +
             '<div class="special-product ' + arr[i].classPromotion + '">' +
             '<div class="hot-product">' +
-            '<span class="promotion">' + arr[i].textPromotion() + '</span>' +
+            '<span class="promotion">' + arr[i].codePromotion + '</span>' +
             '</div>' +
             '</div>' +
           
@@ -59,23 +59,28 @@ function getElementProduct (arr){
         }
         return elmProduct;
     }
+    function getCurrentCost (dataProduct){
+        var currentCost;
+        if(dataProduct.classPromotion == 'promotion-sale'){
+            currentCost= dataProduct.cost - (dataProduct.cost*dataProduct.sale)/100;
+        }else{
+            currentCost=dataProduct.cost;
+        }
+        return Math.round(currentCost);
+    }
     var numberCart = 0;
     var arrProductsInCart=[];
-$(document).ready(function(){
-  
-    $('sub.menu-cart').html(numberCart);
-    $('sub.menu-cart').attr('data-number-product',numberCart);
-    $('span.notification-number').html(numberCart+" sản phẩm");
-    $(window).scroll(function () {
-        var viewportWidth = $("body").innerWidth();
-        var viewportHeight = $("body").innerHeight();
-        var c = document.body.clientHeight;
-        var b = $(window).scrollTop();
-        var a = $("html").scrollTop();
+    function addCart (){
+        $('sub.menu-cart').html(numberCart);
+        $('sub.menu-cart').attr('data-number-product',numberCart);
+        $('span.notification-number').html(numberCart+" sản phẩm");
+    }
+    function showCartBottom (){
+        var positionScroll = $("html").scrollTop();
         
 
         // $('.test').html(a);
-        if (a > 55) {
+        if (positionScroll > 55) {
             //fix-nav
             
             $('#nav-down-wrap').addClass('testScroll');
@@ -92,10 +97,20 @@ $(document).ready(function(){
             $('div.back-to-top').removeClass('show-back-to-top');
             $('a.cart-scrolled').removeClass('show-cart-bottom');
         }
+    }
+$(document).ready(function(){
+  
+    addCart();
+    // $(window).scroll(function () {
+    //     var viewportWidth = $("body").innerWidth();
+    //     var viewportHeight = $("body").innerHeight();
+    //     var c = document.body.clientHeight;
+    //     var b = $(window).scrollTop();
+       
        
 
 
-    })
+    // })
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);
     });

@@ -13,32 +13,7 @@ var SN01= {
     sale:10,    
     src:'images/birthday/SN01.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'S',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:'off'
 }
 var SN02= {
     id:'SN02',
@@ -54,32 +29,7 @@ var SN02= {
     sale:10,        
     src:'images/birthday/SN02.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'N',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:'new'
 }
 var SN03= {
     id:'SN03',
@@ -95,32 +45,7 @@ var SN03= {
     sale:25,        
     src:'images/birthday/SN03.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'S',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:'off'
 }
 var SN04= {
     id:'SN04',
@@ -136,32 +61,7 @@ var SN04= {
     sale:10,        
     src:'images/birthday/SN04.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'H',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:'hot'
 }
 var SN05= {
     id:'SN05',
@@ -177,32 +77,7 @@ var SN05= {
     sale:10,        
     src:'images/birthday/SN05.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'H',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:'hot'
 }
 var SN06= {
     id:'SN06',
@@ -218,32 +93,7 @@ var SN06= {
     sale:10,        
     src:'images/birthday/SN06.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN07= {
     id:'SN07',
@@ -259,32 +109,7 @@ var SN07= {
     sale:10,        
     src:'images/birthday/SN07.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN08= {
     id:'SN08',
@@ -301,32 +126,7 @@ var SN08= {
     oldCost:'',    
     src:'images/birthday/SN08.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN09= {
     id:'SN09',
@@ -342,32 +142,7 @@ var SN09= {
     sale:10,        
     src:'images/birthday/SN09.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN10= {
     id:'SN10',
@@ -383,32 +158,7 @@ var SN10= {
     sale:10,        
     src:'images/birthday/SN02.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN11= {
     id:'SN11',
@@ -424,32 +174,7 @@ var SN11= {
     sale:10,        
     src:'images/birthday/SN11.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN12= {
     id:'SN12',
@@ -465,32 +190,7 @@ var SN12= {
     sale:10,        
     src:'images/birthday/SN12.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN13= {
     id:'SN13',
@@ -506,32 +206,7 @@ var SN13= {
     sale:10,        
     src:'images/birthday/SN13.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN14= {
     id:'SN14',
@@ -547,32 +222,7 @@ var SN14= {
     sale:10,        
     src:'images/birthday/SN14.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN15= {
     id:'SN15',
@@ -588,32 +238,7 @@ var SN15= {
     sale:10,        
     src:'images/birthday/SN15.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN16= {
     id:'SN16',
@@ -629,32 +254,7 @@ var SN16= {
     sale:10,        
     src:'images/birthday/SN16.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN17= {
     id:'SN17',
@@ -670,32 +270,7 @@ var SN17= {
     sale:10,        
     src:'images/birthday/SN17.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN18= {
     id:'SN18',
@@ -711,32 +286,7 @@ var SN18= {
     sale:10,        
     src:'images/birthday/SN02.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN19= {
     id:'SN19',
@@ -752,32 +302,7 @@ var SN19= {
     sale:10,        
     src:'images/birthday/SN19.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN20= {
     id:'S20',
@@ -793,32 +318,7 @@ var SN20= {
     sale:10,        
     src:'images/birthday/SN20.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }
 var SN21= {
     id:'SN21',
@@ -834,30 +334,5 @@ var SN21= {
     sale:10,        
     src:'images/birthday/SN21.jpg',
      //codePromotion S:sale N:new H:hot D:default
-    codePromotion:'D',
-    textPromotion:function(){
-        var text='default';
-        if(this.codePromotion==='N'){
-            text='new';
-        }
-        if(this.codePromotion==='S'){
-            text='off ' + this.sale + '%';
-        }
-        if(this.codePromotion==='H'){
-            text='hot';
-        }
-        return text;
-
-    },
-    oldCost:function(){
-        return Math.round(this.cost);
-    },
-    curentCost:function(){
-        if(this.codePromotion!=='S'){
-            return Math.round(this.cost);
-        }else {
-            let m= this.cost - (this.cost*this.sale)/100;
-            return Math.round(m);
-        }         
-    },
+    codePromotion:''
 }

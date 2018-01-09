@@ -2,36 +2,19 @@ var arrDataSpecial = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08];
 var arrDataBestSell = [SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16];
 var lengthArrDataSpecial = arrDataSpecial.length;
 var lengthArrDataBestSell = arrDataBestSell.length;
-var ABC = {
-    name: 'Sinh Nhật Ngọt Ngào',
-    category: 'birthday',
-    description: 'Làm ngọt theo cách bạn thể hiện mình với sự sắp xếp hoa hồng và hoa cẩm chướng tươi tắn và tươi tắn này. Những bông hồng và hoa cẩm chướng. Những bông hồng và hoa màu trắng nở lên cho dịp này, làm ấm trái tim của người đặc biệt đó trong cuộc sống của bạn.',
-    title: 'Giỏ hoa sinh nhật ngọt ngào',
-    alt: 'Giỏ hoa sinh nhật ngọt ngào',
-    rating: 4,
-    cost: 1000000,
-    //promotion sale||new||hot 
-    classPromotion: 'promotion-new',
-    namePromotion: 'New',
-    sale: 10,
-    src: 'images/birthday/SN01.jpg',
-    //codePromotion S:sale N:new H:hot D:default
-    codePromotion: 'S',
-    curentCost: function () {
-        if (this.codePromotion !== 'S') {
-            return this.cost;
-        } else {
-            let m = this.cost - (this.cost * this.sale) / 100;
-            return m;
-        };
-    }
-   
 
-    
-}
 
 $(document).ready(function () {
-   
+     $(window).scroll(function () {
+        var viewportWidth = $("body").innerWidth();
+        var viewportHeight = $("body").innerHeight();
+        var c = document.body.clientHeight;
+        var b = $(window).scrollTop();
+       
+       showCartBottom();
+
+
+    })
       //products Accessories
     //   var htmlAccessories = "";
     //   var testAccs=0;
@@ -89,7 +72,7 @@ $(document).ready(function () {
         }else {
             getIndex= parseInt(indexCurrent)+1;            
         }
-        console.log(getIndex);
+        // console.log(getIndex);
         
         for (var i = 0; i < lengthImg;i++){
             numberCircle[i].classList.remove('show-circle');
@@ -151,6 +134,7 @@ $(document).ready(function () {
      
      
   }
+//test local storage
 
   // jquery handle when click focus shopping cart
   $('div.shopping-cart-div').click(function(){
@@ -162,12 +146,14 @@ $(document).ready(function () {
         for (var i=0;i<lengthArrDataSpecial;i++){
             if(arrDataBestSell[i].id == idProduct){
                 arrProductsInCart.push(arrDataBestSell[i]);
+                localStorage.setItem('list',JSON.stringify(arrDataBestSell[i]));
             }else if (arrDataSpecial[i].id == idProduct){
                 arrProductsInCart.push(arrDataSpecial[i]);
+                localStorage.setItem("list",JSON.stringify(arrDataSpecial[i]));
+                
             }
         }
         $(_this).css('pointer-events', 'none');
-
         $(_this).html("Đã thêm vào giỏ hàng");
         numberCart++;
         console.log(arrProductsInCart);
@@ -221,11 +207,11 @@ $('span.img-product-quick-view').click(function(){
 
     // load content to preview-product
     $('h2.name-product-preview').html(product.name+"<span class='code-product'>("+product.id+")</span>");
-    // $('span.code-product').html(product.id);
-    $('span.product-sale-cost').html(product.curentCost());
-    $('span.product-current-cost').html(product.oldCost());
+    $('span.product-sale-cost').html(getCurrentCost(product));
+    $('span.product-current-cost').html(product.cost);
     $('div#aside-right-des').html(product.description);
     $('div#aside-img-left img').attr('src',product.src);
+    $('a.buy-now').attr('data-id-product',product.id);
     //add class show-preview 
     $('div#preview-product').addClass('preview-product-show');
 })
@@ -233,6 +219,35 @@ $('span.img-product-quick-view').click(function(){
 // handle close prevew
 $('i.preview-product,div.wrap-preview-product').click(function(){
     $('div#preview-product').removeClass('preview-product-show');
+    
+})
+
+// handle click button buy-now
+$('a.buy-now').click(function(){
+    var idProductBuyNow =  $(this).attr('data-id-product');
+    var isValid = true;
+    var lengthArrProductInCart=arrProductsInCart.length;
+    for(var i = 0; i<lengthArrProductInCart;i++){
+        if(arrProductsInCart[i].id == idProductBuyNow){
+            isValid=false;
+        }
+    }
+    if (isValid){
+        for(var i =0;i<lengthArrDataSpecial;i++){
+            if(arrDataBestSell[i].id == idProductBuyNow){
+                arrProductsInCart.push(arrDataBestSell[i]);
+                numberCart++;
+                addCart();
+            }
+            if(arrDataSpecial[i].id ==idProductBuyNow){
+                arrProductsInCart.push(arrDataSpecial[i]);
+                numberCart++;
+                addCart();
+            }
+            
+        }
+    }
+    
     
 })
 

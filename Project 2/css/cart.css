@@ -1,7 +1,6 @@
 div#content-cart{
     width: 50%;
     margin: auto;
-    /* background-color:  white; */
 }
 
 div.cart-title {
@@ -10,7 +9,7 @@ div.cart-title {
 }
 
 h3.cart-title {
-    color:  #d02552;
+    color: #232a34;
     text-transform: uppercase;
     margin: 15px 0 15px 0;
 }
@@ -26,6 +25,7 @@ div#list-prds {
 div.cart-product {
     width: 100%;
     /* padding:  15px; */
+    overflow:  auto;
 }
 
 div.cart-product-left {
@@ -41,6 +41,8 @@ button.cart-product-remove {
     border: 0px;
     font-size: 14px;
     cursor:  pointer;
+    border-radius: 3px;
+    padding: 0 5px;
 }
 
 .cart-product-right {
@@ -101,7 +103,8 @@ h3.cart-total-title {
 
 span.cart-total {
     float: right;
-    color:  #d02552;
+    color: red;
+    font-weight: bold;
 }
 
 form#form-info-customer {
@@ -199,14 +202,31 @@ label.label-sex {
     margin-right: 3%;
 }
 
-a.cart-product-right-name {
-    color: #d02552;
-    font-size: 18px;
-    font-weight: 600;
+span.cart-product-right-name {
+    color: #232a34;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 span.cart-product-right-cost {
     float: right;
+    color: red;
+}
+
+div.cart-product-right-sale {
+    width: 100%;
+    overflow: auto;
+}
+
+span.cart-product-sale {
+    float: left;
+}
+
+span.cart-product-old-cost {
+    float: right;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
 }
 
 
