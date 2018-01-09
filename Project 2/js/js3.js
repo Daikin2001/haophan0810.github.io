@@ -14,10 +14,10 @@ function getElementProduct (arr){
             '<div class="img-product-bg">'+
             '<div class="img-product-bg-a">'+
             '<a href="" class="img-product-bg-a">'+
+            '</a>'+
             '<span class="img-product-quick-view" data-id-product="'+arr[i].id+'">'+
             '<i class="fa fa-plus img-quick-view" aria-hidden="true"></i>'+
             '</span>'+
-            '</a>'+
             '</div>'+
             '</div>'+
             '</div>' +
