@@ -1,0 +1,316 @@
+div#content-cart{
+    width: 50%;
+    margin: auto;
+}
+
+div.cart-title {
+    width: 100%;
+    padding: 15px 0px 0px 15px;
+}
+
+h3.cart-title {
+    color: #232a34;
+    text-transform: uppercase;
+    margin: 15px 0 15px 0;
+}
+
+div#list-prds {
+    width: 100%;
+    background-color:  white;
+    margin-bottom: 30px;
+    padding: 15px;
+    overflow:  auto;
+}
+
+div.cart-product {
+    width: 100%;
+    /* padding:  15px; */
+    overflow:  auto;
+}
+
+div.cart-product-left {
+    float:  left;
+    width: 20%;
+}
+
+.remove {
+    color: #999;
+}
+
+button.cart-product-remove {
+    border: 0px;
+    font-size: 14px;
+    cursor:  pointer;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.cart-product-right {
+    float: left;
+    width: 80%;
+    padding-left:  15px;
+}
+
+.cart-product-right-name {
+    width: 100%;
+}
+
+.cart-product-right-gift {
+    width: 100%;
+}
+
+span.cart-product-right-gift {
+    display: block;
+    text-indent: 1%;
+}
+
+.cart-product-right-number {
+    width: 32%;
+    float: right;
+}
+
+div.cart-minus,div.cart-number,div.cart-plus {
+    float: left;
+    width: 33%;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.cart-plus {
+    color: #eeaa9c;
+    cursor: pointer;
+}
+
+div.cart-number {
+    color: black;
+    border-right:  0px solid;
+    border-left: 0px solid;
+}
+
+.cart-minus {
+    color: #999;
+}
+
+div.cart-total {
+    width: 100%;
+    margin-bottom:  15px;
+    overflow: auto;
+}
+
+h3.cart-total-title {
+    float: left;
+}
+
+span.cart-total {
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+
+form#form-info-customer {
+    margin-top: 15px;
+}
+
+input#male,input#female {
+    margin-right:  1%;
+}
+
+div#check-sex, div#info-cus, div#check-address, div#show-address, div#show-address,div.time-transport-pro,div.bill-company {
+    margin-bottom: 10px;
+    /* overflow: auto; */
+}
+
+div#info-cus {
+    overflow:  auto;
+}
+
+div#show-address,div.w-address {
+    width: 100%;
+    /* background-color: #e9ebee; */
+    /* padding: 15px; */
+}
+
+div#show-address {
+    padding: 15px 30px 0 30px;
+    background-color:  #e9ebee;
+    position: relative;
+    display:  none;
+}
+
+div.triangle-sho-address {
+    position:  absolute;
+    border-left: 10px solid transparent;
+    border-bottom: 7px solid #e9ebee;
+    border-right: 10px solid transparent;
+    top: -7px;
+    left: 52px;
+}
+
+div.city-address, div.district-address {
+    width: 50%;
+    float: left;
+}
+
+select#city-address,select#district-address {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.district-address {
+    padding: 0 0 0 15px;
+}
+
+div.city-address {
+    padding: 0 15px 0 0;
+    margin-bottom:  5px;
+}
+
+select#city-address,select#district-address {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+input#address,input#shop {
+    margin: 1%;
+}
+
+label.label-address {
+    margin-right: 3%;
+}
+
+div#info-cus {
+    width: 100%;
+}
+
+div.name-cus,div.phone-cus {
+    width: 50%;
+    float: left;
+}
+
+div.phone-cus {
+    padding: 0px 0px 0px 14px;
+}
+
+div.name-cus {
+    padding: 0px 15px 0px 0px;
+}
+
+input#name-cus,input#phone-cus {width: 100%;font-size: 14px;padding: 5px;border: 1px solid #eeaa9c;border-radius: 5px;color: #eeaa9c;}
+
+label.label-sex {
+    margin-right: 3%;
+}
+
+span.cart-product-right-name {
+    color: #232a34;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span.cart-product-right-cost {
+    float: right;
+    color: red;
+}
+
+div.cart-product-right-sale {
+    width: 100%;
+    overflow: auto;
+}
+
+span.cart-product-sale {
+    float: left;
+}
+
+span.cart-product-old-cost {
+    float: right;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+
+select{
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+
+input#address-des {
+    width: 100%;
+    /* display:  block; */
+    /* margin-top: 5px; */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.time-transport-pro {
+    width: 100%;
+}
+
+div.time-transport,div.hour-transport {
+    width:  50%;
+    float:  left;
+}
+
+div.time-transport {
+    padding: 0px 15px 0px 0px;
+}
+
+div.hour-transport {
+    padding:  0px 0px 0px 15px;
+}
+
+select#time-transport,select#hour-transport {
+    width:  100%;
+}
+
+div.bill-company,div.name-company,input#name-company,div.address-company,input#address-company,div.tax-code-company,input#tax-code-company {
+    width:  100%;
+}
+
+div#payment-products {
+    width:  100%;
+}
+
+div.pay-in-house,div.pay-card-online {
+    width:  50%;
+    FLOAT: left;
+    padding: 0 15px;
+}
+
+div#pay-in-house,div#pay-card-online {
+    width:  100%;
+    border-radius:  5px;
+    color:  white;
+    padding:  5px;
+    font-size:  14px;
+    text-align:  center;
+    text-transform: uppercase;
+}
+
+div#pay-in-house {
+    background-color: #aece89;
+}
+
+div#pay-in-house:hover {
+    background-color: #98b27b;
+}
+
+div#pay-card-online {
+    background-color: #eeaa9c;
+}
+
+div#pay-card-online:hover {
+    background-color: rgba(238,156,156,1.00);
+}
+
+div.bill-product {
+    margin-bottom:  10px;
+}
+
+input#name-company, input#address-company, input#tax-code-company {
+    padding: 5px;
+    margin-bottom:  5px;
+}
