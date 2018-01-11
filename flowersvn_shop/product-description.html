@@ -7,149 +7,155 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hoa Hồng giáng sinh</title>
     <link rel="shortcut icon" href="images/icon-flower.ico">
+    <link href="https://fonts.googleapis.com/css?family=Athiti:300" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Trirong:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="./css/index3.css">
     <link rel="stylesheet" href="css/description.css">
 </head>
 
 <body>
-        <header>
-                <!-- NAV UP -->
-        
-                <div id="nav-up-wrap">
-                    <div id="nav-up">
-                        <!-- LOGO -->
-                        <div id="logo">
-                            <a href="">
-                                <span class="text-logo">
-                                    <img id="img-logo" src="images/logo-project.png" alt="">
-                                </span>
-                            </a>
-                        </div>
-                        <!-- SEARCH -->
-                        <div id="menu-search">
-                            <input type="text" name="search" id="ipt-search" placeholder="Bạn muốn tìm hoa gì?">
-                            <i class="fa fa-search" aria-hidden="true"></i>        
-                        </div>
-                        <!-- PHONE -->
-                        <div id="menu-phone">
-                            <a href="tel:01999999999">
-                                <i class="fa fa-phone menu-phone" aria-hidden="true"></i>
-                                <span class="menu-phone">01999999999</span>
-                            </a>
-                        </div>
-                        <!-- CART -->
-                        <div id="menu-cart">
-        
-                            <a href="">
-                                <i class="fa fa-shopping-cart menu-cart" aria-hidden="true"></i>
-                                <sub>12</sub>
-                                <span class="menu-cart">Giỏ hàng</span>
-                            </a>
-                        </div>
-                    </div>
+    <header>
+        <!-- NAV UP -->
+
+        <div id="nav-up-wrap">
+            <div id="nav-up">
+                <!-- LOGO -->
+                <div id="logo">
+                    <a href="./index.html" title="Trang chủ">
+                        <span class="text-logo">
+                            <img id="img-logo" src="images/logo-2.png" alt="Trang chủ" title="Trang chủ">
+                        </span>
+                    </a>
                 </div>
-        
-                <div class="clear"></div>
-                <!-- NAV-DOWN -->
-                <div id="nav-down-wrap">
-                    <nav id="nav-down">
-                        <!-- LIST MAIN -->
-        
-                        <!-- HOME ICON -->
-                        <div id="home">
-                            <a href="">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <!-- UL LV 1 -->
-                        <ul id="list-main">
-                            <!-- LI BIRTHDAY -->
-                            <li class="list-item li-birthday level-1">
-                                <a class="a-level-1" href="">Hoa sinh nhật</a>
+                <!-- SEARCH -->
+                <div id="menu-search">
+                    <input type="text" name="search" id="ipt-search" placeholder="Bạn muốn tìm hoa gì?">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+
+                </div>
+                <!-- PHONE -->
+                <div id="menu-phone">
+                    <a href="tel:01999999999" title="Đặt hàng">
+                        <i class="fa fa-phone menu-phone" aria-hidden="true"></i>
+                        <span class="menu-oder">Đặt hàng:</span>
+                        <span class="menu-phone">01999999999</span>
+                    </a>
+                </div>
+                <!-- CART -->
+                <div id="menu-cart" class="show-cart">
+                    <a href="./cart.html" title="Giỏ hàng của bạn">
+                        <i class="fa fa-shopping-cart menu-cart" aria-hidden="true"></i>
+                        <sub class="menu-cart" data-number-product="0">0</sub>
+                        <span class="menu-cart">Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <!-- NAV-DOWN -->
+        <div id="nav-down-wrap">
+            <nav id="nav-down">
+                <!-- LIST MAIN -->
+
+                <!-- HOME ICON -->
+                <div id="home">
+                    <a href="./index.html" title="Trang chủ">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- UL LV 1 -->
+                <ul id="list-main">
+                    <!-- LI BIRTHDAY -->
+                    <li class="list-item li-birthday level-1">
+                        <a class="a-level-1" href="./products-special.html" title="Hoa sinh nhật">Hoa sinh nhật</a>
+                    </li>
+                    <li class="list-item li-topic level-2">Chủ đề
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                        <!-- OCCASIONS -->
+                        <ul id="list-occasions" class="menu-level-2">
+                            <li class="list-occations li-list-level-2">
+                                <a id="occation-christmas" href="./products-special.html" title="Hoa tết">Hoa Tết</a>
                             </li>
-                            <li class="list-item li-topic level-2">Chủ đề
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-        
-                                <!-- OCCASIONS -->
-                                <ul id="list-occasions" class="menu-level-2">
-                                    <li class="list-occations li-list-level-2">
-                                        <a id="occation-christmas" href="">Hoa Giáng Sinh</a>
-                                    </li>
-                                    <li class="list-occations li-list-level-2">
-                                        <a id="occation-love" href="">Hoa Tình Yêu</a>
-                                    </li>
-                                    <li class="list-occations li-list-level-2">
-                                        <a id="occations-graduation" href="">Hoa mừng tốt nghiệp</a>
-                                    </li>
-                                    <li class="list-occations li-list-level-2">
-                                        <a id="occations-congra" href="">Hoa chúc mừng</a>
-                                    </li>
-                                    <li class="list-occations li-list-level-2">
-                                        <a id="occations-thanks" href="">Hoa cám ơn</a>
-                                    </li>
-                                </ul>
+                            <li class="list-occations li-list-level-2">
+                                <a id="occation-love" href="./products-special.html" title="Hoa tình yêu">Hoa Tình Yêu</a>
                             </li>
-                            <li class="list-item li-flower level-2">Hoa Tươi
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-        
-                                <!-- LIST FLOWERS -->
-                                <ul id="list-flowers" class="menu-level-2">
-                                    <li class="list-flowers li-list-level-2">
-                                        <a href="">Hoa Tươi</a>
-                                    </li>
-                                    <li class="list-flowers li-list-level-2">
-                                        <a href="">Hoa Tươi</a>
-                                    </li>
-                                    <li class="list-flowers li-list-level-2">
-                                        <a href="">Hoa Tươi</a>
-                                    </li>
-                                    <li class="list-flowers li-list-level-2">
-                                        <a href="">Hoa Tươi</a>
-                                    </li>
-                                    <li class="list-flowers li-list-level-2">
-                                        <a href="">Hoa Tươi</a>
-                                    </li>
-                                </ul>
+                            <li class="list-occations li-list-level-2">
+                                <a id="occations-graduation" href="./products-special.html" title="Hoa mừng tốt nghiệp">Hoa mừng tốt nghiệp</a>
                             </li>
-                            <li class="list-item li-flower-special level-2">Hoa đặc biệt
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-        
-                                <!-- LIST SPECIALS -->
-                                <ul id="list-specials" class="menu-level-2">
-                                    <li class="list-specials li-list-level-2">
-                                        <a href="">Hoa đặc biệt</a>
-                                    </li>
-                                    <li class="list-specials li-list-level-2">
-                                        <a href="">Hoa đặc biệt</a>
-                                    </li>
-                                    <li class="list-specials li-list-level-2">
-                                        <a href="">Hoa đặc biệt</a>
-                                    </li>
-                                    <li class="list-specials li-list-level-2">
-                                        <a href="">Hoa đặc biệt</a>
-                                    </li>
-                                    <li class="list-specials li-list-level-2">
-                                        <a href="">Hoa đặc biệt</a>
-                                    </li>
-                                </ul>
+                            <li class="list-occations li-list-level-2">
+                                <a id="occations-congra" href="./products-special.html" title="Hoa giáng sinh">Hoa giáng sinh</a>
                             </li>
-                            <li class="list-item li-func level-1">
-                                <a class="a-level-1" href="">Hoa chia buồn</a>
-                            </li>
-                            <li class="list-item li-gift level-1">
-                                <a class="a-level-1" href="">Phụ kiện</a>
+                            <li class="list-occations li-list-level-2">
+                                <a id="occations-thanks" href="./products-special.html" title="Hoa cám ơn">Hoa cám ơn</a>
                             </li>
                         </ul>
-                    </nav>
-        
-                </div>
-        
-            </header>
-    <div id="wrap">
-     
+                    </li>
+                    <li class="list-item li-flower level-2">Hoa Tươi
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                        <!-- LIST FLOWERS -->
+                        <ul id="list-flowers" class="menu-level-2">
+                            <li class="list-flowers li-list-level-2">
+                                <a href="./products-special.html" title="Hoa hồng">Hoa Hồng</a>
+                            </li>
+                            <li class="list-flowers li-list-level-2">
+                                <a href="./products-special.html" title="Hoa Lan">Hoa Lan</a>
+                            </li>
+                            <li class="list-flowers li-list-level-2">
+                                <a href="./products-special.html" title="Hoa Lily">Hoa Lily</a>
+                            </li>
+                            <li class="list-flowers li-list-level-2">
+                                <a href="./products-special.html" title="Hoa Tulip">Hoa Tulip</a>
+                            </li>
+                            <li class="list-flowers li-list-level-2">
+                                <a href="./products-special.html" title="Các loại hoa khác">Các loại hoa khác</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item li-flower-special level-2">Hoa đặc biệt
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                        <!-- LIST SPECIALS -->
+                        <ul id="list-specials" class="menu-level-2">
+                            <li class="list-specials li-list-level-2">
+                                <a href="./products-special.html" title="Hoa chia buồn">Hoa Chia buồn</a>
+                            </li>
+                            <li class="list-specials li-list-level-2">
+                                <a href="./products-special.html" title="Hoa Khuyến mại">Hoa khuyến mại</a>
+                            </li>
+                            <li class="list-specials li-list-level-2">
+                                <a href="./products-special.html" title="Hoa thăm hỏi">Hoa thăm hỏi</a>
+                            </li>
+                            <li class="list-specials li-list-level-2">
+                                <a href="./products-special.html" title="Hoa đặc biệt">Hoa đặc biệt</a>
+                            </li>
+                            <li class="list-specials li-list-level-2">
+                                <a href="./products-special.html" title="Hoa tốt nghiệp">Hoa tốt nghiệp</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item li-wedding level-1">
+                        <a class="a-level-1" href="./products-special.html" title="Hoa Cưới">Hoa Cưới</a>
+                    </li>
+                    <li class="list-item li-require level-1">
+                        <a class="a-level-1" href="./products-special.html" title="Hoa theo yêu cầu">Hoa Theo Yêu cầu</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="clear"></div>
+
+    <div class="wrap">
+
         <div id="breadcrumb">
             <ul class="breadcrumb">
                 <li class="breadcrumb home">
@@ -158,147 +164,249 @@
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li class="breadcrumb branch"><a href="" id="a-branch">Hoa đặc biệt</a> </li>
-                <li class="breadcrumb branch-2"><a href="" id="a-branch-2">Hoa hồng giáng sinh</a> </li>
-                
+                <li class="breadcrumb branch">
+                    <a href="" id="a-branch">Hoa đặc biệt</a>
+                </li>
+                <li class="breadcrumb branch-2">
+                    <a href="" id="a-branch-2">Hoa hồng giáng sinh</a>
+                </li>
+
             </ul>
         </div>
         <div class="clear"></div>
 
         <div id="content-product-des">
             <div class="content-product-des">
-                    <h1 id="title-product">Hoa Hồng giáng sinh</h1>
-                    <aside id="left">
-                        <div id="aside-img-left">
-                            <img src="images/des-test.jpg" alt="">
+                <div class="wrap-title-content-product">
+                    <h1 id="title-product">Hoa Hồng giáng sinh
+                        <span class="code-product">(HHGS)</span>
+                    </h1>
+
+                    <div class="preview-product-rating">
+                        <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                        <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                        <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                        <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                        <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <aside id="left">
+                    <div id="aside-img-left">
+                        <img src="images/des-test.jpg" alt="">
+                    </div>
+                </aside>
+                <aside id="right">
+                    <div class="aside-right">
+                        <h2 id="aside-right-cost">
+                            <span class="product-sale-cost">5.000.000 VND</span>
+                            <span class="product-current-cost">6.000.000 VND</span>
+                        </h2>
+                        <div id="aside-right-des">
+                            Hoa rất thích hợp vào các dịp sinh nhật, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore, assumenda
+                            quam sed fuga debitis eum odio architecto. Iusto suscipit nisi illo quas quod pariatur ullam
+                            ipsam sunt mollitia sapiente.
                         </div>
-                    </aside>
-                    <aside id="right">
-                        <div class="aside-right">
-                                <h2 id="aside-right-cost">
-                                        <span class="product-sale-cost">5.000.000 VND</span> 
-                                        <span class="product-current-cost">6.000.000 VND</span>
-                                    </h2>
-                                    <div id="aside-right-des">
-                        Hoa rất thích hợp vào các dịp sinh nhật, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore, assumenda quam sed fuga debitis eum odio architecto. Iusto suscipit nisi illo quas quod pariatur ullam ipsam sunt mollitia sapiente.
-                                    </div>
-                                    <div id="aside-right-gift">
-                                        <ul class="gift">
-                                            <li class="item-gift">Gọi đặt mua <a href="tel:0199999999">0199999999</a></li>
-                                            <li class="item-gift">Miễn phí giao hàng trong nội thành Hà Nội</li>
-                                            <li class="item-gift">Tặng thiệp chúc mừng</li>
-                                            <li class="item-gift">Tặng voucher 100.000 VND</li>
-                                           
-                                        </ul>
-                                    </div>
-                                    <div id="aside-right-buy-now">
-                                        <a href="" class="buy-now">Mua ngay</a>
-                                    </div>
+                        <div id="aside-right-gift">
+                            <ul class="gift">
+                                <li class="item-gift">Gọi đặt mua
+                                    <a href="tel:0199999999">0199999999</a>
+                                </li>
+                                <li class="item-gift">Miễn phí giao hàng trong nội thành Hà Nội</li>
+                                <li class="item-gift">Tặng thiệp chúc mừng</li>
+                                <li class="item-gift">Tặng voucher 100.000 VND</li>
+
+                            </ul>
                         </div>
-                       
-            
-                    </aside>
-                    <div class="clear"></div>
+                        <div id="aside-right-buy-now">
+                            <a href="" class="buy-now">Mua ngay</a>
+                        </div>
+                    </div>
+
+
+                </aside>
+                <div class="clear"></div>
             </div>
         </div>
-    </div>
-      <!-- FOOTER -->
-      <footer>
-            <div id="footer-up-wrap">
-                <!-- FOOTER-UP -->
-                <div id="footer-up">
-                    <ul class="footer-col left">
-                        <li class="title">Đặt hàng ngay</li>
-                        <li class="phone">
-                            <a href="">
-                                <i class="fa fa-phone footer-phone" aria-hidden="true"></i>&nbsp;&nbsp; 01999999999
-                            </a>
-                        </li>
-                        <li class="title">Hỗ trợ và tư vấn</li>
-                        <li class="phone">
-                            <a href="">
-                                <i class="fa fa-phone footer-phone" aria-hidden="true"></i>&nbsp;&nbsp; 01888888888
-    
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer-col middle">
-                        <li class="transport">
-                            <a href="">
-                                <i class="fa fa-truck" aria-hidden="true"></i>&nbsp;&nbsp; Giao hàng và thanh toán
-                            </a>
-                        </li>
-                        <li class="about-us">
-                            <a href="">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp; Về chúng tôi
-                            </a>
-    
-                        </li>
-                        <li class="recruit">
-                            <a href="">
-                                <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp; Góp ý, khiếu nại
-                            </a>
-    
-                        </li>
-                        <li class="complain">
-                            <a href="">
-                                <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp; Join Us now
-                            </a>
-    
-                        </li>
-    
-                    </ul>
-                    <div id="social-network">
-                        <ul class="footer-col right">
-                            <li class="address">
-                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;&nbsp; Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội
-                                    
+        <!-- Product category -->
+        <aside class="products-category">
+            <h2 class="products-category-title">Sản phẩm cùng thể loại</h2>
+            <div class="all-products" id="products-category">
+
+
+            </div>
+        </aside>
+
+        <aside class="review-product">
+            <div class="review-product-wrap">
+                <h2 class="review-product">Đánh giá của khách hàng</h2>
+                <div class="review-product-content">
+                    <div class="list-review">
+                        <ul class="list-review">
+                            <li class="list-review">
+                                <div class="content-review-wrap">
+                                    <h3 class="name">Nguyễn Mai Phương</h3>
+                                    <div class="content-review">
+                                        <span class="review-rating">
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+
+                                        </span>
+                                        <span class="content-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo deleniti dignissimos,
+                                            distinctio impedit adipisci. Maiores modi voluptates nobis quos illum impedit
+                                            pariatur repudiandae eos facere molestias. Dolor, voluptas rem.</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="time">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; Giờ mở cửa: từ 9:00 - 21:00
-                                    
+                            <li class="list-review">
+                                <div class="content-review-wrap">
+                                    <h3 class="name">Jack</h3>
+                                    <div class="content-review">
+                                        <span class="review-rating">
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+
+                                        </span>
+                                        <span class="content-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo deleniti dignissimos,
+                                            distinctio impedit adipisci. Maiores modi voluptates nobis quos illum impedit
+                                            pariatur repudiandae eos facere molestias. Dolor, voluptas rem.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-review">
+                                <div class="content-review-wrap">
+                                    <h3 class="name">Phan Nhật Minh</h3>
+                                    <div class="content-review">
+                                        <span class="review-rating">
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+
+                                        </span>
+                                        <span class="content-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo deleniti dignissimos,
+                                            distinctio impedit adipisci. Maiores modi voluptates nobis quos illum impedit
+                                            pariatur repudiandae eos facere molestias. Dolor, voluptas rem.</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                       
-                        <div class="social-icon">
-                            <a href="">
-                                <i class="fa fa-envelope-o social" aria-hidden="true"></i>
-    
-                            </a>
-                            <a href="">
-                                <i class="fa fa-youtube-square social" aria-hidden="true"></i>
-    
-                            </a>
-                            <a href="">
-                                <i class="fa fa-facebook-square social" aria-hidden="true"></i>
-    
-                            </a>
-                            <a href="">
-                                <i class="fa fa-twitter-square social" aria-hidden="true"></i>
-    
-    
-                            </a>
-                            <a href="">
-                                <i class="fa fa-linkedin-square social" aria-hidden="true"></i>
-    
-                            </a>
-    
-                        </div>
-    
                     </div>
                 </div>
             </div>
-            <!-- FOOTER DOWN -->
-            <div class="clear"></div>
-            <div id="footer-down-wrap">
-                    <div id="footer-down">
-                            <span>&copy; flowers.vn | 2017</span>
-                        </div>
+            <div class="send-review-product-wrap">
+                <div class="send-review-product">Gửi ý kiến đánh giá của bạn</div>
+                <div class="send-content">
+                    <div class="rating-product">
+                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                            <i class="fa fa-star preview-product-rating-icon" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
             </div>
-        </footer>
-    
+        </aside>
+
+    </div>
+
+    <div class="clear"></div>
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-up-wrap">
+            <!-- FOOTER-UP -->
+
+            <div id="footer-up">
+                <div class="footer-col">
+                    <a href="" class="footer-up-icon">
+                        <i class="fa fa-map-marker footer-up-icon" aria-hidden="true"></i>
+                    </a>
+                    <p class="footer-up-title">Địa chỉ</p>
+                    <p class="footer-up-content">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+
+                </div>
+                <div class="footer-col middle">
+                    <a href="tel:0199999999" class="footer-up-icon">
+                        <i class="fa fa-phone footer-up-icon" aria-hidden="true"></i>
+                    </a>
+                    <p class="footer-up-title">Điện thoại</p>
+                    <p class="footer-up-content">0199999999</p>
+
+                </div>
+                <div class="footer-col">
+                    <a href="mailto:info@flowers.vn" class="footer-up-icon">
+                        <i class="fa fa-envelope-o footer-up-icon" aria-hidden="true"></i>
+                    </a>
+                    <p class="footer-up-title">Email liên hệ</p>
+                    <p class="footer-up-content">info@flowers.vn</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- FOOTER DOWN -->
+        <div class="clear"></div>
+        <div id="footer-down-wrap">
+            <div class="social-icon">
+                <div class="wrap-icon-a">
+                    <a href="" class="a-social-icon">
+                        <i class="fa fa-envelope-o social" aria-hidden="true"></i>
+
+                    </a>
+                    <a href="" class="a-social-icon">
+                        <i class="fa fa-youtube-square social" aria-hidden="true"></i>
+
+                    </a>
+                    <a href="" class="a-social-icon">
+                        <i class="fa fa-facebook-square social" aria-hidden="true"></i>
+
+                    </a>
+                    <a href="" class="a-social-icon">
+                        <i class="fa fa-twitter-square social" aria-hidden="true"></i>
+
+
+                    </a>
+                    <a href="" class="a-social-icon">
+                        <i class="fa fa-linkedin-square social" aria-hidden="true"></i>
+
+                    </a>
+                </div>
+            </div>
+            <div id="footer-down">
+                <span>&copy; flowers.vn | 2017</span>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <a href="#nav-up" class="back-to-top">
+            <i class="fa fa-arrow-up back-to-top" aria-hidden="true"></i>
+        </a>
+    </div>
+    <a href="cart.html" class="cart-scrolled">
+        <div class="cart-scrolled">
+            <div class="icon-cart-scrolled">
+                <i class="fa fa-shopping-cart icon-cart-scrolled" aria-hidden="true"></i>
+            </div>
+            <div class="cart-scrolled-notification">
+                <span class="notification-title">Giỏ hàng có</span>
+                <span class="notification-number">0 sản phẩm</span>
+            </div>
+        </div>
+    </a>
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- <script src="js/js.js"></script> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/data/data-birthday-products.js"></script>
+    <script src="js/js3.js"></script>
+    <script src="js/product-description.js"></script>
 </body>
 
 </html>

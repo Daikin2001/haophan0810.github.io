@@ -13,7 +13,7 @@ function getElementProduct (arr){
             '<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
             '<div class="img-product-bg">'+
             '<div class="img-product-bg-a">'+
-            '<a href="" class="img-product-bg-a">'+
+            '<a href="./product-description.html" class="img-product-bg-a">'+
             '</a>'+
             '<span class="img-product-quick-view" data-id-product="'+arr[i].id+'">'+
             '<i class="fa fa-plus img-quick-view" aria-hidden="true"></i>'+
@@ -106,9 +106,6 @@ $(document).ready(function(){
     //     var viewportHeight = $("body").innerHeight();
     //     var c = document.body.clientHeight;
     //     var b = $(window).scrollTop();
-       
-       
-
 
     // })
     $(window).on('beforeunload', function () {

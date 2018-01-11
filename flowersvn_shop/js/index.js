@@ -146,11 +146,8 @@ $(document).ready(function () {
         for (var i=0;i<lengthArrDataSpecial;i++){
             if(arrDataBestSell[i].id == idProduct){
                 arrProductsInCart.push(arrDataBestSell[i]);
-                localStorage.setItem('list',JSON.stringify(arrDataBestSell[i]));
             }else if (arrDataSpecial[i].id == idProduct){
                 arrProductsInCart.push(arrDataSpecial[i]);
-                localStorage.setItem("list",JSON.stringify(arrDataSpecial[i]));
-                
             }
         }
         $(_this).css('pointer-events', 'none');
@@ -246,8 +243,7 @@ $('a.buy-now').click(function(){
             }
             
         }
-    }
-    
+    }    
     
 })
 

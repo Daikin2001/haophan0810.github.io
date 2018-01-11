@@ -345,6 +345,7 @@ div.bg-info-shop-left,div.bg-info-shop-right{
     position: absolute;
     z-index:  4;
     width: 45%;
+    display: none;
 }
 
 .bg-info-shop-right {
@@ -368,6 +369,8 @@ span.cost-product-not-sale {
     font-size: 18px;
     font-weight: bold;
     color: #aece89;
+    letter-spacing: 1px;
+    font-family: 'Athiti', sans-serif;
 }
 
 span.cost-product-sale {
@@ -376,6 +379,8 @@ span.cost-product-sale {
     color: #00000080;
     margin-right: 15px;
     display: none;
+    letter-spacing: 0.5px;
+    font-family: 'Athiti', sans-serif;
 }
 
 .cost-product {

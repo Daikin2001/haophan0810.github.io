@@ -624,11 +624,14 @@ span.product-sale-cost {
     color: red;
     font-size: 17px;
     margin-right: 15px;
+    font-family: 'Athiti', sans-serif;
 }
 span.product-current-cost {
     font-size: 13px;
     color: #999;
     text-decoration:  line-through;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 300;
 }
 div#aside-right-des {
     width:  100%;
