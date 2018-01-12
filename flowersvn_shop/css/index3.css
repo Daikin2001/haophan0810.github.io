@@ -95,6 +95,7 @@ h2.slide-description-header{
     color: white;
     margin-bottom: 15px;
     visibility: hidden;
+    letter-spacing: 3px;
 }
 h2.slide-description-header.slide-next-in{
     -webkit-animation: slideUp 1s forwards;
@@ -132,8 +133,8 @@ a.slide-shop-now{
     color: white;
     text-transform: uppercase;
     font-size: 15px;
+    letter-spacing: 2px;
     visibility: hidden;
-    
 }
 a.slide-shop-now.slide-next-in{
 
@@ -196,6 +197,7 @@ span.notification-transport{
     margin-right:  20px;
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 a.notification-transport{
     display: inline-block;
@@ -203,6 +205,7 @@ a.notification-transport{
     background-color: #eeaa9c;
     padding: 10px 20px;
     border-radius: 3px;
+    letter-spacing: 0.5px;
 }
 
 a.notification-transport:hover {
@@ -225,7 +228,7 @@ div.shop-special{
 }
 div.shop-special-img{
     width: 100%;
-    height: 263px;
+    /* height: 263px; */
     position: relative;
 }
 
@@ -287,6 +290,9 @@ aside#info-shop{
 aside#info-shop div.wrap.info-shop {
     position: relative;
 }
+div.info-shop-img {
+    padding: 15px;
+}
 div.info-shop-content-wrap{
     float: left;
     width: 65%;
@@ -298,7 +304,10 @@ h2.info-shop-content-title{
     margin-bottom: 15px;
     letter-spacing: 5px;
 }
-p.info-shop-content{}
+p.info-shop-content{
+    letter-spacing:  1px;
+    text-indent: 30px;
+}
 a.info-shop-read-more{
     display: block;
     margin: auto;
@@ -310,6 +319,7 @@ a.info-shop-read-more{
     font-size: 17px;
     text-transform: uppercase;
     margin-top:  30px;
+    letter-spacing: 1px;
 }
 
 a.info-shop-read-more:hover {
@@ -334,8 +344,8 @@ div.info-shop-img-bg{
 }
 div.info-shop-img-frames{
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     top: 49%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -408,13 +418,15 @@ i.rating-product {
 
 .image-product {
     width: 100%;
-    height: 253px;
+    height: 65%;
     overflow: hidden;
     position: relative;
 }
 
 .name-product a span {
     color: #424443;
+    letter-spacing: 1px;
+    font-size: 14px;
 }
 
 .name-product a span:hover {
@@ -952,6 +964,11 @@ a.promotion-shop-now{
     text-transform: uppercase;
     margin: auto;
     border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+a.promotion-shop-now.width {
+    width: 40%;
 }
 
 a.promotion-shop-now:hover {
@@ -1137,7 +1154,7 @@ span.follow-text{
     font-size: 17px;
     /* margin-right: 100px; */
     display: block;
-    width: 60%;
+    width: 50%;
     float: left;
     padding: 10px 0;
     font-weight: bold;
@@ -1373,4 +1390,91 @@ textarea#message-question::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 a.send-message:hover {
     background-color:  rgba(238,156,156,1.00);
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* screen<1200px */
+@media screen and (max-width:1200px){
+    aside#notification-transport{
+        height: 150px;
+    }
+    span.notification-transport{
+        
+    }
+    a.notification-transport{
+        margin-top: 10px;
+    }
+    div.div-img-frames{
+        height: 80%;
+        top:48%;
+    }
+    html{
+        height: 50%;
+    }
+    p.promotion-description-text{
+        font-size: 14px;
+    }
+    a.promotion-shop-now{
+        width: 40%;
+    }
+    a.promotion-shop-now.width{
+        width: 45%;
+    }
+    div.row-comment{
+        overflow: hidden;
+    }
+}
+/* screen < 992px */
+@media screen and (max-width:992px){
+    /* div#nav-up,nav#nav-down{
+        padding: 0;
+    } */
+    
+    div#logo a{
+        padding-top: 10px;
+    }
+    span.menu-oder,span.menu-cart{
+        display: none;
+    }
+
+    li.list-item{
+        font-size: 13px;
+    }
+    div.info-shop-content-wrap,div.info-shop-img{
+        width: 50%;
+    }
+    a.info-shop-read-more{
+        font-size: 14px;
+        width: 60%;
+    }
+    aside#notification-transport{
+        height: 100px;
+    }
+    div.notification-transport-wrap{
+        padding: 10px 15px;
+    }
+    span.notification-transport{
+        font-size: 14px;
+    }
+    a.notification-transport{
+        font-size: 14px;
+    }
+}
+/* screen <768px */
+@media screen and (max-width:768px){
+    
+}
+/* screen <576px */
+@media screen and (max-width:576px){
+    
+}
+/* screen <360px */
+@media screen and (max-width:360px){
+    
 }

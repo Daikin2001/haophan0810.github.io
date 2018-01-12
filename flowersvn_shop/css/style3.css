@@ -154,7 +154,7 @@ div#menu-cart a sub {
     }
 div#nav-up,nav#nav-down {
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
     margin:  auto;
     height: 100%;
     /* background-color: #aece89; */

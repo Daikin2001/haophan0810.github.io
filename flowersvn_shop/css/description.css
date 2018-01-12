@@ -155,3 +155,28 @@ h2.products-category-title{
     color: #242b35;
     letter-spacing: 2px;
 }
+
+
+
+/* RESPONSIVE */
+
+/* screen<1200px */
+@media screen and (max-width:1200px){
+    
+}
+/* screen < 992px */
+@media screen and (max-width:992px){
+    
+}
+/* screen <768px */
+@media screen and (max-width:768px){
+    
+}
+/* screen <576px */
+@media screen and (max-width:576px){
+    
+}
+/* screen <360px */
+@media screen and (max-width:360px){
+    
+}

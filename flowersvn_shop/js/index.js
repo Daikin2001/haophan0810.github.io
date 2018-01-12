@@ -52,6 +52,19 @@ $(document).ready(function () {
     //   }
     $('#content-products-special').append(getElementProduct(arrDataSpecial));
     $('#content-products-best-sellest').append(getElementProduct(arrDataBestSell));
+
+    //set heigt div-bg
+   
+    var objHeight = 0;
+    $.each($('div.image-product img'), function () {
+
+        objHeight = $(this).width();
+        console.log(objHeight);
+        $('div.img-product-bg,div.image-product').height(objHeight);
+    });
+    
+
+    
     // js slide
     var numberImgSlide = document.querySelectorAll('aside#wrap-slide ul li.slide');
     var imgs = document.querySelectorAll('ul li div.slide-img');
