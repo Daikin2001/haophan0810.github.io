@@ -1465,6 +1465,12 @@ a.send-message:hover {
     a.notification-transport{
         font-size: 14px;
     }
+    div.promotion-description{
+        width: 60%;
+    }
+    a.promotion-shop-now{
+        width: 50%;
+    }
 }
 /* screen <768px */
 @media screen and (max-width:768px){
