@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Trirong', serif;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 header {
@@ -124,6 +124,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 20px;
         color: #eeaa9c;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 div#menu-phone {
     width: 28%;
@@ -133,7 +134,8 @@ div#menu-phone {
 }
 #menu-phone span {
     color: #eeaa9c;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 div#menu-cart {
@@ -145,12 +147,14 @@ div#menu-cart {
 
 div#menu-cart a sub {
     color: #d02552;
-    font-weight:  bold;
+    /* font-weight:  bold; */
+    font-size: 20px;
 }
     span.menu-cart {
         color: #eeaa9c;
-        font-size: 20px;
+        font-size: 22px;
         margin-left: 3%;
+        letter-spacing: 1px;
     }
 div#nav-up,nav#nav-down {
     padding: 0 15px;
@@ -255,7 +259,8 @@ li.level-2 {
 
 .li-list-level-2 {
     padding: 10px;
-    font-size:  14px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .li-list-level-2:hover {
@@ -263,11 +268,12 @@ li.level-2 {
 }
 
 li.list-item {
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
-    padding: 13px 0 0 0;
+    padding: 15px 0 0 0;
     height: 100%;
     transition: 0.4s;
+    letter-spacing: 1px;
 }
 
 li.list-item.li-require.level-1 {
@@ -363,13 +369,14 @@ p.footer-up-title{
     color: #232a34;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 p.footer-up-content{
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     color: #232a34;
     padding: 30px 20px 50px 20px;
+    letter-spacing: 1px;
 }
 
 .social-icon {
@@ -440,6 +447,7 @@ div#footer-down {
     padding: 15px 0;
     color: #232a34;
     font-size: 20px;
+    letter-spacing: 1px;
 }
 .left a,.footer-phone {
     color: #aece89;
@@ -486,7 +494,7 @@ a.cart-scrolled {
     width: 160px;
     position:  fixed;
     bottom: 60px;
-    right: 60px;
+    right: 65px;
     height: 50px;
     color: #232a34;
     visibility: hidden;
@@ -536,12 +544,14 @@ div.cart-scrolled-notification {
 
 span.notification-number {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 span.notification-title {
-    font-size: 12px;
+    font-size: 14px;
     text-align:  center;
+    letter-spacing: 1px;
 }
 
 /* preview */
