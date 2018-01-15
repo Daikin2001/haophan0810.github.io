@@ -108,6 +108,18 @@ $(document).ready(function(){
     //     var b = $(window).scrollTop();
 
     // })
+    var isStatusShortcutMenu=true;
+    $('div#shortcut-menu').click(function(){
+        console.log('click');
+        if(isStatusShortcutMenu){
+        $('div#nav-down-wrap').css('display','block');
+isStatusShortcutMenu=false  ;          
+        }else{
+        $('div#nav-down-wrap').css('display','none');
+isStatusShortcutMenu=true  ;          
+            
+        }
+    })
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);
     });

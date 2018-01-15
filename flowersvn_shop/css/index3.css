@@ -1559,6 +1559,61 @@ a.send-message:hover {
 }
 /* screen <768px */
 @media screen and (max-width:768px){
+    div#menu-phone{
+        display: none;
+    }
+    
+    div#nav-down-wrap{
+        display: none;
+        height: 0px;
+    }
+    nav#nav-down{
+        position: relative;
+        padding: 0px;
+    }
+    ul#list-main{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+    }
+    li.list-item{
+        float: none;
+        padding: 0;
+        background-color: #aece89;
+        display: block;
+        height: 50px;
+        font-size: 20px;
+        letter-spacing :2px;
+    }
+    .a-level-1 {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        padding: 15px;
+    }
+    li.list-item.level-2{
+        padding: 15px;
+        
+    }
+    li.list-item.li-birthday,li.list-item.li-flower,li.list-item.li-topic,li.list-item.li-flower-special,li.list-item.li-wedding,li.list-item.li-require.level-1{
+        width: 100%;
+        
+    }
+    div#home{
+        display: none;
+    }
+    div#menu-search{
+        width: 50%;
+    }
+    div#shortcut-menu{
+        display: block;
+    }
+    div#logo{
+        width: 15%;
+    }
+    div#menu-cart{
+        width: 20%;
+    }
     div#shops-special{
         margin-bottom: 0px;
     }

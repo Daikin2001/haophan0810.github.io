@@ -14,7 +14,15 @@ div#nav-up-wrap,div#nav-down-wrap {
     /* background-color:  white; */
     height:  55px;
 }
-
+div#shortcut-menu{
+   width: 15%;
+   float: left;
+   font-size: 40px;
+   padding: 5px;
+   color: #eeaa9c;
+   display: none;
+   text-align: center;
+}
 div#nav-down-wrap {
     background-color: #aece89;
 }
