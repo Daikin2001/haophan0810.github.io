@@ -239,11 +239,6 @@ li.list-item.li-birthday {
 .menu-level-2 a {
     color: white;
 }
-.level-1:hover .a-level-1 {
-    /* color: #aece89; */
-}
-
-
 
 ul#list-main {
     margin: 0;
@@ -295,12 +290,12 @@ ul.menu-lever-2 li {
     background-color: rgba(238,156,156,1.00);
     /* color: #aece89; */
 }
-.level-2:hover .menu-level-2 {
+/* .level-2:hover .menu-level-2 {
     display:  block;
     background-color: #aece89;
     color: rgb(255, 0, 0);
     z-index: 99999999;
-}
+} */
 
 ul#list-occasions, ul#list-flowers, ul#list-special {
     width: 100%;
@@ -312,6 +307,13 @@ ul.menu-level-2 {
     top: 100%;
     left: 0px;
     display: none;
+    transition: 0.4s;
+}
+ul.menu-level-2.show-menu-level-2{
+    display:  block;
+    background-color: #aece89;
+    color: rgb(255, 0, 0);
+    z-index: 99999999;
 }
 
 .menu-lever-2 {

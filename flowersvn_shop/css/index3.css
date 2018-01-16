@@ -1565,23 +1565,25 @@ a.send-message:hover {
     
     div#nav-down-wrap{
         display: none;
-        height: 0px;
+        height: auto;
     }
     nav#nav-down{
         position: relative;
         padding: 0px;
+        height: auto;
     }
     ul#list-main{
         position: absolute;
         z-index: 10;
         width: 100%;
+        height: auto;
     }
     li.list-item{
         float: none;
         padding: 0;
         background-color: #aece89;
         display: block;
-        height: 50px;
+        height: auto;
         font-size: 20px;
         letter-spacing :2px;
     }
@@ -1592,13 +1594,17 @@ a.send-message:hover {
         padding: 15px;
     }
     li.list-item.level-2{
-        padding: 15px;
-        
+        padding: 15px 0 0 0;
+        position: static;
     }
     li.list-item.li-birthday,li.list-item.li-flower,li.list-item.li-topic,li.list-item.li-flower-special,li.list-item.li-wedding,li.list-item.li-require.level-1{
         width: 100%;
         
     }
+    ul.menu-level-2{
+    position: static;
+    margin-top: 15px;
+}
     div#home{
         display: none;
     }
@@ -1644,6 +1650,9 @@ a.send-message:hover {
         float: none;
         margin: auto;
         width: 70%;
+    }
+    div.slide-circle-routing{
+        z-index: 3;
     }
     div.comment-img{
         padding: 15px;
