@@ -185,19 +185,188 @@ function whatIsInAName(collection, source) {
     // What's in a name?
     var arr = [];
     // Only change code below this line
-    
-    var arrKeySource = Object.keys(source);
-    for (var i=0; i<collection.length;i++){
-       for(var j=0;j< arrKeySource.length;j++){
-           if{collection[i].hasOwnProperty()}
-       }
-
-    }
-    console.log(collection);
-    console.log(arrKeySource);
-    
+    var keysSource = Object.keys(source);
+    arr= collection.filter(function(item){
+         for(var i=0; i<keysSource.length;i++){
+         if(!item.hasOwnProperty(keysSource[i]) || item[keysSource[i]] !== source[keysSource[i]]){
+             return false;
+         }
+        }
+        return true;
+        
+    })
+    console.log(arr);
+  
     // Only change code above this line
     return arr;
   }
   
-  whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 });
+//   whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 });
+
+
+//   Search and Replace
+//   Array.prototype.splice()
+// String.prototype.replace()
+// Array.prototype.join()
+
+
+function myReplace(str, before, after) {
+    // convert fist letter of after if first letter of before to upper case
+    if(before[0]===before[0].toUpperCase()){
+        after= after.split('');
+        after[0]=after[0].toUpperCase();
+        after=after.join('');
+    }
+    str=str.split(' ');
+    for(var i =0; i<str.length;i++){
+        if(str[i]===before){
+            str[i]=str[i].replace(str[i],after);
+        }
+    }
+    str=str.join(' ');
+    return str;
+  }
+  
+//   myReplace("Let us get back to more Coding", "Coding", "algorithms");
+
+
+
+  // Pig latin
+// Array.prototype.indexOf()
+// Array.prototype.push()
+// Array.prototype.join()
+// String.prototype.substr()
+// String.prototype.split()
+// * 5 nguyên âm: a , e , o , i , u .
+// * 21 phụ âm: b , c , d , f , g , h , j , k , l , m , n , p , q , r , s , t , v , w , x , y , z .
+ 
+function translatePigLatin(str) {
+    str= str.toLowerCase();
+    var arrStr;
+    var index;
+    arrStr=str.split('');
+    index= arrStr.filter(function(item){
+        if(item==='a' || item==='e'|| item==='o' || item ==='i' || item ==='u'){
+            return true;
+        }
+    });
+    // get index of vowel
+    index= str.indexOf(index[0]);
+    if(index===0){
+        str=str+'way';
+    }else{
+        str=str.slice(index)+str.slice(0,index) +"ay";
+    }
+    
+    console.log(index);
+    console.log(str);
+    return str;
+
+  }
+  
+//   translatePigLatin("vvvvvvvv");
+
+
+
+// DNA Pairing
+// Array.prototype.push()
+// String.prototype.split()
+  
+// function pairElement(str) {
+//     function convertWord(w){
+//         var newWord;
+//         var arrResult=[];
+//         switch(w){
+//             case 'T':
+//             newWord='A';
+//             break;
+//             case 'A':
+//             newWord='T';
+//             break;
+//             case 'C':
+//             newWord='G';
+//             break;
+//             case 'G':
+//             newWord='C';
+//             break;
+//         }
+//         return newWord;
+//     }
+//     for(var i = 0;i>str.length){
+//         var elementResult=[];
+//         elementResult.push(str[i]).push(convertWord(str[i]));
+        
+              
+//     }
+    
+//     return str;
+//   }
+  
+//   pairElement("GCG");
+
+
+
+//EX 1
+
+function changeFontSize(x){
+    var p = document.getElementsByClassName("text");
+    for (var i =0;i< p.length ; i++){
+      p[i].style.fontSize = x +"px";
+    }
+    
+  }
+//   changeFontSize(10);
+  
+  //EX 2
+  function increaseFontSize(paragraph){  
+    var pX = document.getElementById(paragraph);
+    var a = pX.style.fontSize ;  
+    if (parseInt(a)>29){    
+      return;
+    }else {
+      a=pX.style.fontSize = parseInt(a)+1 +"px"; 
+    }
+  }
+  
+//   increaseFontSize("p1");
+  
+  
+  // EX 3
+  function decreaseFontSize(paragraph){
+    var pX = document.getElementById(paragraph);
+    var a =pX.style.fontSize ;  
+    if (parseInt(a)<11){ 
+      return;
+    }else {
+      a=pX.style.fontSize = parseInt(a)-1 +"px"; 
+    }
+  }
+  
+  // decreaseFontSize("p3");
+  
+  //EX 4
+  function changeColor(){
+    var p = document.getElementsByClassName ("text");
+    p[0].style.color= "blue";
+    p[1].style.color= "yellow";
+    p[2].style.color= "red";
+  }
+  
+  // changeColor();
+  
+  //EX 5
+  function changeBgColor(color){
+    var bd = document.getElementsByTagName("body");
+    bd[0].style.backgroundColor = color;
+  }
+  // changeBgColor("grey");
+  
+  
+  //EX 6
+  function copyContent(paragraph1,paragraph2){
+    var content2 = document.getElementById(paragraph2).innerHTML;  
+    var content1 = document.getElementById(paragraph1).innerHTML = content2;
+    
+  }
+  copyContent("p1","p2");
+  
