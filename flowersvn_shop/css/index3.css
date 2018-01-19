@@ -103,12 +103,11 @@ h2.slide-description-header.slide-next-in{
     
 }
 div.slide-line{
-    /* width: 50%; */
-    border:  1px solid white;
+    width: 30%;
+    /* border:  1px solid white; */
     margin: auto;
     margin-bottom: 30px;
     visibility: hidden;
-    
 }
 div.slide-line.slide-next-in{
     -webkit-animation: slideUp 1 forwards;
@@ -577,12 +576,9 @@ span.cost-product-sale.promotion-sale {
     /* letter-spacing:  2px; */
 }
 div.line-title{
-    
-width: 8%;
-    
-margin: auto;
-    
-padding-top: 15px;
+    width: 20%;
+    margin: auto;
+    padding-top: 15px;
 }
 
 
