@@ -182,22 +182,92 @@ function diffArray(arr1, arr2) {
 // Object.keys()
 
 function whatIsInAName(collection, source) {
-    // What's in a name?
-    var arr = [];
-    // Only change code below this line
-    
-    var arrKeySource = Object.keys(source);
-    for (var i=0; i<collection.length;i++){
-       for(var j=0;j< arrKeySource.length;j++){
-           if{collection[i].hasOwnProperty()}
-       }
-
-    }
-    console.log(collection);
-    console.log(arrKeySource);
-    
-    // Only change code above this line
-    return arr;
+    // "What's in a name? that which we call a rose
+    // By any other name would smell as sweet.”
+    // -- by William Shakespeare, Romeo and Juliet
+    var srcKeys = Object.keys(source);
+  
+    // filter the collection
+    return collection.filter(function (obj) {
+      for(var i = 0; i < srcKeys.length; i++) {
+        if(!obj.hasOwnProperty(srcKeys[i]) || obj[srcKeys[i]] !== source[srcKeys[i]]) {
+          return false;
+        }
+      }
+      return true;
+    });
   }
   
-  whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 });
+  // test here
+//   whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 });
+
+// DNA Pairing
+// Array.prototype.push()
+// String.prototype.split()
+
+
+function pairElement(str) {
+    str = str.toUpperCase();
+    var arrDNA=[];
+    function convertDNA(dna){
+        var result;
+        switch(dna){
+            case "A":
+            result= "T";
+            break;
+            case "T":
+            result= "A";
+            break;
+            case "C":
+            result= "G";
+            break;
+            case "G":
+            result= "C";
+            break;
+        }
+        return result;
+    }
+    for (var i = 0; i<str.length;i++){
+        var arrElementDNA=[];
+        arrElementDNA.push(str[i]);
+        arrElementDNA.push(convertDNA(str[i]));
+        arrDNA.push(arrElementDNA);
+    }
+    console.log(arrDNA);
+    return arrDNA;
+  }
+  
+//   pairElement("GCG");
+
+
+// Missing letters
+// String.prototype.charCodeAt()
+// String.fromCharCode()
+
+
+
+function fearNotLetter(str) {
+    str=str.toLowerCase();
+    var arrCharCode = [];
+    var index;
+    for (var i=0; i<str.length;i++){
+        arrCharCode.push(str.charCodeAt(i));
+    }    
+    console.log(arrCharCode);
+    for (var j = arrCharCode[0], i = 0; i< arrCharCode.length;j++,i++){
+        if (j!==arrCharCode[i]){
+            index = j;
+            break;
+        }
+        
+        
+    }
+    console.log(index);
+    if(index){
+        index=String.fromCharCode(index);
+    }
+    console.log(index);
+    return index;
+  }
+  
+  fearNotLetter("abcdefghjklmno");
