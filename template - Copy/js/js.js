@@ -182,6 +182,7 @@ function diffArray(arr1, arr2) {
 // Object.keys()
 
 function whatIsInAName(collection, source) {
+<<<<<<< HEAD
     // "What's in a name? that which we call a rose
     // By any other name would smell as sweet.”
     // -- by William Shakespeare, Romeo and Juliet
@@ -271,3 +272,128 @@ function fearNotLetter(str) {
   }
   
   fearNotLetter("abcdefghjklmno");
+=======
+    // What's in a name?
+    var arr = [];
+    // Only change code below this line
+    var keysSource = Object.keys(source);
+    arr= collection.filter(function(item){
+         for(var i=0; i<keysSource.length;i++){
+         if(!item.hasOwnProperty(keysSource[i]) || item[keysSource[i]] !== source[keysSource[i]]){
+             return false;
+         }
+        }
+        return true;
+        
+    })
+    console.log(arr);
+  
+    // Only change code above this line
+    return arr;
+  }
+  
+//   whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 });
+
+
+//   Search and Replace
+//   Array.prototype.splice()
+// String.prototype.replace()
+// Array.prototype.join()
+
+
+function myReplace(str, before, after) {
+    // convert fist letter of after if first letter of before to upper case
+    if(before[0]===before[0].toUpperCase()){
+        after= after.split('');
+        after[0]=after[0].toUpperCase();
+        after=after.join('');
+    }
+    str=str.split(' ');
+    for(var i =0; i<str.length;i++){
+        if(str[i]===before){
+            str[i]=str[i].replace(str[i],after);
+        }
+    }
+    str=str.join(' ');
+    return str;
+  }
+  
+//   myReplace("Let us get back to more Coding", "Coding", "algorithms");
+
+
+
+  // Pig latin
+// Array.prototype.indexOf()
+// Array.prototype.push()
+// Array.prototype.join()
+// String.prototype.substr()
+// String.prototype.split()
+// * 5 nguyên âm: a , e , o , i , u .
+// * 21 phụ âm: b , c , d , f , g , h , j , k , l , m , n , p , q , r , s , t , v , w , x , y , z .
+ 
+function translatePigLatin(str) {
+    str= str.toLowerCase();
+    var arrStr;
+    var index;
+    arrStr=str.split('');
+    index= arrStr.filter(function(item){
+        if(item==='a' || item==='e'|| item==='o' || item ==='i' || item ==='u'){
+            return true;
+        }
+    });
+    // get index of vowel
+    index= str.indexOf(index[0]);
+    if(index===0){
+        str=str+'way';
+    }else{
+        str=str.slice(index)+str.slice(0,index) +"ay";
+    }
+    
+    console.log(index);
+    console.log(str);
+    return str;
+
+  }
+  
+//   translatePigLatin("vvvvvvvv");
+
+
+
+// DNA Pairing
+// Array.prototype.push()
+// String.prototype.split()
+  
+// function pairElement(str) {
+//     function convertWord(w){
+//         var newWord;
+//         var arrResult=[];
+//         switch(w){
+//             case 'T':
+//             newWord='A';
+//             break;
+//             case 'A':
+//             newWord='T';
+//             break;
+//             case 'C':
+//             newWord='G';
+//             break;
+//             case 'G':
+//             newWord='C';
+//             break;
+//         }
+//         return newWord;
+//     }
+//     for(var i = 0;i>str.length){
+//         var elementResult=[];
+//         elementResult.push(str[i]).push(convertWord(str[i]));
+        
+              
+//     }
+    
+//     return str;
+//   }
+  
+//   pairElement("GCG");
+
+
+>>>>>>> b398a8a3c6b404f1ddf250d81351cc48bf4e288e

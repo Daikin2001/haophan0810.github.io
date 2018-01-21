@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hoa Hồng giáng sinh</title>
     <link rel="shortcut icon" href="images/icon-flower.ico">
-    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Trirong:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/cart.css">
@@ -49,6 +49,9 @@
                         <sub class="menu-cart" data-number-product="0">0</sub>
                         <span class="menu-cart">Giỏ hàng</span>
                     </a>
+                </div>
+                <div id="shortcut-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -149,7 +152,6 @@
         </div>
 
     </header>
-
     <div class="wrap">
      
         <div id="content-cart">
@@ -227,12 +229,15 @@
 
                         </div>
                     </div>
-                    <span class="form-text">Để được phục vụ nhanh nhất, hãy chọn thêm</span>
+                    <div class="form-text">
+                        <span class="form-text">Để được phục vụ nhanh nhất, hãy chọn thêm</span>
+
+                    </div>
                     <div id="check-address">
                         <input type="radio" name="address" id="address">
                         <label class="label-address" for="address">Địa chỉ giao hàng</label>
-                        <input type="radio" name="shop" id="shop">
-                        <label for="shop">Nhận tại cửa hàng</label>
+                        <input type="radio" name="address" id="shop">
+                        <label  class="label-shop" for="shop">Nhận tại cửa hàng</label>
                     </div>
                     <div id="show-address">
 
@@ -278,7 +283,7 @@
                         
                         <div class="bill-product">
                             <input type="checkbox" name="bill-product" id="bill-cart">
-                            <label for="bill-cart">Xuất hóa đơn</label>
+                            <label class="lbl-bill-cart" for="bill-cart">Xuất hóa đơn</label>
                         </div>
                         <div class="bill-company">
                             <div class="name-company">
@@ -297,15 +302,15 @@
                     </div>
 
                     <div id="payment-products">
-                        <div class="pay-in-house">
+                        <a href="" class="pay-in-house">
                             <div id="pay-in-house">Thanh toán khi nhận hàng</div>
 
-                        </div>
+                        </a>
 
-                        <div class="pay-card-online">
+                        <a href="" class="pay-card-online">
                             <div id="pay-card-online">Thanh toán Online</div>
 
-                        </div>
+                        </a>
                     </div>
 
 

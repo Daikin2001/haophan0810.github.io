@@ -103,12 +103,11 @@ h2.slide-description-header.slide-next-in{
     
 }
 div.slide-line{
-    /* width: 50%; */
-    border:  1px solid white;
+    width: 20%;
+    /* border:  1px solid white; */
     margin: auto;
     margin-bottom: 30px;
     visibility: hidden;
-    
 }
 div.slide-line.slide-next-in{
     -webkit-animation: slideUp 1 forwards;
@@ -429,6 +428,7 @@ i.rating-product {
     height: 65%;
     overflow: hidden;
     position: relative;
+    background-size: cover;
 }
 
 .name-product a span {
@@ -446,14 +446,14 @@ i.rating-product {
     font-weight: bold;
     text-align: center;
     font-size: 18px;
-    height: 30%;
+    height: 29%;
     overflow: hidden;
     color: #232a34;
 }
 i.fa.fa-shopping-cart.product-cart {font-size: 17px;color: #ffffff;margin-right: 7px;}
 
 .shopping-cart {
-    padding: 10px 40px 10px 40px;
+    padding: 5px 20px 5px 20px;
     text-align: center;
     color: white;
     height: 35%;
@@ -473,7 +473,7 @@ span.shopping-cart-span {
     border: 1px solid;
     background-color: #eeaa9c;
     border-radius: 5px;
-    padding: 6px 5px 0px 5px;
+    padding: 10px 5px 0px 5px;
     cursor: pointer;
     transition: 0.2s;
     font-size: 14px;
@@ -519,6 +519,7 @@ span.img-product-quick-view{
     border-radius: 50%;
     background-color: #0000008c;
     cursor: pointer;
+    padding: 5px;
 }
 
 span.img-product-quick-view:hover {
@@ -577,12 +578,9 @@ span.cost-product-sale.promotion-sale {
     /* letter-spacing:  2px; */
 }
 div.line-title{
-    
-width: 8%;
-    
-margin: auto;
-    
-padding-top: 15px;
+    width: 15%;
+    margin: auto;
+    padding-top: 15px;
 }
 
 
@@ -1058,10 +1056,11 @@ h2.blog-header{
     letter-spacing: 5px;
     color: #232a34;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 div#blog{
     width: 100%;
+    margin-top: 30px;
 }
 div#blog div.article-blog{
     width: 33.3333333%;
@@ -1227,11 +1226,12 @@ h2.comment-header{
     color: #232a34;
     font-size: 30px;
     letter-spacing: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 div.row-comment{
     width: 100%;
     overflow: auto;
+    margin-top: 30px;
 }
 div.comment-img{
     width: 15%;
@@ -1442,12 +1442,7 @@ a.send-message:hover {
 
 /* screen<1200px */
 @media screen and (max-width:1200px){
-    li.list-item{
-        font-size: 18px;
-    }
-    .li-list-level-2{
-        font-size: 13px;
-    }
+  
     aside#notification-transport{
         height: 120px;
     }
@@ -1492,17 +1487,7 @@ a.send-message:hover {
     /* div#nav-up,nav#nav-down{
         padding: 0;
     } */
-    
-    div#logo a{
-        padding-top: 10px;
-    }
-    span.menu-oder,span.menu-cart{
-        display: none;
-    }
-
-    li.list-item{
-        font-size: 13px;
-    }
+  
     div.info-shop-content-wrap,div.info-shop-img{
         width: 50%;
     }
@@ -1559,66 +1544,14 @@ a.send-message:hover {
 }
 /* screen <768px */
 @media screen and (max-width:768px){
-    div#menu-phone{
-        display: none;
+    .shopping-cart-div{
+        padding-top:5px;
     }
-    
-    div#nav-down-wrap{
-        display: none;
-        height: auto;
+    .special-product{
+        top: 220px;
     }
-    nav#nav-down{
-        position: relative;
-        padding: 0px;
-        height: auto;
-    }
-    ul#list-main{
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: auto;
-    }
-    li.list-item{
-        float: none;
-        padding: 0;
-        background-color: #aece89;
-        display: block;
-        height: auto;
-        font-size: 20px;
-        letter-spacing :2px;
-    }
-    .a-level-1 {
-        width: 100%;
-        display: inline-block;
-        height: 100%;
-        padding: 15px;
-    }
-    li.list-item.level-2{
-        padding: 15px 0 0 0;
-        position: static;
-    }
-    li.list-item.li-birthday,li.list-item.li-flower,li.list-item.li-topic,li.list-item.li-flower-special,li.list-item.li-wedding,li.list-item.li-require.level-1{
-        width: 100%;
-        
-    }
-    ul.menu-level-2{
-    position: static;
-    margin-top: 15px;
-}
-    div#home{
-        display: none;
-    }
-    div#menu-search{
-        width: 50%;
-    }
-    div#shortcut-menu{
-        display: block;
-    }
-    div#logo{
-        width: 15%;
-    }
-    div#menu-cart{
-        width: 20%;
+    div.line-title{
+        width: 25%;
     }
     div#shops-special{
         margin-bottom: 0px;
@@ -1650,6 +1583,9 @@ a.send-message:hover {
         float: none;
         margin: auto;
         width: 70%;
+    }
+    aside#wrap-slide{
+        margin-top: 55px;
     }
     div.slide-circle-routing{
         z-index: 3;
@@ -1701,22 +1637,7 @@ a.send-message:hover {
     h2.comment-header,h2.header-question{
         font-size: 20px;
     }
-    p.footer-up-content{
-        display: none;
-        
-    }
-    div#footer-up{
-        padding-bottom: 30px;
-    }
-    p.footer-up-title{
-        font-size: 15px;
-    }
-    .social-icon{
-        margin-top: 15px;
-    }
-    span.img-product-quick-view{
-        padding-top: 6px;
-    }
+    
 }
 /* screen <576px */
 @media screen and (max-width:576px){
@@ -1845,33 +1766,7 @@ a.send-message:hover {
     div.send-message{
         margin-top: 15px;
     }
-    div#footer-up{
-        margin-top: 50px;
-    }
-    a.footer-up-icon{
-        width: 80px;
-        height: 80px;
-        padding-top: 15px;
-    }
-    a.footer-up-icon i.footer-up-icon{
-        font-size: 45px;
-    }
-    p.footer-up-title{
-        font-size: 14px;
-        letter-spacing: 1.5px;
-    }
-    div.back-to-top{
-        width: 40px;
-        height: 40px;
-        bottom: 15px;
-    }
-    i.back-to-top{
-        font-size: 20px;
-    }
-    a.cart-scrolled{
-        right: 5px;
-    }
-
+  
 }
 /* screen <360px */
 @media screen and (max-width:360px){

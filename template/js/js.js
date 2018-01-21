@@ -108,8 +108,27 @@ function getCash(weight1,value1,weight2,value2,weight3){
 
 var tds =document.querySelectorAll('td');
 var count = 0;
-console.log(tds);
+// console.log(tds);
 var tick=true;
+var arrPosition = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+function getArrContainCell(cell){    
+return arrPosition.filter(function(item){   
+    // console.log(item); 
+        for(let j=0; j< item.length;j++){
+            if (cell===item[j]){
+                return true;
+            }                    
+    }
+    return false;    
+})
+}
+function checkWin2(){
+    var m= getArrContainCell(0);
+    console.log(m);
+    
+}
+checkWin2();
+// console.log(getArrContainCell(1));
 
 function getAttr(obj,str){
    return obj.getAttribute(str);
@@ -203,10 +222,7 @@ function checkWin(){
     return false;
     
 }
-for(var i=0;i<tds.length;i++){
- 
- 
- 
+for(var i=0;i<tds.length;i++){ 
     tds[i].addEventListener('click',function(){
       
         var _this = this;
@@ -215,25 +231,30 @@ for(var i=0;i<tds.length;i++){
             alert('End Game');
             return;
         }
-        // console.log(dataTick);
-        if(dataTick!='yes'){
-            alert("Danh vao o khac");
+        
+        // if(dataTick!='yes'){
+        //     alert("Danh vao o khac");
 
-            return;
-        }
+        //     return;
+        // }
         
         if(tick==true){
             var idTd=_this.getAttribute('id');
             console.log(idTd);
             _this.innerHTML="X";
             _this.setAttribute("data-tick",'1');
+            _this.classList.add('X');
             count++;
+            _this.style.pointerEvents='none';
             checkWin();
             tick=false;
         }else{
             _this.innerHTML="O";
             _this.setAttribute("data-tick",'0');
+            _this.classList.add('X');
+            
             count++;
+            _this.style.pointerEvents='none';
             checkWin();
             tick=true;
         }
@@ -241,7 +262,6 @@ for(var i=0;i<tds.length;i++){
             alert("hoa");
             return;
         }
-       
     })
 }
 

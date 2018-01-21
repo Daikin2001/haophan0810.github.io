@@ -9,8 +9,8 @@ function getElementProduct(arr) {
         elmProduct +=
             '<div class="product" id="' + arr[i].id + '">' +
             '<div class="content-product">' +
-            ' <div class="image-product">' +
-            '<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
+            ' <div class="image-product" style="background-image:url(\''+arr[i].src+'\')" title="' + arr[i].title + '">' +
+            // '<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
             '<div class="img-product-bg">' +
             '<div class="img-product-bg-a">' +
             '<a href="./product-description.html" class="img-product-bg-a">' +
@@ -122,15 +122,19 @@ $(document).ready(function () {
         }
     })
     //li-level-2 click
+    var blurUl;
     $('li.list-item.level-2').click(function(){
-        $('ul.menu-level-2').removeClass('show-menu-level-2');
+        $('ul.menu-level-2').removeClass('show-menu-level-2');        
         var ulChild=$(this).children()[1];
-        $(ulChild).addClass('show-menu-level-2');
+        blurUl = ulChild;
+        $(ulChild).addClass('show-menu-level-2');      
         
     })
+   $('footer,#nav-up-wrap,aside,section').click(function(){
+    $('ul.menu-level-2').removeClass('show-menu-level-2');        
+       
+   })
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);
     });
-
-
 })

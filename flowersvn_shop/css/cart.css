@@ -1,6 +1,7 @@
 div#content-cart{
     width: 50%;
     margin: auto;
+    letter-spacing: 1px;
 }
 
 div.cart-title {
@@ -57,6 +58,7 @@ button.cart-product-remove {
 
 .cart-product-right-gift {
     width: 100%;
+    margin-top: 5px;
 }
 
 span.cart-product-right-gift {
@@ -74,6 +76,7 @@ div.cart-minus,div.cart-number,div.cart-plus {
     width: 33%;
     text-align: center;
     border: 1px solid #999;
+    padding: 5px;
 }
 
 .cart-plus {
@@ -95,6 +98,7 @@ div.cart-total {
     width: 100%;
     margin-bottom:  15px;
     overflow: auto;
+    margin-top: 15px;
 }
 
 h3.cart-total-title {
@@ -105,6 +109,7 @@ span.cart-total {
     float: right;
     color: red;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 form#form-info-customer {
@@ -113,11 +118,20 @@ form#form-info-customer {
 
 input#male,input#female {
     margin-right:  1%;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
 }
 
 div#check-sex, div#info-cus, div#check-address, div#show-address, div#show-address,div.time-transport-pro,div.bill-company {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     /* overflow: auto; */
+}
+
+.bill-company {
+    display: none;
 }
 
 div#info-cus {
@@ -134,7 +148,7 @@ div#show-address {
     padding: 15px 30px 0 30px;
     background-color:  #e9ebee;
     position: relative;
-    display:  none;
+    display: none;
 }
 
 div.triangle-sho-address {
@@ -183,6 +197,8 @@ div#info-cus {
     width: 100%;
 }
 
+div.form-text {padding: 10px 0;}
+
 div.name-cus,div.phone-cus {
     width: 50%;
     float: left;
@@ -200,12 +216,14 @@ input#name-cus,input#phone-cus {width: 100%;font-size: 14px;padding: 5px;border:
 
 label.label-sex {
     margin-right: 3%;
+    cursor: pointer;
 }
 
 span.cart-product-right-name {
     color: #232a34;
     font-size: 15px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 span.cart-product-right-cost {
@@ -216,10 +234,12 @@ span.cart-product-right-cost {
 div.cart-product-right-sale {
     width: 100%;
     overflow: auto;
+    margin-top: 5px;
 }
 
 span.cart-product-sale {
     float: left;
+    letter-spacing: 1px;
 }
 
 span.cart-product-old-cost {
@@ -247,7 +267,10 @@ input#address-des {
 
 div.time-transport-pro {
     width: 100%;
+    overflow: auto;
 }
+
+div.card-pay {}
 
 div.time-transport,div.hour-transport {
     width:  50%;
@@ -272,12 +295,16 @@ div.bill-company,div.name-company,input#name-company,div.address-company,input#a
 
 div#payment-products {
     width:  100%;
+    margin-top: 30px;
+    overflow: auto;
 }
 
-div.pay-in-house,div.pay-card-online {
+a.pay-in-house,a.pay-card-online {
     width:  50%;
     FLOAT: left;
+    height: 60px;
     padding: 0 15px;
+    display: block;
 }
 
 div#pay-in-house,div#pay-card-online {
@@ -292,6 +319,12 @@ div#pay-in-house,div#pay-card-online {
 
 div#pay-in-house {
     background-color: #aece89;
+    line-height: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    letter-spacing: 2px;
 }
 
 div#pay-in-house:hover {
@@ -300,6 +333,12 @@ div#pay-in-house:hover {
 
 div#pay-card-online {
     background-color: #eeaa9c;
+    padding: 20px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 100%;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 div#pay-card-online:hover {

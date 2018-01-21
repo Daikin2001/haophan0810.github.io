@@ -357,3 +357,56 @@ var HH21= {
     codePromotion:'D',
     
 }
+
+
+elmProduct +=
+'<div class="product" id="' + arr[i].id + '">' +
+'<div class="content-product">' +
+' <div class="image-product">' +
+'<img src="' + arr[i].src + '" alt="' + arr[i].alt + '" title="' + arr[i].title + '">' +
+'<div class="img-product-bg">' +
+'<div class="img-product-bg-a">' +
+'<a href="./product-description.html" class="img-product-bg-a">' +
+'</a>' +
+'<span class="img-product-quick-view" data-id-product="' + arr[i].id + '">' +
+'<i class="fa fa-plus img-quick-view" aria-hidden="true"></i>' +
+'</span>' +
+'</div>' +
+'</div>' +
+'</div>' +
+'<div class="descrition">' +
+'<div class="name-product">' +
+'<a href="">' +
+'<span>' + arr[i].name + '</span>' +
+'</a>' +
+'</div>' +
+'<div class="cost-product">' +
+'<span class="cost-product-sale ' + arr[i].classPromotion + '" data-old-cost="' + arr[i].cost + '">' + arr[i].cost.toLocaleString() + ' đ</span>' +
+'<span class="cost-product-not-sale" data-current-cost="' + getCurrentCost(arr[i]) + '">' + getCurrentCost(arr[i]).toLocaleString() + ' đ</span>' +
+'</div>' +
+'<div class="rating-product">' +
+'<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+'<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+'<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+'<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+'<i class="fa fa-star rating-product" aria-hidden="true"></i>' +
+'</div>' +
+'<div class="shopping-cart">' +
+'<div class="shopping-cart-div" data-id-product="' + arr[i].id + '">' +
+
+'<i class="fa fa-shopping-cart product-cart" aria-hidden="true"></i>' +
+'<span class="shopping-cart-span">Thêm vào giỏ hàng</span>' +
+
+'</div>' +
+'</div>' +
+'</div>' +
+'<div class="special-product ' + arr[i].classPromotion + '">' +
+'<div class="hot-product">' +
+'<span class="promotion">' + arr[i].codePromotion + '</span>' +
+'</div>' +
+'</div>' +
+
+'</div>' +
+'</div>'
+
+}

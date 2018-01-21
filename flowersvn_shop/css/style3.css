@@ -554,7 +554,7 @@ div.cart-scrolled-notification {
 
 span.notification-number {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 
@@ -740,4 +740,183 @@ div#aside-img-left {
 
 div.preview-product.title {
     width: 100%;
+}
+
+/* RESPONSIVE */
+
+/* screen<1200px */
+@media screen and (max-width:1200px){
+    li.list-item{
+        font-size: 18px;
+    }
+    .li-list-level-2{
+        font-size: 13px;
+    }
+    html{
+        height: 50%;
+    }
+   
+}
+/* screen < 992px */
+@media screen and (max-width:992px){
+    /* div#nav-up,nav#nav-down{
+        padding: 0;
+    } */
+    
+    div#logo a{
+        padding-top: 10px;
+    }
+    span.menu-oder,span.menu-cart{
+        display: none;
+    }
+
+    li.list-item{
+        font-size: 13px;
+    }
+ 
+  
+}
+/* screen <768px */
+@media screen and (max-width:768px){
+    div#nav-up-wrap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    div#nav-down-wrap{
+        position: fixed;
+        top: 55px;
+        left: 0;
+        z-index: 20;
+    }
+    div#nav-down-wrap.testScroll{
+        top: 55px;
+    }
+    div#menu-phone{
+        display: none;
+    }
+    
+    div#nav-down-wrap{
+        display: none;
+        height: auto;
+    }
+    nav#nav-down{
+        position: relative;
+        padding: 0px;
+        height: auto;
+    }
+    ul#list-main{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+    }
+    li.list-item{
+        float: none;
+        padding: 0;
+        background-color: #aece89;
+        display: block;
+        height: auto;
+        font-size: 20px;
+        letter-spacing :2px;
+    }
+    .a-level-1 {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        padding: 15px;
+    }
+    li.list-item.level-2{
+        padding: 15px 0 0 0;
+        position: static;
+    }
+    li.list-item.li-birthday,li.list-item.li-flower,li.list-item.li-topic,li.list-item.li-flower-special,li.list-item.li-wedding,li.list-item.li-require.level-1{
+        width: 100%;
+        
+    }
+    ul.menu-level-2{
+    position: static;
+    margin-top: 15px;
+}
+    div#home{
+        display: none;
+    }
+    div#menu-search{
+        width: 50%;
+    }
+    div#shortcut-menu{
+        display: block;
+    }
+    div#logo{
+        width: 15%;
+    }
+    div#menu-cart{
+        width: 20%;
+    }
+  
+    p.footer-up-content{
+        display: none;
+        
+    }
+    div#footer-up{
+        padding-bottom: 30px;
+    }
+    p.footer-up-title{
+        font-size: 15px;
+    }
+    .social-icon{
+        margin-top: 15px;
+    }
+    span.img-product-quick-view{
+        padding-top: 6px;
+    }
+}
+/* screen <576px */
+@media screen and (max-width:576px){
+    html{
+        height: 35%;
+    }
+    div#menu-search{
+        padding: 11px 15px 10px 15px;
+        width: 70%;
+    }
+    i.fa.fa-search{
+        right: 10%;
+    }
+    div#menu-cart{
+        display: none;
+    }
+   
+    div#footer-up{
+        margin-top: 50px;
+    }
+    a.footer-up-icon{
+        width: 80px;
+        height: 80px;
+        padding-top: 15px;
+    }
+    a.footer-up-icon i.footer-up-icon{
+        font-size: 45px;
+    }
+    p.footer-up-title{
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    div.back-to-top{
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+    }
+    i.back-to-top{
+        font-size: 20px;
+    }
+    a.cart-scrolled{
+        right: 5px;
+    }
+
+}
+/* screen <360px */
+@media screen and (max-width:360px){
+    
 }
