@@ -429,6 +429,7 @@ i.rating-product {
     overflow: hidden;
     position: relative;
     background-size: cover;
+    background-position: center center;
 }
 
 .name-product a span {
@@ -949,9 +950,14 @@ h2.promotion-description-title{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     letter-spacing: 10px;
     margin-top: 30px;
+}
+
+div.promotion-description div.line-title {
+    width: 35%;
+    margin-bottom: 15px;
 }
 p.promotion-description-text{
     color: white;
@@ -1002,9 +1008,14 @@ h2.promotion-2-description-title{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding: 30px 0;
+    padding-top: 30px;
     letter-spacing: 10px;
     margin-top: 30px;
+}
+
+div.promotion-2-description div.line-title {
+    width: 25%;
+    margin-bottom: 15px;
 }
 p.promotion-2-description-text{
     color: white;
@@ -1035,8 +1046,13 @@ h2.promotion-3-description-title{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding: 30px 0;
+    padding-top: 30px;
     letter-spacing: 10px;
+}
+
+div.promotion-3-description div.line-title {
+    width: 25%;
+    margin-bottom: 15px;
 }
 p.promotion-3-description-text{
     color: white;
@@ -1290,8 +1306,12 @@ h2.header-question{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 30px;
+}
+
+h2.header-question~div.line-title {
+    margin-bottom: 30px;
 }
 div.question-wrap{
     width: 80%;
@@ -1473,13 +1493,16 @@ a.send-message:hover {
         padding: 10px;
     }
     .special-product{
-        top:183px;
+        top:55%;
     }
     a.promotion-shop-now.width{
         width: 45%;
     }
     div.row-comment{
         overflow: hidden;
+    }
+    .name-product{
+        height: 28%;
     }
 }
 /* screen < 992px */
@@ -1637,6 +1660,9 @@ a.send-message:hover {
     h2.comment-header,h2.header-question{
         font-size: 20px;
     }
+    p.promotion-description-text{
+        height: 185px;
+    }
     
 }
 /* screen <576px */
@@ -1711,6 +1737,7 @@ a.send-message:hover {
     }
     p.promotion-description-text,p.promotion-2-description-text,p.promotion-3-description-text{
         height: 150px;
+        width: 100%;
     }
     a.promotion-shop-now{
         width: 60%;
@@ -1770,5 +1797,13 @@ a.send-message:hover {
 }
 /* screen <360px */
 @media screen and (max-width:360px){
-    
+    h2.comment-header{
+        margin-bottom: 0px;
+    }
+    .shopping-cart-div{
+        width: 80%;
+    }
+    p.promotion-description-text, p.promotion-2-description-text, p.promotion-3-description-text{
+        width: 140px;
+    }
 }

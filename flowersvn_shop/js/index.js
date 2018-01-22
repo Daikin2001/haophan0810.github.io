@@ -13,7 +13,6 @@ $(document).ready(function () {
        
        showCartBottom();
 
-
     })
       //products Accessories
     //   var htmlAccessories = "";

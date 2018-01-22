@@ -871,6 +871,10 @@ div.preview-product.title {
     span.img-product-quick-view{
         padding-top: 6px;
     }
+    div#phone_box{
+        left: -40px;
+        bottom: -40px;
+    }
 }
 /* screen <576px */
 @media screen and (max-width:576px){
@@ -914,9 +918,16 @@ div.preview-product.title {
     a.cart-scrolled{
         right: 5px;
     }
+    
 
 }
 /* screen <360px */
 @media screen and (max-width:360px){
+    p.promotion-description-text, p.promotion-2-description-text, p.promotion-3-description-text{
+        width: 140px;
+    }
     
 }
+
+
+

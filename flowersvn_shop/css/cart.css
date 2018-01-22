@@ -140,12 +140,12 @@ div#info-cus {
 
 div#show-address,div.w-address {
     width: 100%;
-    /* background-color: #e9ebee; */
-    /* padding: 15px; */
+    overflow: auto;
+    margin-top: 15px;
 }
 
 div#show-address {
-    padding: 15px 30px 0 30px;
+    padding: 15px 30px;
     background-color:  #e9ebee;
     position: relative;
     display: none;
@@ -183,6 +183,8 @@ select#city-address,select#district-address {
     display: block;
     float: left;
     width: 100%;
+    height: 30px;
+    background-color:  white;
 }
 
 input#address,input#shop {
@@ -259,10 +261,15 @@ select{
 
 input#address-des {
     width: 100%;
-    /* display:  block; */
-    /* margin-top: 5px; */
     padding: 5px;
     margin-bottom: 10px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+span.time-transport {
+    margin: 10px 0;
+    display: block;
 }
 
 div.time-transport-pro {
@@ -287,6 +294,8 @@ div.hour-transport {
 
 select#time-transport,select#hour-transport {
     width:  100%;
+    height: 30px;
+    background-color:  white;
 }
 
 div.bill-company,div.name-company,input#name-company,div.address-company,input#address-company,div.tax-code-company,input#tax-code-company {
@@ -352,4 +361,87 @@ div.bill-product {
 input#name-company, input#address-company, input#tax-code-company {
     padding: 5px;
     margin-bottom:  5px;
+    height: 30px;
+}
+
+/* RESPONSIVE */
+/* screen<1200px */
+@media screen and (max-width:1200px){
+    div#content-cart{
+        width:55%;
+    }
+    div#pay-card-online{
+        padding: 10px 20px;
+    }
+  
+}
+/* screen < 992px */
+@media screen and (max-width:992px){
+    div#content-cart{
+        width: 70%;
+    }
+   
+}
+/* screen <768px */
+@media screen and (max-width:768px){
+    div#content-cart{
+        width: 95%;
+    }
+    
+}
+/* screen <576px */
+@media screen and (max-width:576px){
+    .cart-product-right-number{
+        width: 50%;
+    }
+    div.name-cus{
+        
+        margin-bottom: 5px;
+
+    }
+    div.name-cus, div.phone-cus{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    div.form-text{
+        font-size: 15px;
+    }
+    div.city-address, div.district-address,div.time-transport, div.hour-transport{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    select#city-address, select#district-address{
+        float: none;
+    }
+    a.pay-in-house, a.pay-card-online{
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    div#pay-card-online{
+        padding: 20px;
+    }
+    
+}
+/* screen <360px */
+@media screen and (max-width:360px){
+    span.cart-product-sale,.cart-product-right-gift{
+        display: none;
+    }
+    .cart-product-right-number{
+        width: 60%;
+        margin-top: 15px;
+    }
+    div.cart-product-left{
+        width: 30%;
+    }
+    .cart-product-right{
+        width: 70%;
+    }
+    .cart-product-right-name{
+        text-align: right;
+    }
 }

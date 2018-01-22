@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700&amp;subset=vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Athiti:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate-phone-ring.css">
+
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
@@ -234,10 +236,15 @@
 
                     </div>
                     <div id="check-address">
-                        <input type="radio" name="address" id="address">
-                        <label class="label-address" for="address">Địa chỉ giao hàng</label>
-                        <input type="radio" name="address" id="shop">
-                        <label  class="label-shop" for="shop">Nhận tại cửa hàng</label>
+                        <div class="check-address">
+                                <input type="radio" name="address" id="address">
+                                <label class="label-address" for="address">Địa chỉ giao hàng</label>
+                        </div>
+                      <div class="check-address-shop">
+                            <input type="radio" name="address" id="shop">
+                            <label  class="label-shop" for="shop">Nhận tại cửa hàng</label>
+                      </div>
+                        
                     </div>
                     <div id="show-address">
 
@@ -322,6 +329,20 @@
         <!-- FOOTER -->
        
     </div>
+    <div class="back-to-top">
+        <a href="#nav-up" class="back-to-top">
+            <i class="fa fa-arrow-up back-to-top" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div id="phone_box">
+		<div  class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+			<div class="phonering-alo-ph-circle"></div>
+			<div class="phonering-alo-ph-circle-fill"></div>
+			<a href="tel:0199999999" class="pps-btn-img" title="Liên hệ">
+				<div class="phonering-alo-ph-img-circle"></div>
+			</a>
+		</div>
+	</div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/data/data-birthday-products.js"></script>
     <script src="js/js3.js"></script>

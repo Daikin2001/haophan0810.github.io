@@ -10,7 +10,15 @@ $(document).ready(function(){
     })
 
 
+    $(window).scroll(function () {
+        var viewportWidth = $("body").innerWidth();
+        var viewportHeight = $("body").innerHeight();
+        var c = document.body.clientHeight;
+        var b = $(window).scrollTop();
+       
+       showCartBottom();
 
+    })
 
 
     console.log(arrProductsInCart);
