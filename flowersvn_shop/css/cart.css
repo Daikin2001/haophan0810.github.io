@@ -363,7 +363,9 @@ input#name-company, input#address-company, input#tax-code-company {
     margin-bottom:  5px;
     height: 30px;
 }
-
+button:focus{
+    outline: none;
+}
 /* RESPONSIVE */
 /* screen<1200px */
 @media screen and (max-width:1200px){

@@ -5,14 +5,32 @@ var lengthArrDataBestSell = arrDataBestSell.length;
 
 
 $(document).ready(function () {
+    function getScrollTopElement (id){
+        return $(id).offset().top;
+    }
      $(window).scroll(function () {
         var viewportWidth = $("body").innerWidth();
         var viewportHeight = $("body").innerHeight();
+        var windowScrollTop =$('html').scrollTop();
+        var promotionScrollTop = getScrollTopElement('#promotion');
+        var promotionScrollTop2 = getScrollTopElement('#promotion-2');
+        var promotionScrollTop3 = getScrollTopElement('#promotion-3');
+        // console.log('pro1: ' +promotionScrollTop2);
+        console.log(viewportHeight);
+        // handle when scroll to div promotion
+        if(windowScrollTop>promotionScrollTop-600 && windowScrollTop < getScrollTopElement('#products-hot')){
+            $('div.promotion-description').addClass('promotion-right-in');
+        }else{
+            $('div.promotion-description').removeClass('promotion-right-in');
+        }
+        
+        
         var c = document.body.clientHeight;
         var b = $(window).scrollTop();
-       
-       showCartBottom();
+       console.log(getScrollTopElement('#promotion'));
 
+       showCartBottom();
+    
     })
       //products Accessories
     //   var htmlAccessories = "";
