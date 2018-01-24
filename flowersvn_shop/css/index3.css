@@ -1804,6 +1804,6 @@ a.send-message:hover {
         width: 80%;
     }
     p.promotion-description-text, p.promotion-2-description-text, p.promotion-3-description-text{
-        width: 140px;
+        height: 140px;
     }
 }

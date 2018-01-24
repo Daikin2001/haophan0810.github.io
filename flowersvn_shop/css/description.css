@@ -156,10 +156,30 @@ h2.review-product{
 }
 li.list-review{
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 h3.name{
     letter-spacing: 1px;
     margin-bottom: 5px;
+}
+
+div.content-review-wrap::after {
+    width: 20px;
+}
+
+div.content-review-wrap {
+    position: relative;
+    /* margin-top:  5px; */
+}
+
+div.content-review-wrap::after {
+    content: "";
+    width: 163px;
+    height: 2px;
+    background-color: #252c36;
+    position: absolute;
+    /* z-index: 10; */
+    margin: 10px 0;
 }
 span.review-rating{margin-right:  5px;color: #fecb27;}
 span.content-review{
