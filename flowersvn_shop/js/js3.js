@@ -59,6 +59,7 @@ function getElementProduct(arr) {
     }
     return elmProduct;
 }
+
 function getCurrentCost(dataProduct) {
     var currentCost;
     if (dataProduct.classPromotion == 'promotion-sale') {

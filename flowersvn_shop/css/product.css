@@ -11,14 +11,29 @@ li.breadcrumb.home {
 
 float: left;
 
-width: 5%;
+width: 8%;
+
+font-size: 16px;
+
+color: #232a34;
+}
+
+li.breadcrumb.angle {
+    width: 1%;
+    float: left;
+}
+
+a.breadcrumb {
+    color: #232a34;
+    letter-spacing: 1px;
+    font-size: 16px;
 }
 
 li.breadcrumb.home:hover i#icon-home {
     color:  #000000;
 }
 li.breadcrumb.branch {
-    padding: 5px 0px 0px 0px;
+    /* padding: 5px 0px 0px 0px; */
     float: left;
     width: 11%;
     text-align:  center;

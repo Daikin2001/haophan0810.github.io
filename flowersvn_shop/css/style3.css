@@ -653,6 +653,10 @@ span.product-current-cost {
     text-decoration:  line-through;
     font-family: 'Athiti', sans-serif;
     font-weight: 300;
+    display: none;
+}
+span.product-current-cost.promotion-sale{
+    display: inline;
 }
 div#aside-right-des {
     width:  100%;

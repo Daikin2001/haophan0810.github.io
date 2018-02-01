@@ -7,7 +7,7 @@ var SN01= {
     title:'Giỏ hoa sinh nhật ngọt ngào',
     alt:'Giỏ hoa sinh nhật ngọt ngào',
     rating:4,
-    cost:1000000,    
+    cost:500000,    
     //promotion sale new hot 
     classPromotion:'promotion-sale',
     sale:10,    
@@ -17,13 +17,13 @@ var SN01= {
 }
 var SN02= {
     id:'SN02',
-    name:'I\'ll Fly Away',
+    name:'Cúc vàng và Hồng vàng',
     category:'birthday',
     description:'Hít thở không khí trong lành bằng những bông hoa hồng, xanh lá cây và tím nóng bỏng, được thiết kế đặc biệt cho những bông hoa trong tâm trí của bạn. Tôi sẽ Fly Away là những gì họ sẽ nói khi mà bất ngờ hoàn hảo đất trên ngưỡng cửa của họ.',
-    title:'Giỏ hoa I\'ll Fly Away',
-    alt:'Giỏ hoa I\'ll Fly Away',
+    title:'Giỏ hoa Cúc vàng và Hồng vàng',
+    alt:'Giỏ hoa Cúc vàng và Hồng vàng',
     rating:4,
-    cost:1000000,
+    cost:499000,
     //promotion sale new hot 
     classPromotion:'promotion-new',
     sale:10,        
@@ -39,7 +39,7 @@ var SN03= {
     title:'Giỏ hoa Blooming Sunshine',
     alt:'Giỏ hoa Blooming Sunshine',
     rating:4,
-    cost:90000.90,
+    cost:599000,
     //promotion sale new hot 
     classPromotion:'promotion-sale',
     sale:25,        
@@ -55,7 +55,7 @@ var SN04= {
     title:'Giỏ hoa Over the Blue Horizon',
     alt:'Giỏ hoa Over the Blue Horizon',
     rating:4,
-    cost:1000000,
+    cost:320000,
     //promotion sale new hot 
     classPromotion:'promotion-hot',
     sale:10,        
@@ -71,7 +71,7 @@ var SN05= {
     title:'Giỏ hoa The Princess Diaries',
     alt:'Giỏ hoa The Princess Diaries',
     rating:4,
-    cost:1000000,
+    cost:150000,
     //promotion sale new hot 
     classPromotion:'promotion-hot',
     sale:10,        
@@ -87,7 +87,7 @@ var SN06= {
     title:'Giỏ hoa Three Hearts of Charm',
     alt:'Giỏ hoa Three Hearts of Charm',
     rating:4,
-    cost:1000000,
+    cost:399000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,        
@@ -103,7 +103,7 @@ var SN07= {
     title:'Giỏ hoa Birthday Flowers of Europe',
     alt:'Giỏ hoa Birthday Flowers of Europe',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,        
@@ -119,7 +119,7 @@ var SN08= {
     title:'Giỏ hoa Soothing Elegance Birthday',
     alt:'Giỏ hoa Soothing Elegance Birthday',
     rating:4,
-    cost:1000000,
+    cost:255000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,
@@ -136,7 +136,7 @@ var SN09= {
     title:'Giỏ hoa A Windfall of Orchids',
     alt:'Giỏ hoa A Windfall of Orchids',
     rating:4,
-    cost:1000000,
+    cost:249000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -152,7 +152,7 @@ var SN10= {
     title:'Giỏ hoa Dreams Of Joy',
     alt:'Giỏ hoa Dreams Of Joy',
     rating:4,
-    cost:1000000,
+    cost:129000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -168,7 +168,7 @@ var SN11= {
     title:'Giỏ hoa Purity Bouquet',
     alt:'Giỏ hoa Purity Bouquet',
     rating:4,
-    cost:1000000,
+    cost:239000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -184,7 +184,7 @@ var SN12= {
     title:'Giỏ hoa White Roses',
     alt:'Giỏ hoa White Roses',
     rating:4,
-    cost:1000000,
+    cost:249000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -200,7 +200,7 @@ var SN13= {
     title:'Giỏ hoa One Dozen Red Roses',
     alt:'Giỏ hoa One Dozen Red Roses',
     rating:4,
-    cost:1000000,
+    cost:359000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -216,7 +216,7 @@ var SN14= {
     title:'Giỏ hoa Perfectly Pleasant',
     alt:'Giỏ hoa Perfectly Pleasant',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -232,7 +232,7 @@ var SN15= {
     title:'Giỏ hoa Fresh Blossom Potpourri',
     alt:'Giỏ hoa Fresh Blossom Potpourri',
     rating:4,
-    cost:1000000,
+    cost:214000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -248,7 +248,7 @@ var SN16= {
     title:'Giỏ hoa Exotic Scarlet Nights',
     alt:'Giỏ hoa Exotic Scarlet Nights',
     rating:4,
-    cost:1000000,
+    cost:259000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -264,7 +264,7 @@ var SN17= {
     title:'Giỏ hoa Butterfly Basket',
     alt:'Giỏ hoa Butterfly Basket',
     rating:4,
-    cost:1000000,
+    cost:129000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -280,7 +280,7 @@ var SN18= {
     title:'Giỏ hoa Fashionista Chic',
     alt:'Giỏ hoa Fashionista Chic',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -296,7 +296,7 @@ var SN19= {
     title:'Giỏ hoa An Exotic Flare of Sunset',
     alt:'Giỏ hoa An Exotic Flare of Sunset',
     rating:4,
-    cost:1000000,
+    cost:599000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -312,7 +312,7 @@ var SN20= {
     title:'Giỏ hoa A Little Bit of Blush',
     alt:'Giỏ hoa A Little Bit of Blush',
     rating:4,
-    cost:1000000,
+    cost:128000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -328,7 +328,7 @@ var SN21= {
     title:'Giỏ hoa Bear Hug Bear',
     alt:'Giỏ hoa Bear Hug Bear',
     rating:4,
-    cost:1000000,
+    cost:259000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
