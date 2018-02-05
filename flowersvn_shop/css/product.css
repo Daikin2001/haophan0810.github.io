@@ -11,7 +11,7 @@ li.breadcrumb.home {
 
 float: left;
 
-width: 8%;
+width: 80px;
 
 font-size: 16px;
 
@@ -35,7 +35,7 @@ li.breadcrumb.home:hover i#icon-home {
 li.breadcrumb.branch {
     /* padding: 5px 0px 0px 0px; */
     float: left;
-    width: 11%;
+    width: 100px;
     text-align:  center;
     font-size: 16px;
 }
@@ -155,12 +155,12 @@ div#home:hover i.fa.fa-home{
   div.wrap{
       margin-top: 55px;
   }
-  li.breadcrumb.home{
+  /* li.breadcrumb.home{
       width: 8%;
   }
   li.breadcrumb.branch{
       width: 17%;
-  }
+  } */
   .product{
       width: 50%;
   }
@@ -172,18 +172,18 @@ div#home:hover i.fa.fa-home{
         width: 100%;
     }
       
-    li.breadcrumb.home{
+    /* li.breadcrumb.home{
         width: 15%;
     }
     li.breadcrumb.branch{
         width: 25%;
-    }
+    } */
 }
 /* screen <360px */
 @media screen and (max-width:360px){
-    li.breadcrumb.branch{
+    /* li.breadcrumb.branch{
         width: 40%;
-    }
+    } */
     div.line-title{
         width: 30%;
     }
