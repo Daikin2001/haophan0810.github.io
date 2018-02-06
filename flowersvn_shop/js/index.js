@@ -231,6 +231,21 @@ $(document).ready(function () {
         }    
         
     })
+
+    //validate submit email
+    $('div.btn-follow').click(function(){
+        if($('input#mail-follow').val().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)==null){
+            alert("Sai định dạng email");
+        }else{
+            $('input#mail-follow').val('');
+            alert('Đăng ký thành công');
+        }
+        
+    })
     
+    //validate send message
+    $('a.send-message').click(function(){
+        
+    })
 
 })

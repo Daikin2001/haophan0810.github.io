@@ -311,6 +311,7 @@ p.info-shop-content{
     line-height: 35px;
     height: 180px;
     overflow: hidden;
+    font-size: 20px;
 }
 a.info-shop-read-more{
     display: block;
@@ -1203,37 +1204,49 @@ input#mail-follow{
     float: left;
     padding: 10px 15px;
     font-weight: bold;
+    font-size: 20px;
 }
 input#mail-follow::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #232a34;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 18px;
   }
   input#mail-follow::-moz-placeholder { /* Firefox 19+ */
     color: #232a34;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 18px;
+    
   }
   input#mail-follow:-ms-input-placeholder { /* IE 10+ */
     color: #232a34;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 18px;
+    
   }
   input#mail-follow:-moz-placeholder { /* Firefox 18- */
     color: #232a34;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 18px;
+    
   }
 div.follow-submit{
     width: 10%;
     float: left;
     padding: 0px 20px;
 }
-a.btn-follow{padding: 10px 20px;display: inline-block;background-color: #eeaa9c;border-radius: 3px;color: white;text-transform: uppercase;letter-spacing: 2px;}
+div.btn-follow{padding: 10px 20px;display: inline-block;background-color: #eeaa9c;border-radius: 3px;color: white;text-transform: uppercase;letter-spacing: 2px;cursor: pointer;}
+
+div.btn-follow:hover {
+    background-color: rgba(238,156,156,1.00);
+}
 
 /* comment */
 h2.comment-header{
@@ -1330,6 +1343,7 @@ input#name-user{
     padding: 10px 20px;
     border: 0px;
     border-bottom:  1px solid gray;
+    font-size: 20px;
 }
 div.question-email-user{
     width: 50%;
@@ -1341,6 +1355,7 @@ input#email-user{
     padding: 10px 20px;
     border: 0px;
     border-bottom:  1px solid gray;
+    font-size: 20px;
 }
 div.question-textarea{
     width: 80%;
@@ -1351,6 +1366,7 @@ textarea#message-question{
     border: 0px;
     border-bottom:  1px solid gray;
     width: 100%;
+    font-size: 20px;
     resize: none;
 }
 
