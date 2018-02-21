@@ -170,7 +170,8 @@ $(document).ready(function () {
         $(ulChild).addClass('show-menu-level-2');      
         
     })
-   $('footer,#nav-up-wrap,aside,section').click(function(){
+
+   $('footer,#nav-up-wrap,aside,section,#breadcrumb,.wrap').click(function(){
     $('ul.menu-level-2').removeClass('show-menu-level-2');        
        
    })

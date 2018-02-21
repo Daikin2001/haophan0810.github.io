@@ -1,4 +1,4 @@
-var arrDataProductsBirthday = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08,SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16,SN16,SN18,SN19,SN20,SN21];
+var arrDataProductsBirthday = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08,SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16,SN17,SN18,SN19,SN20,SN21];
 var lengthDataSpecial=arrDataProductsBirthday.length;
 
 $(document).ready(function () {

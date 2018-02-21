@@ -1,5 +1,5 @@
-var arrDataSpecial = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08];
-var arrDataBestSell = [SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16];
+var arrDataSpecial = [SN01, LL01, HH03, LL03, TL02, TL01, HH09, SN08];
+var arrDataBestSell = [TL03, SN02, HH03, HH02, LL02, LL05, TL10, TL16];
 var lengthArrDataSpecial = arrDataSpecial.length;
 var lengthArrDataBestSell = arrDataBestSell.length;
 

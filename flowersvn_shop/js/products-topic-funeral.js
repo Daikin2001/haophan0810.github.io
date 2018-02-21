@@ -1,4 +1,4 @@
-var arrDataProductsSpecial = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08,SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16,SN16,SN18,SN19,SN20,SN21];
+var arrDataProductsSpecial = [CB01, CB02, CB03, CB04, CB05, CB06, CB07, CB08,CB09, CB10, CB11, CB12, CB13, CB14, CB15, CB16,CB17,CB18,CB19,CB20,CB21];
 var lengthDataSpecial=arrDataProductsSpecial.length;
 
 $(document).ready(function () {
