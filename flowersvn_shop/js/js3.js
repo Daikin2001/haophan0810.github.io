@@ -1,3 +1,5 @@
+var numberCart = 0;
+var arrProductsInCart = [];
 function getElementProduct(arr) {
     var elmProduct = "";
     var arrLength = arr.length;
@@ -59,6 +61,7 @@ function getElementProduct(arr) {
     }
     return elmProduct;
 }
+
 function getCurrentCost(dataProduct) {
     var currentCost;
     if (dataProduct.classPromotion == 'promotion-sale') {
@@ -68,8 +71,45 @@ function getCurrentCost(dataProduct) {
     }
     return Math.round(currentCost);
 }
-var numberCart = 0;
-var arrProductsInCart = [];
+function loadDataToQuickView(idProduct,product,arr){
+    var lengthProducts = arr.length;
+    for(var i = 0; i< lengthProducts;i++){
+        if (idProduct == arr[i].id){
+            product = arr[i];
+        }
+    }
+    // console.log(product);
+
+    // load content to preview-product
+    $('h2.name-product-preview').html(product.name+"<span class='code-product'>("+product.id+")</span>");
+    $('span.product-sale-cost').html(getCurrentCost(product).toLocaleString()+ " đ");
+    $('span.product-current-cost').html(product.cost.toLocaleString()+" đ");
+    $('span.product-current-cost').removeClass('promotion-sale');        
+    $('span.product-current-cost').addClass(product.classPromotion);        
+    $('div#aside-right-des').html(product.description);
+    $('div#aside-img-left img').attr('src',product.src);
+    $('a.buy-now').attr('data-id-product',product.id);
+    //add class show-preview 
+    $('div#preview-product').addClass('preview-product-show');
+}
+function clickedShoppingCart(idProduct,arrProductsInCart,arrProductsCurrent,_this){
+    var lengthArrProductInCart = arrProductsInCart.length;
+    var lengthArrProductsCurrent = arrProductsCurrent.length;
+    for (var i=0;i<lengthArrProductsCurrent;i++){
+        if(arrProductsCurrent[i].id == idProduct){
+            arrProductsInCart.push(arrProductsCurrent[i]);
+        }
+    }
+    $(_this).css('pointer-events', 'none');
+    $(_this).html("Đã thêm vào giỏ hàng");
+    numberCart++;
+    console.log(arrProductsInCart);
+    $('sub.menu-cart').html(numberCart);
+    $('sub.menu-cart').attr('data-number-product',numberCart);
+    $('span.notification-number').html(numberCart+" sản phẩm");
+    $('a.cart-scrolled').addClass('show-cart-bottom');
+}
+
 function addCart() {
     $('sub.menu-cart').html(numberCart);
     $('sub.menu-cart').attr('data-number-product', numberCart);
@@ -130,7 +170,8 @@ $(document).ready(function () {
         $(ulChild).addClass('show-menu-level-2');      
         
     })
-   $('footer,#nav-up-wrap,aside,section').click(function(){
+
+   $('footer,#nav-up-wrap,aside,section,#breadcrumb,.wrap').click(function(){
     $('ul.menu-level-2').removeClass('show-menu-level-2');        
        
    })

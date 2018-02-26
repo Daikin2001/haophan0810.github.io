@@ -1,5 +1,5 @@
-var arrDataSpecial = [SN01, SN02, SN03, SN04, SN05, SN06, SN07, SN08];
-var arrDataBestSell = [SN09, SN10, SN11, SN12, SN13, SN14, SN15, SN16];
+var arrDataSpecial = [SN01, LL01, HH03, LL03, TL02, TL01, HH09, SN08];
+var arrDataBestSell = [TL03, SN02, HH03, HH02, LL02, LL05, TL10, TL16];
 var lengthArrDataSpecial = arrDataSpecial.length;
 var lengthArrDataBestSell = arrDataBestSell.length;
 
@@ -32,41 +32,7 @@ $(document).ready(function () {
        showCartBottom();
     
     })
-      //products Accessories
-    //   var htmlAccessories = "";
-    //   var testAccs=0;
-    //   var testAccs2=0;
-    //   for (var i = 0; i < arrDataAccessories.length; i++) {
-    //       testAccs2=(testAccs%8+1)/10;
-    //       testAccs+=1;         
-    //       htmlAccessories += 
-    //       '<div class="product-accessories wow fadeInUp" data-wow-duration="0,5s" data-wow-delay="'+testAccs2+'s" id="' + arrDataAccessories[i].id + '">' +
-    //         '<div class="content-product-accessories">' +
-    //             '<div class="image-product-acessories">' +
-    //                 '<a href="product-description.html">' +
-    //                      '<img src="' + arrDataAccessories[i].src + '" alt="' + arrDataAccessories[i].alt + '" title="' + arrDataAccessories[i].title + '">' +
-    //                  '</a>' +
-    //             '</div>' +
-    //             '<div class="descrition-acessories">' +
-    //                 '<div class="name-product-acessories">' +
-    //                      '<a href="">' +
-    //                          '<span class="span-accessories">' + arrDataAccessories[i].name + '</span>' +
-    //                      '</a>' +
-    //                 '</div>' +
-    //                 '<div class="cost-product-acessories">' +
-    //                      '<div class="cost-product-not-sale-acessories">' + arrDataAccessories[i].curentCost() + ' đ</div>' +
-    //                      '<div class="cost-product-sale-acessories ' + arrDataAccessories[i].promotion + '">' + arrDataAccessories[i].oldCost() + ' đ</div>' +
-    //                 '</div>' +
-    //             '</div>' +
-    //             '<div class="quick-view-acessories">' +
-    //                 '<a href="" title="Xem nhanh">' +
-    //                     '<i class="fa fa-search-plus" aria-hidden="true"></i>' +
-    //                 '</a>' +
-    //             '</div>' +
-    //             '</div>' +
-    //         '</div>'
-  
-    //   }
+    
     $('#content-products-special').append(getElementProduct(arrDataSpecial));
     $('#content-products-best-sellest').append(getElementProduct(arrDataBestSell));
     
@@ -203,66 +169,83 @@ $(document).ready(function () {
     //     clearInterval(closeStartSale);
     // },5000);
 
-//  handle when click preview
 
-$('span.img-product-quick-view').click(function(){
-    var idProduct = $(this).attr('data-id-product');
-    var product;
-    // console.log(idProduct);
-    // looking for index 
-    for(var i = 0; i< lengthArrDataSpecial;i++){
-        if (idProduct == arrDataSpecial[i].id){
-            product = arrDataSpecial[i];
-        }
-        if (idProduct == arrDataBestSell[i].id){
-            product = arrDataBestSell[i];
-        }
-    }
-    // console.log(product);
-
-    // load content to preview-product
-    $('h2.name-product-preview').html(product.name+"<span class='code-product'>("+product.id+")</span>");
-    $('span.product-sale-cost').html(getCurrentCost(product));
-    $('span.product-current-cost').html(product.cost);
-    $('div#aside-right-des').html(product.description);
-    $('div#aside-img-left img').attr('src',product.src);
-    $('a.buy-now').attr('data-id-product',product.id);
-    //add class show-preview 
-    $('div#preview-product').addClass('preview-product-show');
-})
-
-// handle close prevew
-$('i.preview-product,div.wrap-preview-product').click(function(){
-    $('div#preview-product').removeClass('preview-product-show');
-    
-})
-
-// handle click button buy-now
-$('a.buy-now').click(function(){
-    var idProductBuyNow =  $(this).attr('data-id-product');
-    var isValid = true;
-    var lengthArrProductInCart=arrProductsInCart.length;
-    for(var i = 0; i<lengthArrProductInCart;i++){
-        if(arrProductsInCart[i].id == idProductBuyNow){
-            isValid=false;
-        }
-    }
-    if (isValid){
-        for(var i =0;i<lengthArrDataSpecial;i++){
-            if(arrDataBestSell[i].id == idProductBuyNow){
-                arrProductsInCart.push(arrDataBestSell[i]);
-                numberCart++;
-                addCart();
+    $('span.img-product-quick-view').click(function(){
+        var idProduct = $(this).attr('data-id-product');
+        var product;
+        // console.log(idProduct);
+        // looking for index 
+        for(var i = 0; i< lengthArrDataSpecial;i++){
+            if (idProduct == arrDataSpecial[i].id){
+                product = arrDataSpecial[i];
             }
-            if(arrDataSpecial[i].id ==idProductBuyNow){
-                arrProductsInCart.push(arrDataSpecial[i]);
-                numberCart++;
-                addCart();
+            if (idProduct == arrDataBestSell[i].id){
+                product = arrDataBestSell[i];
             }
-            
         }
-    }    
+        // console.log(product);
     
-})
+        // load content to preview-product
+        $('h2.name-product-preview').html(product.name+"<span class='code-product'>("+product.id+")</span>");
+        $('span.product-sale-cost').html(getCurrentCost(product).toLocaleString()+ " đ");
+        $('span.product-current-cost').html(product.cost.toLocaleString()+" đ");
+        $('span.product-current-cost').removeClass('promotion-sale');        
+        $('span.product-current-cost').addClass(product.classPromotion);        
+        $('div#aside-right-des').html(product.description);
+        $('div#aside-img-left img').attr('src',product.src);
+        $('a.buy-now').attr('data-id-product',product.id);
+        //add class show-preview 
+        $('div#preview-product').addClass('preview-product-show');
+    })
+    
+    // handle close prevew
+    $('i.preview-product,div.wrap-preview-product').click(function(){
+        $('div#preview-product').removeClass('preview-product-show');
+        
+    })
+    
+    // handle click button buy-now
+    $('a.buy-now').click(function(){
+        var idProductBuyNow =  $(this).attr('data-id-product');
+        var isValid = true;
+        var lengthArrProductInCart=arrProductsInCart.length;
+        for(var i = 0; i<lengthArrProductInCart;i++){
+            if(arrProductsInCart[i].id == idProductBuyNow){
+                isValid=false;
+            }
+        }
+        if (isValid){
+            for(var i =0;i<lengthArrDataSpecial;i++){
+                if(arrDataBestSell[i].id == idProductBuyNow){
+                    arrProductsInCart.push(arrDataBestSell[i]);
+                    numberCart++;
+                    addCart();
+                }
+                if(arrDataSpecial[i].id ==idProductBuyNow){
+                    arrProductsInCart.push(arrDataSpecial[i]);
+                    numberCart++;
+                    addCart();
+                }
+                
+            }
+        }    
+        
+    })
+
+    //validate submit email
+    $('div.btn-follow').click(function(){
+        if($('input#mail-follow').val().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)==null){
+            alert("Sai định dạng email");
+        }else{
+            $('input#mail-follow').val('');
+            alert('Đăng ký thành công');
+        }
+        
+    })
+    
+    //validate send message
+    $('a.send-message').click(function(){
+        
+    })
 
 })

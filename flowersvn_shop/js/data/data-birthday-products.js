@@ -7,7 +7,7 @@ var SN01= {
     title:'Giỏ hoa sinh nhật ngọt ngào',
     alt:'Giỏ hoa sinh nhật ngọt ngào',
     rating:4,
-    cost:1000000,    
+    cost:500000,    
     //promotion sale new hot 
     classPromotion:'promotion-sale',
     sale:10,    
@@ -17,13 +17,13 @@ var SN01= {
 }
 var SN02= {
     id:'SN02',
-    name:'I\'ll Fly Away',
+    name:'Cúc vàng và Hồng vàng',
     category:'birthday',
-    description:'Hít thở không khí trong lành bằng những bông hoa hồng, xanh lá cây và tím nóng bỏng, được thiết kế đặc biệt cho những bông hoa trong tâm trí của bạn. Tôi sẽ Fly Away là những gì họ sẽ nói khi mà bất ngờ hoàn hảo đất trên ngưỡng cửa của họ.',
-    title:'Giỏ hoa I\'ll Fly Away',
-    alt:'Giỏ hoa I\'ll Fly Away',
+    description:'Chúc một người rất đặc biệt một sinh nhật thật vui vẻ với sự sắp xếp nhà máy chậu đẹp này! Lush, giàu và verdurous, những màu xanh lá cây tỏa vẻ đẹp tự nhiên, trong khi hạnh phúc',
+    title:'Giỏ hoa Cúc vàng và Hồng vàng',
+    alt:'Giỏ hoa Cúc vàng và Hồng vàng',
     rating:4,
-    cost:1000000,
+    cost:499000,
     //promotion sale new hot 
     classPromotion:'promotion-new',
     sale:10,        
@@ -33,29 +33,29 @@ var SN02= {
 }
 var SN03= {
     id:'SN03',
-    name:'Blooming Sunshine',
+    name:'Ánh nắng vàng',
     category:'birthday',
-    description:'Sinh động sống động và rực rỡ, sự sắp xếp quyến rũ này tràn ngập những bông hoa sáng và vui vẻ - một món quà sinh nhật tuyệt vời và thơm ngon!',
+    description:'Mở mắt cho mùa xuân! Các hoa oải hương thơm ngon trong những sắc màu hoàn hảo của màu hồng xanh tươi và hồng hào làm nổi bật lời hứa về một bình minh mới. Những khởi đầu mới và sự lãng mạn nảy nở xảy ra trong mùa thịnh vượng. Hãy tặng cho người đặc biệt đó món quà của niềm vui với một ý nghĩ đơn giản về lòng tốt.',
     title:'Giỏ hoa Blooming Sunshine',
     alt:'Giỏ hoa Blooming Sunshine',
     rating:4,
-    cost:90000.90,
+    cost:600000,
     //promotion sale new hot 
     classPromotion:'promotion-sale',
-    sale:25,        
+    sale:20,        
     src:'images/birthday/SN03.jpg',
      //codePromotion S:sale N:new H:hot D:default
     codePromotion:'off'
 }
 var SN04= {
     id:'SN04',
-    name:'Over the Blue Horizon',
+    name:'Sinh Nhật Màu hồng',
     category:'birthday',
     description:'Hãy tưởng tượng đi thuyền trên Biển Caribê giữa vùng biển trong xanh. Mờ và sáng như bầu trời mùa đông kết hợp tinh tế của các hoa màu trắng và xanh này sẽ tạo nên một món quà bất ngờ tuyệt vời. Hiển thị cảm xúc của bạn để trở thành màu xanh thật sự với những gì họ sẽ nhớ suốt đời.',
-    title:'Giỏ hoa Over the Blue Horizon',
-    alt:'Giỏ hoa Over the Blue Horizon',
+    title:'Giỏ hoa Sinh Nhật Màu hồng',
+    alt:'Giỏ hoa Sinh Nhật Màu hồng',
     rating:4,
-    cost:1000000,
+    cost:320000,
     //promotion sale new hot 
     classPromotion:'promotion-hot',
     sale:10,        
@@ -65,13 +65,13 @@ var SN04= {
 }
 var SN05= {
     id:'SN05',
-    name:'The Princess Diaries',
+    name:'Sinh Nhật Vui Vẻ',
     category:'birthday',
     description:'Từ lâu đài mê hoặc, đã từng có một người phụ nữ trẻ xinh đẹp đến thị trấn Camelot. Được ban phước với vẻ đẹp tinh tế và ân sủng tinh tế, cô bắt đầu câu chuyện về The Princess Diaries. Cảm giác rằng ai đó đặc biệt trong cuộc sống của bạn với một liên lạc của cánh hoa nhạt từ trời!',
-    title:'Giỏ hoa The Princess Diaries',
-    alt:'Giỏ hoa The Princess Diaries',
+    title:'Giỏ hoa Sinh Nhật Vui Vẻ',
+    alt:'Giỏ hoa Sinh Nhật Vui Vẻ',
     rating:4,
-    cost:1000000,
+    cost:150000,
     //promotion sale new hot 
     classPromotion:'promotion-hot',
     sale:10,        
@@ -81,13 +81,13 @@ var SN05= {
 }
 var SN06= {
     id:'SN06',
-    name:'Three Hearts of Charm',
+    name:'Chạm đến trái tim',
     category:'birthday',
     description:'Hoa hồng đỏ truyền đạt cảm giác yêu thương và sự hòa hợp cho người đặc biệt đó. Ba Trái tim của Charm chỉ là món quà hoàn hảo để làm nổi bật khoảnh khắc đó sẽ kéo dài mãi mãi. Cho họ thấy một tình yêu hoàn hảo từ trái tim của bạn.',
-    title:'Giỏ hoa Three Hearts of Charm',
-    alt:'Giỏ hoa Three Hearts of Charm',
+    title:'Giỏ hoa Chạm đến trái tim',
+    alt:'Giỏ hoa Chạm đến trái tim',
     rating:4,
-    cost:1000000,
+    cost:399000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,        
@@ -97,13 +97,13 @@ var SN06= {
 }
 var SN07= {
     id:'SN07',
-    name:'Birthday Flowers of Europe',
+    name:'Hoa Sinh nhật Châu âu',
     category:'birthday',
     description:'Hoa hồng, tím và vàng vào cuộc sống từ loại hoa hồng tươi sáng rực rỡ này. Một sự bất ngờ sinh ngày ấm áp cho những người bạn thực sự quan tâm!',
-    title:'Giỏ hoa Birthday Flowers of Europe',
-    alt:'Giỏ hoa Birthday Flowers of Europe',
+    title:'Giỏ hoa Hoa Sinh nhật Châu âu',
+    alt:'Giỏ hoa Hoa Sinh nhật Châu âu',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,        
@@ -113,13 +113,13 @@ var SN07= {
 }
 var SN08= {
     id:'SN08',
-    name:'Soothing Elegance Birthday',
+    name:'Sinh nhật May Mắn',
     category:'birthday',
     description:'Sự mềm mại của hoa huệ hồng đặt xung quanh một loại hoa tươi, trắng, thực sự là một lời ngợi khen cho vẻ đẹp của thiên nhiên và tiền thưởng. Hiển thị người mà bạn quan tâm vào ngày sinh nhật của họ với bó hoa này nở rộ nhưng rực rỡ.',
-    title:'Giỏ hoa Soothing Elegance Birthday',
-    alt:'Giỏ hoa Soothing Elegance Birthday',
+    title:'Giỏ hoa Sinh nhật May Mắn',
+    alt:'Giỏ hoa Sinh nhật May Mắn',
     rating:4,
-    cost:1000000,
+    cost:255000,
     //promotion sale nclassPw hot 
     classPromotion:'',
     sale:10,
@@ -130,13 +130,13 @@ var SN08= {
 }
 var SN09= {
     id:'SN09',
-    name:'A Windfall of Orchids',
+    name:'Sinh Nhật cùng người thương',
     category:'birthday',
     description:'Khuyến khích tinh thần với những bông hoa thanh lịch và quyến rũ này. Tỏa ra niềm vui của vẻ đẹp tinh khiết!',
-    title:'Giỏ hoa A Windfall of Orchids',
-    alt:'Giỏ hoa A Windfall of Orchids',
+    title:'Giỏ hoa Sinh Nhật cùng người thương',
+    alt:'Giỏ hoa Sinh Nhật cùng người thương',
     rating:4,
-    cost:1000000,
+    cost:249000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -146,13 +146,13 @@ var SN09= {
 }
 var SN10= {
     id:'SN10',
-    name:'Dreams Of Joy',
+    name:'Ngày đặc biệt',
     category:'birthday',
     description:'Một tầm nhìn sống động của những lời chúc sinh nhật nồng nhiệt nhất, mang đến cho bạn một cuộc sống tươi trẻ như bó hoa thơm ngát! Những bông hoa oải hương màu hồng và hoa oải hương nhẹ nhàng được kết hợp với hoa hồng tinh tế, tràn ngập từ bình hoa rực rỡ.',
-    title:'Giỏ hoa Dreams Of Joy',
-    alt:'Giỏ hoa Dreams Of Joy',
+    title:'Giỏ hoa Ngày đặc biệt',
+    alt:'Giỏ hoa Ngày đặc biệt',
     rating:4,
-    cost:1000000,
+    cost:129000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -162,13 +162,13 @@ var SN10= {
 }
 var SN11= {
     id:'SN11',
-    name:'Purity Bouquet',
+    name:'Ngày Vui vẻ',
     category:'birthday',
     description:'Hoàn hảo tinh khiết, sẵn sàng, và breathtakingly đẹp! Vui vẻ hân hoan, chạm vào vẻ đẹp, và tình cảm tinh tế với bó hoa này được sắp xếp một cách chuyên nghiệp bởi một người bán hoa chuyên nghiệp. Nâng tinh thần của họ - gửi ngày hôm nay!',
-    title:'Giỏ hoa Purity Bouquet',
-    alt:'Giỏ hoa Purity Bouquet',
+    title:'Giỏ hoa Ngày Vui vẻ',
+    alt:'Giỏ hoa Ngày Vui vẻ',
     rating:4,
-    cost:1000000,
+    cost:239000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -178,13 +178,13 @@ var SN11= {
 }
 var SN12= {
     id:'SN12',
-    name:'White Roses',
+    name:'Hoa Sinh Nhật nhẹ nhàng',
     category:'birthday',
     description:'Cổ điển, tinh khiết, và đơn giản là tuyệt đẹp - nói tất cả những gì bạn phải nói với sự thanh lịch ngoạn mục của hoa hồng màu kem.',
-    title:'Giỏ hoa White Roses',
-    alt:'Giỏ hoa White Roses',
+    title:'Giỏ hoa Hoa Sinh Nhật nhẹ nhàng',
+    alt:'Giỏ hoa Hoa Sinh Nhật nhẹ nhàng',
     rating:4,
-    cost:1000000,
+    cost:249000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -194,13 +194,13 @@ var SN12= {
 }
 var SN13= {
     id:'SN13',
-    name:'One Dozen Red Roses',
+    name:'Sinh Nhật cùng bạn',
     category:'birthday',
     description:'Biểu tượng của tình yêu không mệt mỏi, sang trọng dễ dàng với món quà cổ điển của một tá hoa hồng đỏ quyến rũ. Mỗi cánh hoa quý giá đại diện cho một trong vô số lý do rằng cô ấy là người bạn không thể thoát khỏi tâm trí của bạn khi cô ấy phát triển đẹp hơn mỗi năm. Cho cô ấy thấy rằng bạn muốn kỷ niệm sinh nhật của mình một cách hoàn hảo nhất, gửi hoa ngày hôm nay.',
-    title:'Giỏ hoa One Dozen Red Roses',
-    alt:'Giỏ hoa One Dozen Red Roses',
+    title:'Giỏ hoa Sinh Nhật cùng bạn',
+    alt:'Giỏ hoa Sinh Nhật cùng bạn',
     rating:4,
-    cost:1000000,
+    cost:359000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -210,13 +210,13 @@ var SN13= {
 }
 var SN14= {
     id:'SN14',
-    name:'Perfectly Pleasant',
+    name:'Tuyệt hảo',
     category:'birthday',
     description:'Tinh tế và ngoạn mục là chủ đề trong ngày! Hoàn toàn Pleasant chụp một khoảnh khắc quý giá của hoa hồng, hoa oải hương, và màu vàng hợp tác để làm cho rằng nhân dịp đặc biệt hoàn thành. Hát và nhảy múa với màu sắc của mùa xuân cho thời gian đó của cuộc sống của họ chỉ là xung quanh góc.',
-    title:'Giỏ hoa Perfectly Pleasant',
-    alt:'Giỏ hoa Perfectly Pleasant',
+    title:'Giỏ hoa Tuyệt hảo',
+    alt:'Giỏ hoa Tuyệt hảo',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -226,13 +226,13 @@ var SN14= {
 }
 var SN15= {
     id:'SN15',
-    name:'Fresh Blossom Potpourri',
+    name:'May Mắn',
     category:'birthday',
     description:'Một mảng chói của hoa tươi thơm được sẵn sàng trên một chiếc nồi đất terra cotta đáng yêu với một ruy băng sáng. Thiết kế hoàn hảo thơm ngon này sẽ mang lại nụ cười hạnh phúc và hạnh phúc sighs! Nói sinh nhật vui vẻ với phong cách và chân thành, gửi hoa!',
-    title:'Giỏ hoa Fresh Blossom Potpourri',
-    alt:'Giỏ hoa Fresh Blossom Potpourri',
+    title:'Giỏ hoa May Mắn',
+    alt:'Giỏ hoa May Mắn',
     rating:4,
-    cost:1000000,
+    cost:214000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -242,13 +242,13 @@ var SN15= {
 }
 var SN16= {
     id:'SN16',
-    name:'Exotic Scarlet Nights',
+    name:'Đêm cổ tích',
     category:'birthday',
     description:'Nét đẹp cổ điển và thanh lịch tuyệt vời, mảng hoa hồng đỏ rực rỡ này với ân sủng và quyến rũ! Hạnh phúc, nở hoa phong phú luôn luôn làm cho một mùi ngọt ngào và thực sự đáng nhớ món quà sinh nhật!',
-    title:'Giỏ hoa Exotic Scarlet Nights',
-    alt:'Giỏ hoa Exotic Scarlet Nights',
+    title:'Giỏ hoa Đêm cổ tích',
+    alt:'Giỏ hoa Đêm cổ tích',
     rating:4,
-    cost:1000000,
+    cost:259000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -258,13 +258,13 @@ var SN16= {
 }
 var SN17= {
     id:'SN17',
-    name:'Butterfly Basket',
+    name:'Sinh nhật Ước Mơ',
     category:'birthday',
     description:'Mang lại nụ cười vui vẻ với bộ sưu tập đầy màu sắc và niềm vui này! Gửi hoa ngày hôm nay!',
-    title:'Giỏ hoa Butterfly Basket',
-    alt:'Giỏ hoa Butterfly Basket',
+    title:'Giỏ hoa Sinh nhật Ước Mơ',
+    alt:'Giỏ hoa Sinh nhật Ước Mơ',
     rating:4,
-    cost:1000000,
+    cost:129000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -274,13 +274,13 @@ var SN17= {
 }
 var SN18= {
     id:'SN18',
-    name:'Fashionista Chic',
+    name:'Lung linh',
     category:'birthday',
-    description:'Nhẫn vào mùa xuân với thời trang Fashionista Chic! Một sự hợp tác tinh tế nhất của pastels trong ánh sáng chiếu sáng của màu vàng, hồng, và màu xanh lá cây nổi bật rằng mùa xuân đã đến. Waltz xuống sàn catwalk như thể thế giới đang theo dõi một vẻ đẹp tuyệt đẹp không bao giờ bỏ qua!',
-    title:'Giỏ hoa Fashionista Chic',
-    alt:'Giỏ hoa Fashionista Chic',
+    description:'Nhẫn vào mùa xuân với thời trang Lung linh! Một sự hợp tác tinh tế nhất của pastels trong ánh sáng chiếu sáng của màu vàng, hồng, và màu xanh lá cây nổi bật rằng mùa xuân đã đến. Waltz xuống sàn catwalk như thể thế giới đang theo dõi một vẻ đẹp tuyệt đẹp không bao giờ bỏ qua!',
+    title:'Giỏ hoa Lung linh',
+    alt:'Giỏ hoa Lung linh',
     rating:4,
-    cost:1000000,
+    cost:299000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -290,13 +290,13 @@ var SN18= {
 }
 var SN19= {
     id:'SN19',
-    name:'An Exotic Flare of Sunset',
+    name:'Sinh nhật hoành tráng',
     category:'birthday',
     description:'Rạng rỡ hoa hồng và một loạt các loại hoa tươi khác đã nở hoa từ sự sắp xếp này trong sắc thái tinh tế của đào và hồng. Đẹp, thơm và sôi động, bó hoa này tạo nên một món quà sinh nhật tuyệt vời cho người đặc biệt!',
-    title:'Giỏ hoa An Exotic Flare of Sunset',
-    alt:'Giỏ hoa An Exotic Flare of Sunset',
+    title:'Giỏ hoa Sinh nhật hoành tráng',
+    alt:'Giỏ hoa Sinh nhật hoành tráng',
     rating:4,
-    cost:1000000,
+    cost:599000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -306,13 +306,13 @@ var SN19= {
 }
 var SN20= {
     id:'S20',
-    name:'A Little Bit of Blush',
+    name:'Một chút nhẹ nhàng',
     category:'birthday',
     description:'Nâng cao kính champagne của bạn trong dịp kỷ niệm sự kiện hoàn hảo đó! Cuộc sống cuộc sống đầy đủ và không bao giờ nhìn lại! Hãy nhấn mạnh khoảnh khắc trong những hương thơm hấp dẫn nhất trong bộ rạn rực rỡ, hoa đào quý báu, và màu trắng rực rỡ để làm cho dịp thích hợp!',
-    title:'Giỏ hoa A Little Bit of Blush',
-    alt:'Giỏ hoa A Little Bit of Blush',
+    title:'Giỏ hoa Một chút nhẹ nhàng',
+    alt:'Giỏ hoa Một chút nhẹ nhàng',
     rating:4,
-    cost:1000000,
+    cost:128000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        
@@ -322,13 +322,13 @@ var SN20= {
 }
 var SN21= {
     id:'SN21',
-    name:'Bear Hug Bear',
+    name:'Hưng phấn cao độ',
     category:'birthday',
     description:'Cánh tay của anh ta tràn ngập một bó hoa tuyệt đẹp, gấu ngựa nhỏ của chúng ta vẫn còn ôm lấy một cái ôm sinh nhật! Các màu hoa hồng và tím quý giá gửi lời chúc mừng sinh nhật của bạn một cách ngọt ngào, trong khi những hoa hồng cổ điển sẽ thích thú giữa các loại hoa tươi thơm.',
-    title:'Giỏ hoa Bear Hug Bear',
-    alt:'Giỏ hoa Bear Hug Bear',
+    title:'Giỏ hoa Hưng phấn cao độ',
+    alt:'Giỏ hoa Hưng phấn cao độ',
     rating:4,
-    cost:1000000,
+    cost:259000,
     //promotion sale new hot 
     classPromotion:'',
     sale:10,        

@@ -106,7 +106,7 @@ div#menu-search {
     width: 43%;
     float: left;
     max-width: 500px;
-    padding: 15px 10px 10px 30px;
+    padding: 10px 10px 10px 30px;
     position: relative;
 }
 input:focus {
@@ -115,15 +115,19 @@ input:focus {
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #eeaa9c;
+    font-size: 20px;
   }
   input::-moz-placeholder { /* Firefox 19+ */
     color: #eeaa9c;
+    font-size: 20px;
   }
  input:-ms-input-placeholder { /* IE 10+ */
     color: #eeaa9c;
+    font-size: 20px;
   }
  input:-moz-placeholder { /* Firefox 18- */
     color: #eeaa9c;
+    font-size: 20px;
   }
     i.fa.fa-search {
         position: absolute;
@@ -202,7 +206,7 @@ input#ipt-search {
     border: 1px solid #eeaa9c;
     border-radius: 10px;
     width: 100%;
-    height: 30px;
+    height: 35px;
     padding-left: 10px;
     color: #eeaa9c;
 }
@@ -554,7 +558,7 @@ div.cart-scrolled-notification {
 
 span.notification-number {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -653,6 +657,10 @@ span.product-current-cost {
     text-decoration:  line-through;
     font-family: 'Athiti', sans-serif;
     font-weight: 300;
+    display: none;
+}
+span.product-current-cost.promotion-sale{
+    display: inline;
 }
 div#aside-right-des {
     width:  100%;
