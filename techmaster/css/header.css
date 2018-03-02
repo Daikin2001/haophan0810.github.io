@@ -1,0 +1,19 @@
+.main-menu__item {
+font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.main-menu__item--home-hide {
+    display: none;
+}
+
+
+.main-menu__link {
+  color: #4a4a4a;
+    
+}
