@@ -5,68 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <title>Techmaster Việt Nam</title>
+    <link rel="icon" href="images/logo/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="./css/lib/bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/header.css">
-
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <header class="container ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light main-menu">
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light main-menu container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand main-menu__logo" href="#">
+                <img src="images/logo/logo.png" title="Techmaster">
+            </a>
             <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto main-menu-content">
-                    <li class="nav-item main-menu__item main-menu__item--home-hide">
-                        <a class="nav-link main-menu__link" href="#">Trang Chủ
+                <ul class="navbar-nav mr-auto main-menu-content-left">
+                    <li class="nav-item main-menu__item main-menu__item-home--hide">
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Trang Chủ</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item main-menu__item main-menu__item-search">
+                        <a class="main-menu__link" href="#">
+                            <div class="main-menu__link-circle">
+                                <i class="fas fa-search"></i>
+                            </div>
+
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link" href="#">
-                            <i class="fas fa-search"></i>
-                            <span class="sr-only">(current)</span>
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Khóa học</span>
                         </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link" href="#">Khóa học</a>
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Bài viết</span>
+                        </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link " href="#">Bài viết</a>
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Về chúng tôi</span>
+                        </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link " href="#">Về chúng tôi</a>
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Việc làm</span>
+                        </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link " href="#">Việc làm</a>
+                        <a class="main-menu__link" href="#">
+                            <span class="main-menu__text">Liên hệ</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav main-menu-content-right">
+                    <li class="nav-item main-menu__item main-menu__item-register">
+                        <a class="main-menu__link " href="#">
+                            <span class="main-menu__text">Đăng ký</span>
+                        </a>
                     </li>
                     <li class="nav-item main-menu__item">
-                        <a class="nav-link main-menu__link " href="#">Liên hệ</a>
+                        <a class="main-menu__link " href="#">
+                            <span class="main-menu__text">Đăng nhập</span>
+                        </a>
                     </li>
-                    <li class="nav-item main-menu__item" >
-                            <a class="nav-link main-menu__link " href="#">Đăng ký</a>
-                        </li>
-                        <li class="nav-item main-menu__item">
-                                <a class="nav-link main-menu__link " href="#">Đăng nhập</a>
-                            </li>
                 </ul>
             </div>
         </nav>
-
-
         <!-- END HEADER -->
     </header>
-    <footer class="container">
-
+    <section class="slide-bar"></section>
+    <section class="post-content"></section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-wrap container">
+          <div class="row">
+              <div class="col-xl-3 footer__contact">
+                  <h4 class="footer__title">Liên hệ</h4>
+                  <div class="footer__contact-supporter footer__contact-supporter--margin-bottom">
+                      <span class="footer__text">
+                          Mr Cường: <a class="footer__phone" href="tel:0902209011">090.220.9011</a>
+                      </span>
+                      <a href="mailto:cuong@techmaster.vn" class="footer__mail">cuong@techmaster.vn</a>
+                  </div>
+                  <div class="footer__contact-supporter">
+                        <span class="footer__text">
+                            Ms Huyền :<a class="footer__phone" href="tel:01683097229">0168.309.7229</a>
+                        </span>
+                        <a href="mailto:huyen@techmaster.vn" class="footer__mail">huyen@techmaster.vn</a>
+                    </div>
+              </div>
+              <div class="col-xl-3 footer__time-work">
+                    <h4 class="footer__title">Giờ làm việc</h4>
+                    <span class="footer__text footer__open-times">9:00 - 18:00</span>
+                    <span class="footer__text footer__open-days">Thứ 2 - Thứ 6</span>                
+                                    
+              </div>
+              <div class="col-xl-3 footer__address">
+                    <h4 class="footer__title">Địa chỉ</h4>
+                    <span class="footer__text _anddres">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</span>
+                                   
+                                    
+              </div>
+              <div class="col-xl-3 footer__social-network"></div>
+          </div>
+        </div>
+        <!-- END FOOTER -->
     </footer>
 
 
