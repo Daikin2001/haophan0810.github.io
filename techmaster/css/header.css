@@ -59,6 +59,9 @@ a.main-menu__link {
   transform: translateY(-50%);
 
 }
+.main-menu__item-login {
+  width: 122px;
+}
 
 .main-menu-content-right {
   width: 200px;

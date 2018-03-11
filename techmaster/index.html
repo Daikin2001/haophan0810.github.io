@@ -76,7 +76,7 @@
                             <span class="main-menu__text">Đăng ký</span>
                         </a>
                     </li>
-                    <li class="nav-item main-menu__item">
+                    <li class="nav-item main-menu__item  main-menu__item-login">
                         <a class="main-menu__link " href="#">
                             <span class="main-menu__text">Đăng nhập</span>
                         </a>
@@ -86,41 +86,144 @@
         </nav>
         <!-- END HEADER -->
     </header>
-    <section class="slide-bar"></section>
-    <section class="post-content"></section>
+    <!-- SLIDE BAR -->
+    <section class="slide-bar container">
+        <div class="row slide-bar__wrap">
+            <div class="col-xl-6 slide-bar__item-left">
+                <a href="" class="slide-bar__link">
+                    <img src="images/slide.png" alt="">
+                </a>
+            </div>
+            <div class="col-xl-6 slide-bar__item-right">
+                <a href="" class="slide-bar__link">
+                    <img src="images/slide.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="slide-bar__circles">
+            <ul class="slide-bar__circles-wrap">
+                <li class="slide-bar__circle-item slide-bar__circle-item--active"></li>
+                <li class="slide-bar__circle-item"></li>
+                <li class="slide-bar__circle-item"></li>
+            </ul>
+        </div>
+        <!-- END SLIDE-BAR -->
+    </section>
+
+
+    <!-- POST_CONTENT -->
+    <section class="post-content container">
+        <div class="row post-content__wrap">
+            <div class="col-xl-4 post-content__item">
+                <a href="" class="post-content__link">
+                    <img src="images/content-1.png" alt="">
+                    <h2 class="post-content__title"></h2>
+                </a>
+
+            </div>
+            <div class="col-xl-4 post-content__item">
+                <a href="" class="post-content__link">
+                    <img src="images/content-1.png" alt="">
+                    <h2 class="post-content__title"></h2>
+                </a>
+
+            </div>
+            <div class="col-xl-4 post-content__item">
+                <a href="" class="post-content__link">
+                    <img src="images/content-1.png" alt="">
+                    <h2 class="post-content__title"></h2>
+                </a>
+
+            </div>
+        </div>
+        <!-- END POST_CONTENT -->
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products container">
+        <h1 class="products__title">Khóa Học</h1>
+        <div class="products__list">
+            <ul class="products__list-wrap">
+                <li class="products__list-item products__list-new products__list-item--active">Mới</li>
+                <li class="products__list-item products__list-learn">Học nhiều</li>
+                <li class="products__list-item products__list-web">Web</li>
+                <li class="products__list-item products__list-mobile">Di động</li>
+                <li class="products__list-item products__list-all">Tất cả</li>
+
+            </ul>
+        </div>
+        <div class="row">
+            <article class="card col-xl-3 products__item" >
+                <img class="card-img-top" src="images/product.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </article>
+            <article class="card col-xl-3 products__item" >
+                    <img class="card-img-top" src="images/product.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    </div>
+                </article>
+                <article class="card col-xl-3 products__item" >
+                        <img class="card-img-top" src="images/product.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                        </div>
+                    </article>
+                    <article class="card col-xl-3 products__item" >
+                            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                            </div>
+                        </article>
+        </div>
+        <!-- END_PRODUCTS -->
+    </section>
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-wrap container">
-          <div class="row">
-              <div class="col-xl-3 footer__contact">
-                  <h4 class="footer__title">Liên hệ</h4>
-                  <div class="footer__contact-supporter footer__contact-supporter--margin-bottom">
-                      <span class="footer__text">
-                          Mr Cường: <a class="footer__phone" href="tel:0902209011">090.220.9011</a>
-                      </span>
-                      <a href="mailto:cuong@techmaster.vn" class="footer__mail">cuong@techmaster.vn</a>
-                  </div>
-                  <div class="footer__contact-supporter">
+            <div class="row">
+                <div class="col-xl-3 footer__contact">
+                    <h4 class="footer__title">Liên hệ</h4>
+                    <div class="footer__contact-supporter footer__contact-supporter--margin-bottom">
                         <span class="footer__text">
-                            Ms Huyền :<a class="footer__phone" href="tel:01683097229">0168.309.7229</a>
+                            Mr Cường:
+                            <a class="footer__phone" href="tel:0902209011">090.220.9011</a>
+                        </span>
+                        <a href="mailto:cuong@techmaster.vn" class="footer__mail">cuong@techmaster.vn</a>
+                    </div>
+                    <div class="footer__contact-supporter">
+                        <span class="footer__text">
+                            Ms Huyền :
+                            <a class="footer__phone" href="tel:01683097229">0168.309.7229</a>
                         </span>
                         <a href="mailto:huyen@techmaster.vn" class="footer__mail">huyen@techmaster.vn</a>
                     </div>
-              </div>
-              <div class="col-xl-3 footer__time-work">
+                </div>
+                <div class="col-xl-3 footer__time-work">
                     <h4 class="footer__title">Giờ làm việc</h4>
                     <span class="footer__text footer__open-times">9:00 - 18:00</span>
-                    <span class="footer__text footer__open-days">Thứ 2 - Thứ 6</span>                
-                                    
-              </div>
-              <div class="col-xl-3 footer__address">
+                    <span class="footer__text footer__open-days">Thứ 2 - Thứ 6</span>
+
+                </div>
+                <div class="col-xl-3 footer__address">
                     <h4 class="footer__title">Địa chỉ</h4>
                     <span class="footer__text _anddres">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</span>
-                                   
-                                    
-              </div>
-              <div class="col-xl-3 footer__social-network"></div>
-          </div>
+
+
+                </div>
+                <div class="col-xl-3 footer__social-network"></div>
+            </div>
         </div>
         <!-- END FOOTER -->
     </footer>
