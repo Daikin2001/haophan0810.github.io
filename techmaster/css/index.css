@@ -1,4 +1,6 @@
 
+/* SLIDE BAR */
+
 section.slide-bar{
     margin-top: 77px;
     margin-bottom: 58px;
@@ -50,6 +52,9 @@ section.post-content {
 
 
 /* PRODUCTS */
+section.products {
+    margin-bottom: 67px;
+}
 .products__title {
     font-size: 30px;
     font-weight: 800;
@@ -107,3 +112,114 @@ li.products__list-item {
 .products__item {
     border: 0px solid;
 }
+
+.products__item-content {
+    padding: 0;
+    text-align: center;
+    border: solid 1px #d8d8d8;
+   
+}
+
+.products__item-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #4a4a4a;
+    height: 90px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 255px;
+    position: relative;
+}
+
+.products__item-title::after {
+    content: "";
+    position: absolute;
+    width: 197px;
+    height: 3px;
+    background-color: #d8d8d8;
+    bottom: -1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.products__item-cost {
+    height: 60px;
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #17aa1c;
+    
+}
+
+
+
+
+/* BLOG */
+section.blog{
+    background-color: #f4f4f4;
+    padding-top: 36px;
+    padding-bottom: 72px;
+}
+
+.blog__title {
+    margin-bottom: 27px;
+}
+.blog__title-left {
+    font-size: 30px;
+    font-weight: 800;
+    color: #4a4a4a;
+    float: left;
+}
+.blog__title-right {
+    font-size: 20px;
+    color: #4a4a4a;
+    float: right;
+}
+
+.blog__item {
+    border: 0 solid;
+    background-color: #f4f4f4;
+    
+}
+
+
+.blog__item-content {
+    padding: 0;
+    text-align: center;
+    border: solid 1px #d8d8d8;
+    background-color: #ffffff;
+}
+
+.blog__item-title {
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a4a;
+    width: 255px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.blog__item-title::after {
+    content: "";
+    position: absolute;
+    width: 219px;
+    height: 3px;
+    background-color: #d8d8d8;
+    bottom: -1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog__item-date-post {
+    height: 50px;
+    padding-top: 18px;    
+    font-size: 14px;
+    text-align: right;
+    color: #4a4a4a;
+    padding-right: 17px;   
+    
+}
+
+
