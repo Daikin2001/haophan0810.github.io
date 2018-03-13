@@ -111,6 +111,52 @@ li.products__list-item {
 
 .products__item {
     border: 0px solid;
+    position: relative;    
+}
+
+.products__item:hover .products__link-wrap {
+    visibility: visible;
+    
+}
+
+.products__link-wrap {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 255px;
+    height: 179px;
+    visibility: hidden;
+}
+
+.products__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.products__link-button {
+    background-color: #00b0f0;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.products__link-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.products__link-text {
+    display: table-cell;
+    vertical-align: middle;
+    height: 45px;
+    width: 135px;
 }
 
 .products__item-content {
@@ -191,6 +237,7 @@ section.blog{
 }
 
 .blog__item-title {
+    padding: 0 5px;
     height: 80px;
     font-size: 18px;
     font-weight: bold;
@@ -223,3 +270,131 @@ section.blog{
 }
 
 
+/* HOW LEARNING */
+
+section.how-learning {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.how-learning__main-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.how-learning__icon-wrap {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+.how-learning__icon-bg-img {
+    background-color: #60c2ee;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative; 
+
+}
+
+.how-learning__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36.9px;
+    transform: translate(-50%,-50%);
+}
+
+.how-learning__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.how-learning__description {
+    font-size: 20px;
+    color: #9b9b9b;
+    text-align: center;
+}
+
+
+/* COMMENT */
+
+section.comment {
+    padding-top: 65px;
+    padding-bottom: 90px;
+    background-color: #f5f5f5;
+}
+
+.comment__main-title {
+    font-size: 30px;
+    color: #4a4a4a;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.comment__content-wrap {
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+.comment__quote-left {
+    position: absolute;
+    top: -15px;
+    left: -60px;
+    font-size: 40px;
+    color: #4a4a4a;
+}
+.comment__content {
+    height: 120px;
+    text-align: left;
+    font-size: 16px;
+    color: #4a4a4a;
+    /* letter-spacing: 1px; */
+}
+
+.comment__student-avatar {
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* .comment__student-i {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+} */
+.comment__student-avatar img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+.comment__student-arrow-left,
+.comment__student-arrow-right {
+    position: absolute;
+    font-size: 40px;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.comment__student-arrow-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.comment__student-arrow-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.comment__student-name,.comment__student-school {
+    font-size: 16px;
+    color: #4a4a4a;
+    text-align: center;
+}
