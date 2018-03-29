@@ -1,7 +1,18 @@
 * {
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: Karma;
+    src: url("Karma/Karma-Bold.ttf");
+    src: url("Karma/Karma-Regular.ttf");
+    
+}
+@font-face {
+    font-family: KarmaBold;
+    src: url("Karma/Karma-Bold.ttf");
+   
+    
+}
 div#root {
     margin: auto;
     overflow: auto;
@@ -15,4 +26,7 @@ td {
     text-align:  center;
     border: 2px solid rebeccapurple;
     cursor: pointer;
+}
+.test-font {
+    font-family: KarmaBold;
 }

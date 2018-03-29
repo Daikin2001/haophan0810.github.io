@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    
+}
+.main-menu {
+    width: 1000px;
+    margin: auto;
+    height: auto;
+    background-color: aqua;
+}
+
+ul {
+    width: 100%;
+    height: auto;
+}
+
+.main-menu__item {
+    display: block;
+    float: left;
+    width: 150px;
+    text-align: center;
+
+}

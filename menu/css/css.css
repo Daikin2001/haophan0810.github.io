@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+/* wrap main-menu */
+.main-menu-wrap {
+    height: 60px;
+    background-color: aqua;
+    width: 100%;
+}   
+    /* style main-menu */
+    .main-menu {
+        width: 1140px;
+        margin: auto;
+        height: 60px;
+    }
+    /* item of main-menu */
+    .main-menu__item-lv-1 {
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        position: relative;
+        padding-top: 23px;
+        font-size: 20px;
+        /* overflow: auto; */
+    }
+    
+    /* arrow absolute */
+    .main-menu__arrow {
+        position: absolute;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        right: 12%;
+        top: 39%;
+    }
+    .main-menu__arrow img {
+        width: 100%;
+    }
+/* an menu-cap 2 */
+.menu-2 {
+    display: none;
+    /* position: absolute; */
+    /* top: 60px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* css khi hover vao thang item-lv1  */
+
+.main-menu__item-lv-1:hover .menu-2 {
+    display: block;
+}
+.main-menu__item-lv-1:hover .main-menu__arrow {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__item-lv-2 {
+    display: block;
+    padding: 5px 10px;
+}
+.clear {
+    clear: both;
+}
+.menu__item-lv-2:hover {
+    background-color: bisque;
+}
