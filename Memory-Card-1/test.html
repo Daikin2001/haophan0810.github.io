@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        
+        
+        <script>
+       
+	//Example 1:
+	var n;
+	function factorial(n) {
+		var result = 1;
+		if (n >=0) {
+			for(var i = n; i >= 1; i--){
+				result*=i;
+			}
+		}
+		else {
+			alert("Error");
+		}
+		return result;
+		}
+		
+	//Example 2:
+	var str = '';
+	typeof str == "String";
+		function reverse(str){
+		var arr = str.split("");
+		var storage = [];
+		for(var i=arr.length; i>=0; i--){
+			storage.push(arr[i]);
+			}
+		return storage.join("");
+
+		}
+	
+	
+//  Bài 4 sử dụng (arr.sort; });) sẽ chính xác hơn. Bài 5 cũng vậy, nên viết là duplicated(arr) chứ không phải fix cứng giá trị của mảng. Bài 6 cũng vậy, sửa lại rồi nộp lại nhé
+	//Example 3:
+	
+
+	var strCoppy = '';
+	function duplicate(strCoppy){
+		strDepot = "";
+		for(i=1; i<=10; i++){
+			strDepot += strCoppy + "-";
+		}
+		return strDepot.slice(0, strDepot.length-1);
+	}
+
+
+	//Example 4:
+	
+	function example5(arr) {
+				return arr.sort(function(a, b){return a-b});
+				
+			}
+			document.write("Số nhỏ nhất mảng: " + example5([1,2,1,5,-1]).slice(0, 1) + "<br/>");
+
+
+
+	//Example 5
+	var num = [];
+	function duplicated(num) {
+		var depot = [];
+		for(i=0; i<num.length; i++){
+			depot.push(num[i]*2);
+		}
+		return depot;
+	}
+
+	//Example 6
+
+	arrNum = [];
+	function surplus(arrNum){
+		var depotNum = [];
+		for(i=0; i<arrNum.length; i++){
+			depotNum.push(arrNum[i]%2);
+		}
+		return depotNum;
+	}
+
+
+
+
+
+
+
+        </script>
+
+</body>
+</html>
