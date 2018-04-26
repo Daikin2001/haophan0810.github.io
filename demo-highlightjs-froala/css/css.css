@@ -4,5 +4,27 @@
     box-sizing: border-box;
 }
 #highlight-popup {
-    display: none;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.493);
+   z-index: 100;
 }
+
+.highlight_wrap {
+    margin: auto;
+    width: 1200px;
+    height: 80%;
+}
+
+.hljs-popup__title {}
+.hljs-popup__lang {}
+.hljs-popup__lang-title{}
+.hljs-popup__text-content {}
+.hljs-popup_submit {}
+.cancel-wrap {}
+.submit-wrap {}
+.hljs-popup__close {}
+.hljs-popup__text-area {}
