@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 25%;
+    /* padding: 5px; */
+    /* float: left; */
+}
+
+.menu-actress {
+   margin-bottom: 30px;
+   margin-top: 15px;
+    text-align: center;
+    
+}
+
+h1.title {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.filter {
+    margin-right: 10px;
+}
+
+.active {
+    background-color: lightcoral;
+}
+
+@media screen and (max-width: 1140px) {
+    .post {
+        width: 33.3333%;
+    }
+   }
+
+@media screen and (max-width: 992px) {
+   .post {
+       width: 50%;
+   }
+  }
+
+  @media screen and (max-width: 570px) {
+    .post {
+        width: 100%;
+    }
+   }
