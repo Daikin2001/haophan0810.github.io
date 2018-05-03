@@ -1,7 +1,9 @@
 
-function test() {
-  alert('vao day chua');
+function modify(_this) {
+  console.log('this :', _this);
+  console.log('this.text() :', $(_this).html());
 }
+
 $(function () {
   let getThis;
   let languages = [
@@ -50,36 +52,8 @@ $(function () {
       getThis = this;
       $('#input-code').val("");
       $("#highlight-popup").css("display", "block");
-
       console.log(getThis);
-      // var codeInput = prompt("Please enter your name",);
-      // console.log("input", codeInput);
-      // if (codeInput != null) {
-      //replace (\n) -> <br>
-      // var textContent= codeInput.replace(/\n/g,"<br/>");
-      // console.log("textContent", textContent);
-
-      // console.log(textContent);
-      // move text-content to div container
-      // $(".text-container").html("<pre class='js-insert-text'><code>"+ codeInput + "</code></pre>");
-
-      // highlight code of div container
-      // $('pre code').each(function(i, block) {
-      // console.log(i);
-      // hljs.highlightBlock(block);
-      // });
-      // set attribute : not edit text
-      // $('pre.js-insert-text').attr("contenteditable","false");
-      // get html code highlighted
-
-      // var getTextHighlighted = $(".text-container").html();
-      // console.log(getTextHighlighted);
-      // this.html.insert(getTextHighlighted+"<p></p>");
-      // this.html.insert("<pre><code>"+ getTextHighlighted + "</code></pre>");
-
-      // this.html.insert(a);
-      // 
-      // }
+      
     }
   });
 
@@ -103,26 +77,37 @@ $(function () {
     if (codeInput != '') {
       codeInput = codeInput.replace(/'&'/g, '&amp;')
         .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
+        .replace(/>/g, "&gt;")
+        .replace(/&/g,'&amp;');
+        
       console.log('codeInput :', codeInput);
       // move to text-container
-      $(".text-container").html(`<pre id='test-new' onclick='test()' class='${lang} hljs js-insert-text'><code>${codeInput} </code></pre>`);
+
+      $(".text-container").html(`<pre class='${lang} hljs js-insert-text'><code>${codeInput} </code></pre>`);
+      
       // highlight code of div container
       $('pre code').each(function (i, block) {
         console.log(i);
         hljs.highlightBlock(block);
       });
+      
       // set attribute : not edit text
       $('pre.js-insert-text').attr("contenteditable", "false");
 
       // get html code highlighted
       var getTextHighlighted = $(".text-container").html();
+      // getTextHighlighted.replace(/"<br>"/g,'\n');
       console.log('getTextHighlighted :', getTextHighlighted);
 
-       getThis.html.insert(`<p class='testhl'>${getTextHighlighted}</p><p></p>`);
+      getThis.html.insert(`${getTextHighlighted}<p></p>`);
       // getThis.html.insert("<pre><code>" + getTextHighlighted + "</code></pre>");
       // console.log(codeInput);
       // console.log($('#input-code'));
+
+      // add function modify
+      $('.js-insert-text').attr('onclick','modify(this)');
+
+      //close popup
       $("#highlight-popup").css("display", "none");
 
     } else {
@@ -133,29 +118,11 @@ $(function () {
   })
 
 
-  // .replace(/\n/g,"<br/>")
+  // click close
 
-  //handle edit highlight
-  // console.log($.FroalaEditor) ;
-
-});
-$('.fr-element.fr-view').on('click', function (e) {
-  // Do something here.
-  console.log(e);
-  alert('hh');
-});
+  $('.cancel,.close-icon').click(function(){
+    $('#highlight-popup').css("display","none");
 
 
-$('.js-insert-text').on('click', function (e) {
-  // Do something here.
-  console.log(e);
-  alert('hh');
-});
-
-$('#test-new').on('click', function () {
-  alert('ffd');
-})
-
-$('.js-insert-text').on('froalaEditor.click', function (e, editor, clickEvent) {
-  // Do something here.
+  })
 });
