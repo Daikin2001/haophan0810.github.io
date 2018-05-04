@@ -12,7 +12,10 @@ function modify(dataCodeInput, _this) {
   console.log('getCodeInput :', getCodeInput);
   // $('#input-code').html("");
   
-  $('#input-code').html(getCodeInput);
+  // $('#input-code').html(getCodeInput);
+
+  $('#input-code').val(getCodeInput);
+  
   $('#highlight-popup').css('display', 'block');
   // console.log('isEdit :', isEdit);
 }
@@ -65,6 +68,9 @@ $(function () {
       getThis = this;
       $('#input-code').val("");
       $("#highlight-popup").css("display", "block");
+      // focus to textarea popup
+      $('#input-code').focus();
+      
       console.log(getThis);
 
     }
@@ -90,6 +96,7 @@ $(function () {
 
   // handle event when click submit
   $('.submit').click(function () {
+    // $.FroalaEditor.BLOCK_TAGS = ['address', 'article', 'aside', 'audio', 'blockquote', 'canvas', 'dd',  'dl', 'dt', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'hgroup', 'hr', 'li', 'main', 'nav', 'noscript', 'ol', 'output', 'p', 'pre', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'ul', 'video'];
     // get class name of languages
     let lang = $('#list-language').val();
     // get text input
@@ -121,7 +128,7 @@ $(function () {
 
       if (!isEdit) {
         //insert new code
-        getThis.html.insert(`<div data-id-code-input='${idCodeInput}'>${getTextHighlighted}</div><p></p>`);
+        getThis.html.insert(`<p><div data-id-code-input='${idCodeInput}'>${getTextHighlighted}</div></p><p></p>`);
         // insert event double click
         $(`div[data-id-code-input='${idCodeInput}']`).attr('ondblclick', `modify(${idCodeInput},this)`);
         //storage code
