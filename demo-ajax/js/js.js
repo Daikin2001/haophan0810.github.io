@@ -1,7 +1,7 @@
-let getData=''
-
-function getAPI (){
+const btn = $('.quote__btn')
+function getQuote (){
     $.ajax({
+        type: 'GET',
        headers: {
         "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
         Accept: "application/json",
@@ -12,10 +12,22 @@ function getAPI (){
   })
     .done (function(data){
         console.log('data :', data);
-  $('#root').append(data.quote);
+        $('.quote__text').html(data.quote);
+        $('.quote__author').html(data.author);
+ 
       
+    })
+    .fail (function(jqXHR, textStatus){
+        
+    })
+    .always (function(jqXHR,textStatus){
+       
     })
     
   }
-  getAPI();
-  console.log('getData :', getData);
+  getQuote();
+  
+  btn.click(function(){
+  getQuote();
+    
+  })
