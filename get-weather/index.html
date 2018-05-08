@@ -6,81 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/css.css">
 
 </head>
 
 <body>
-    <header class="title container">
+    <header class="main-title container text-center text-capitalize">
         The Weather
     </header>
 
     <main class="content container">
+        <!-- div current-position -->
         <div class="current-position">
-            <div class="current__title">Current Position</div>
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="card">
-                        <img class="card-img-top" src="" alt="">
+            
+
+            <div class="row  justify-content-center">
+
+                <div class="weather__current col-lg-8">
+                    <div class="weather__info card">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Text</p>
+                            <div class="weather__info-top row reset-margin-row">
+                                <!-- name -->
+                                <h2 class="name-position col-lg-8"></h2>
+                                <!-- temp min max -->
+                                <div class="weather__temp-min-max col-lg-4">
+                                    <span class="weather__temp-min">
+                                        <i class="fas fa-long-arrow-alt-up text-info"></i>
+
+                                        <span class="temp-min"></span>
+                                        <i class="far fa-circle t-min"></i>
+                                    </span>
+                                    
+                                    <span class="weather__temp-max">
+                                        <i class="fas fa-long-arrow-alt-down text-info"></i>
+
+                                        <span class="temp-max"></span>
+                                        <i class="far fa-circle t-max"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="weather__info-middle col-lg-4">
+
+                                    <p class="date-current"></p>
+                                    <p class="full-date"></p>
+                                    <p class="weather-wind">Wind
+                                        <span class="wind"></span>km/h
+                                    </p>
+                                    <p class="weather-wet">
+                                        <i class="fas fa-tint text-info"></i>
+                                        <span class="wet"></span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <img src="./images/weatherpng.png" alt="" class="card-img-top">
+                                </div>
+                                <div class="col-lg-4 weather-temp__wrap">
+                                    <span class="temp__wrap">
+                                            <span class="weather__temp"></span>
+                                            <i class="far fa-circle tmp"></i>
+                                    </span>
+                                   
+                                </div>
+                            </div>
+                            <div class="weather__info-bottom">
+                                <span class="weather__type"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="description__current col-lg-7">
-                    <div class="descript__temp"><span>Temprature:</span></div>
-                    <div class="descript__pressure">de</div>
-                    <div class="descript__humidity">de</div>
-                    <div class="temp__desc">
-                        <div class="temp-min col-lg-6">ded</div>
-                        <div class="temp-max col-lg-6">de</div>
-                    </div>
-                </div>
+
             </div>
-        </div>
-        <div class="other-position">
-            <div class="list-position">
-                <ul class="row">
-                    <li class="position col-lg-2 text-center">lao</li>
-                    <li class="position col-lg-2 text-center">lao</li>
-                    <li class="position col-lg-2 text-center">lao</li>
-                    <li class="position col-lg-2 text-center">lao</li>
-                    <li class="position col-lg-2 text-center">lao</li>
-                    <li class="position col-lg-2 text-center">lao</li>
-                </ul>
-            </div>
-            <div class="content">
-                    <div class="row">
-                            <div class="col-lg-5">
-                                <div class="card">
-                                    <img class="card-img-top" src="" alt="">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Title</h4>
-                                        <p class="card-text">Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="description col-lg-7">
-                                <div class="descript__temp"></div>
-                                <div class="descript__pressure"></div>
-                                <div class="descript__humidity"></div>
-                                <div class="temp__desc">
-                                    <div class="temp-min col-lg-6"></div>
-                                    <div class="temp-max col-lg-6"></div>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-        </div>
 
     </main>
+
     <script src="js/lib/jquery-3.2.1.min.js"></script>
     <script src="./js/lib/boostrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="js/map-google.js"></script> -->
     <script src="js/js.js"></script>
+    <!-- insert google map -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEuf8DBhwL6DRYx1fOGDMvEtD9GGJ9vYY&callback=initMap"
+    type="text/javascript"></script> -->
 
 </body>
 
