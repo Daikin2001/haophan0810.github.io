@@ -1,6 +1,6 @@
 const CLICK =  document.querySelector('.click');
 const DISPLAY = document.querySelector('.result');
-let foods  = ['Cơm', 'Phở', 'Bánh cuốn', 'Miến trộn', 'Chè', 'Nhịn ăn', 'Cháo', 'Bánh mỳ', 'Bún đậu', 'Bún chả'];
+let foods  = ['Lẩu', 'Cơm', 'Phở', 'Bánh cuốn', 'Miến trộn', 'Chè', 'Nhịn ăn', 'Cháo', 'Bánh mỳ', 'Bún đậu', 'Bún chả'];
 let length = foods.length;
 
 
