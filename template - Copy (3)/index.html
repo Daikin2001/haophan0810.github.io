@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="h2 title text-center btn btn-info w-100 rounded-0 text-uppercase">Input</h2>
+                <div>
+                    <textarea name="" id="input" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+                <h2 class="h2 title text-center btn btn-success w-100 rounded-0 text-uppercase">Output</h2>
+
+
+                <div class="content__output">
+                    <textarea name="" id="output" cols="30" rows="10" readonly></textarea>
+                    <span id="copy" class="btn__copy btn btn-info">
+                        <i class="fas fa-copy"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+
+
+<iframe src="https://translate.google.com/" frameborder="0"></iframe>
+
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="./js/lib/boostrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        <script src="js/js.js"></script>
+        <script>
+            const copy = document.getElementById('copy');
+            const input = document.getElementById('input');
+            const output = document.getElementById('output');
+            const submit = document.getElementById('render');
+            const regex = /\d{2}:\d{2}:\d{2},\d{3}\s-->\s\d{2}:\d{2}:\d{2},\d{3}/;
+            //     submit.addEventListener('click', (e) => {
+            //         let textInput = input.value;
+            //         let textOutput = '';
+            //         textOutput = textInput.replace(new RegExp(regex, 'g'), '');
+            //         console.log('textOutput :', textOutput);
+            //         textOutput = textOutput.replace(/\n{3}/g,'');
+            // console.log('textInput :', textInput);
+            //         output.value = textOutput;
+            //     })
+
+            input.addEventListener('input', (e) => {
+                let textInput = input.value;
+                let textOutput = '';
+                textOutput = textInput.replace(new RegExp(regex, 'g'), '');
+                console.log('textOutput :', textOutput);
+                textOutput = textOutput.replace(/\n{3}/g, '');
+
+                textOutput = textOutput.replace(/\d|\d{2}/g, '');
+                textOutput = textOutput.replace(/\n{3}/g, '');
+                
+                // textOutput = textOutput.replace(/[MUSIC]/g, '');
+                
+
+                console.log('textInput :', textInput);
+                output.value = textOutput;
+
+            })
+
+            //copy clipboard
+            copy.addEventListener('click', (e) => {
+                output.select();
+                  document.execCommand("copy");
+                  console.log('dsf');
+                
+
+
+            })
+
+
+
+
+        </script>
+</body>
+
+</html>

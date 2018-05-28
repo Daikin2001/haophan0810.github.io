@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.content__wrap{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.content__link {
+    width: 25%;
+    padding: 15px;
+}
+.content__post{}
+.content__image{}
+.post__description{}
+.post__title{}
+.post__cost{}
+.old-price{}
+.new-price{}
+img {
+    width: 100%;
+}

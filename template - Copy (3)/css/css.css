@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+}
+
+.content__output {
+    position: relative;
+}
+
+.btn__copy {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.title {
+    letter-spacing: 1.5px;
+}
