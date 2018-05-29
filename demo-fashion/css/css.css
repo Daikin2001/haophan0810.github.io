@@ -2,31 +2,7 @@
     box-sizing: border-box;
 }
 
-/* .container-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 800px;
-    height: 500px;
+div {
+    height: 10px;
     
-
 }
-
-
-.item-flex {
-    width: 50px;
-    height: 50px;
-    background-color: antiquewhite;
-    border: 0.5px solid rgba(255, 0, 0, 0.216);
-    display: block;
-}
-.item-1{}
-.item-2{}
-.item-3{}
-.item-4{}
-.item-5{}
-.item-6{}
-.item-7{}
-.item-8{}
-.item-9{}
-.item-10{} */

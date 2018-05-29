@@ -9,12 +9,33 @@
     <link rel="stylesheet" href="css/css.css">    
 </head>
 <body>
-    
+    <div id="app">
+<h1>{{  product  }}</h1>
+<h2>{{  description }}</h2>
+<p v-if='test'>true</p>
+<p v-if='newif'>hi</p>
+<p v-else>false</p>
+<div class="img">
+    <img v-bind:src="srcImage" alt="">
+</div>
+<div  v-for='detail in details' >{{  detail.split('').reverse().join('')  }}</div>
+<div v-for='product in products' :key='product.ida'>{{ product.name   }}</div>
+<input type="button" 
+v-on:click='addCart' 
+value="click" 
+:class='{ "d-1": isTrue }'
+
+>
+
+    </div>
+
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="./js/vue.js"></script>
     <!-- <script src="js/js.js"></script> -->
-    <script src="js/test-vue-js.js"></script>
+    <script src="js/main.js"></script>
     <!-- <script src="js/js-fcc.js"></script> -->
    
     
