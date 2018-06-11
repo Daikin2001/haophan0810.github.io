@@ -24,12 +24,12 @@
 
     <main class="main-content">
         <div class="btn-random__wrap">
-            <input type="button" class="btn-random" value="Random">
+            <input type="button" id="random" class="btn-random" value="Random">
 
         </div>
 
         <div class="result__wrap">
-            <div class="card-student">
+            <div id="student-1" class="card-student">
                 <div class="card-student__inner">
                     <div class="student__name-wrap">
                         <div class="student__number">1</div>
@@ -42,7 +42,7 @@
                     <div class="student__description">
                         <div class="student__id-wrap">
                             <div class="student__id-title">
-                                    <i class="far fa-id-card"></i>
+                                <i class="far fa-id-card"></i>
                             </div>
 
                             <div class="student__id">jghjhg</div>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="student__email-wrap">
                             <div class="student__email-title">
-                                    <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <a href='mailto:' class="student__email">jghjghjhj</a>
                             <div class="copy-icon" title="copy">
@@ -61,18 +61,18 @@
                         </div>
 
                     </div>
-                    <div class="waiting">
-                            <div class="bouncing-loader">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                  </div>
+
+                </div>
+
+                <div class="waiting">
+                    <div class="bouncing-loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
-                
-
             </div>
-            <div class="card-student">
+            <div id="student-2" class="card-student">
                 <div class="card-student__inner">
                     <div class="student__name-wrap">
                         <div class="student__number">2</div>
@@ -86,7 +86,7 @@
                     <div class="student__description">
                         <div class="student__id-wrap">
                             <div class="student__id-title">
-                                    <i class="far fa-id-card"></i>
+                                <i class="far fa-id-card"></i>
                             </div>
 
                             <div class="student__id">jghjhg</div>
@@ -96,28 +96,29 @@
                         </div>
                         <div class="student__email-wrap">
                             <div class="student__email-title">
-                                    <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope"></i>
                             </div>
 
-                            <a href='mailto:' class="student__email">jghjghjhj</a>                            
+                            <a href='mailto:' class="student__email">jghjghjhj</a>
                             <div class="copy-icon" title="copy">
                                 <i class="fas fa-copy"></i>
                             </div>
                         </div>
 
                     </div>
-                    <div class="waiting">
-                            <div class="bouncing-loader">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                  </div>
+
+                </div>
+                <div class="waiting">
+                    <div class="bouncing-loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
 
 
             </div>
-            
+
 
         </div>
     </main>
@@ -126,6 +127,7 @@
 
     <script src="js/lib/jquery-3.2.1.min.js"></script>
     <script src="./js/lib/boostrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/data-student.js"></script>
     <script src="js/js.js"></script>
 
 </body>

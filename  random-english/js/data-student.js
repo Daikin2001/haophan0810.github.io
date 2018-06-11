@@ -283,13 +283,3 @@ const trainee7932 = {
 }
 
 
-const trainee7951 = {
-    id: 7951,
-    name:'Nguyễn Đăng Thiện',
-    userName:'Nguyen Dang Thien',
-    phone:'01645529636',
-    mail:'thienlcvip@gmail.com',
-    level:'html',
-    dayAdmission:'',
-    note:''
-}

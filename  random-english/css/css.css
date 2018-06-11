@@ -11,6 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.waiting.js-show{
+    visibility: visible;
+    opacity: 1;
 }
 
 a.student__email {
@@ -127,12 +134,22 @@ h2.student__name {
     flex-direction: column;
     width: 100%;
     position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+.card-student__inner.js-show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .card-student {
+    position: relative;
     display: flex;
     width: 50%;
     padding: 15px;
+    /* visibility: hidden;
+    opacity: 0; */
 }
 
 .result__wrap {
@@ -157,7 +174,8 @@ h2.student__name {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.36);
+    border: none;
+    /* box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.36); */
 }
 
 .btn-random__wrap {
