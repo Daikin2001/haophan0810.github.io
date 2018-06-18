@@ -7,46 +7,185 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./css/bootstrap-4.0.0-dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/css.css">
 
 </head>
 
 <body>
-  <div class="clock__wrapper">
-      <div class="clock__face">
-          <div class="clock__out-line">
-
-          </div>
-          <div class="clock__inline"></div>
-          <div class="hand hour-hand"></div>
-          <div class="hand minute-hand"></div>
-          <div class="hand second-hand"></div>
-          <span class="hour-number hour-number--twenty">12</span>
-          <span class="hour-number hour-number--three">3</span>
-          <span class="hour-number hour-number--six">6</span>
-          <span class="hour-number hour-number--nine">9</span>
-          
-          
-          
-      </div>
-  </div>
+    <div class="circle clock__wrapper">
+        <div class="circle center-ab circle-sub">
+        </div>
+        <div class="center-ab main-clock__number-other main-clock__number-other--1"></div>
+        <div class="center-ab main-clock__number-other main-clock__number-other--2"></div>
+        <div class="center-ab main-clock__number-other main-clock__number-other--4"></div>
+        <div class="center-ab main-clock__number-other main-clock__number-other--5"></div>
 
 
 
+        <div class="circle center-ab main-clock">
+
+            <div class="main-clock__inner">
+                <h2 class="main-clock__title">Rofake</h2>
+                <div class="main-clock__number number--twenty">12</div>
+                <div class="main-clock__number number--three">3</div>
+                <div class="main-clock__number number--six">6</div>
+                <div class="main-clock__number number--nine">9</div>
+
+
+                <div id="main-hour-hand" class="center-ab hand hour-hand"></div>
+                <div id="main-minute-hand" class="center-ab hand minute-hand"></div>
+                <div id="main-second-hand" class="center-ab hand secon-hand"></div>
+                <div class="circle center-ab main-clock__center"></div>
+                <div class="circle sub-clock__wrap clock-usa">
+                    <div class="circle  sub-clock usa-clock">
+                        <div class="circle center-ab circle-sub-mini">
+                        </div>
+                        <div class="center-ab sub-clock__number-other main-clock__number-other--1"></div>
+                        <div class="center-ab sub-clock__number-other main-clock__number-other--2"></div>
+                        <div class="center-ab sub-clock__number-other main-clock__number-other--4"></div>
+                        <div class="center-ab sub-clock__number-other main-clock__number-other--5"></div>
+                        <div class="center-ab circle sub-clock__inner">
+                            <div id="usa-hour-hand" class="center-ab hand sub-clock__hand hour-hand"></div>
+                            <div id="usa-minute-hand" class="center-ab hand sub-clock__hand minute-hand"></div>
+                            <div class="circle center-ab sub-clock__center"></div>
+                            <div class="sub-clock__number number--twenty">12</div>
+                            <div class="sub-clock__number number--three">3</div>
+                            <div class="sub-clock__number number--six">6</div>
+                            <div class="sub-clock__number number--nine">9</div>
+                            <div class="sub-clock__title">USA</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="circle sub-clock__wrap clock-eng">
+                    <div class="circle center-ab circle-sub-mini">
+                    </div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--1"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--2"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--4"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--5"></div>
+                    <div class="circle sub-clock usa-clock">
+                        <div class="center-ab circle sub-clock__inner">
+                            <div id="eng-hour-hand" class="center-ab hand sub-clock__hand hour-hand"></div>
+                            <div id="eng-minute-hand" class="center-ab hand sub-clock__hand minute-hand"></div>
+                            <div class="circle center-ab sub-clock__center"></div>
+                            <div class="sub-clock__number number--twenty">12</div>
+                            <div class="sub-clock__number number--three">3</div>
+                            <div class="sub-clock__number number--six">6</div>
+                            <div class="sub-clock__number number--nine">9</div>
+                            <div class="sub-clock__title">ENG</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="circle sub-clock__wrap clock-ita">
+                    <div class="circle center-ab circle-sub-mini">
+                    </div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--1"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--2"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--4"></div>
+                    <div class="center-ab sub-clock__number-other main-clock__number-other--5"></div>
+                    <div class="circle sub-clock usa-clock">
+                        <div class="center-ab circle sub-clock__inner">
+                            <div id="ita-hour-hand" class="center-ab hand sub-clock__hand hour-hand"></div>
+                            <div id="ita-minute-hand" class="center-ab hand sub-clock__hand minute-hand"></div>
+                            <div class="circle center-ab sub-clock__center"></div>
+                            <div class="sub-clock__number number--twenty">12</div>
+                            <div class="sub-clock__number number--three">3</div>
+                            <div class="sub-clock__number number--six">6</div>
+                            <div class="sub-clock__number number--nine">9</div>
+                            <div class="sub-clock__title">ITA</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 
 
 
 
 
+
+
+    <script>
+        const mainHour = document.getElementById('main-hour-hand');
+        const mainMinute = document.getElementById('main-minute-hand');
+        const mainSecond = document.getElementById('main-second-hand');
+        const usaHour = document.getElementById('usa-hour-hand');
+        const usaMinute = document.getElementById('usa-minute-hand');
+        const engHour = document.getElementById('eng-hour-hand');
+        const engMinute = document.getElementById('eng-minute-hand');
+        const itaHour = document.getElementById('ita-hour-hand');
+        const itaMinute = document.getElementById('ita-hour-hand');
+        setInterval(clockActive, 1000)
+        function secondHandRun(time, hand) {
+
+        }
+
+        function clockActive() {
+            const currentTime = new Date();
+            let currentHour = currentTime.getHours();
+            let currentMinute = currentTime.getMinutes();
+            let currentSecond = currentTime.getSeconds();
+
+            
+            let secondsDegress = (currentSecond * (360/60))-90;
+            let minutesDegress = (currentMinute * (360/60)) - 90;
+            let hoursDegress = currentHour * (12 / 360) + currentMinute * (30 / 60) - 90;
+            mainSecond.style.transform = `rotate(${secondsDegress}deg)`;
+            mainMinute.style.transform = `rotate(${minutesDegress}deg)`;
+            mainHour.style.transform = `rotate(${hoursDegress}deg)`;
+            
+            let hourUSA = convertHourUTC(currentHour,-4);
+            let hoursUSADegress = hourUSA * (12 / 360) + currentMinute * (30 / 60) - 90;
+            console.log('hoursUSADegress :', hoursUSADegress);
+            usaHour.style.transform = `rotate(${hoursUSADegress}deg)`;
+            usaMinute.style.transform = `rotate(${minutesDegress}deg)`;
+            
+            let hourEng = convertHourUTC(currentHour,1);
+            console.log('hourEng :', hourUSA);
+            let hoursEngDegress = hourEng * (12 / 360) + currentMinute * (30 / 60) - 90;
+            engHour.style.transform = `rotate(${hoursEngDegress}deg)`;
+            engMinute.style.transform = `rotate(${minutesDegress}deg)`;
+            
+            let hourIta = convertHourUTC(currentHour,2);
+            let hoursItaDegress = hourIta * (12 / 360) + currentMinute * (30 / 60) - 90;
+            itaHour.style.transform = `rotate(${hoursItaDegress}deg)`;
+            itaMinute.style.transform = `rotate(${minutesDegress}deg)`;
+             
+
+        }
+        function convertHourUTC(currentHour, utc) {
+            const currentUTC = 7;
+            let space = currentUTC - utc;
+            let hourConverted = currentHour - space;
+            if (hourConverted < 0) {
+                hourConverted += 24;
+            }
+            return hourConverted;
+        }
+
+    </script>
 
 
     <script src="js/lib/jquery-3.2.1.min.js"></script>
     <!-- <script src="./js/lib/boostrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
     <script src="js/js.js"></script>
-  
-   
+
+
 </body>
 
 </html>
