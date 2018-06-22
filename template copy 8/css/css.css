@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+.task {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+}
+
+.mon__item--1 .task--1 {
+    flex: 6 0 0;
+}
+.mon__item--1 .task--2 {
+    flex: 4 0 0;
+    
+}
+.mon__item--1 .task--3 {
+    flex: 2 0 0;
+    
+}
+.mon__item--1 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.mon__item--2 .task--1 {
+    flex: 2 0 0;
+}
+.mon__item--2 .task--2 {
+    flex: 8 0 0;
+    
+}
+.mon__item--2 .task--3 {
+    flex: 2 0 0;
+    
+}
+.mon__item--2 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.mon__item--3 .task--1 {
+    flex: 1 0 0;
+}
+.mon__item--3 .task--2 {
+    flex: 7 0 0;
+    
+}
+.mon__item--3 .task--3 {
+    flex: 6 0 0;
+    
+}
+.mon__item--3 .task--4 {
+    flex: 2 0 0;
+    
+}
+
+.mon__item--4 .task--1 {
+    flex: 4 0 0;
+}
+.mon__item--4 .task--2 {
+    flex: 6 0 0;
+    
+}
+.mon__item--4 .task--3 {
+    flex: 2 0 0;
+    
+}
+.mon__item--4 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.tue__item--1 .task--1 {
+    flex: 6 0 0;
+}
+.tue__item--1 .task--2 {
+    flex: 6 0 0;
+    
+}
+.tue__item--1 .task--3 {
+    flex: 2 0 0;
+    
+}
+.tue__item--1 .task--4 {
+    flex: 2 0 0;
+    
+}
+
+.tue__item--2 .task--1 {
+    flex: 8 0 0;
+}
+.tue__item--2 .task--2 {
+    flex: 4 0 0;
+    
+}
+.tue__item--2 .task--3 {
+    flex: 4 0 0;
+    
+}
+
+.tue__item--3 .task--1 {
+    flex: 10 0 0;
+}
+.tue__item--3 .task--2 {
+    flex: 6 0 0;
+    
+}
+
+
+.tue__item--4 .task--1 {
+    flex: 4 0 0;
+}
+.tue__item--4 .task--2 {
+    flex: 6 0 0;
+    
+}
+.tue__item--4 .task--3 {
+    flex: 4 0 0;
+    
+}
+.tue__item--4 .task--4 {
+    flex: 2 0 0;
+    
+}
+
+.tue__item--5 .task--1 {
+    flex: 2 0 0;
+}
+.tue__item--5 .task--2 {
+    flex: 6 0 0;
+    
+}
+.tue__item--5 .task--3 {
+    flex: 4 0 0;
+    
+}
+.tue__item--5 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+
+.wed__item--1 .task--1 {
+    flex: 8 0 0;
+}
+.wed__item--1 .task--2 {
+    flex: 4 0 0;
+    
+}
+.wed__item--1 .task--3 {
+    flex: 4 0 0;
+    
+}
+
+
+
+
+.wed__item--2 .task--1 {
+    flex: 1 0 0;
+}
+.wed__item--2 .task--2 {
+    flex: 7 0 0;
+    
+}
+.wed__item--2 .task--3 {
+    flex: 8 0 0;
+    
+}
+
+
+.wed__item--3 .task--1 {
+    flex: 10 0 0;
+}
+.wed__item--3 .task--2 {
+    flex: 2 0 0;
+    
+}
+.wed__item--3 .task--3 {
+    flex: 4 0 0;
+    
+}
+
+.thu__item--1 .task--1 {
+    flex: 6 0 0;
+}
+.thu__item--1 .task--2 {
+    flex: 4 0 0;
+    
+}
+.thu__item--1 .task--3 {
+    flex: 2 0 0;
+    
+}
+.thu__item--1 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+
+.thu__item--2 .task--1 {
+    flex: 2 0 0;
+}
+.thu__item--2 .task--2 {
+    flex: 8 0 0;
+    
+}
+.thu__item--2 .task--3 {
+    flex: 2 0 0;
+    
+}
+.thu__item--2 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.thu__item--3 .task--1 {
+    flex: 1 0 0;
+}
+.thu__item--3 .task--2 {
+    flex: 7 0 0;
+    
+}
+.thu__item--3 .task--3 {
+    flex: 6 0 0;
+    
+}
+.thu__item--3 .task--4 {
+    flex: 2 0 0;
+    
+}
+
+.thu__item--4 .task--1 {
+    flex: 4 0 0;
+}
+.thu__item--4 .task--2 {
+    flex: 6 0 0;
+    
+}
+.thu__item--4 .task--3 {
+    flex: 2 0 0;
+    
+}
+.thu__item--4 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.fri__item--1 .task--1 {
+    flex: 6 0 0;
+}
+.fri__item--1 .task--2 {
+    flex: 4 0 0;
+    
+}
+.fri__item--1 .task--3 {
+    flex: 2 0 0;
+    
+}
+.fri__item--1 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+
+.fri__item--2 .task--1 {
+    flex: 2 0 0;
+}
+.fri__item--2 .task--2 {
+    flex: 6 0 0;
+    
+}
+.fri__item--2 .task--3 {
+    flex: 4 0 0;
+    
+}
+.fri__item--2 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+.fri__item--3 .task--1 {
+    flex: 6 0 0;
+}
+.fri__item--3 .task--2 {
+    flex: 8 0 0;
+    
+}
+.fri__item--3 .task--3 {
+    flex: 2 0 0;
+    
+}
+
+
+.fri__item--4 .task--1 {
+    flex: 2 0 0;
+}
+.fri__item--4 .task--2 {
+    flex: 6 0 0;
+    
+}
+.fri__item--4 .task--3 {
+    flex: 4 0 0;
+    
+}
+.fri__item--4 .task--4 {
+    flex: 4 0 0;
+    
+}
+
+
+
+
+
+
+.task--medical {
+    background-color: #71a5dc;
+}
+
+.task--emergency {
+    background-color: #e484a9;
+}
+.task--none {
+    background-color: white;
+    
+}
+
+.task--laryngological {
+    background-color: #efef68;
+    
+}
+
+.task--gynaecological {
+    background-color: #65d48b;
+    
+}
+
+.task--cardiac {
+    background-color: #654cad;
+    
+}
+
+.task--outpatient {
+    background-color: #f16d6d;
+    
+}
+
+.row__item {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.table__row {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction:  column;
+}
+
+.table__hour {
+    flex: 1 0 0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid gray;
+    color: white;
+}
+
+.table__title {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.table-inner {
+    display: flex;
+    height: 80px;
+    background-color: #332b4b;
+    width: 100%;
+}
+
+.table-wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
