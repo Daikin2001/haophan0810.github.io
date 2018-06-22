@@ -3,8 +3,8 @@ const waiting = document.querySelectorAll('.waiting');
 const cardStudent = document.querySelectorAll('.card-student__inner');
 const copy = document.querySelectorAll('.copy-icon');
 const allStudents = [trainee3398,trainee3517,trainee4574,trainee4766,trainee6090,trainee7375,
-trainee7591,trainee7626,trainee7627,trainee7635,trainee7664,trainee7726,trainee7731,trainee7748,trainee7755,trainee7758,
-trainee7843,trainee7844,trainee7846,trainee7873,trainee7932,trainee7933,trainee7951,trainee7942,
+trainee7591,trainee7626,trainee7627,trainee7664,trainee7726,trainee7731,trainee7748,trainee7755,trainee7758,
+trainee7843,trainee7844,trainee7873,trainee7932,trainee7933,trainee7951,trainee7942,
 trainee7951,trainee7991,trainee8028]
 console.log('allStudents.length :', allStudents);
 

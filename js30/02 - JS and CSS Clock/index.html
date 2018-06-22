@@ -144,7 +144,7 @@
             
             let secondsDegress = (currentSecond * (360/60))-90;
             let minutesDegress = (currentMinute * (360/60)) - 90;
-            let hoursDegress = currentHour * (12 / 360) + currentMinute * (30 / 60) - 90;
+            let hoursDegress = currentHour * (12 / 360) + currentMinute * (30 / 60) + 90;
             mainSecond.style.transform = `rotate(${secondsDegress}deg)`;
             mainMinute.style.transform = `rotate(${minutesDegress}deg)`;
             mainHour.style.transform = `rotate(${hoursDegress}deg)`;
